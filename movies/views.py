@@ -50,3 +50,8 @@ class MovieDetailView(APIView):
             return Response(updated_movie.data, status=status.HTTP_202_ACCEPTED)
         return Response(updated_movie.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
+    def delete(self, _request, pk):
+        movie_to_delete = self.get_movie(pk=pk)
+        movie_to_delete.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
