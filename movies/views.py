@@ -4,9 +4,9 @@ from rest_framework import status
 from rest_framework.exceptions import NotFound
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
-
 from .models import Movie
 from .serializers.common import MovieSerializer
+from .serializers.populated import PopulatedMovieSerializer
 
 class MoviesListView(APIView):
     ''' Handles all requests to /movies (Get-Index and Post-Create) '''
@@ -40,7 +40,7 @@ class MovieDetailView(APIView):
 
     def get(self, _request, pk):
         movie = self.get_movie(pk=pk)
-        serialized_movie = MovieSerializer(movie)
+        serialized_movie = PopulatedMovieSerializer(movie)
         return Response(serialized_movie.data, status=status.HTTP_200_OK)
 
     # the update request below takes the original data and takes in the incoming update 
