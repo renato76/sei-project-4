@@ -1,0 +1,62 @@
+[
+{
+  "model": "movies.movie",
+  "pk": 1,
+  "fields": {
+    "title": "Hard Kill",
+    "image": "https://image.tmdb.org/t/p/w1280/ugZW8ocsrfgI95pnQ7wrmKDxIe.jpg",
+    "description": "The work of billionaire tech CEO Donovan Chalmers is so valuable that he hires mercenaries to protect it, and a terrorist group kidnaps his daughter just to get it.",
+    "genre": "Action",
+    "starring": "Bruce Willis, Jesse Metcalf, Natalia Eva Marie",
+    "release": "2020",
+    "director": "Matt Eskandari",
+    "duration": "1h 38m",
+    "age_rating": "15"
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 2,
+  "fields": {
+    "title": "Welcome to Sudden Death",
+    "image": "https://image.tmdb.org/t/p/w1280/elZ6JCzSEvFOq4gNjNeZsnRFsvj.jpg",
+    "description": "Jesse Freeman is a former special forces officer and explosives expert now working a regular job as a security guard in a state-of-the-art basketball arena. Trouble erupts when a tech-savvy cadre of terrorists kidnap the team's owner and Jesse's daughter during opening night. Facing a ticking clock",
+    "genre": "Action",
+    "starring": "Michael Jai White, Michael Eklund, Gillian White, Gary Owen",
+    "release": "2019",
+    "director": "Dallas Jackson",
+    "duration": "1h 20m",
+    "age_rating": "15"
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 3,
+  "fields": {
+    "title": "2067",
+    "image": "https://image.tmdb.org/t/p/w1280/7D430eqZj8y3oVkLFfsWXGRcpEG.jpg",
+    "description": "A lowly utility worker is called to the future by a mysterious radio signal, he must leave his dying wife to embark on a journey that will force him to face his deepest fears in an attempt to change the fabric of reality and save humankind from its greatest environmental crisis yet.",
+    "genre": "Action, Sci-Fi",
+    "starring": "Kodi Smit-McPhee, Ryan Kwanten, Sana'a Shaik, Aaron Glenane",
+    "release": "2020",
+    "director": "Seth Larney",
+    "duration": "1h 54m",
+    "age_rating": "16+"
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 5,
+  "fields": {
+    "title": "Bad Boys For Life",
+    "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/y95lQLnuNKdPAzw9F9Ab8kJ80c3.jpg",
+    "description": "Marcus and Mike are forced to confront new threats, career changes, and midlife crises as they join the newly created elite team AMMO of the Miami police department to take down the ruthless Armando Armas, the vicious leader of a Miami drug cartel.",
+    "genre": "Thriller, Action, Crime",
+    "starring": "Will Smith, Martin Lawrence, Paoloa Nunez",
+    "release": "2020",
+    "director": "Bilall Fallah",
+    "duration": "2h4m",
+    "age_rating": "15"
+  }
+}
+]
