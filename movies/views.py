@@ -38,3 +38,15 @@ class MovieDetailView(APIView):
         movie = self.get_movie(pk=pk)
         serialized_movie = MovieSerializer(movie)
         return Response(serialized_movie.data, status=status.HTTP_200_OK)
+
+    # the update request below takes the original data and takes in the incoming update 
+    # then compares them and validates them
+
+    def put(self, request, pk):
+        movie_to_update = self.get_movie(pk=pk)
+        updated_movie = MovieSerializer(movie_to_update, data=request.data)
+        if updated_movie.is_valid():
+            updated_movie.save()
+            return Response(updated_movie.data, status=status.HTTP_202_ACCEPTED)
+        return Response(updated_movie.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+
