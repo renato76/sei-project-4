@@ -15,7 +15,7 @@ class UserSerializer(serializers.ModelSerializer):
         password_confirmation = data.pop('password_confirmation')
 
         if password != password_confirmation:
-            raise ValidationError(message='Password Confirmation Does Not Match')
+            raise ValidationError({ 'password_confirmation': 'Does not match'})
 
 
         # try:
