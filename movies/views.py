@@ -12,3 +12,6 @@ class MoviesListView(APIView):
         serialized_movies_list = MovieSerializer(movies_list, many=True)
         return Response(serialized_movies_list.data, status=status.HTTP_200_OK)
 
+# class MovieDetailView(APIView):
+    
+
