@@ -15,11 +15,14 @@ class MoviesListView(APIView):
         return Response(serialized_movies_list.data, status=status.HTTP_200_OK)
 
 class MovieDetailView(APIView):
-    def get(self, _request, pk):
+
+    def get_movie(self, pk):
         try:
-            movie = Movie.objects.get(pk=pk)
-            serialized_movie = MovieSerializer(movie)
-            return Response(serialized_movie.data, status=status.HTTP_200_OK)
+            return Movie.objects.get(pk=pk)
         except Movie.DoesNotExist:
             raise NotFound()
-        
+
+    def get(self, _request, pk):
+        movie = self.get_movie(pk=pk)
+        serialized_movie = MovieSerializer(movie)
+        return Response(serialized_movie.data, status=status.HTTP_200_OK)
