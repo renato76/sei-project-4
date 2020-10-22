@@ -10,7 +10,7 @@ from .serializers.common import MovieSerializer
 
 class MoviesListView(APIView):
     ''' Handles all requests to /movies (Get-Index and Post-Create) '''
-    permission_classes = (IsAuthenticatedOrReadOnly, )
+    permission_classes = (IsAuthenticatedOrReadOnly,)
 
     def get(self, _request):
         movies_list = Movie.objects.all()
@@ -29,6 +29,8 @@ class MoviesListView(APIView):
 
 class MovieDetailView(APIView):
     ''' Handles all requests to /movies/id (Get-Show, Put-Update and Delete-Delete) '''
+
+    permission_classes = (IsAuthenticatedOrReadOnly, )
 
     def get_movie(self, pk):
         try:
