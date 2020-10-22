@@ -1,14 +1,16 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-
 from rest_framework.exceptions import NotFound
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
+
 
 from .models import Movie
 from .serializers.common import MovieSerializer
 
 class MoviesListView(APIView):
     ''' Handles all requests to /movies (Get-Index and Post-Create) '''
+    permission_classes = (IsAuthenticatedOrReadOnly, )
 
     def get(self, _request):
         movies_list = Movie.objects.all()
