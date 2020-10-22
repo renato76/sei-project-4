@@ -2,6 +2,8 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 
+from rest_framework.exceptions import NotFound
+
 from .models import Movie
 from .serializers.common import MovieSerializer
 
@@ -14,7 +16,10 @@ class MoviesListView(APIView):
 
 class MovieDetailView(APIView):
     def get(self, _request, pk):
-        movie = Movie.objects.get(pk=pk)
-        serialized_movie = MovieSerializer(movie)
-        return Response(serialized_movie.data, status=status.HTTP_200_OK)
+        try:
+            movie = Movie.objects.get(pk=pk)
+            serialized_movie = MovieSerializer(movie)
+            return Response(serialized_movie.data, status=status.HTTP_200_OK)
+        except Movie.DoesNotExist:
+            raise NotFound()
         
