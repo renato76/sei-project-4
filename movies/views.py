@@ -1,7 +1,7 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from rest_framework.exceptions import NotFound
+from rest_framework.exceptions import NotFound, PermissionDenied
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 from .models import Movie
@@ -39,8 +39,13 @@ class MovieDetailView(APIView):
         except Movie.DoesNotExist:
             raise NotFound()
 
+    def is_movie_owner(self, movie, user):
+        if movie.user.id != user.id:
+            raise PermissionDenied()
+
     def get(self, _request, pk):
         movie = self.get_movie(pk=pk)
+        self.is_movie_owner(movie_to_update, request.user)
         serialized_movie = PopulatedMovieSerializer(movie)
         return Response(serialized_movie.data, status=status.HTTP_200_OK)
 
@@ -55,8 +60,9 @@ class MovieDetailView(APIView):
             return Response(updated_movie.data, status=status.HTTP_202_ACCEPTED)
         return Response(updated_movie.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
-    def delete(self, _request, pk):
+    def delete(self, request, pk):
         movie_to_delete = self.get_movie(pk=pk)
+        self.is_movie_owner(movie_to_delete, request.user)
         movie_to_delete.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 
