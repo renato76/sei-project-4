@@ -12,20 +12,11 @@ class Comment(models.Model):
         on_delete=models.CASCADE
     )
 
-    # def no_of_ratings(self):
-    #     ratings = Comment.objects.filter(movie=self)
-    #     return len(ratings)
-
-    # def avg_rating(self):
-    #     sum = 0
-    #     ratings = Comment.objects.filter(movie=self)
-    #     for rating in ratings:
-    #         sum += rating.stars
-    #     if len(ratings) > 0:
-    #         return sum / len(ratings)
-    #     else:
-    #         return 0
-
+    user = models.ForeignKey(
+        'jwt_auth.user',
+        related_name="posted_comments",
+        on_delete=models.CASCADE
+    )
 
     def __str__(self):
         return f'Comment - {self.id} on Movie - {self.movie}'

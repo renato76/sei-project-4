@@ -1,10 +1,10 @@
 from jwt_auth.serializers.nested import NestedUserSerializer
 from ..serializers.common import MovieSerializer
 from genres.serializers.common import GenreSerializer
-from comments.serializers.common import CommentSerializer
+from comments.serializers.populated import PopulatedCommentSerializer
 
 class PopulatedMovieSerializer(MovieSerializer):
 
-    comments = CommentSerializer(many=True)
+    comments = PopulatedCommentSerializer(many=True)
     genre = GenreSerializer(many=True)
     user = NestedUserSerializer()

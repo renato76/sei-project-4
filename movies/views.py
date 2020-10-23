@@ -33,25 +33,27 @@ class MovieDetailView(APIView):
 
     permission_classes = (IsAuthenticatedOrReadOnly, )
 
+    # get all movies
     def get_movie(self, pk):
         try:
             return Movie.objects.get(pk=pk)
         except Movie.DoesNotExist:
             raise NotFound()
-
+    # check if user is same as movie owner
     def is_movie_owner(self, movie, user):
         if movie.user.id != user.id:
             raise PermissionDenied()
 
-    def get(self, _request, pk):
+    # get one movie by its id
+    def get(self, request, pk):
         movie = self.get_movie(pk=pk)
-        self.is_movie_owner(movie_to_update, request.user)
         serialized_movie = PopulatedMovieSerializer(movie)
         return Response(serialized_movie.data, status=status.HTTP_200_OK)
 
-    # the update request below takes the original data and takes in the incoming update 
-    # then compares them and validates them
+    ''' this update request below takes the original data and takes in the incoming update 
+    then compares them and validates them '''
 
+    # update one movie if logged in
     def put(self, request, pk):
         movie_to_update = self.get_movie(pk=pk)
         updated_movie = MovieSerializer(movie_to_update, data=request.data)
@@ -60,6 +62,7 @@ class MovieDetailView(APIView):
             return Response(updated_movie.data, status=status.HTTP_202_ACCEPTED)
         return Response(updated_movie.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
+    # delete a movie if logged in
     def delete(self, request, pk):
         movie_to_delete = self.get_movie(pk=pk)
         self.is_movie_owner(movie_to_delete, request.user)
