@@ -3,7 +3,6 @@ from rest_framework.response import Response
 from rest_framework.exceptions import NotFound
 from rest_framework import status
 
-
 from .serializers.common import CommentSerializer
 from .models import Comment
 
