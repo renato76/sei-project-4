@@ -20,6 +20,7 @@ class MoviesListView(APIView):
     ''' the create request will convert incoming data and validate it '''
 
     def post(self, request):
+        request.data['user'] = request.user.id
         movie_to_create = MovieSerializer(data=request.data)
         if movie_to_create.is_valid():
             movie_to_create.save()
