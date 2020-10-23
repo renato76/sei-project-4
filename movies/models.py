@@ -14,6 +14,11 @@ class Movie(models.Model):
         'genres.Genre',
         related_name="genres"
     )
+    user = models.ForeignKey(
+        'jwt_auth.user',
+        related_name="created_movies",
+        on_delete=models.CASCADE
+    )
 
     def __str__(self):
         return f'{self.title}'
