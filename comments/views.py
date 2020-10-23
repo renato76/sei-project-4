@@ -2,11 +2,14 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.exceptions import NotFound
 from rest_framework import status
+from rest_framework.permissions import IsAuthenticated
 
 from .serializers.common import CommentSerializer
 from .models import Comment
 
 class CommentListView(APIView):
+
+    permission_classes = (IsAuthenticated, )
 
     def post(self, request):
         comment_to_create = CommentSerializer(data=request.data)
@@ -17,6 +20,8 @@ class CommentListView(APIView):
 
 
 class CommentDetailView(APIView):
+
+    permission_classes = (IsAuthenticated, )
 
     def get_comment(self, pk):
         try: 
