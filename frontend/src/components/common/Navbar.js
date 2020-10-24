@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
+    <nav className="navbar is-transparent">
       <div className="container">
         <div className="navbar-start">
           <a className="navbar-item" href="/">
-            <img id="logo" src="https://assets.brand.microsites.netflix.io/assets/493f5bba-81a4-11e9-bf79-066b49664af6_cm_1440w.png?v=41" alt="formula1" width="112" height="30" />
+            <img id="logo" src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg" alt="formula1" width="160" height="50" />
           </a>
           <Link to="/" className="navbar-item">Home</Link>
         </div>

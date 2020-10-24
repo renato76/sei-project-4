@@ -13,7 +13,6 @@
 
 .row-poster {
   object-fit: contain;
-  width: 100%;
   height: 300px;
   width: 200px;
   transition: transform 450ms;
@@ -35,23 +34,25 @@
 }
 
 .home-main {
-  background-color: black;
+  background-color: #08080a;
   
 }
 
 .navbar {
-  background-color: #000000;
+  background-color: #08080a;
   height: 4.6rem;
   padding-left: 100px;
+  
 }
 
 .navbar-item {
   color: white;
   font-weight: bold;
-  background-color: #000000;
+  background-color: #08080a;
+  
 }
 
-.navbar :hover {
+.navbar:hover {
   background-color: #000000;
   font-weight: bold;
 }
@@ -60,4 +61,59 @@ h1 {
   font-weight: bold;
   color: white;
   margin-left: 100px;
+}
+
+.poster-view {
+  img {
+    max-width: 400px;
+    border-radius: 20px;
+  }
+
+  object-fit: contain;
+  height: 100vh;
+  padding: 50px;
+}
+
+.details {
+  display: flex;
+  border: 1px dashed red;
+  background-color: #08080a;
+  
+}
+
+.movie-title {
+  display: flex;
+  h1 {
+    color: white;
+    padding-top: 50px;
+    font-weight: bold;
+    font-size: 40px;
+  }
+  h2 {
+    color: white;
+    padding-top: 50px;
+    font-size: 40px;
+  }
+  
+}
+
+.movie-info {
+  display: flex;
+  padding-left: 100px;
+  padding-top: 10px;
+  h3 {
+    display: inline;
+    color: white;
+    border: 1px solid white;
+    padding: 3px;
+    margin-right: 15px;
+  }
+  h4 {
+    display: inline;
+    color: white;
+    font-size: 18px;
+  }
+  .duration {
+    margin-left: 15px;
+  }
 }
