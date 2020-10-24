@@ -22,8 +22,8 @@ class Home extends React.Component {
     if ( !this.state.movies ) return null
     console.log(this.state)
     return (
-      <div>
-        <div className="hero is-dark is-fullheight">
+      <div className="home-main">
+        <div className="hero is-fullheight">
           <div className="hero-body">
             <div className="container">
               <p className="title">

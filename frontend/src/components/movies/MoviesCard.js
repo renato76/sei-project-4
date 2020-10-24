@@ -1,4 +1,5 @@
 import React from 'react'
+import MovieDetails from './MovieDetails'
 
 const MoviesCard = ({ title, image }) => {
 
@@ -13,7 +14,8 @@ const MoviesCard = ({ title, image }) => {
         <div className="row-poster">
           <img src={image} alt={title} />
         </div>
-      </div>   
+      </div>  
+      <MovieDetails /> 
     </div>
 
   )
