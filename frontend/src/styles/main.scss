@@ -3,7 +3,8 @@
   display: flex;
   overflow-y: hidden;
   overflow-x: scroll;
-  padding: 20px
+  padding: 20px;
+  margin: 0 80px;
 }
 
 .main-page::-webkit-scrollbar {
@@ -20,7 +21,7 @@
 }
 
 .row-poster:hover {
-  transform: scale(1.08);
+  transform: scale(1.09);
 }
 
 .featured {
@@ -58,5 +59,5 @@
 h1 {
   font-weight: bold;
   color: white;
-  margin-left: 20px;
+  margin-left: 100px;
 }
