@@ -2,7 +2,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.exceptions import NotFound, PermissionDenied
-from rest_framework.permissions import IsAuthenticatedOrReadOnly
+from rest_framework.permissions import IsAuthenticatedOrReadOnly, IsAuthenticated
 
 from .models import Movie
 from .serializers.common import MovieSerializer
@@ -68,4 +68,14 @@ class MovieDetailView(APIView):
         self.is_movie_owner(movie_to_delete, request.user)
         movie_to_delete.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+class MovieLikeView(MovieDetailView):
+    
+    permission_classes = (IsAuthenticated, )
+
+    def post(self, request, pk):
+        movie_to_like = self.get_movie(pk=pk)
+        movie_to_like.liked_by.add(request.user.id)
+        movie_to_like.save()
+        return Response({'Message': f'Like Added To Movie {pk}'}, status=status.HTTP_202_ACCEPTED)
 
