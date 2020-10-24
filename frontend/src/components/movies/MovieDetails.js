@@ -1,6 +1,7 @@
 import React from 'react'
 import { getSingleMovie } from '../../lib/api'
 
+
 class MovieDetails extends React.Component {
   state = {
     movie: null
@@ -8,23 +9,20 @@ class MovieDetails extends React.Component {
 
   async componentDidMount() {
     // request single movie by id
-    const response = await (getSingleMovie)
-    const data = await response.json()
-    console.log(data)
+    const movieId = this.props.match.params.id
+    console.log(this.props, movieId)
+    const response = await getSingleMovie(movieId)
+    console.log(response)
 
-    this.setState({
-      movie: response.data
-    })
   }
 
   render() {
-    const { movie } = this.state
+    // const { movie } = this.state
 
-    if (!movie) return null
+    // if (!movie) return null
     return (
       <div className="details">
         <h2>App Is Running</h2>
-        <h2>{movie.title}</h2>
       </div>
     )
   }
