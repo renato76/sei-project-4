@@ -1,27 +1,33 @@
 import React from 'react'
-
 import { getSingleMovie } from '../../lib/api'
 
 class MovieDetails extends React.Component {
   state = {
     movie: null
   }
+
   async componentDidMount() {
-    //request a single movie by id
-    const response = await getSingleMovie()
+    // request single movie by id
+    const response = await (getSingleMovie)
+    const data = await response.json()
+    console.log(data)
+
     this.setState({
       movie: response.data
     })
   }
 
-
   render() {
+    const { movie } = this.state
 
+    if (!movie) return null
     return (
-      <h1>Show Single Movie Details</h1>
+      <div className="details">
+        <h2>App Is Running</h2>
+        <h2>{movie.title}</h2>
+      </div>
     )
   }
-
 }
 
 export default MovieDetails

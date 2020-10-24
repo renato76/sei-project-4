@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const MoviesCard = ({ title, image, id }) => {
-
-
+  console.log(title)
+  
   // 1. I would like each image to link to the Show One Movie from API backend
   // I think the url should be /movies/id
 
@@ -15,7 +15,7 @@ const MoviesCard = ({ title, image, id }) => {
   // Another row can have "Romantic" "Comedy" etc etc
 
   return (
-    <div className="main">
+    <div id={id} className="main">
       <Link to={`/movies/${id}`} >
         <div className="row-posters">
           <div className="row-poster">
@@ -23,15 +23,7 @@ const MoviesCard = ({ title, image, id }) => {
           </div>
         </div>  
       </Link>
-      {/* <Link to={`/movies/${id}`} >
-        <div className="row-posters">
-          <div className="row-poster">
-            <img src={image} alt={title} />
-          </div>
-        </div>  
-      </Link> */}
     </div>
-
   )
 }
 
