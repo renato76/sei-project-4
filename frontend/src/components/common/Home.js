@@ -32,7 +32,9 @@ class Home extends React.Component {
               </p>
             </div>
           </div>
-          <h1>ACTION MOVIES</h1>
+          <div className="home-titles">
+            <h1>ACTION MOVIES</h1>
+          </div>
           <div className="main-page">
             
             { this.state.movies.map(movie => (

@@ -3,14 +3,9 @@ import { Link } from 'react-router-dom'
 
 const MoviesCard = ({ title, image, id }) => {
   console.log(title)
-  
-  // 1. I would like each image to link to the Show One Movie from API backend
-  // I think the url should be /movies/id
-
-
 
   // 2. Currently I am displaying All the movies
-  // I need to create a way to display only movies with certain genres
+  // I want to create a way to display only movies with certain genres
   // for example a row of movies with genres "Action", "Crime"
   // Another row can have "Romantic" "Comedy" etc etc
 

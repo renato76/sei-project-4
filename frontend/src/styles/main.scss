@@ -4,7 +4,7 @@
   overflow-y: hidden;
   overflow-x: scroll;
   padding: 20px;
-  margin: 0 80px;
+  margin: 0 50px;
 }
 
 .main-page::-webkit-scrollbar {
@@ -60,7 +60,7 @@
 h1 {
   font-weight: bold;
   color: white;
-  margin-left: 90px;
+  margin-left: 70px;
 }
 
 .poster-view {
@@ -100,7 +100,7 @@ h1 {
 
 .movie-info {
   display: flex;
-  padding-left: 90px;
+  padding-left: 70px;
   padding-top: 10px;
   h3 {
     display: inline;
@@ -128,12 +128,12 @@ h1 {
 }
 .description {
   color: white;
-  padding: 0 90px;
+  padding: 0 70px;
 }
 
 .cast {
   padding-top: 30px;
-  padding-left: 90px;
+  padding-left: 70px;
   color: white;
 
 }
@@ -145,4 +145,12 @@ h1 {
 }
 .starring {
   padding-top: 40px;
+}
+
+.right-box {
+  background-color: #0e1018;
+  margin-top: 50px;
+  margin-right: 50px;
+  border-radius: 20px;
+  padding-bottom: 60px;
 }
