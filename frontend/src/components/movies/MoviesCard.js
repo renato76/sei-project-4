@@ -23,6 +23,13 @@ const MoviesCard = ({ title, image, id }) => {
           </div>
         </div>  
       </Link>
+      {/* <Link to={`/movies/${id}`} >
+        <div className="row-posters">
+          <div className="row-poster">
+            <img src={image} alt={title} />
+          </div>
+        </div>  
+      </Link> */}
     </div>
 
   )

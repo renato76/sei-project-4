@@ -32,8 +32,9 @@ class Home extends React.Component {
               </p>
             </div>
           </div>
+          <h1>ACTION MOVIES</h1>
           <div className="main-page">
-            <h1>ACTION MOVIES</h1>
+            
             { this.state.movies.map(movie => (
               <MoviesCard key={movie.id} {...movie} />
             ))}

@@ -3,6 +3,11 @@
   display: flex;
   overflow-y: hidden;
   overflow-x: scroll;
+  padding: 20px
+}
+
+.main-page::-webkit-scrollbar {
+  display: none;
 }
 
 .row-poster {
@@ -48,4 +53,10 @@
 .navbar :hover {
   background-color: #000000;
   font-weight: bold;
+}
+
+h1 {
+  font-weight: bold;
+  color: white;
+  margin-left: 20px;
 }
