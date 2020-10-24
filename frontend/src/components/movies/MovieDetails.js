@@ -1,6 +1,5 @@
 import React from 'react'
 import { getSingleMovie } from '../../lib/api'
-// import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord'
 
 class MovieDetails extends React.Component {
   state = {
@@ -26,22 +25,41 @@ class MovieDetails extends React.Component {
     console.log(movie)
     if (!movie) return null
     return (
-      <div className="details">
-        <div className="poster-view">
-          <img src={movie.image} alt={movie.title} />
-        </div>
-        <div className="main-right">
-          <div className="movie-title">
-            <h1>{movie.title}&nbsp;</h1>
-            <h2>({movie.release})</h2>       
+      <div className="show-page">
+        <div className="details">
+          <div className="poster-view">
+            <img src={movie.image} alt={movie.title} />
           </div>
-          <div className="movie-info">
-            <h3>{movie.age_rating}&nbsp;</h3>
-            <div className="genres">
-              <h4> {movie.genre.map(genre => genre.name)} </h4>
+          <div className="main-right">
+            <div className="movie-title">
+              <h1>{movie.title}&nbsp;</h1>
+              <h2>({movie.release})</h2>       
             </div>
-            <div className="duration">
-              <h4>{movie.duration}</h4>
+            <div className="movie-info">
+              <h3>{movie.age_rating}&nbsp;</h3>
+              <div className="genres">
+                <h4> {movie.genre.map(genre => genre.name)} </h4>
+              </div>
+              <div className="duration">
+                <h4>{movie.duration}</h4>
+              </div>
+            </div>
+            <div className="overview">
+              <h1>Overview</h1>
+              <div className="description">
+                <h2>{movie.description}</h2>
+              </div>
+            </div>
+            <div className="cast">
+              <div className="director">
+                <h5>Director</h5>
+                <h4>{movie.director}</h4>
+                
+              </div>
+              <div className="starring">
+                <h5>Starring</h5>
+                <h4>{movie.starring}</h4>
+              </div>
             </div>
           </div>
         </div>
