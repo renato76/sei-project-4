@@ -1,7 +1,8 @@
 
 .main-page {
   display: flex;
-  
+  overflow-y: hidden;
+  overflow-x: scroll;
 }
 
 .row-poster {
@@ -10,11 +11,11 @@
   height: 300px;
   width: 200px;
   transition: transform 450ms;
+  margin-right: 15px;
 }
 
-.row-posters {
-  margin-right: 5px;
-
+.row-poster:hover {
+  transform: scale(1.08);
 }
 
 .featured {
