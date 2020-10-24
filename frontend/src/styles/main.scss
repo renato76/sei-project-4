@@ -9,7 +9,7 @@
   width: 100%;
   height: 300px;
   width: 200px;
-  
+  transition: transform 450ms;
 }
 
 .row-posters {
@@ -21,15 +21,15 @@
 
   max-height: 800px;
   width: 100%;
-  padding: 0;
-  margin: 0 auto;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0.5;
 }
 
 .home-main {
   background-color: black;
+  
 }
 
 .navbar {

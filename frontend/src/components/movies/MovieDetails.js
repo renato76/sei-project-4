@@ -14,7 +14,7 @@ class MovieDetails extends React.Component {
     })
   }
 
-  
+
   render() {
 
     return (
