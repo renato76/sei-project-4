@@ -20,5 +20,10 @@ class Movie(models.Model):
         on_delete=models.CASCADE
     )
 
+    liked_by = models.ManyToManyField(
+        'jwt_auth.User', 
+        related_name='liked_movies'
+    )
+
     def __str__(self):
         return f'{self.title}'

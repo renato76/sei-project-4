@@ -8,3 +8,4 @@ class PopulatedMovieSerializer(MovieSerializer):
     comments = PopulatedCommentSerializer(many=True)
     genre = GenreSerializer(many=True)
     user = NestedUserSerializer()
+    liked_by = NestedUserSerializer(many=True)

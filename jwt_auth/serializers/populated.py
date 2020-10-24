@@ -6,5 +6,6 @@ class PopulatedUserSerializer(UserSerializer):
 
     created_movies = MovieSerializer(many=True)
     posted_comments = CommentSerializer(many=True)
+    liked_movies = MovieSerializer(many=True)
 
     
