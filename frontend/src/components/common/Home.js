@@ -27,7 +27,8 @@ class Home extends React.Component {
           <div className="hero-body">
             <div className="container">
               <p className="title">
-          Featured Movie
+                <img className="featured" 
+                  src="https://free4kwallpapers.com/uploads/originals/2020/05/01/interstellar-wallpaper.jpg" alt="featured-movie"  />
               </p>
             </div>
           </div>
