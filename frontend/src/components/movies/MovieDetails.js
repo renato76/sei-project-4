@@ -74,14 +74,16 @@ class MovieDetails extends React.Component {
               <div className="cast">
                 <div className="director">
                   <h5>Director</h5>
-                  <h4>{movie.director}</h4>
-                  
+                  <h4>{movie.director}</h4>                
+                </div>
+                <div className="trailer">      
+                  <button><a href={movie.trailer}>Watch Trailer</a></button>
                 </div>
                 <div className="starring">
                   <h5>Starring</h5>
                   <h4>{movie.starring}</h4>
                 </div>
-              </div>
+              </div>        
             </div>
           </div>
         </div>  

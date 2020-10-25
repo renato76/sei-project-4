@@ -13,3 +13,5 @@ export const registerUser = formData => {
 export const loginUser = formData => {
   return axios.post('/auth/login/', formData)
 }
+
+// Will need another export const here to handle new comments

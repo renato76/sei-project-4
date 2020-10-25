@@ -146,11 +146,12 @@ h1 {
     font-weight: bold;
   }
 }
-.starring {
-  padding-top: 40px;
-}
+// .starring {
+//   padding-top: 0;
+// }
 
 .right-box {
+  height: 71vh;
   background-color: #161616;
   margin-top: 50px;
   margin-right: 50px;
@@ -189,15 +190,30 @@ h1 {
 }
 
 .comments-left {
-  margin-left: 100px;
-  border: 1px dashed red;
-  padding: 0 50px;
+  margin-left: 90px;
+  // border: 1px dashed red;
+  padding: 0 10px;
   width: 40%;
   h2 {
     color: white;
     padding: 20px 0;
     font-weight: bold;
   }
+}
+
+.trailer {
+  a {
+    color: rgb(19, 19, 19);
+    font-size: 20px;
+    font-weight: bold;
+  }
+  button {
+    padding: 10px;
+    border-radius: 15px;
+  }  
+  display:flex;
+  justify-content: flex-end;
+  margin-right: 300px;
 }
 
 
