@@ -26,10 +26,11 @@ class Home extends React.Component {
         <div className="hero is-fullheight">
           <div className="hero-body">
             <div className="container">
-              <h2 className="title">WATCH TRAILER
+              <div className="title">
                 <img className="featured" 
                   src="https://free4kwallpapers.com/uploads/originals/2020/05/01/interstellar-wallpaper.jpg" alt="featured-movie"  />
-              </h2>
+                <h2>Watch Trailer</h2>
+              </div>
             </div>
           </div>
           <div className="home-titles">

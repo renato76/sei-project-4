@@ -64,7 +64,31 @@ class MovieDetails extends React.Component {
               </div>
             </div>
           </div>
-        </div>
+        </div>  
+        <div className="next-page">
+          <div className="comments-left">
+            <h2>Comments</h2>
+            <article className="media">
+              <div className="media-content">
+                <div className="field">
+                  <p className="control">
+                    <textarea className="textarea" placeholder="Add a comment..."></textarea>
+                  </p>
+                </div>
+                <nav className="level">
+                  <div className="level-left">
+                    <div className="level-item">
+                      <a className="button is-info">Submit</a>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </article>
+          </div>
+          <div className="comments-right">
+
+          </div>
+        </div> 
       </div>
     )
   }

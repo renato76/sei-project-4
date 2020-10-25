@@ -71,7 +71,7 @@ h1 {
   }
 
   object-fit: contain;
-  height: 100vh;
+  height: 90vh;
   padding: 50px;
   margin-left: 50px;
 }
@@ -79,9 +79,11 @@ h1 {
 .details {
   display: flex;
   // border: 1px dashed red;
-  background-color: #08080a;
-  
+  background-color: #08080a;  
+  // background-image: url('https://image.tmdb.org/t/p/w1280/7D430eqZj8y3oVkLFfsWXGRcpEG.jpg');
+  background-size: cover;
 }
+
 
 .movie-title {
   display: flex;
@@ -149,9 +151,53 @@ h1 {
 }
 
 .right-box {
-  background-color: #0e1018;
+  background-color: #161616;
   margin-top: 50px;
   margin-right: 50px;
   border-radius: 20px;
   padding-bottom: 60px;
 }
+
+.title {
+  position: relative;
+  h2 {
+    position:absolute;
+    top: 350px;
+    right: 550px;
+    color: white;
+    font-weight: bold;
+  }
+}
+
+// Register and Login
+
+.section {
+  background-color: #111111;
+  height: 100vh;
+}
+
+// Bpttpm page comments etc
+
+.next-page {
+  display: flex;
+  background-color: #08080a;  
+  background-size: cover;
+}
+
+.next-page {
+  height: 60vh;
+}
+
+.comments-left {
+  margin-left: 100px;
+  border: 1px dashed red;
+  padding: 0 50px;
+  width: 40%;
+  h2 {
+    color: white;
+    padding: 20px 0;
+  }
+}
+
+
+
