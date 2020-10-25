@@ -3,7 +3,10 @@ import { getSingleMovie } from '../../lib/api'
 
 class MovieDetails extends React.Component {
   state = {
-    movie: null
+    movie: null,
+    commentData: {
+      comments: '' 
+    }
   }
 
   async componentDidMount() {
@@ -16,8 +19,25 @@ class MovieDetails extends React.Component {
     this.setState({
       movie: response.data
     })
+  }
 
+  // Need to create a function that handles the comments formdata, 
 
+  newComment = event => {
+    const commentData = {
+      ...this.state.commentData,
+      [event.target.name]: event.target.value
+    }
+    this.setState({ commentData })
+  }
+
+  // A function to handle submit comment
+  handleSubmit = async event => {
+    event.preventDefault()
+    const response = await this.newComment(this.state.commentData)
+    console.log(response)
+    // redirect  user the relevant page
+    this.props.history.push('/movies')
   }
 
   render() {
@@ -77,8 +97,8 @@ class MovieDetails extends React.Component {
                 </div>
                 <nav className="level">
                   <div className="level-left">
-                    <div className="level-item">
-                      <a className="button is-info">Submit</a>
+                    <div className="field">
+                      <button type="submit" className="button is-fullwidth is-dark">Submit</button>
                     </div>
                   </div>
                 </nav>
@@ -86,7 +106,6 @@ class MovieDetails extends React.Component {
             </article>
           </div>
           <div className="comments-right">
-
           </div>
         </div> 
       </div>
