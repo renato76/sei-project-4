@@ -5,10 +5,10 @@ import MoviesCard from '../movies/MoviesCard'
 class Home extends React.Component {
 
   state = {
-    movies: []
+    movies: [],
+    comedyMovies: ''
   
   }
- 
 
   async componentDidMount() {
     try {
@@ -21,20 +21,26 @@ class Home extends React.Component {
     }
   }
 
+  // function that returns movies with certain genres
+  comedyMovies = () => {
+    const comedy = 
+    this.state.movies.filter(movie => {
+      return movie.genre === 1
+    })
+    this.setState({ comedy })
+  }
+  
+
   render() {
     if ( !this.state.movies ) return null
     console.log(this.state)
     return (
       <div className="home-main">
-        <div className="hero is-fullheight">
-          <div className="hero-body">
-            <div className="container">
-              <div className="title">
-                <img className="featured" 
-                  src="https://free4kwallpapers.com/uploads/originals/2020/05/01/interstellar-wallpaper.jpg" alt="featured-movie"  />
-                <h2>Watch Trailer</h2>   
-              </div>
-            </div>
+        <div className="hero">
+          <div className="title">
+            <img className="featured" 
+              src="https://free4kwallpapers.com/uploads/originals/2020/05/01/interstellar-wallpaper.jpg" alt="featured-movie"  />
+            <h2>Watch Trailer</h2>   
           </div>
           <div className="home-titles">
             <h1>ACTION MOVIES</h1>
@@ -45,6 +51,7 @@ class Home extends React.Component {
               <MoviesCard key={movie.id} {...movie} />
             ))}
           </div>
+
         </div>
       </div>
     )

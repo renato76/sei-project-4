@@ -8,6 +8,7 @@ const MoviesCard = ({ title, image, id }) => {
   // I want to create a way to display only movies with certain genres
   // for example a row of movies with genres "Action", "Crime"
   // Another row can have "Romantic" "Comedy" etc etc
+  
 
   return (
     <div id={id} className="main">

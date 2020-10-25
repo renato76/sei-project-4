@@ -4,7 +4,7 @@
   overflow-y: hidden;
   overflow-x: scroll;
   padding: 20px;
-  margin: 0 50px;
+  margin: 0 30px;
 }
 
 .main-page::-webkit-scrollbar {
@@ -12,8 +12,7 @@
 }
 
 .row-poster {
-  object-fit: contain;
-  height: 280px;
+  // object-fit: contain;
   width: 180px;
   transition: transform 500ms;
   margin-right: 15px;
@@ -29,14 +28,12 @@
 
 .featured {
 
-  max-height: 800px;
+  // max-height: 800px;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.7;
-  border-radius: 15px;
-
+  opacity: 0.8;
 }
 
 .home-main {
@@ -61,6 +58,7 @@
 .navbar:hover {
   background-color: #000000;
   font-weight: bold;
+  color: white;
 }
 
 h1 {
@@ -77,7 +75,7 @@ h1 {
 
   object-fit: contain;
   height: 90vh;
-  padding: 50px;
+  padding: 30px 50px;
   margin-left: 50px;
 }
 
@@ -87,7 +85,7 @@ h1 {
   background-color: #08080a;  
   // background-image: url('https://image.tmdb.org/t/p/w1280/7D430eqZj8y3oVkLFfsWXGRcpEG.jpg');
   background-size: cover;
-  height: 100vh;
+  height: 78vh;
 }
 
 
@@ -155,10 +153,10 @@ h1 {
 
 .right-box {
   background-color: #161616;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-right: 50px;
   border-radius: 20px;
-  padding-bottom: 90px;
+  padding-bottom: 50px;
 }
 
 .title {
@@ -183,8 +181,8 @@ h1 {
 
 .next-page {
   display: flex;
-  background-color: #18181d;  
-  background-size: cover;
+  
+
 }
 
 .next-page {
@@ -197,7 +195,7 @@ h1 {
   padding: 0 10px;
   width: 40%;
   h2 {
-    color: white;
+    
     padding: 20px 0;
     font-weight: bold;
     font-size: 30px;

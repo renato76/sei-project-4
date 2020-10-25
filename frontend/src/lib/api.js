@@ -15,3 +15,12 @@ export const loginUser = formData => {
 }
 
 // Will need another export const here to handle new comments
+export const newComment = formData => {
+  const token = localStorage.getItem('token')
+  const headers = {
+    headers: {
+      Authorization: `Bearer ${token}`
+    }
+  }
+  return axios.post('/api/comments/', formData, headers)
+}

@@ -1,11 +1,13 @@
 import React from 'react'
 import { getSingleMovie } from '../../lib/api'
+import { newComment } from '../../lib/api'
 
 class MovieDetails extends React.Component {
   state = {
     movie: null,
-    commentData: {
-      comments: '' 
+    formdata: {
+      text: '',
+      rating: ''
     }
   }
 
@@ -23,25 +25,27 @@ class MovieDetails extends React.Component {
 
   // Need to create a function that handles the comments formdata, 
 
-  newComment = event => {
-    const commentData = {
-      ...this.state.commentData,
+  handleChange = event => {
+    console.log(event.target)
+    const formData = {
+      ...this.state.formData,
       [event.target.name]: event.target.value
     }
-    this.setState({ commentData })
+    this.setState({ formData })
   }
 
   // A function to handle submit comment
   handleSubmit = async event => {
     event.preventDefault()
-    const response = await this.newComment(this.state.commentData)
+    const response = await newComment(this.state.formData)
     console.log(response)
+    this.setState({ formData: response.data })
     // redirect  user the relevant page
     this.props.history.push('/movies')
   }
 
   render() {
-    const { movie } = this.state
+    const { movie, formData } = this.state
     console.log(movie)
     if (!movie) return null
     return (
@@ -90,22 +94,35 @@ class MovieDetails extends React.Component {
         <div className="next-page">
           <div className="comments-left">
             <h2>Comments</h2>
-            <article className="media">
-              <div className="media-content">
-                <div className="field">
-                  <p className="control">
-                    <textarea className="textarea" placeholder="Add a comment..."></textarea>
-                  </p>
+            <form onSubmit={this.handleSubmit} className="column is-half is-offset-one-quarter box">
+              <div className="field">
+                <label className="label">Comments</label>
+                <div className="control">
+                  <textarea
+                    className="textarea"
+                    placeholder="Comments"
+                    name="text"
+                    value={movie.text}
+                    onChange={this.handleChange}
+                  />
                 </div>
-                <nav className="level">
-                  <div className="level-left">
-                    <div className="field">
-                      <button type="submit" className="button is-fullwidth is-dark">Submit</button>
-                    </div>
-                  </div>
-                </nav>
               </div>
-            </article>
+              <div className="field">
+                <label className="label">Rating</label>
+                <div className="control">
+                  <input
+                    className="input"
+                    placeholder="Rating"
+                    name="rating" 
+                    value={movie.rating}
+                    onChange={this.handleChange}
+                  />
+                </div>
+              </div>
+              <div className="field">
+                <button type="submit" className="button is-fullwidth is-dark">Submit</button>
+              </div>
+            </form>
           </div>
           <div className="comments-right">
           </div>
