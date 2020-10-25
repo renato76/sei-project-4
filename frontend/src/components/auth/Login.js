@@ -25,10 +25,8 @@ class Login extends React.Component {
     const response = await loginUser(this.state.formData)
     console.log(response)
     setToken(response.data.token)
-    this.props.history.push('/movies')
+    this.props.history.push('/')
   } 
-
-
 
   render() {
     const { email, password } = this.state

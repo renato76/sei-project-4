@@ -1,11 +1,14 @@
 import React from 'react'
 import MoviesCard from '../movies/MoviesCard'
 
+
 class Home extends React.Component {
 
   state = {
     movies: []
+  
   }
+ 
 
   async componentDidMount() {
     try {

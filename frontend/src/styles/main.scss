@@ -13,10 +13,14 @@
 
 .row-poster {
   object-fit: contain;
-  height: 300px;
-  width: 200px;
-  transition: transform 450ms;
+  height: 280px;
+  width: 180px;
+  transition: transform 500ms;
   margin-right: 15px;
+  img {
+    border-radius: 6px;
+  }
+  
 }
 
 .row-poster:hover {
@@ -30,7 +34,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.5;
+  opacity: 0.7;
+  border-radius: 15px;
 
 }
 
@@ -82,6 +87,7 @@ h1 {
   background-color: #08080a;  
   // background-image: url('https://image.tmdb.org/t/p/w1280/7D430eqZj8y3oVkLFfsWXGRcpEG.jpg');
   background-size: cover;
+  height: 100vh;
 }
 
 
@@ -146,17 +152,13 @@ h1 {
     font-weight: bold;
   }
 }
-// .starring {
-//   padding-top: 0;
-// }
 
 .right-box {
-  height: 71vh;
   background-color: #161616;
   margin-top: 50px;
   margin-right: 50px;
   border-radius: 20px;
-  padding-bottom: 60px;
+  padding-bottom: 90px;
 }
 
 .title {
@@ -181,7 +183,7 @@ h1 {
 
 .next-page {
   display: flex;
-  background-color: #08080a;  
+  background-color: #18181d;  
   background-size: cover;
 }
 
@@ -198,6 +200,7 @@ h1 {
     color: white;
     padding: 20px 0;
     font-weight: bold;
+    font-size: 30px;
   }
 }
 
