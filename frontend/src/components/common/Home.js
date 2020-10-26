@@ -6,7 +6,8 @@ class Home extends React.Component {
 
   state = {
     movies: [],
-    comedyMovies: ''
+    comedyMovies: '',
+    comedy: ''
   
   }
 
@@ -21,17 +22,18 @@ class Home extends React.Component {
     }
   }
 
-  // function that returns movies with certain genres
-  comedyMovies = () => {
-    const comedy = 
-    this.state.movies.filter(movie => {
-      return movie.genre === 1
-    })
-    this.setState({ comedy })
-  }
+  // // function that returns movies with certain genres
+  // comedyMovies = () => {
+  //   const comedy = 
+  //   this.state.movies.filter(movie => {
+  //     return movie.genre.id === 1
+  //   })
+  //   this.setState({ comedy })
+  // }
   
 
   render() {
+    // const { comedyMovies } = this.state
     if ( !this.state.movies ) return null
     console.log(this.state)
     return (
@@ -40,18 +42,24 @@ class Home extends React.Component {
           <div className="title">
             <img className="featured" 
               src="https://free4kwallpapers.com/uploads/originals/2020/05/01/interstellar-wallpaper.jpg" alt="featured-movie"  />
-            <h2>Watch Trailer</h2>   
+            <a href="https://www.youtube.com/watch?v=zSWdZVtXT7E&t=10s"><h2>Watch Trailer</h2></a>
           </div>
           <div className="home-titles">
-            <h1>ACTION MOVIES</h1>
+            <h1>MOST POPULAR</h1>
           </div>
-          <div className="main-page">
-            
+          <div className="movie-row">       
             { this.state.movies.map(movie => (
               <MoviesCard key={movie.id} {...movie} />
             ))}
           </div>
-
+          <div className="home-titles">
+            <h1>COMEDIES</h1>
+          </div>
+          <div className="movie-row">       
+            { this.state.movies.map(movie => (
+              <MoviesCard key={movie.id} {...movie} />
+            ))}
+          </div>
         </div>
       </div>
     )

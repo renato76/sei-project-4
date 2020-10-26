@@ -1,10 +1,12 @@
 
-.main-page {
+.movie-row{
   display: flex;
   overflow-y: hidden;
   overflow-x: scroll;
-  padding: 20px;
-  margin: 0 30px;
+  padding: 20px 5px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .main-page::-webkit-scrollbar {
@@ -24,6 +26,19 @@
 
 .row-poster:hover {
   transform: scale(1.09);
+}
+
+.home-titles {
+  h1 {
+    font-weight: bold;
+    color: white;
+    margin-left: 60px;
+    margin-top: 30px;
+  }
+}
+
+.movie-row {
+  padding-bottom: 5px;
 }
 
 .featured {
@@ -61,11 +76,6 @@
   color: white;
 }
 
-h1 {
-  font-weight: bold;
-  color: white;
-  margin-left: 70px;
-}
 
 .poster-view {
   img {
@@ -83,9 +93,14 @@ h1 {
   display: flex;
   // border: 1px dashed red;
   background-color: #08080a;  
-  // background-image: url('https://image.tmdb.org/t/p/w1280/7D430eqZj8y3oVkLFfsWXGRcpEG.jpg');
-  background-size: cover;
-  height: 78vh;
+  // background-image: url('https://image.tmdb.org/t/p/w1280/fePczipv6ZzDO2uoww4vTAu2Sq3.jpg');
+  // background-size: cover;
+  height: 80vh;
+  h1 {
+    font-weight: bold;
+    color: white;
+    margin-left: 70px;
+  }
 }
 
 
@@ -163,8 +178,8 @@ h1 {
   position: relative;
   h2 {
     position:absolute;
-    top: 350px;
-    right: 550px;
+    top: 40%;
+    right: 45%;
     color: white;
     font-weight: bold;
   }
@@ -181,11 +196,6 @@ h1 {
 
 .next-page {
   display: flex;
-  
-
-}
-
-.next-page {
   height: 60vh;
 }
 
@@ -202,6 +212,14 @@ h1 {
   }
 }
 
+.starring, 
+.director {
+  h4 {
+    font-weight: bold;
+    font-size: 16px;
+  }
+}
+
 .trailer {
   a {
     color: rgb(19, 19, 19);
@@ -209,12 +227,12 @@ h1 {
     font-weight: bold;
   }
   button {
-    padding: 10px;
+    padding: 15px;
     border-radius: 15px;
   }  
   display:flex;
   justify-content: flex-end;
-  margin-right: 300px;
+  margin-right: 350px;
 }
 
 

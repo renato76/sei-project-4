@@ -15,7 +15,7 @@ export const loginUser = formData => {
 }
 
 // Will need another export const here to handle new comments
-export const newComment = formData => {
+export const createNewComment = formData => {
   const token = localStorage.getItem('token')
   const headers = {
     headers: {

@@ -1,6 +1,8 @@
 import React from 'react'
 import { getSingleMovie } from '../../lib/api'
-import { newComment } from '../../lib/api'
+import { createNewComment } from '../../lib/api'
+
+// import { ThumbUpSharp } from '@material-ui/icons'
 
 class MovieDetails extends React.Component {
   state = {
@@ -23,29 +25,32 @@ class MovieDetails extends React.Component {
     })
   }
 
-  // Need to create a function that handles the comments formdata, 
+  // function that handles the comments formdata, 
 
   handleChange = event => {
     console.log(event.target)
     const formData = {
       ...this.state.formData,
       [event.target.name]: event.target.value
-    }
+    } 
+    console.log(formData)
     this.setState({ formData })
   }
 
   // A function to handle submit comment
   handleSubmit = async event => {
     event.preventDefault()
-    const response = await newComment(this.state.formData)
+    // add the movieID to the Object formdata
+    this.state.formData.movie = this.state.movie.id
+
+    const response = await createNewComment(this.state.formData)
     console.log(response)
-    this.setState({ formData: response.data })
-    // redirect  user the relevant page
-    this.props.history.push('/movies')
+
   }
 
   render() {
-    const { movie, formData } = this.state
+    const { movie, text, rating } = this.state
+
     console.log(movie)
     if (!movie) return null
     return (
@@ -58,7 +63,7 @@ class MovieDetails extends React.Component {
             <div className="right-box">
               <div className="movie-title">
                 <h1>{movie.title}&nbsp;</h1>
-                <h2>({movie.release})</h2>       
+                <h2>{movie.release}</h2>       
               </div>
               <div className="movie-info">
                 <h3>{movie.age_rating}&nbsp;</h3>
@@ -81,7 +86,7 @@ class MovieDetails extends React.Component {
                   <h4>{movie.director}</h4>                
                 </div>
                 <div className="trailer">      
-                  <button><a href={movie.trailer}>Watch Trailer</a></button>
+                  <button><a href={movie.trailer}>Play Trailer</a></button>
                 </div>
                 <div className="starring">
                   <h5>Starring</h5>
@@ -93,16 +98,16 @@ class MovieDetails extends React.Component {
         </div>  
         <div className="next-page">
           <div className="comments-left">
-            <h2>Comments</h2>
+            <h2>Social</h2>
             <form onSubmit={this.handleSubmit} className="column is-half is-offset-one-quarter box">
               <div className="field">
-                <label className="label">Comments</label>
+                <label className="label">Review</label>
                 <div className="control">
                   <textarea
                     className="textarea"
-                    placeholder="Comments"
+                    placeholder="Add A Review"
                     name="text"
-                    value={movie.text}
+                    value={text}
                     onChange={this.handleChange}
                   />
                 </div>
@@ -112,9 +117,9 @@ class MovieDetails extends React.Component {
                 <div className="control">
                   <input
                     className="input"
-                    placeholder="Rating"
+                    placeholder="Choose 1-5"
                     name="rating" 
-                    value={movie.rating}
+                    value={rating}
                     onChange={this.handleChange}
                   />
                 </div>
