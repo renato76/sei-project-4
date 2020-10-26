@@ -42,16 +42,16 @@ class MovieDetails extends React.Component {
     event.preventDefault()
     // add the movieID to the Object formdata
     this.state.formData.movie = this.state.movie.id
-
     const response = await createNewComment(this.state.formData)
     console.log(response)
-
   }
+
+
 
   render() {
     const { movie, text, rating } = this.state
-
-    console.log(movie)
+    console.log(this.state)
+    // console.log(movie)
     if (!movie) return null
     return (
       <div className="show-page">
@@ -98,14 +98,13 @@ class MovieDetails extends React.Component {
         </div>  
         <div className="next-page">
           <div className="comments-left">
-            <h2>Social</h2>
             <form onSubmit={this.handleSubmit} className="column is-half is-offset-one-quarter box">
               <div className="field">
-                <label className="label">Review</label>
+                <label className="label">Add A Review</label>
                 <div className="control">
                   <textarea
                     className="textarea"
-                    placeholder="Add A Review"
+                    placeholder="comments"
                     name="text"
                     value={text}
                     onChange={this.handleChange}
@@ -130,6 +129,15 @@ class MovieDetails extends React.Component {
             </form>
           </div>
           <div className="comments-right">
+            <div className="comments-box">
+              <div className="comments-title">
+                <h1>REVIEWS</h1>
+              </div>
+              <div className="user-reviews">
+                <h2></h2>
+                <h2></h2>
+              </div>
+            </div>
           </div>
         </div> 
       </div>

@@ -5,6 +5,16 @@ export const getSingleMovie = movieId => {
   return axios.get(`/api/movies/${movieId}`)
 }
 
+export const createMovie = formData => {
+  const token = localStorage.getItem('token')
+  const headers = {
+    headers: {
+      Authorization: `Bearer ${token}`
+    }
+  }
+  return axios.post('/api/movies/', formData, headers)
+}
+
 // AUTH
 export const registerUser = formData => {
   return axios.post('/api/auth/register/', formData)
