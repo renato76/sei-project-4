@@ -64,7 +64,7 @@ class MovieDetails extends React.Component {
             <div className="right-box">
               <div className="movie-title">
                 <h1>{movie.title}&nbsp;</h1>
-                <h2>({movie.release})</h2>       
+                <h2>({movie.release}</h2>       
               </div>
               <div className="movie-info">
                 <h3>{movie.age_rating}&nbsp;</h3>
