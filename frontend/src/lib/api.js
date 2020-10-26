@@ -12,6 +12,7 @@ export const createMovie = formData => {
       Authorization: `Bearer ${token}`
     }
   }
+  // console.log(formData, headers)
   return axios.post('/api/movies/', formData, headers)
 }
 

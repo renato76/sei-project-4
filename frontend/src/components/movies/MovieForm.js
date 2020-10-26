@@ -2,7 +2,7 @@ import React from 'react'
 
 const MovieForm = props => {
   const { handleChange, handleSubmit } = props
-  const { title, genre, image, description, starring, release, director, duration, age_rating } = props.formData
+  const { title, genre, image, description, starring, release, director, duration, age_rating, trailer } = props.formData
 
   return (
     <div className="columns">
@@ -19,7 +19,7 @@ const MovieForm = props => {
             />
           </div>
         </div>
-        <div className="field">
+        {/* <div className="field">
           <label className="label">Genre</label>
           <div className="control">
             <input
@@ -30,7 +30,7 @@ const MovieForm = props => {
               onChange={handleChange}
             />
           </div>
-        </div>
+        </div> */}
         <div className="field">
           <label className="label">Image</label>
           <div className="control">
@@ -47,7 +47,7 @@ const MovieForm = props => {
         <div className="field">
           <label className="label">Description</label>
           <div className="control">
-            <input
+            <textarea
               className="input"
               type="text"
               placeholder="Description (Required)"
@@ -62,6 +62,7 @@ const MovieForm = props => {
           <div className="control">
             <input
               className="input"
+              type="text"
               placeholder="Starring (Required)"
               name="starring"
               value={starring}
@@ -99,7 +100,7 @@ const MovieForm = props => {
             <input
               className="input"
               placeholder="Duration (eg: 1h 45m)"
-              name="duaration"
+              name="duration"
               value={duration}
               onChange={handleChange}
             />
@@ -113,6 +114,18 @@ const MovieForm = props => {
               placeholder="Age Rating (eg. PG or 18)"
               name="age_rating"
               value={age_rating}
+              onChange={handleChange}
+            />
+          </div>
+        </div>
+        <div className="field">
+          <label className="label">Trailer</label>
+          <div className="control">
+            <input
+              className="input"
+              placeholder="Trailer (Required)"
+              name="trailer"
+              value={trailer}
               onChange={handleChange}
             />
           </div>

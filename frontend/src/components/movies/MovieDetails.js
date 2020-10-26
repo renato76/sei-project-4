@@ -44,6 +44,7 @@ class MovieDetails extends React.Component {
     this.state.formData.movie = this.state.movie.id
     const response = await createNewComment(this.state.formData)
     console.log(response)
+    this.props.history.push('/')
   }
 
 
@@ -63,7 +64,7 @@ class MovieDetails extends React.Component {
             <div className="right-box">
               <div className="movie-title">
                 <h1>{movie.title}&nbsp;</h1>
-                <h2>{movie.release}</h2>       
+                <h2>({movie.release})</h2>       
               </div>
               <div className="movie-info">
                 <h3>{movie.age_rating}&nbsp;</h3>
@@ -134,8 +135,8 @@ class MovieDetails extends React.Component {
                 <h1>REVIEWS</h1>
               </div>
               <div className="user-reviews">
-                <h2></h2>
-                <h2></h2>
+                <h2>{text}</h2>
+                <h2>{rating}</h2>
               </div>
             </div>
           </div>

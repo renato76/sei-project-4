@@ -15,13 +15,12 @@
 
 .row-poster {
   // object-fit: contain;
-  width: 180px;
+  width: 200px;
   transition: transform 500ms;
   margin-right: 15px;
   img {
     border-radius: 6px;
-  }
-  
+  }  
 }
 
 .row-poster:hover {
@@ -95,7 +94,7 @@
   background-color: #08080a;  
   // background-image: url('https://image.tmdb.org/t/p/w1280/fePczipv6ZzDO2uoww4vTAu2Sq3.jpg');
   // background-size: cover;
-  height: 80vh;
+  height: 90vh;
   h1 {
     font-weight: bold;
     color: white;
@@ -169,9 +168,10 @@
 .right-box {
   background-color: #161616;
   margin-top: 30px;
-  margin-right: 50px;
+  margin-right: 90px;
   border-radius: 20px;
   padding-bottom: 50px;
+  
 }
 
 .title {
@@ -195,6 +195,7 @@
 // Bpttpm page comments etc
 
 .next-page {
+  margin-top: 50px;
   display: flex;
   height: 60vh;
 }
@@ -227,12 +228,12 @@
     font-weight: bold;
   }
   button {
-    padding: 15px;
-    border-radius: 15px;
+    padding: 12px;
+    border-radius: 12px;
   }  
   display:flex;
   justify-content: flex-end;
-  margin-right: 350px;
+  margin-right: 300px;
 }
 
 .comments-right {
