@@ -8,7 +8,7 @@ const MovieForm = props => {
     <div className="columns">
       <form onSubmit={handleSubmit} className="column add-movie is-one-third is-offset-one-third box">
         <div className="field">
-          <label className="label">Add A Movie</label>
+          <label className="label">Add / Edit A Movie</label>
           <div className="control">
             <input
               className="input"

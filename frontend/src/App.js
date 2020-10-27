@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import MovieDetails from './components/movies/MovieDetails'
 import MovieNew from './components/movies/MovieNew'
+import MovieEdit from './components/movies/MovieEdit'
 
 import Home from './components/common/Home'
 import Navbar from './components/common/Navbar'
@@ -16,6 +17,7 @@ const App = ()  => {
       <Navbar />
       <Switch>
         <Route path="/movies/new" component={MovieNew} />   
+        <Route path="/movies/:id/edit" component={MovieEdit} />
         <Route path="/movies/:id" component={MovieDetails} />
         <Route exact path="/" component={Home} />   
         <Route path="/register" component={Register} />     

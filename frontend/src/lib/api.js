@@ -1,10 +1,13 @@
 import axios from 'axios'
 
 // MOVIES
+
+// GET ONE MOVIE
 export const getSingleMovie = movieId => {
   return axios.get(`/api/movies/${movieId}`)
 }
 
+// CREATE A MOVIE
 export const createMovie = formData => {
   const token = localStorage.getItem('token')
   const headers = {
@@ -15,6 +18,20 @@ export const createMovie = formData => {
   // console.log(formData, headers)
   return axios.post('/api/movies/', formData, headers)
 }
+
+// UPDATE A MOVIE
+export const updateMovie = (id, formData) => {
+  const token = localStorage.getItem('token')
+  const headers = {
+    headers: {
+      Authorization: `Bearer ${token}`
+    }
+  }
+  // console.log(formData, headers)
+  return axios.put(`/api/movies/${id}/`, formData, headers)
+}
+
+
 
 // AUTH
 export const registerUser = formData => {

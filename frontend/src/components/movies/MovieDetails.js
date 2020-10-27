@@ -1,8 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { getSingleMovie } from '../../lib/api'
 import { createNewComment } from '../../lib/api'
-
-import StarRatings from './StarRating'
 
 // import { ThumbUpSharp } from '@material-ui/icons'
 
@@ -124,7 +123,6 @@ class MovieDetails extends React.Component {
                     onChange={this.handleChange}
                   />
                 </div>
-                <StarRatings />
               </div>
               <div className="field">
                 <button type="submit" className="button is-fullwidth is-dark">Submit</button>
@@ -133,6 +131,12 @@ class MovieDetails extends React.Component {
           </div>
           <div className="comments-right">
             <div className="comments-box">
+              <div className="edit-buttons">
+                <Link to={`/movies/${movie.id}/edit`} className="button is-info">Edit</Link>
+
+                <button onClick={this.handleDelete} className="button is-danger">Delete</button>
+              </div>
+              <hr />
               <div className="comments-title">
                 <h1>REVIEWS</h1>
               </div>
@@ -149,6 +153,9 @@ class MovieDetails extends React.Component {
                       <div className="comment-rating">
                         <p>Rating: {comment.rating}</p>
                       </div>
+                      <div className="comment-rating">
+                        <p>Created at: {comment.created_at}</p>
+                      </div>
                     </>
                   ))}
                   
@@ -156,6 +163,7 @@ class MovieDetails extends React.Component {
                     <h2>{movie.comments.map(comment => comment.created_at)}</h2>
                   </div> */}
                 </div>
+                
               </div>
             </div>
           </div>
