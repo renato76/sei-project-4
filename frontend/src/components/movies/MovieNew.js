@@ -36,7 +36,7 @@ class MovieNew extends React.Component {
     const response = await createMovie(this.state.formData)
     console.log(response)
     // redirect user to whichever page we want - I guess the show page of the movie they create
-
+    this.props.history.push(`/movies/${response.data.id}`)
 
   }
 

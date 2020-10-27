@@ -3,13 +3,12 @@
   display: flex;
   overflow-y: hidden;
   overflow-x: scroll;
-  padding: 20px 5px;
+  padding: 10px 5px;
   margin-bottom: 20px;
   margin-left: 50px;
   margin-right: 50px;
 }
-
-.main-page::-webkit-scrollbar {
+.movie-row::-webkit-scrollbar {
   display: none;
 }
 
@@ -32,7 +31,7 @@
     font-weight: bold;
     color: white;
     margin-left: 60px;
-    margin-top: 30px;
+    margin-top: 10px;
   }
 }
 
@@ -48,16 +47,19 @@
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.8;
+  h2 {
+    background-color: white;
+  }
 }
 
 .home-main {
-  background-color: #08080a;
+  background-color: #17171b;
   
 }
 
 .navbar {
-  background-color: #08080a;
-  height: 4.6rem;
+  background-color: #0f0f0f;
+  height: 4.56rem;
   padding-left: 100px;
   
 }
@@ -65,12 +67,12 @@
 .navbar-item {
   color: white;
   font-weight: bold;
-  background-color: #08080a;
+  background-color: #0f0f0f;
   
 }
 
 .navbar:hover {
-  background-color: #000000;
+  background-color: #0f0f0f;
   font-weight: bold;
   color: white;
 }
@@ -153,15 +155,18 @@
 }
 
 .cast {
+  display: flex;
   padding-top: 30px;
   padding-left: 70px;
+  padding-bottom: 50px;
   color: white;
 
 }
 .director {
-  
+  margin-right: 50px;
   h4 {
     font-weight: bold;
+
   }
 }
 
@@ -182,20 +187,47 @@
     right: 45%;
     color: white;
     font-weight: bold;
+    background-color: #181818;
+    border-radius: 12px;
+    padding: 10px 30px;
+    font-size: 20px;
+  }
+  h2:hover {
+    background-color: #202020;
   }
 }
 
 // Register and Login
 
 .section {
-  background-color: #111111;
+  background-color: #1f1e1e;
   height: 100vh;
 }
+
+.field {
+  button {
+    background-color: #009cc4;
+    border: 1px solid #009cc4;
+    padding: 10px;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+  }
+  button:hover {
+    background-color: #03acd6;
+    border: 1px solid #03acd6;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    transition: transform 900ms;
+  }
+}
+
 
 // Bpttpm page comments etc
 
 .next-page {
-  margin-top: 50px;
+  background-color: #f5f5f5;
   display: flex;
   height: 60vh;
 }
@@ -229,17 +261,51 @@
     font-weight: bold;
   }
   button {
-    padding: 12px;
+    background-color: #009cc4;
+    border: 1px solid #009cc4;
+    padding: 10px;
+    width: 200px;
     border-radius: 12px;
-  }  
-  display:flex;
-  justify-content: flex-end;
-  margin-right: 300px;
+    margin-left: 65px;
+  }
+  button:hover {
+    background-color: #03acd6;
+    border: 1px solid #03acd6;
+    border-radius: 12px;
+    margin-left: 65px;
+    transition: transform 900ms;
+  }
 }
 
 .comments-right {
-  border: 1px dashed red;
+  border: 1px solid grey;
   width: 50%;
+  padding: 20px;
+  background-color: white;
+  margin-top: 60px;
+}
+
+.comments-left {
+  margin-top: 60px;
+}
+
+.comments-title {
+  h1 {
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+
+.user-reviews-parent {
+  display: flex;
+  h1,
+  h2 {
+    font-weight: bold;
+  }
+}
+
+.user-reviews {
+  flex-direction: column;
 }
 
 

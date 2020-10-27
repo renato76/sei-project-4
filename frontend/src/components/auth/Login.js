@@ -35,7 +35,7 @@ class Login extends React.Component {
       <section className="section">
         <div className="container">
           <div className="columns">
-            <form onSubmit={this.handleSubmit} className="column is-half is-offset-one-quarter box">
+            <form onSubmit={this.handleSubmit} className="column is-one-third is-offset-one-third box">
               <div className="field">
                 <label className="label">Email</label>
                 <div className="control">

@@ -2,6 +2,8 @@ import React from 'react'
 import { getSingleMovie } from '../../lib/api'
 import { createNewComment } from '../../lib/api'
 
+import StarRatings from './StarRating'
+
 // import { ThumbUpSharp } from '@material-ui/icons'
 
 class MovieDetails extends React.Component {
@@ -48,7 +50,6 @@ class MovieDetails extends React.Component {
   }
 
 
-
   render() {
     const { movie, text, rating } = this.state
     console.log(this.state)
@@ -64,7 +65,7 @@ class MovieDetails extends React.Component {
             <div className="right-box">
               <div className="movie-title">
                 <h1>{movie.title}&nbsp;</h1>
-                <h2>({movie.release}</h2>       
+                <h2>({movie.release})</h2>       
               </div>
               <div className="movie-info">
                 <h3>{movie.age_rating}&nbsp;</h3>
@@ -85,15 +86,15 @@ class MovieDetails extends React.Component {
                 <div className="director">
                   <h5>Director</h5>
                   <h4>{movie.director}</h4>                
-                </div>
-                <div className="trailer">      
-                  <button><a href={movie.trailer}>Play Trailer</a></button>
-                </div>
+                </div>            
                 <div className="starring">
                   <h5>Starring</h5>
                   <h4>{movie.starring}</h4>
                 </div>
-              </div>        
+              </div>   
+              <div className="trailer">      
+                <button><a href={movie.trailer}>Play Trailer</a></button>
+              </div>     
             </div>
           </div>
         </div>  
@@ -123,6 +124,7 @@ class MovieDetails extends React.Component {
                     onChange={this.handleChange}
                   />
                 </div>
+                <StarRatings />
               </div>
               <div className="field">
                 <button type="submit" className="button is-fullwidth is-dark">Submit</button>
@@ -134,9 +136,26 @@ class MovieDetails extends React.Component {
               <div className="comments-title">
                 <h1>REVIEWS</h1>
               </div>
-              <div className="user-reviews">
-                <h2>{text}</h2>
-                <h2>{rating}</h2>
+              <div className="user-reviews-parent">
+                <div className="user-reviews">
+                  {/* // Display all comments here
+                  // prob need to map through the array and display info  */}
+                  {movie.comments.map(comment => (
+                    <>
+                      <div className="comment-text">
+                        <h3>{comment.user.username}</h3>
+                        <p>{comment.text}</p>
+                      </div>
+                      <div className="comment-rating">
+                        <p>Rating: {comment.rating}</p>
+                      </div>
+                    </>
+                  ))}
+                  
+                  {/* <div className="comment.created_at">
+                    <h2>{movie.comments.map(comment => comment.created_at)}</h2>
+                  </div> */}
+                </div>
               </div>
             </div>
           </div>

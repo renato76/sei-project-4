@@ -39,9 +39,9 @@ class Register extends React.Component {
       <section className="section">
         <div className="container">
           <div className="columns">
-            <form onSubmit={this.handleSubmit} className="column is-half is-offset-one-quarter box">
+            <form onSubmit={this.handleSubmit} className="column is-one-third is-offset-one-third box">
               <div className="field">
-                <label className="label">Username</label>
+                <label className="label">Register</label>
                 <div className="control">
                   <input
                     className="input"
@@ -53,7 +53,7 @@ class Register extends React.Component {
                 </div>
               </div>
               <div className="field">
-                <label className="label">Email</label>
+                {/* <label className="label">Email</label> */}
                 <div className="control">
                   <input
                     className="input"
@@ -65,7 +65,7 @@ class Register extends React.Component {
                 </div>
               </div>
               <div className="field">
-                <label className="label">First Name</label>
+                {/* <label className="label">First Name</label> */}
                 <div className="control">
                   <input
                     className="input"
@@ -77,7 +77,7 @@ class Register extends React.Component {
                 </div>
               </div>
               <div className="field">
-                <label className="label">Last Name</label>
+                {/* <label className="label">Last Name</label> */}
                 <div className="control">
                   <input
                     className="input"
@@ -89,7 +89,7 @@ class Register extends React.Component {
                 </div>
               </div>
               <div className="field">
-                <label className="label">Profile Image</label>
+                {/* <label className="label">Profile Image</label> */}
                 <div className="control">
                   <input
                     className="input"
@@ -101,7 +101,7 @@ class Register extends React.Component {
                 </div>
               </div>
               <div className="field">
-                <label className="label">Password</label>
+                {/* <label className="label">Password</label> */}
                 <div className="control">
                   <input
                     type="password"
@@ -114,7 +114,7 @@ class Register extends React.Component {
                 </div>
               </div>
               <div className="field">
-                <label className="label">Password Confirmation</label>
+                {/* <label className="label">Password Confirmation</label> */}
                 <div className="control">
                   <input
                     type="password"
@@ -127,7 +127,7 @@ class Register extends React.Component {
                 </div>
               </div>
               <div className="field">
-                <button type="submit" className="button is-fullwidth is-dark">Register</button>
+                <button type="submit" className="button is-fullwidth">Register</button>
               </div>
             </form>
           </div>

@@ -2,13 +2,13 @@ import React from 'react'
 
 const MovieForm = props => {
   const { handleChange, handleSubmit } = props
-  const { title, genre, image, description, starring, release, director, duration, age_rating, trailer } = props.formData
+  const { title, image, description, starring, release, director, duration, age_rating, trailer } = props.formData
 
   return (
     <div className="columns">
-      <form onSubmit={handleSubmit} className="column is-half is-offset-one-quarter box">
+      <form onSubmit={handleSubmit} className="column add-movie is-one-third is-offset-one-third box">
         <div className="field">
-          <label className="label">Title</label>
+          <label className="label">Add A Movie</label>
           <div className="control">
             <input
               className="input"
@@ -32,12 +32,12 @@ const MovieForm = props => {
           </div>
         </div> */}
         <div className="field">
-          <label className="label">Image</label>
+          {/* <label className="label">Image</label> */}
           <div className="control">
             <input
               className="input"
               type="text"
-              placeholder="Image(Required)"
+              placeholder="Image URL (required)"
               name="image"
               value={image}
               onChange={handleChange}
@@ -45,12 +45,12 @@ const MovieForm = props => {
           </div>
         </div>
         <div className="field">
-          <label className="label">Description</label>
+          {/* <label className="label">Description</label> */}
           <div className="control">
             <textarea
               className="input"
               type="text"
-              placeholder="Description (Required)"
+              placeholder="Description (required)"
               name="description"
               value={description}
               onChange={handleChange}
@@ -58,12 +58,12 @@ const MovieForm = props => {
           </div>
         </div>
         <div className="field">
-          <label className="label">Starring</label>
+          {/* <label className="label">Starring</label> */}
           <div className="control">
             <input
               className="input"
               type="text"
-              placeholder="Starring (Required)"
+              placeholder="Starring (seperated by commas - required)"
               name="starring"
               value={starring}
               onChange={handleChange}
@@ -71,11 +71,11 @@ const MovieForm = props => {
           </div>
         </div>
         <div className="field">
-          <label className="label">Release</label>
+          {/* <label className="label">Release</label> */}
           <div className="control">
             <input
               className="input"
-              placeholder="Release Year (Required)"
+              placeholder="Release Year (required)"
               name="release"
               value={release}
               onChange={handleChange}
@@ -83,11 +83,11 @@ const MovieForm = props => {
           </div>
         </div>
         <div className="field">
-          <label className="label">Director</label>
+          {/* <label className="label">Director</label> */}
           <div className="control">
             <input
               className="input"
-              placeholder="Director(Required)"
+              placeholder="Director(required)"
               name="director"
               value={director}
               onChange={handleChange}
@@ -95,7 +95,7 @@ const MovieForm = props => {
           </div>
         </div>
         <div className="field">
-          <label className="label">Duration</label>
+          {/* <label className="label">Duration</label> */}
           <div className="control">
             <input
               className="input"
@@ -107,11 +107,11 @@ const MovieForm = props => {
           </div>
         </div>
         <div className="field">
-          <label className="label">Age Rating</label>
+          {/* <label className="label">Age Rating</label> */}
           <div className="control">
             <input
               className="input"
-              placeholder="Age Rating (eg. PG or 18)"
+              placeholder="Age Rating (eg. 12A or 18)"
               name="age_rating"
               value={age_rating}
               onChange={handleChange}
@@ -119,11 +119,11 @@ const MovieForm = props => {
           </div>
         </div>
         <div className="field">
-          <label className="label">Trailer</label>
+          {/* <label className="label">Trailer</label> */}
           <div className="control">
             <input
               className="input"
-              placeholder="Trailer (Required)"
+              placeholder="Trailer URL(required)"
               name="trailer"
               value={trailer}
               onChange={handleChange}
@@ -131,7 +131,7 @@ const MovieForm = props => {
           </div>
         </div>
         <div className="field">
-          <button type="submit" className="button is-fullwidth is-dark">Submit</button>
+          <button type="submit" className="button is-fullwidth">Submit</button>
         </div>
       </form>
     </div>
