@@ -19,7 +19,6 @@ class MovieEdit extends React.Component {
     }
   }
 
-
   // In order to pre-populate the edit form with current data, 
   // I need to make an api request to movie ID 
   // then update the state with that info
@@ -49,15 +48,16 @@ class MovieEdit extends React.Component {
   handleSubmit = async event => {
     event.preventDefault() 
     const genreItems = this.state.formData.genre.map(genre => genre.id)
-    console.log(genreItems)
+    // console.log(genreItems)
     this.state.formData.genre = genreItems
 
     const userId = this.state.formData
-    console.log(userId)
+    // console.log(userId)
     this.state.formData.user = userId.id
 
-
-
+    const likedBy = this.state.formData
+    console.log(likedBy)
+    this.state.formData.liked_by = likedBy.value
 
     const movieId = this.props.match.params.id
     // post to /movies via the api axios request
@@ -66,19 +66,9 @@ class MovieEdit extends React.Component {
 
     // redirect user to the new edited movie detail page
 
-
   }
 
-
   render()  {
-
-    // console.log(this.state.formData)
-
-    // const userId = this.state.formData
-    // console.log(userId)
-
-    
-    
 
     return (
       <section className="section">
