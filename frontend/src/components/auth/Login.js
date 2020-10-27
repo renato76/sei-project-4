@@ -62,7 +62,7 @@ class Login extends React.Component {
                 </div>
               </div>
               <div className="field">
-                <button type="submit" className="button is-fullwidth is-dark">Login</button>
+                <button type="submit" className="button is-fullwidth">Login</button>
               </div>
             </form>
           </div>

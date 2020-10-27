@@ -3,7 +3,7 @@
   display: flex;
   overflow-y: hidden;
   overflow-x: scroll;
-  padding: 10px 5px;
+  padding: 25px 5px;
   margin-bottom: 20px;
   margin-left: 50px;
   margin-right: 50px;
@@ -13,7 +13,7 @@
 }
 
 .row-poster {
-  // object-fit: contain;
+  object-fit: contain;
   width: 200px;
   transition: transform 500ms;
   margin-right: 15px;

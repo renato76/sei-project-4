@@ -51,7 +51,7 @@ class MovieDetails extends React.Component {
 
   render() {
     const { movie, text, rating } = this.state
-    console.log(this.state)
+    // console.log(this.state)
     // console.log(movie)
     if (!movie) return null
     return (
