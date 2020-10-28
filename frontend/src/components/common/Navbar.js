@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { logout, isAuthenticated } from '../../lib/auth'
+import { logout } from '../../lib/auth'
 
 const Navbar = () => {
 

@@ -17,7 +17,7 @@ class MovieDetails extends React.Component {
   async componentDidMount() {
     // request single movie by id
     const movieId = this.props.match.params.id
-    // console.log(this.props, movieId)
+    console.log(this.props, movieId)
     const response = await getSingleMovie(movieId)
     // console.log(response)
 
@@ -51,10 +51,11 @@ class MovieDetails extends React.Component {
 
   handleDelete = async () => {
     const movieId = this.props.match.params.id
+    console.log(movieId)
     const response = deleteMovie(movieId)
     await deleteMovie(movieId)
     console.log(response)
-    this.props.history.push('/movies/')
+    this.props.history.push('/')
   }
 
   render() {
@@ -66,7 +67,7 @@ class MovieDetails extends React.Component {
       <div className="show-page">
         <div className="details">
           <div className="poster-view">
-            <img src={movie.image} alt={movie.title} />
+            <img src={movie.image} key={movie.title} alt={movie.title} />
           </div>
           <div className="main-right">
             <div className="right-box">
@@ -107,7 +108,7 @@ class MovieDetails extends React.Component {
                   <FaThumbsUp size="2em" />
                 </div>
                 <div className="favourite">
-                  <FaHeart size="2em" color="red" />
+                  <FaHeart size="2em"/>
                 </div>
               </div> 
             </div>
@@ -162,8 +163,8 @@ class MovieDetails extends React.Component {
                   {movie.comments.map(comment => (
                     <>
                       <div className="comment-text">
-                        <h3>{comment.user.username}</h3>
-                        <p>{comment.text}</p>
+                        <h3>User: {comment.user.username}</h3>
+                        <p>Comment: {comment.text}</p>
                       </div>
                       <div className="comment-rating">
                         <p>Rating: {comment.rating}</p>

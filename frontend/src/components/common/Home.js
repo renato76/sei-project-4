@@ -1,38 +1,33 @@
 import React from 'react'
-import MoviesCard from '../movies/MoviesCard'
+import { getAllMovies } from '../../lib/api'
 
+import MoviesCard from '../movies/MoviesCard'
 
 class Home extends React.Component {
 
   state = {
     movies: []
-
-  
   }
 
   async componentDidMount() {
-    try {
-      const response = await fetch('/api/movies')
-      const movies = await response.json()
-      console.log(movies)
-      this.setState({ movies })
-    } catch (err) {
-      console.log(err)
-    }
+    const response = await getAllMovies()
+    console.log(getAllMovies)
+    this.setState({
+      movies: response.data
+    })
+    // console.log('movies array >>>>', response.data)
   }
 
-  // // function that returns movies with certain genres
-  // comedyMovies = () => {
-  //   const comedy = 
-  //   this.state.movies.filter(movie => {
-  //     return movie.genre.id === 2
-  //   })
-  //   this.setState({ comedy })
-  // }
 
   render() {
+    const movies = this.state.movies
+    console.log(movies)
+
+    const comedies = movies.filter(movie => movie.genre.includes(1))
+    console.log(comedies)
+
     if ( !this.state.movies ) return null
-    console.log(this.state)
+    // console.log(this.state)
     return (
       <div className="home-main">
         <div className="hero">
@@ -52,7 +47,7 @@ class Home extends React.Component {
           <div className="home-titles">
             <h1>COMEDIES</h1>
           </div>
-          <div className="movie-row">       
+          {/* <div className="movie-row">       
             { this.state.movies.map(movie => (
               <MoviesCard key={movie.id} {...movie} />
             ))}
@@ -61,12 +56,7 @@ class Home extends React.Component {
             { this.state.movies.map(movie => (
               <MoviesCard key={movie.id} {...movie} />
             ))}
-          </div>
-          <div className="movie-row">       
-            { this.state.movies.map(movie => (
-              <MoviesCard key={movie.id} {...movie} />
-            ))}
-          </div>
+          </div> */}
         </div>
       </div>
     )

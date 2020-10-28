@@ -64,6 +64,10 @@
   
 }
 
+.navbar-end {
+  margin-right: 100px;
+}
+
 .navbar-item {
   color: white;
   font-weight: bold;
@@ -260,10 +264,20 @@
   color: #009cc4;
   margin-left: 200px;
 }
+.like:hover {
+  color: #17cffd;
+  transition: 500ms;
+  margin-left: 200px;
+}
 
 .favourite {
-  color: red;
-  margin-left:30px;
+  color: #eeeeee;
+  margin-left: 30px;
+}
+.favourite:hover {
+  color: #f81515;
+  margin-left: 30px;
+  transition: 500ms;
 }
 
 .trailer {
@@ -282,7 +296,9 @@
   }
   button:hover {
     background-color: #03acd6;
+    transition: 500ms;
     border: 1px solid #03acd6;
+    
     border-radius: 12px;
     margin-left: 65px;
     transition: transform 900ms;

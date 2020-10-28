@@ -2,6 +2,11 @@ import axios from 'axios'
 
 // MOVIES
 
+// GET ALL MOVIES
+export const getAllMovies = () =>  {
+  return axios.get('/api/movies/')
+}
+
 // GET ONE MOVIE
 export const getSingleMovie = movieId => {
   return axios.get(`/api/movies/${movieId}`)
@@ -35,7 +40,9 @@ export const updateMovie = (id, formData) => {
 export const deleteMovie = movieId => {
   const token = localStorage.getItem('token')
   const headers = {
-    Authorization: `Bearer ${token}`
+    headers: {
+      Authorization: `Bearer ${token}`
+    }
   }
   return axios.delete(`/api/movies/${movieId}`, headers)
 }

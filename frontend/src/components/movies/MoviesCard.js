@@ -2,13 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const MoviesCard = ({ title, image, id }) => {
-  console.log(title)
-
-  // 2. Currently I am displaying All the movies
-  // I want to create a way to display only movies with certain genres
-  // for example a row of movies with genres "Action", "Crime"
-  // Another row can have "Romantic" "Comedy" etc etc
-  
+  // console.log(title)
 
   return (
     <div id={id} className="main">
