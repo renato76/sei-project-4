@@ -37,14 +37,14 @@ export const updateMovie = (id, formData) => {
 }
 
 // DELETE A MOVIE
-export const deleteMovie = movieId => {
+export const deleteMovie = id => {
   const token = localStorage.getItem('token')
   const headers = {
     headers: {
       Authorization: `Bearer ${token}`
     }
   }
-  return axios.delete(`/api/movies/${movieId}`, headers)
+  return axios.delete(`/api/movies/${id}`, headers)
 }
 
 

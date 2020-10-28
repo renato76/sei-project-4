@@ -23,7 +23,7 @@ class Home extends React.Component {
     const movies = this.state.movies
     const comedies = movies.filter(movie => movie.genre.includes(1))
     const thrillers = movies.filter(movie => movie.genre.includes(3))
-
+    
 
     if ( !this.state.movies ) return null
 

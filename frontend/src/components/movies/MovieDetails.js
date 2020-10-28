@@ -11,8 +11,7 @@ class MovieDetails extends React.Component {
     formdata: {
       text: '',
       rating: ''
-    },
-    liked_by: 3
+    }
   }
 
   async componentDidMount() {
@@ -59,25 +58,11 @@ class MovieDetails extends React.Component {
     this.props.history.push('/')
   }
 
-  addLike = () => {
-    console.log('add a like')
-    const newCount = this.state.likes + 1
-    this.setState({
-      likes: newCount
-    })
-  }
-
   render() {
     const { movie, text, rating } = this.state
     // console.log(this.state)
     console.log(movie)
 
-    
-    // const likes = movie['liked_by'].length
-    // console.log(likes)
-
-
-    
     if (!movie) return null
     return (
       <div className="show-page">
@@ -119,7 +104,11 @@ class MovieDetails extends React.Component {
               <div className="trailer-parent">
                 <div className="trailer">      
                   <button><a href={movie.trailer}>Play Trailer</a></button>
-                </div>   
+                </div>  
+                <div className="edit-buttons">
+                  <Link to={`/movies/${movie.id}/edit`} className="button">Edit</Link>
+                  <button onClick={this.handleDelete} className="button">Delete</button>
+                </div> 
                 {/* <div className="like">
                   <FaThumbsUp size="2em" onClick={this.addLike} />
                   <h5>Likes: {this.state.likes}</h5>
@@ -165,18 +154,18 @@ class MovieDetails extends React.Component {
           </div>
           <div className="comments-right">
             <div className="comments-box">
-              <div className="edit-buttons">
+              {/* <div className="edit-buttons">
                 <Link to={`/movies/${movie.id}/edit`} className="button">Edit</Link>
                 <button onClick={this.handleDelete} className="button">Delete</button>
-              </div>
-              <hr />
+              </div> */}
               <div className="comments-title">
                 <h1>Reviews</h1>
               </div>
+              <hr />
               <div className="user-reviews-parent">
                 <div className="user-reviews">
                   {/* // Display all comments here
-                  // prob need to map through the array and display info  */}
+                  // need to map through the array and display info  */}
                   {movie.comments.map(comment => (
                     <>
                       <div className="comment-text">
