@@ -14,8 +14,7 @@ class MovieEdit extends React.Component {
       director: '',
       duration: '',
       age_rating: '',
-      trailer: '',
-      liked_by: []
+      trailer: ''
     }
   }
 

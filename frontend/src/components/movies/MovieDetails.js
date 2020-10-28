@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { getSingleMovie, deleteMovie } from '../../lib/api'
 import { createNewComment } from '../../lib/api'
 
-import { FaThumbsUp, FaHeart } from 'react-icons/fa'
+// import { FaThumbsUp, FaHeart } from 'react-icons/fa'
 
 class MovieDetails extends React.Component {
   state = {
@@ -11,7 +11,8 @@ class MovieDetails extends React.Component {
     formdata: {
       text: '',
       rating: ''
-    }
+    },
+    liked_by: 3
   }
 
   async componentDidMount() {
@@ -58,10 +59,25 @@ class MovieDetails extends React.Component {
     this.props.history.push('/')
   }
 
+  addLike = () => {
+    console.log('add a like')
+    const newCount = this.state.likes + 1
+    this.setState({
+      likes: newCount
+    })
+  }
+
   render() {
     const { movie, text, rating } = this.state
     // console.log(this.state)
-    // console.log(movie)
+    console.log(movie)
+
+    
+    // const likes = movie['liked_by'].length
+    // console.log(likes)
+
+
+    
     if (!movie) return null
     return (
       <div className="show-page">
@@ -104,12 +120,13 @@ class MovieDetails extends React.Component {
                 <div className="trailer">      
                   <button><a href={movie.trailer}>Play Trailer</a></button>
                 </div>   
-                <div className="like">
-                  <FaThumbsUp size="2em" />
+                {/* <div className="like">
+                  <FaThumbsUp size="2em" onClick={this.addLike} />
+                  <h5>Likes: {this.state.likes}</h5>
                 </div>
                 <div className="favourite">
                   <FaHeart size="2em"/>
-                </div>
+                </div> */}
               </div> 
             </div>
           </div>

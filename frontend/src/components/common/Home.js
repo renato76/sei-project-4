@@ -21,13 +21,12 @@ class Home extends React.Component {
 
   render() {
     const movies = this.state.movies
-    console.log(movies)
-
     const comedies = movies.filter(movie => movie.genre.includes(1))
-    console.log(comedies)
+    const thrillers = movies.filter(movie => movie.genre.includes(3))
+
 
     if ( !this.state.movies ) return null
-    // console.log(this.state)
+
     return (
       <div className="home-main">
         <div className="hero">
@@ -47,16 +46,19 @@ class Home extends React.Component {
           <div className="home-titles">
             <h1>COMEDIES</h1>
           </div>
-          {/* <div className="movie-row">       
-            { this.state.movies.map(movie => (
+          <div className="movie-row">       
+            { comedies.map(movie => (
               <MoviesCard key={movie.id} {...movie} />
             ))}
           </div>
+          <div className="home-titles">
+            <h1>THRILLERS</h1>
+          </div>
           <div className="movie-row">       
-            { this.state.movies.map(movie => (
+            { thrillers.map(movie => (
               <MoviesCard key={movie.id} {...movie} />
             ))}
-          </div> */}
+          </div>
         </div>
       </div>
     )
