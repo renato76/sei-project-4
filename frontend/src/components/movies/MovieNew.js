@@ -15,7 +15,7 @@ class MovieNew extends React.Component {
       duration: '',
       age_rating: '',
       trailer: '',
-      liked_by: []
+      
     }
   }
 

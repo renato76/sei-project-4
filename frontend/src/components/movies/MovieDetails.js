@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { getSingleMovie } from '../../lib/api'
+import { getSingleMovie, deleteMovie } from '../../lib/api'
 import { createNewComment } from '../../lib/api'
 
-// import { ThumbUpSharp } from '@material-ui/icons'
+import { FaThumbsUp, FaHeart } from 'react-icons/fa'
 
 class MovieDetails extends React.Component {
   state = {
@@ -25,6 +25,7 @@ class MovieDetails extends React.Component {
       movie: response.data
     })
   }
+
 
   // function that handles the comments formdata, 
 
@@ -48,6 +49,13 @@ class MovieDetails extends React.Component {
     this.props.history.push('/')
   }
 
+  handleDelete = async () => {
+    const movieId = this.props.match.params.id
+    const response = deleteMovie(movieId)
+    await deleteMovie(movieId)
+    console.log(response)
+    this.props.history.push('/movies/')
+  }
 
   render() {
     const { movie, text, rating } = this.state
@@ -91,15 +99,23 @@ class MovieDetails extends React.Component {
                   <h4>{movie.starring}</h4>
                 </div>
               </div>   
-              <div className="trailer">      
-                <button><a href={movie.trailer}>Play Trailer</a></button>
-              </div>     
+              <div className="trailer-parent">
+                <div className="trailer">      
+                  <button><a href={movie.trailer}>Play Trailer</a></button>
+                </div>   
+                <div className="like">
+                  <FaThumbsUp size="2em" />
+                </div>
+                <div className="favourite">
+                  <FaHeart size="2em" color="red" />
+                </div>
+              </div> 
             </div>
           </div>
         </div>  
         <div className="next-page">
           <div className="comments-left">
-            <form onSubmit={this.handleSubmit} className="column is-half is-offset-one-quarter box">
+            <form onSubmit={this.handleSubmit} className="review-column is-two-thirds is-offset-one-quarter box">
               <div className="field">
                 <label className="label">Add A Review</label>
                 <div className="control">
@@ -132,13 +148,12 @@ class MovieDetails extends React.Component {
           <div className="comments-right">
             <div className="comments-box">
               <div className="edit-buttons">
-                <Link to={`/movies/${movie.id}/edit`} className="button is-info">Edit</Link>
-
-                <button onClick={this.handleDelete} className="button is-danger">Delete</button>
+                <Link to={`/movies/${movie.id}/edit`} className="button">Edit</Link>
+                <button onClick={this.handleDelete} className="button">Delete</button>
               </div>
               <hr />
               <div className="comments-title">
-                <h1>REVIEWS</h1>
+                <h1>Reviews</h1>
               </div>
               <div className="user-reviews-parent">
                 <div className="user-reviews">
@@ -156,12 +171,9 @@ class MovieDetails extends React.Component {
                       <div className="comment-rating">
                         <p>Created at: {comment.created_at}</p>
                       </div>
+                      <hr />
                     </>
                   ))}
-                  
-                  {/* <div className="comment.created_at">
-                    <h2>{movie.comments.map(comment => comment.created_at)}</h2>
-                  </div> */}
                 </div>
                 
               </div>

@@ -229,12 +229,11 @@
 .next-page {
   background-color: #f5f5f5;
   display: flex;
-  height: 60vh;
+  height: 100vh;
 }
 
 .comments-left {
   margin-left: 90px;
-  // border: 1px dashed red;
   padding: 0 10px;
   width: 40%;
   h2 {
@@ -245,13 +244,26 @@
   }
 }
 
-
 .starring, 
 .director {
   h4 {
     font-weight: bold;
     font-size: 16px;
   }
+}
+
+.trailer-parent {
+  display: flex;
+}
+
+.like {
+  color: #009cc4;
+  margin-left: 200px;
+}
+
+.favourite {
+  color: red;
+  margin-left:30px;
 }
 
 .trailer {
@@ -278,7 +290,7 @@
 }
 
 .comments-right {
-  border: 1px solid grey;
+  border-radius: 20px;
   width: 50%;
   padding: 20px;
   background-color: white;
@@ -287,6 +299,11 @@
 
 .comments-left {
   margin-top: 60px;
+}
+
+.review-column {
+  border-radius: 20px;
+  margin-right: 20px;
 }
 
 .comments-title {
@@ -308,5 +325,16 @@
   flex-direction: column;
 }
 
+.edit-buttons {
+  .button {
+    background-color: #009cc4;
+    border: 1px solid #009cc4;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    border-radius: 12px;
+    margin-left: 5px;
+  }
+}
 
 

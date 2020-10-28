@@ -65,8 +65,10 @@ class MovieEdit extends React.Component {
     console.log(response)
 
     // redirect user to the new edited movie detail page
+    this.props.history.push('/movies/')
 
   }
+
 
   render()  {
 
