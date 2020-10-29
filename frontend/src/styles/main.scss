@@ -96,10 +96,7 @@
 
 .details {
   display: flex;
-  // border: 1px dashed red;
   background-color: #08080a;  
-  // background-image: url('https://image.tmdb.org/t/p/w1280/fePczipv6ZzDO2uoww4vTAu2Sq3.jpg');
-  // background-size: cover;
   height: 90vh;
   h1 {
     font-weight: bold;
@@ -235,10 +232,7 @@
   display: flex;
   padding-bottom: 100px;
   // height: 100vh;
-  // border: 1px dashed red;
 }
-
-
 
 .comments-left {
   margin-left: 90px;
@@ -356,6 +350,8 @@
     background-color: #009cc4;
     border: 1px solid #009cc4;
     color: white;
+    font-weight: bold;
+
     padding: 10px;
     width: 100px;
     border-radius: 10px;
