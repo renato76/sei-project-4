@@ -14,7 +14,7 @@
 
 .row-poster {
   object-fit: contain;
-  width: 180px;
+  width: 200px;
   transition: transform 500ms;
   margin-right: 15px;
   img {
@@ -231,7 +231,7 @@
 // Bottom page comments etc
 
 .next-page {
-  background-color: #f8f8f8;
+  background-color: #111116;
   display: flex;
   padding-bottom: 100px;
   // height: 100vh;
