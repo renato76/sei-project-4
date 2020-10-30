@@ -62,7 +62,7 @@ class MovieEdit extends React.Component {
     const movieId = this.props.match.params.id
     // post to /movies via the api axios request
     const response = await updateMovie(movieId, this.state.formData)
-    // console.log(response)
+    console.log(response)
 
     // redirect user to the new edited movie detail page
     this.props.history.push(`/movies/${movieId}`)

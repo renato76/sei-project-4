@@ -1,3 +1,32 @@
+// *** Navbar ***
+
+.navbar {
+  background-color: #0f0f0f;
+  height: 4.56rem;
+  padding-left: 100px;
+  
+}
+
+.navbar-end {
+  margin-right: 100px;
+}
+
+.navbar-item {
+  color: white;
+  font-weight: bold;
+  background-color: #0f0f0f;
+  
+}
+
+.navbar:hover {
+  background-color: #0f0f0f;
+  font-weight: bold;
+  color: white;
+}
+
+// *** Home Page *** 
+
+// Movie rows
 
 .movie-row{
   display: flex;
@@ -35,13 +64,9 @@
   }
 }
 
-.movie-row {
-  padding-bottom: 5px;
-}
+// Hero 
 
 .featured {
-
-  // max-height: 800px;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -54,33 +79,9 @@
 
 .home-main {
   background-color: #17171b;
-  
-}
+}        
 
-.navbar {
-  background-color: #0f0f0f;
-  height: 4.56rem;
-  padding-left: 100px;
-  
-}
-
-.navbar-end {
-  margin-right: 100px;
-}
-
-.navbar-item {
-  color: white;
-  font-weight: bold;
-  background-color: #0f0f0f;
-  
-}
-
-.navbar:hover {
-  background-color: #0f0f0f;
-  font-weight: bold;
-  color: white;
-}
-
+// *** Show One Movie Page ***
 
 .poster-view {
   img {
@@ -88,7 +89,6 @@
     border-radius: 20px;
   }
 
-  object-fit: contain;
   height: 90vh;
   padding: 30px 50px;
   margin-left: 50px;
@@ -105,18 +105,17 @@
   }
 }
 
-
 .movie-title {
   display: flex;
   h1 {
     color: white;
-    padding-top: 50px;
+    padding-top: 40px;
     font-weight: bold;
     font-size: 40px;
   }
   h2 {
     color: white;
-    padding-top: 50px;
+    padding-top: 40px;
     font-size: 40px;
   }
   
@@ -145,7 +144,7 @@
 }
 .overview {
   h1 {
-    margin-top: 40px;
+    margin-top: 30px;
     font-size: 26px;
     font-weight: bold;
   }
@@ -177,7 +176,7 @@
   margin-right: 90px;
   border-radius: 20px;
   padding-bottom: 50px;
-  
+  height: 525px;
 }
 
 .title {
@@ -198,52 +197,11 @@
   }
 }
 
-// Register and Login
-
-.section {
-  background-color: #1f1e1e;
-  height: 100vh;
-}
-
-.field {
-  button {
-    background-color: #009cc4;
-    border: 1px solid #009cc4;
-    padding: 10px;
-    border-radius: 12px;
-    color: white;
-    font-weight: bold;
-  }
-  button:hover {
-    background-color: #03acd6;
-    border: 1px solid #03acd6;
-    border-radius: 8px;
-    color: white;
-    font-weight: bold;
-    transition: transform 900ms;
-  }
-}
-
-
-// Bottom page comments etc
-
 .next-page {
   background-color: #111116;
   display: flex;
   padding-bottom: 100px;
   // height: 100vh;
-}
-
-.comments-left {
-  margin-left: 90px;
-  padding: 0 10px;
-  width: 35%;
-  h2 {
-    
-    padding: 20px 0;
-    font-weight: bold;
-    font-size: 30px;
-  }
 }
 
 .starring, 
@@ -280,7 +238,7 @@
 
 .trailer {
   a {
-    color: rgb(19, 19, 19);
+    color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: bold;
   }
@@ -303,6 +261,29 @@
   }
 }
 
+// *** Comments ***
+
+.comments-left {
+  margin-left: 90px;
+  padding: 0 10px;
+  width: 35%;
+  h2 {
+    
+    padding: 20px 0;
+    font-weight: bold;
+    font-size: 30px;
+  }
+}
+
+.comments-box {
+  height: 250px;
+  padding: 20px;
+  
+  
+}
+.comments-box::-webkit-scrollbar {
+  width: 1em;
+}
 
 .comments-right {
   overflow-y: scroll;
@@ -371,6 +352,32 @@ h5 {
   font-size: 12px;
   font-weight: bold;
   font-family: Quicksand;
+}
+
+// *** Register and Login ***
+
+.section {
+  background-color: #1f1e1e;
+  height: 100vh;
+}
+
+.field {
+  button {
+    background-color: #009cc4;
+    border: 1px solid #009cc4;
+    padding: 10px;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+  }
+  button:hover {
+    background-color: #03acd6;
+    border: 1px solid #03acd6;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    transition: transform 900ms;
+  }
 }
 
 

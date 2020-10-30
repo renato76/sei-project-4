@@ -44,9 +44,11 @@ class MovieDetails extends React.Component {
     event.preventDefault()
     // add the movieID to the Object formdata
     this.state.formData.movie = this.state.movie.id
+    const movieId = this.state.movie.id
     const response = await createNewComment(this.state.formData)
     console.log(response)
-    this.props.history.push('/')
+    
+    this.props.history.push(`/movies/${movieId}`)
   }
 
   handleDelete = async () => {

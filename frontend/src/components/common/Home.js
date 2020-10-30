@@ -59,6 +59,14 @@ class Home extends React.Component {
               <MoviesCard key={movie.id} {...movie} />
             ))}
           </div>
+          <div className="home-titles">
+            <h1>RECENTLY ADDED</h1>
+          </div>
+          <div className="movie-row">       
+            { this.state.movies.map(movie => (
+              <MoviesCard key={movie.id} {...movie} />
+            ))}
+          </div>
         </div>
       </div>
     )
