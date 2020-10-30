@@ -55,7 +55,7 @@ To allow a user to find movies quicker, categories are pre-built.
 < add a link to the app on netlify >
 
 
-<img src="../frontend/src/styles/project-photos/homepage.png" width="900" height="500">
+<img src="./frontend/src/styles/project-photos/homepage.png" width="900" height="500">
 
 
 <br/>
@@ -74,15 +74,15 @@ First of all I planned how the app should function and what the user should be a
 
 Then created user stories and wireframes to reflect this. 
 
-<img src="./src/styles/project-photos/Wireframe-1.png" width="600">
+<img src="./frontend/src/styles/project-photos/Wireframe-1.png" width="600">
 
-<img src="./src/styles/project-photos/Wireframe-2.png" width="300">
+<img src="./frontend/src/styles/project-photos/Wireframe-2.png" width="300">
 
 The next step was to plan the back end and what models and fields would be required at front end.
 
 
 
-<img src="./src/styles/project-photos/ERD-diagram.png" width="800">
+<img src="./frontend/src/styles/project-photos/ERD-diagram.png" width="800">
 <br/>
 <br/>
 
