@@ -35,7 +35,7 @@ class CommentDetailView(APIView):
             raise PermissionDenied()
 
     def delete(self, request, pk):
-        commeny_to_delete = self.get_comment(pk=pk)
+        comment_to_delete = self.get_comment(pk=pk)
         self.is_comment_owner(commeny_to_delete, request.user)
         commeny_to_delete.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)

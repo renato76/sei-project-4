@@ -1,1 +1,547 @@
-[{"model": "movies.movie", "pk": 1, "fields": {"title": "Welcome to the Sudden Death", "image": "https://image.tmdb.org/t/p/w1280/elZ6JCzSEvFOq4gNjNeZsnRFsvj.jpg", "description": "Jesse Freeman is a former special forces officer and explosives expert now working a regular job as a security guard in a state-of-the-art basketball arena. Trouble erupts when a tech-savvy cadre of terrorists kidnap the team's owner and Jesse's daughter during opening night. Facing a ticking clock", "starring": "Michael Jai White, Michael Eklund, Gillian White, Gary Owen", "release": "2019", "director": "Dallas Jackson", "duration": "1h 20m", "age_rating": "15", "user": 2, "genre": [1, 2, 3]}}, {"model": "movies.movie", "pk": 3, "fields": {"title": "2067", "image": "https://image.tmdb.org/t/p/w1280/7D430eqZj8y3oVkLFfsWXGRcpEG.jpg", "description": "A lowly utility worker is called to the future by a mysterious radio signal, he must leave his dying wife to embark on a journey that will force him to face his deepest fears in an attempt to change the fabric of reality and save humankind from its greatest environmental crisis yet.", "starring": "Kodi Smit-McPhee, Ryan Kwanten, Sana'a Shaik, Aaron Glenane", "release": "2020", "director": "Seth Larney", "duration": "1h 54m", "age_rating": "16+", "user": 1, "genre": [1, 2, 4]}}, {"model": "movies.movie", "pk": 5, "fields": {"title": "Bad Boys For Life", "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/y95lQLnuNKdPAzw9F9Ab8kJ80c3.jpg", "description": "Marcus and Mike are forced to confront new threats, career changes, and midlife crises as they join the newly created elite team AMMO of the Miami police department to take down the ruthless Armando Armas, the vicious leader of a Miami drug cartel.", "starring": "Will Smith, Martin Lawrence, Paoloa Nunez", "release": "2020", "director": "Bilall Fallah", "duration": "2h4m", "age_rating": "15", "user": 1, "genre": [1, 2, 4]}}, {"model": "movies.movie", "pk": 6, "fields": {"title": "Ava", "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/i4kPwXPlM1iy8Jf3S1uuLuwqQAV.jpg", "description": "A black ops assassin is forced to fight for her own survival after a job goes dangerously wrong.", "starring": "Jessica Chastain, John Malkovic, Colin Farrell", "release": "2020", "director": "Tate Taylor", "duration": "1h 36m", "age_rating": "15", "user": 1, "genre": [2, 3, 5, 7]}}, {"model": "movies.movie", "pk": 7, "fields": {"title": "Money Plane", "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/thPyrU7LsAVKbxt57ZsxdZJzupN.jpg", "description": "A professional thief with $40 million in debt and his family's life on the line must commit one final heist - rob a futuristic airborne casino filled with the world's most dangerous criminals.", "starring": "Adam Copeland", "release": "2020", "director": "Andrew Lawrence", "duration": "1h 22m", "age_rating": "15", "user": 1, "genre": [1, 2]}}, {"model": "movies.movie", "pk": 13, "fields": {"title": "Peninsula", "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/sy6DvAu72kjoseZEjocnm2ZZ09i.jpg", "description": "A soldier and his team battle hordes of post-apocalyptic zombies in the wastelands of the Korean Peninsula.", "starring": "Kang Dong-won, Lee Jung-hyun", "release": "2020", "director": "Yeon Sang-ho", "duration": "1h 54m", "age_rating": "NR", "user": 1, "genre": [2, 3, 4]}}, {"model": "movies.movie", "pk": 14, "fields": {"title": "The War With Grandpa", "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ltyARDw2EFXZ2H2ERnlEctXPioP.jpg", "description": "Sixth-grader Peter is pretty much your average kid—he likes gaming, hanging with his friends and his beloved pair of Air Jordans. But when his recently widowed grandfather Ed moves in with Peter’s family, the boy is forced to give up his most prized possession of all, his bedroom. Unwilling to let s", "starring": "Robert De Niro, Uma Thurman, Christopher Walken", "release": "2020", "director": "Tim Hill", "duration": "1h 34m", "age_rating": "PG", "user": 1, "genre": [9]}}, {"model": "movies.movie", "pk": 15, "fields": {"title": "Sonic The Hedgehog", "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aQvJ5WPzZgYVDrxLX4R6cLJCEaQ.jpg", "description": "Based on the global blockbuster videogame franchise from Sega, Sonic the Hedgehog tells the story of the world’s speediest hedgehog as he embraces his new home on Earth. In this live-action adventure comedy, Sonic and his new best friend team up to defend the planet from the evil genius Dr. Robotnik", "starring": "Ben Schwartz, James Marsden, Jim Carrey", "release": "2020", "director": "Jeff Fowler", "duration": "1h 39m", "age_rating": "PG", "user": 1, "genre": [1, 9]}}, {"model": "movies.movie", "pk": 16, "fields": {"title": "The Green Mile", "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/o0lO84GI7qrG6XFvtsPOSV7CTNa.jpg", "description": "A supernatural tale set on death row in a Southern prison, where gentle giant John Coffey possesses the mysterious power to heal people's ailments. When the cell block's head guard, Paul Edgecomb, recognizes Coffey's miraculous gift, he tries desperately to help stave off the condemned man's executi", "starring": "Tom Hanks,", "release": "1999", "director": "Frank Darabont", "duration": "3h 9m", "age_rating": "18", "user": 1, "genre": [10, 5, 7]}}, {"model": "movies.movie", "pk": 17, "fields": {"title": "Pulp Fiction", "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/plnlrtBUULT0rh3Xsjmpubiso3L.jpg", "description": "A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.", "starring": "John Travolta, Uma Thurman, Samuel L Jackson", "release": "1994", "director": "Quentin Tarantino", "duration": "2h 34m", "age_rating": "18", "user": 1, "genre": [3, 7]}}]
+[
+{
+  "model": "movies.movie",
+  "pk": 1,
+  "fields": {
+    "title": "Welcome to the Sudden Death",
+    "image": "https://image.tmdb.org/t/p/w1280/elZ6JCzSEvFOq4gNjNeZsnRFsvj.jpg",
+    "description": "Jesse Freeman is a former special forces officer and explosives expert now working a regular job as a security guard in a state-of-the-art basketball arena. Trouble erupts when a tech-savvy cadre of terrorists kidnap the team's owner and Jesse's daughter during opening night. Facing a ticking clocks",
+    "starring": "Michael Jai White, Michael Eklund, Gillian White, Gary Owen",
+    "release": "2019",
+    "director": "Dallas Jackson",
+    "duration": "1h 20m",
+    "age_rating": "18",
+    "trailer": "https://youtu.be/jKCj3XuPG8",
+    "user": 1,
+    "genre": [
+      2,
+      3,
+      5
+    ],
+    "liked_by": [
+      1
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 3,
+  "fields": {
+    "title": "2067",
+    "image": "https://image.tmdb.org/t/p/w1280/7D430eqZj8y3oVkLFfsWXGRcpEG.jpg",
+    "description": "A lowly utility worker is called to the future by a mysterious radio signal, he must leave his dying wife to embark on a journey that will force him to face his deepest fears in an attempt to change the fabric of reality and save humankind from its greatest environmental crisis yet.",
+    "starring": "Kodi Smit-McPhee, Ryan Kwanten, Sana'a Shaik, Aaron Glenane",
+    "release": "2020",
+    "director": "Seth Larney",
+    "duration": "1h 54m",
+    "age_rating": "15",
+    "trailer": "https://youtu.be/cU5875rHQ8k",
+    "user": 1,
+    "genre": [
+      2,
+      3,
+      12
+    ],
+    "liked_by": [
+      1
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 5,
+  "fields": {
+    "title": "Bad Boys For Life",
+    "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/y95lQLnuNKdPAzw9F9Ab8kJ80c3.jpg",
+    "description": "Marcus and Mike are forced to confront new threats, career changes, and midlife crises as they join the newly created elite team AMMO of the Miami police department to take down the ruthless Armando Armas, the vicious leader of a Miami drug cartel.",
+    "starring": "Will Smith, Martin Lawrence, Paoloa Nunez",
+    "release": "2020",
+    "director": "Bilall Fallah",
+    "duration": "2h4m",
+    "age_rating": "15",
+    "trailer": "https://youtu.be/jKCj3XuPG8M",
+    "user": 1,
+    "genre": [
+      1,
+      2,
+      7
+    ],
+    "liked_by": [
+      1
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 7,
+  "fields": {
+    "title": "Money Plane",
+    "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/thPyrU7LsAVKbxt57ZsxdZJzupN.jpg",
+    "description": "A professional thief with $40 million in debt and his family's life on the line must commit one final heist - rob a futuristic airborne casino filled with the world's most dangerous criminals.",
+    "starring": "Adam Copeland",
+    "release": "2020",
+    "director": "Andrew Lawrence",
+    "duration": "1h 22m",
+    "age_rating": "15",
+    "trailer": "https://youtu.be/aETz_dRDEys",
+    "user": 1,
+    "genre": [
+      1,
+      2
+    ],
+    "liked_by": [
+      1
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 14,
+  "fields": {
+    "title": "The War With Grandpa",
+    "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ltyARDw2EFXZ2H2ERnlEctXPioP.jpg",
+    "description": "Sixth-grader Peter is pretty much your average kid—he likes gaming, hanging with his friends and his beloved pair of Air Jordans. But when his recently widowed grandfather Ed moves in with Peter’s family, the boy is forced to give up his most prized possession of all, his bedroom. Unwilling to let s",
+    "starring": "Robert De Niro, Uma Thurman, Christopher Walken",
+    "release": "2020",
+    "director": "Tim Hill",
+    "duration": "1h 34m",
+    "age_rating": "PG",
+    "trailer": "https://youtu.be/EohVvIWg-Oc",
+    "user": 1,
+    "genre": [
+      2,
+      7,
+      9
+    ],
+    "liked_by": [
+      1
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 15,
+  "fields": {
+    "title": "Sonic The Hedgehog",
+    "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aQvJ5WPzZgYVDrxLX4R6cLJCEaQ.jpg",
+    "description": "Based on the global blockbuster videogame franchise from Sega, Sonic the Hedgehog tells the story of the world’s speediest hedgehog as he embraces his new home on Earth. In this live-action adventure comedy, Sonic and his new best friend team up to defend the planet from the evil genius Dr. Robotnik",
+    "starring": "Ben Schwartz, James Marsden, Jim Carrey",
+    "release": "2020",
+    "director": "Jeff Fowler",
+    "duration": "1h 39m",
+    "age_rating": "PG",
+    "trailer": "https://youtu.be/szby7ZHLnkA",
+    "user": 1,
+    "genre": [
+      1,
+      9
+    ],
+    "liked_by": [
+      1
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 16,
+  "fields": {
+    "title": "The Green Mile",
+    "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/o0lO84GI7qrG6XFvtsPOSV7CTNa.jpg",
+    "description": "A supernatural tale set on death row in a Southern prison, where gentle giant John Coffey possesses the mysterious power to heal people's ailments. When the cell block's head guard, Paul Edgecomb, recognizes Coffey's miraculous gift, he tries desperately to help stave off the condemned man's executi",
+    "starring": "Tom Hanks,",
+    "release": "1999",
+    "director": "Frank Darabont",
+    "duration": "3h 9m",
+    "age_rating": "18",
+    "trailer": "https://youtu.be/ctRK-4Vt7dA1",
+    "user": 1,
+    "genre": [
+      5,
+      7,
+      10
+    ],
+    "liked_by": [
+      1
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 17,
+  "fields": {
+    "title": "Pulp Fiction",
+    "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/plnlrtBUULT0rh3Xsjmpubiso3L.jpg",
+    "description": "A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.",
+    "starring": "John Travolta, Uma Thurman, Samuel L Jackson",
+    "release": "1994",
+    "director": "Quentin Tarantino",
+    "duration": "2h 34m",
+    "age_rating": "18",
+    "trailer": "https://youtu.be/tGpTpVyI_OQ",
+    "user": 1,
+    "genre": [
+      3,
+      7
+    ],
+    "liked_by": [
+      1
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 18,
+  "fields": {
+    "title": "Jack Reacher - Never Go Back",
+    "image": "https://image.tmdb.org/t/p/w1280/heHPL3kGWy4pMGkSg2g9Nd5QT4C.jpg",
+    "description": "Jack Reacher must uncover the truth behind a major government conspiracy in order to clear his name. On the run as a fugitive from the law, Reacher uncovers a potential secret from his past that could change his life forever.",
+    "starring": "Tom Cruise, Cobie Smulders, Aldis Hodge, Danika Yarosh",
+    "release": "2016",
+    "director": "Edward Zwick",
+    "duration": "1h 58m",
+    "age_rating": "12A",
+    "trailer": "https://youtu.be/aoCP_JHzBUM",
+    "user": 1,
+    "genre": [
+      2,
+      3
+    ],
+    "liked_by": [
+      1
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 19,
+  "fields": {
+    "title": "Triple Frontier",
+    "image": "https://image.tmdb.org/t/p/w1280/aBw8zYuAljVM1FeK5bZKITPH8ZD.jpg",
+    "description": "Struggling to make ends meet, former special ops soldiers reunite for a high-stakes heist: stealing $75 million from a South American drug lord.",
+    "starring": "Pedro Pascal",
+    "release": "2019",
+    "director": "J.C. Chandor",
+    "duration": "2h 6m",
+    "age_rating": "R",
+    "trailer": "https://youtu.be/Fo3yRLLrXQA",
+    "user": 1,
+    "genre": [
+      2,
+      3,
+      7
+    ],
+    "liked_by": [
+      1
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 20,
+  "fields": {
+    "title": "Spenser Confidential",
+    "image": "https://image.tmdb.org/t/p/w1280/fePczipv6ZzDO2uoww4vTAu2Sq3.jpg",
+    "description": "Spenser, a former Boston patrolman who just got out from prison, teams up with Hawk, an aspiring fighter, to unravel the truth behind the death of two police officers.",
+    "starring": "Mark Wahlberg, Winston Duke, Iliza Shlesinger",
+    "release": "2020",
+    "director": "Peter Berg",
+    "duration": "1h 50m",
+    "age_rating": "R",
+    "trailer": "https://youtu.be/bgKEoHNi3Uc",
+    "user": 1,
+    "genre": [
+      1,
+      2,
+      3
+    ],
+    "liked_by": [
+      1
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 21,
+  "fields": {
+    "title": "Joy",
+    "image": "https://image.tmdb.org/t/p/w1280/drHYguFkQO4nQQFUhRYqIbl45oT.jpg",
+    "description": "A story based on the life of a struggling Long Island single mom who became one of the country's most successful entrepreneurs.",
+    "starring": "Jennifer Lawrence, Bradley Cooper",
+    "release": "2015",
+    "director": "David O. Russell",
+    "duration": "2hrs 4m",
+    "age_rating": "12A",
+    "trailer": "https://youtu.be/uR-2TiQVY-k",
+    "user": 1,
+    "genre": [
+      1,
+      5
+    ],
+    "liked_by": [
+      1
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 22,
+  "fields": {
+    "title": "The Ugly Truth",
+    "image": "https://image.tmdb.org/t/p/w1280/2rq96Ihbqb1eU3TEBVtgFlqbeX7.jpg",
+    "description": "A romantically challenged morning show producer is reluctantly embroiled in a series of outrageous tests by her chauvinistic correspondent to prove his theories on relationships and help her find love. His clever ploys, however, lead to an unexpected result.",
+    "starring": "Katherine Heigl, Gerard Butler",
+    "release": "2009",
+    "director": "Robert Luketic",
+    "duration": "1h 36m",
+    "age_rating": "15",
+    "trailer": "https://youtu.be/Lh_NT69lcPY",
+    "user": 1,
+    "genre": [
+      1,
+      11
+    ],
+    "liked_by": [
+      1
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 23,
+  "fields": {
+    "title": "Rumour Has It",
+    "image": "https://image.tmdb.org/t/p/w1280/1dAnuoBKGbpxZ5XvjDGJcUYsf0x.jpg",
+    "description": "Sarah Huttinger's return home with her fiance convinces her that the sedate, proper, country-club lifestyle of her family isn't for her – and that maybe the Huttinger family isn't even hers – as she uncovers secrets that suggest the Huttingers are neither sedate nor proper.",
+    "starring": "Jennifer Aniston, Kevin Costner",
+    "release": "2005",
+    "director": "Rob Reiner",
+    "duration": "1h 37m",
+    "age_rating": "12",
+    "trailer": "https://youtu.be/QWYqikq6YuE",
+    "user": 1,
+    "genre": [
+      1
+    ],
+    "liked_by": [
+      1
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 24,
+  "fields": {
+    "title": "Ava",
+    "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/i4kPwXPlM1iy8Jf3S1uuLuwqQAV.jpg",
+    "description": "A black ops assassin is forced to fight for her own survival after a job goes dangerously wrong.",
+    "starring": "Jessica Chastain, John Malkovic, Colin Farrell",
+    "release": "2020",
+    "director": "Tate Taylor",
+    "duration": "1h 36m",
+    "age_rating": "15",
+    "trailer": "https://youtu.be/aoCP_JHzBUM",
+    "user": 1,
+    "genre": [
+      2,
+      3
+    ],
+    "liked_by": [
+      1
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 26,
+  "fields": {
+    "title": "Law Abiding Citizen",
+    "image": "https://image.tmdb.org/t/p/w1280/zRAPh8EbzsXNrVsEbZa9VcKKf6L.jpg",
+    "description": "A frustrated man decides to take justice into his own hands after a plea bargain sets one of his family's killers free. He targets not only the killer but also the district attorney and others involved in the deal.",
+    "starring": "Jamie Foxx, Gerard Butler",
+    "release": "2009",
+    "director": "F. Gary Gray",
+    "duration": "1h 49m",
+    "age_rating": "18",
+    "trailer": "https://youtu.be/qsR8-zxV-3E",
+    "user": 1,
+    "genre": [
+      2,
+      3
+    ],
+    "liked_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 27,
+  "fields": {
+    "title": "Mission Impossible - Fallout",
+    "image": "https://image.tmdb.org/t/p/w1280/AkJQpZp9WoNdj7pLYSj1L0RcMMN.jpg",
+    "description": "When an IMF mission ends badly, the world is faced with dire consequences. As Ethan Hunt takes it upon himself to fulfill his original briefing, the CIA begin to question his loyalty and his motives. The IMF team find themselves in a race against time, hunted by assassins while trying to prevent a global catastrophe.",
+    "starring": "Tom Cruise, Henry Cavill",
+    "release": "2018",
+    "director": "Christopher McQuarrie",
+    "duration": "2h 27m",
+    "age_rating": "12A",
+    "trailer": "https://youtu.be/wb49-oV0F78",
+    "user": 1,
+    "genre": [
+      2,
+      3
+    ],
+    "liked_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 29,
+  "fields": {
+    "title": "The Bourne Supremacy",
+    "image": "https://image.tmdb.org/t/p/w1280/7IYGiDrquvX3q7e9PV6Pejs6b2g.jpg",
+    "description": "When a CIA operation to purchase classified Russian documents is blown by a rival agent, who then shows up in the sleepy seaside village where Bourne and Marie have been living. The pair run for their lives and Bourne, who promised retaliation should anyone from his former life attempt contact, is forced to once again take up his life as a trained assassin to survive.",
+    "starring": "Matt Damon, Franka Potente, Julia Stiles",
+    "release": "2004",
+    "director": "Paul Greengrass",
+    "duration": "1h 48m",
+    "age_rating": "12A",
+    "trailer": "https://youtu.be/ofMkaGkyAPw",
+    "user": 1,
+    "genre": [
+      2,
+      3
+    ],
+    "liked_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 37,
+  "fields": {
+    "title": "Lucy",
+    "image": "https://image.tmdb.org/t/p/w1280/kRbpUTRNm6QbLQFPFWUcNC4czEm.jpg",
+    "description": "A woman, accidentally caught in a dark deal, turns the tables on her captors and transforms into a merciless warrior evolved beyond human logic.",
+    "starring": "Scarlett Johannson, Morgan Freeman",
+    "release": "2014",
+    "director": "Luc Besson",
+    "duration": "1h 29m",
+    "age_rating": "15",
+    "trailer": "https://youtu.be/bN7ksFEVO9U",
+    "user": 1,
+    "genre": [
+      2,
+      3
+    ],
+    "liked_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 38,
+  "fields": {
+    "title": "Bridge Of Spies",
+    "image": "https://image.tmdb.org/t/p/w1280/bORlvwnVJE1Z6yIg96qnLLY3LJQ.jpg",
+    "description": "During the Cold War, the Soviet Union captures U.S. pilot Francis Gary Powers after shooting down his U-2 spy plane. Sentenced to 10 years in prison, Powers' only hope is New York lawyer James Donovan, recruited by a CIA operative to negotiate his release. Donovan boards a plane to Berlin, hoping to win the young man's freedom through a prisoner exchange. If all goes well, the Russians would get Rudolf Abel, the convicted spy who Donovan defended in court.",
+    "starring": "Tom Hanks, Amy Ryan",
+    "release": "2015",
+    "director": "Steven Spielberg",
+    "duration": "2h 21m",
+    "age_rating": "12A",
+    "trailer": "https://youtu.be/2-2x3r1m2I4",
+    "user": 1,
+    "genre": [
+      3,
+      5
+    ],
+    "liked_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 39,
+  "fields": {
+    "title": "State of Play",
+    "image": "https://image.tmdb.org/t/p/w1280/4f8nhHESDhAVKow2M1khmqDdatp.jpg",
+    "description": "Handsome, unflappable U.S. Congressman Stephen Collins is the future of his political party: an honorable appointee who serves as the chairman of a committee overseeing defense spending. All eyes are upon the rising star to be his party's contender for the upcoming presidential race. Until his research assistant/mistress is brutally murdered and buried secrets come tumbling out.",
+    "starring": "Russell Crowe, Ben Affleck, Rachel McAdams, Helen Mirren",
+    "release": "2009",
+    "director": "Kevin Macdonald",
+    "duration": "2h 7m",
+    "age_rating": "12",
+    "trailer": "https://youtu.be/s1Sp1QvyQQI",
+    "user": 1,
+    "genre": [
+      3,
+      5
+    ],
+    "liked_by": [
+      1
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 40,
+  "fields": {
+    "title": "Notting Hill",
+    "image": "https://image.tmdb.org/t/p/w1280/cBpef6K40Su2CcBb3c18WdwRFCL.jpg",
+    "description": "William Thacker is a London bookstore owner whose humdrum existence is thrown into romantic turmoil when famous American actress Anna Scott appears in his shop. A chance encounter over spilled orange juice leads to a kiss that blossoms into a full-blown affair. As the average bloke and glamorous movie star draw closer and closer together, they struggle to reconcile their radically different lifestyles in the name of love.",
+    "starring": "Jula Roberts, Hugh Grant",
+    "release": "1999",
+    "director": "Roger Michell",
+    "duration": "2h 4m",
+    "age_rating": "12",
+    "trailer": "https://youtu.be/4RI0QvaGoiI",
+    "user": 1,
+    "genre": [
+      1,
+      5,
+      11
+    ],
+    "liked_by": [
+      1
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 41,
+  "fields": {
+    "title": "The Hangover",
+    "image": "https://image.tmdb.org/t/p/w1280/jjCPcxw7QCmFPYM1t3BThdEawJK.jpg",
+    "description": "When three friends finally come to after a raucous night of bachelor-party revelry, they find a baby in the closet and a tiger in the bathroom. But they can't seem to locate their best friend, Doug – who's supposed to be tying the knot. Launching a frantic search for Doug, the trio perseveres through a nasty hangover to try to make it to the church on time.",
+    "starring": "Bradley Cooper, Ed Helms, Zach Galifianakis, Justin Bartha, Heather Graham",
+    "release": "2009",
+    "director": "Todd Philips",
+    "duration": "1h 40m",
+    "age_rating": "15",
+    "trailer": "https://youtu.be/jj6wcUes1no",
+    "user": 1,
+    "genre": [
+      1
+    ],
+    "liked_by": [
+      1
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 42,
+  "fields": {
+    "title": "Welcome to the Sudden Death",
+    "image": "https://image.tmdb.org/t/p/w1280/elZ6JCzSEvFOq4gNjNeZsnRFsvj.jpg",
+    "description": "When three friends finally come to after a raucous night of bachelor-party revelry, they find a baby in the closet and a tiger in the bathroom. But they can't seem to locate their best friend, Doug – who's supposed to be tying the knot. Launching a frantic search for Doug, the trio perseveres through a nasty hangover to try to make it to the church on time.",
+    "starring": "Michael Jai White, Michael Eklund, Gillian White, Gary Owen",
+    "release": "2019",
+    "director": "Dallas Jackson",
+    "duration": "1h 29m",
+    "age_rating": "R",
+    "trailer": "https://youtu.be/szby7ZHLnkA",
+    "user": 1,
+    "genre": [
+      1
+    ],
+    "liked_by": []
+  }
+}
+]
