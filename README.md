@@ -55,7 +55,7 @@ To allow a user to find movies quicker, categories are pre-built.
 < add a link to the app on netlify >
 
 
-<img src="./src/styles/project-photos/homepage.png" width="900" height="500">
+<img src="../frontend/src/styles/project-photos/homepage.png" width="900" height="500">
 
 
 <br/>
