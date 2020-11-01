@@ -1,7 +1,7 @@
 import React from 'react'
 
 const MovieForm = props => {
-  const { handleChange, handleSubmit } = props
+  const { handleChange, handleSubmit, handleMultiSelect } = props
   const { title, image, description, starring, release, director, duration, age_rating, trailer } = props.formData
 
   return (
@@ -19,18 +19,13 @@ const MovieForm = props => {
             />
           </div>
         </div>
-        {/* <div className="field">
-          <label className="label">Genre</label>
-          <div className="control">
-            <input
-              className="input"
-              placeholder="Genre (Required. Multiple values seprated by comma)"
-              name="genre"
-              value={genre}
-              onChange={handleChange}
-            />
-          </div>
-        </div> */}
+        <div className="select is-multiple">
+          <select multiple size="14" onChange={handleMultiSelect}>
+            <option name="1"value={1}>Comedy</option>
+            <option name="2"value={2}>Action</option>
+            <option name="3"value={3}>Thriller</option>
+          </select>
+        </div>
         <div className="field">
           {/* <label className="label">Image</label> */}
           <div className="control">

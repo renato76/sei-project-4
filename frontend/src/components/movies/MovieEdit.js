@@ -56,7 +56,7 @@ class MovieEdit extends React.Component {
     this.state.formData.user = userId.id
 
     const likedBy = this.state.formData
-    // console.log(likedBy)
+    console.log(likedBy)
     this.state.formData.liked_by = likedBy.value
 
     const movieId = this.props.match.params.id

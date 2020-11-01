@@ -11,13 +11,20 @@ class MovieDetails extends React.Component {
     formdata: {
       text: '',
       rating: ''
+    }, 
+    likesData: {
+      id: '',
+      username: ''
     }
   }
 
   async componentDidMount() {
+
+    // console.log(this.state)
+    
     // request single movie by id
     const movieId = this.props.match.params.id
-    console.log(this.props, movieId)
+    // console.log(this.props, movieId)
     const response = await getSingleMovie(movieId)
     // console.log(response)
 
@@ -26,16 +33,21 @@ class MovieDetails extends React.Component {
     })
   }
 
+  // A function that handles liked by Object 
+  handleLikes = () => {
+    console.log('I am being clicked')
+  }
+ 
 
   // function that handles the comments formdata, 
 
   handleChange = event => {
-    console.log(event.target)
+    // console.log(event.target)
     const formData = {
       ...this.state.formData,
       [event.target.name]: event.target.value
     } 
-    console.log(formData)
+    // console.log(formData)
     this.setState({ formData })
   }
 
@@ -53,7 +65,7 @@ class MovieDetails extends React.Component {
 
   handleDelete = async () => {
     const movieId = this.props.match.params.id
-    console.log(movieId)
+    // console.log(movieId)
     const response = deleteMovie(movieId)
     await deleteMovie(movieId)
     console.log(response)
@@ -62,8 +74,9 @@ class MovieDetails extends React.Component {
 
   render() {
     const { movie, text, rating } = this.state
-    // console.log(this.state)
-    console.log(movie)
+    console.log(this.state)
+    // console.log(movie)
+    
 
     if (!movie) return null
     return (
@@ -111,6 +124,7 @@ class MovieDetails extends React.Component {
                   <Link to={`/movies/${movie.id}/edit`} className="button">Edit</Link>
                   <button onClick={this.handleDelete} className="button">Delete</button>
                 </div> 
+                
                 {/* <div className="like">
                   <FaThumbsUp size="2em" onClick={this.addLike} />
                   <h5>Likes: {this.state.likes}</h5>
@@ -124,6 +138,9 @@ class MovieDetails extends React.Component {
         </div>  
         <div className="next-page">
           <div className="comments-left">
+          <div className="like">
+                  <button onClick={this.handleLikes}>Like</button>
+                </div>
             <form onSubmit={this.handleSubmit} className="review-column is-two-thirds is-offset-one-quarter box">
               <div className="field">
                 <label className="label">Add A Review</label>
