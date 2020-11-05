@@ -39,9 +39,9 @@ The app was built using Django and Django REST Framwork with a Postgres database
 
 ### **Technologies Used**
 
+* React JS
 * Django REST 
 * Postgres
-* React JS
 * CSS
 * Bulma
 
@@ -52,8 +52,12 @@ The app was built using Django and Django REST Framwork with a Postgres database
 * Git
 * GitHub
 * TablePlus
+* Insomnia
 * Google Fonts
 * Chrome Developer Tools
+* Axios
+* Quickdatabasediagrams.com
+
 <br/>
 <br/>
 
