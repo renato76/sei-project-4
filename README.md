@@ -64,7 +64,7 @@ The app was built using Django and Django REST Framwork with a Postgres database
 
 **Here is a screenshot of the homepage**
 
-<img src="./frontend/src/styles/project-photos/homepage.png" width="900" height="500">
+<img src="./frontend/src/styles/project-photos/homepage.png" width="1200">
 
 
 <br/>
