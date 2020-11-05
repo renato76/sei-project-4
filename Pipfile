@@ -10,6 +10,8 @@ django = "*"
 psycopg2-binary = "*"
 djangorestframework = "*"
 pyjwt = "*"
+python-dotenv = "*"
+dj-database-url = "*"
 
 [requires]
 python_version = "3.8"

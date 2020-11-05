@@ -145,11 +145,13 @@ The details of the movies was styled with a view to giving users all the info th
 
 ## **Future Features**
 
-I am really excited to carry on working on this in the future. Some of the initial features to add include more movies added and more categories to choose from.
+I am really excited to carry on working on this in the future. Initially I will add more movies and more categories to choose from.
 
-A Profile page feature will be added allowing users to see their own profile with information such as whoch movies they liked, and which comments they left on movies. I would also like to add an "Add to favourites" feature which will need some modification in the back end as well.
+A Profile page feature will be added allowing users to see their own profile with information such as which movies they liked, and which comments they left on movies. I would also like to add an "Add to favourites" feature which will need some modifications in the back end as well.
 
-I plan to show and hide certain links depending on whether a user is logged in or not. For example a user will only be able to see register and Login until they are logged in at which point they will only be able to see the Logout, Add A Movie and their own Profile page
+I plan to show and hide certain links depending on whether a user is logged in or not. For example a user will only be able to see register and Login until they are logged in at which point they will only be able to see the Logout, Add A Movie and their own Profile page.
+
+Currently this is built for desktop, so I will need to make it responsive for tablets and mobile devices.
 
 <br/>
 <br/>

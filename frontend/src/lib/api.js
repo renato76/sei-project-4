@@ -9,7 +9,7 @@ export const getAllMovies = () =>  {
 
 // GET ONE MOVIE
 export const getSingleMovie = movieId => {
-  return axios.get(`/api/movies/${movieId}`)
+  return axios.get(`/api/movies/${movieId}/`)
 }
 
 // CREATE A MOVIE
@@ -44,7 +44,7 @@ export const deleteMovie = id => {
       Authorization: `Bearer ${token}`
     }
   }
-  return axios.delete(`/api/movies/${id}`, headers)
+  return axios.delete(`/api/movies/${id}/`, headers)
 }
 
 

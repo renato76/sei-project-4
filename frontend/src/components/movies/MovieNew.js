@@ -6,7 +6,7 @@ class MovieNew extends React.Component {
   state = {
     formData: {
       title: '',
-      genre: [],
+      genre: [1],
       image: '',
       description: '',
       starring: '',
@@ -18,25 +18,25 @@ class MovieNew extends React.Component {
     }
   }
 
-  handleMultiSelect = event => {
-    console.log(event.target.value)
-    // create a const with empty array
-    const selectedIds = []
-    // push the selected values into that array
-    selectedIds.push(event.target.value[0])
-    console.log(selectedIds)
+  // handleMultiSelect = event => {
+  //   console.log(event.target.value)
+  //   // create a const with empty array
+  //   const selectedIds = []
+  //   // push the selected values into that array
+  //   selectedIds.push(event.target.value[0])
+  //   console.log(selectedIds)
 
-    // now open up formdata and set genres to this array's values
-    const formData = {
-      ...this.state.formData,
-      genre: selectedIds
-    }
+  //   // now open up formdata and set genres to this array's values
+  //   const formData = {
+  //     ...this.state.formData,
+  //     genre: selectedIds
+  //   }
 
-    // and set state of formdata
-    this.setState({ formData })
-    console.log(formData)
+  //   // and set state of formdata
+  //   this.setState({ formData })
+  //   console.log(formData)
     
-  }
+  // }
 
   handleChange = event => {
     // console.log(event.target)
@@ -65,7 +65,7 @@ class MovieNew extends React.Component {
           <MovieForm 
             handleChange={this.handleChange}
             handleSubmit={this.handleSubmit}
-            handleMultiSelect={this.handleMultiSelect}
+            // handleMultiSelect={this.handleMultiSelect}
             formData={this.state.formData}/>
         </div>
       </section>

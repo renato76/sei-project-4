@@ -14,10 +14,7 @@ class MovieDetails extends React.Component {
     }
   }
 
-  async componentDidMount() {
-
-    // console.log(this.state)
-    
+  async componentDidMount() {    
     // request single movie by id
     const movieId = this.props.match.params.id
     // console.log(this.props, movieId)
@@ -28,12 +25,6 @@ class MovieDetails extends React.Component {
       movie: response.data
     })
   }
-
-  // A function that handles liked by Object 
-  handleLikes = () => {
-    console.log('I am being clicked')
-  }
-
 
   // function that handles the comments formdata, 
 
@@ -134,9 +125,6 @@ class MovieDetails extends React.Component {
         </div>  
         <div className="next-page">
           <div className="comments-left">
-            {/* <div className="like">
-              <FaThumbsUp size="2em"onClick={this.handleLikes} />
-            </div> */}
             <form onSubmit={this.handleSubmit} className="review-column is-two-thirds is-offset-one-quarter box">
               <div className="field">
                 <label className="label">Add A Review</label>
@@ -169,18 +157,13 @@ class MovieDetails extends React.Component {
           </div>
           <div className="comments-right">
             <div className="comments-box">
-              {/* <div className="edit-buttons">
-                <Link to={`/movies/${movie.id}/edit`} className="button">Edit</Link>
-                <button onClick={this.handleDelete} className="button">Delete</button>
-              </div> */}
               <div className="comments-title">
                 <h1>Reviews</h1>
               </div>
               <hr />
               <div className="user-reviews-parent">
                 <div className="user-reviews">
-                  {/* // Display all comments here
-                  // need to map through the array and display info  */}
+                  {/* display comments using a map method */}
                   {movie.comments.map(comment => (
                     <>
                       <div className="comment-text">
@@ -196,8 +179,7 @@ class MovieDetails extends React.Component {
                       <hr />
                     </>
                   ))}
-                </div>
-                
+                </div>              
               </div>
             </div>
           </div>
