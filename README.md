@@ -161,7 +161,7 @@ Currently this is built for desktop, so I will need to make it responsive for ta
 
 * Install Django - "pipenv install django"
 * Enter Shell - "pipenv shell"
-* Run Backend Server - "python manage.py runserver" 
+* Run Backend Server - "python manage. py runserver" 
 * Install Dependencies - "npm i"
 * Launch the app locally - "npm start"
 
