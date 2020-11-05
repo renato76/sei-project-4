@@ -106,7 +106,11 @@ Using an ERD diagram I planned which models and fields would be required. This a
 ## **Challenges**
 The main challenges were first of all building the back end with Django REST Framework, understanding the error messages and dealing with them was challenging, I used the Django Documentation to guide me with a lot of these.
 
-Another main challenge was when working on the frontend in React, getting the data across to back end in the correct format exactly as setout on the backend. Agagin this was agreat learning curve in understanding error messages and providing the correct code to fix them. 
+Here is a screenshot of the code to fix the error messages regarding the type of information being submitted to the formData:
+
+<img src="./frontend/src/styles/project-photos/handleSubmit.png">
+
+Another main challenge was when working on the frontend in React, getting the data across to back end in the correct format exactly as setout on the backend. This was a great learning curve in understanding error messages and providing the correct code to fix them. 
 
 The main thing I learned from these was to take a systematic approach and aso use pseudo code to write out each step of the solution.
 

@@ -11,10 +11,6 @@ class MovieDetails extends React.Component {
     formdata: {
       text: '',
       rating: ''
-    }, 
-    likesData: {
-      id: '',
-      username: ''
     }
   }
 
@@ -37,7 +33,7 @@ class MovieDetails extends React.Component {
   handleLikes = () => {
     console.log('I am being clicked')
   }
- 
+
 
   // function that handles the comments formdata, 
 
