@@ -23,7 +23,7 @@ class MovieNew extends React.Component {
     // create a const with empty array
     const selectedIds = []
     // push the selected values into that array
-    selectedIds.push(event.target.value)
+    selectedIds.push(event.target.value[0])
     console.log(selectedIds)
 
     // now open up formdata and set genres to this array's values

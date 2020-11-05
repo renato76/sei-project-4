@@ -120,11 +120,6 @@ class MovieDetails extends React.Component {
                 <div className="trailer">      
                   <button><a href={movie.trailer}>Play Trailer</a></button>
                 </div>  
-                <div className="edit-buttons">
-                  <Link to={`/movies/${movie.id}/edit`} className="button">Edit</Link>
-                  <button onClick={this.handleDelete} className="button">Delete</button>
-                </div> 
-                
                 {/* <div className="like">
                   <FaThumbsUp size="2em" onClick={this.addLike} />
                   <h5>Likes: {this.state.likes}</h5>
@@ -132,15 +127,20 @@ class MovieDetails extends React.Component {
                 <div className="favourite">
                   <FaHeart size="2em"/>
                 </div> */}
+                <div className="edit-buttons">
+                  <Link to={`/movies/${movie.id}/edit`} className="button">Edit</Link>
+                  <button onClick={this.handleDelete} className="button">Delete</button>
+                </div> 
+                
               </div> 
             </div>
           </div>
         </div>  
         <div className="next-page">
           <div className="comments-left">
-          <div className="like">
-                  <button onClick={this.handleLikes}>Like</button>
-                </div>
+            {/* <div className="like">
+              <FaThumbsUp size="2em"onClick={this.handleLikes} />
+            </div> */}
             <form onSubmit={this.handleSubmit} className="review-column is-two-thirds is-offset-one-quarter box">
               <div className="field">
                 <label className="label">Add A Review</label>
