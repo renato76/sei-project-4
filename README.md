@@ -14,7 +14,7 @@ The app has full CRUD functionality, so users can register and login. Once logge
 
 Categories were created to allow users to find movies in certain categories such as "Action Comedies"
 
-The app was built using Django and Django REST Framwork with a Postr=gres database for the backend, and React JS for frontend.
+The app was built using Django and Django REST Framwork with a Postgres database for the backend, and React JS for frontend.
 
 <br/>
 
