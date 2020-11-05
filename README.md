@@ -40,7 +40,8 @@ The app was built using Django and Django REST Framwork with a Postgres database
 ### **Technologies Used**
 
 * React JS
-* Django REST 
+* Django
+* Django REST Framework
 * Postgres
 * CSS
 * Bulma
