@@ -10,7 +10,7 @@
 ## **Overview**
 For my final project I created a movies database that showcases popular movies based on categories. The app allows users to view movie information including a Youtube trailer. Users can view and comment on any movie and add their own rating.
 
-The app has full CRUD functionality, so users can register and login. Once logged in users can then upload their own movie and create a listing with the required information. They can also edit their own moview and delete them if needed.
+The app has full CRUD functionality, so users can register and login. Once logged in users can then upload their own movie and create a listing with the required information. They can also edit their own movies and delete them if needed.
 
 Categories were created to allow users to find movies in certain categories such as "Action Comedies"
 
