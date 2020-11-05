@@ -81,7 +81,7 @@ My approach was work entirely on back end first, and then once that was complete
 
 First of all I planned how the app should function and what the user should be able to see and do. 
 
-Then created user stories and wireframes to reflect this. 
+Then I created simple wireframes to reflect this. 
 
 <br/>
 <br/>
