@@ -20,7 +20,16 @@ The app was built using Django and Django REST Framwork with a Postgres database
 
 ## **Launch The App**
 
-< add a link to the deployed app >
+https://movies-tmbd.herokuapp.com/
+
+<br/>
+
+## **Check Out The GitHub Repo**
+
+<https://github.com/renato76/sei-project-4>
+
+<br/>
+<br/>
 
 
 ## Features Required: 
@@ -70,11 +79,6 @@ The app was built using Django and Django REST Framwork with a Postgres database
 <br/>
 <br/>
 
-## **Check Out The GitHub Repo**
-
-<https://github.com/renato76/sei-project-4>
-<br/>
-<br/>
 
 ## **Approach**
 My approach was work entirely on back end first, and then once that was complete start working on the front end in React.
@@ -146,6 +150,8 @@ The details of the movies was styled with a view to giving users all the info th
 ## **Future Features**
 
 I am really excited to carry on working on this in the future. Initially I will add more movies and more categories to choose from.
+
+Users will be able to clearly see if they are logged in, I will also display success and error messages to the user for registration, login, logout, create movie etc. 
 
 A Profile page feature will be added allowing users to see their own profile with information such as which movies they liked, and which comments they left on movies. I would also like to add an "Add to favourites" feature which will need some modifications in the back end as well.
 
