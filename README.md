@@ -23,7 +23,7 @@ https://movies-tmbd.herokuapp.com/
 
 <br/>
 
-**Check Out The GitHub Repo**
+## **Check Out The GitHub Repo**
 <https://github.com/renato76/sei-project-4>
 
 <br/>
