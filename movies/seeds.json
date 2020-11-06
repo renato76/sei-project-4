@@ -1,13 +1,13 @@
 [
 {
   "model": "movies.movie",
-  "pk": 1,
+  "pk": 3,
   "fields": {
     "title": "Welcome to the Sudden Death",
     "image": "https://image.tmdb.org/t/p/w1280/elZ6JCzSEvFOq4gNjNeZsnRFsvj.jpg",
     "description": "Jesse Freeman is a former special forces officer and explosives expert now working a regular job as a security guard in a state-of-the-art basketball arena. Trouble erupts when a tech-savvy cadre of terrorists kidnap the team's owner and Jesse's daughter during opening night. Facing a ticking clocks",
     "starring": "Michael Jai White, Michael Eklund, Gillian White, Gary Owen",
-    "release": "2019",
+    "release": "2020",
     "director": "Dallas Jackson",
     "duration": "1h 20m",
     "age_rating": "18",
@@ -16,31 +16,7 @@
     "genre": [
       2,
       3,
-      5
-    ],
-    "liked_by": [
       1
-    ]
-  }
-},
-{
-  "model": "movies.movie",
-  "pk": 3,
-  "fields": {
-    "title": "2067",
-    "image": "https://image.tmdb.org/t/p/w1280/7D430eqZj8y3oVkLFfsWXGRcpEG.jpg",
-    "description": "A lowly utility worker is called to the future by a mysterious radio signal, he must leave his dying wife to embark on a journey that will force him to face his deepest fears in an attempt to change the fabric of reality and save humankind from its greatest environmental crisis yet.",
-    "starring": "Kodi Smit-McPhee, Ryan Kwanten, Sana'a Shaik, Aaron Glenane",
-    "release": "2020",
-    "director": "Seth Larney",
-    "duration": "1h 54m",
-    "age_rating": "15",
-    "trailer": "https://youtu.be/cU5875rHQ8k",
-    "user": 1,
-    "genre": [
-      2,
-      3,
-      12
     ],
     "liked_by": [
       1
@@ -58,7 +34,7 @@
     "release": "2020",
     "director": "Bilall Fallah",
     "duration": "2h4m",
-    "age_rating": "15",
+    "age_rating": "18",
     "trailer": "https://youtu.be/jKCj3XuPG8M",
     "user": 1,
     "genre": [
@@ -105,13 +81,13 @@
     "release": "2020",
     "director": "Tim Hill",
     "duration": "1h 34m",
-    "age_rating": "PG",
+    "age_rating": "12A",
     "trailer": "https://youtu.be/EohVvIWg-Oc",
     "user": 1,
     "genre": [
+      9,
       2,
-      7,
-      9
+      7
     ],
     "liked_by": [
       1
@@ -156,9 +132,9 @@
     "trailer": "https://youtu.be/ctRK-4Vt7dA1",
     "user": 1,
     "genre": [
+      10,
       5,
-      7,
-      10
+      7
     ],
     "liked_by": [
       1
@@ -182,29 +158,6 @@
     "genre": [
       3,
       7
-    ],
-    "liked_by": [
-      1
-    ]
-  }
-},
-{
-  "model": "movies.movie",
-  "pk": 18,
-  "fields": {
-    "title": "Jack Reacher - Never Go Back",
-    "image": "https://image.tmdb.org/t/p/w1280/heHPL3kGWy4pMGkSg2g9Nd5QT4C.jpg",
-    "description": "Jack Reacher must uncover the truth behind a major government conspiracy in order to clear his name. On the run as a fugitive from the law, Reacher uncovers a potential secret from his past that could change his life forever.",
-    "starring": "Tom Cruise, Cobie Smulders, Aldis Hodge, Danika Yarosh",
-    "release": "2016",
-    "director": "Edward Zwick",
-    "duration": "1h 58m",
-    "age_rating": "12A",
-    "trailer": "https://youtu.be/aoCP_JHzBUM",
-    "user": 1,
-    "genre": [
-      2,
-      3
     ],
     "liked_by": [
       1
@@ -241,12 +194,12 @@
   "fields": {
     "title": "Spenser Confidential",
     "image": "https://image.tmdb.org/t/p/w1280/fePczipv6ZzDO2uoww4vTAu2Sq3.jpg",
-    "description": "Spenser, a former Boston patrolman who just got out from prison, teams up with Hawk, an aspiring fighter, to unravel the truth behind the death of two police officers.",
+    "description": "Spenser, a former Boston patrolman who just got out from prison, teams up with Hawk, an aspiring fighter, to unravel the truth behind the death of two police officers",
     "starring": "Mark Wahlberg, Winston Duke, Iliza Shlesinger",
     "release": "2020",
     "director": "Peter Berg",
-    "duration": "1h 50m",
-    "age_rating": "R",
+    "duration": "1h 52m",
+    "age_rating": "PG",
     "trailer": "https://youtu.be/bgKEoHNi3Uc",
     "user": 1,
     "genre": [
@@ -352,27 +305,6 @@
 },
 {
   "model": "movies.movie",
-  "pk": 26,
-  "fields": {
-    "title": "Law Abiding Citizen",
-    "image": "https://image.tmdb.org/t/p/w1280/zRAPh8EbzsXNrVsEbZa9VcKKf6L.jpg",
-    "description": "A frustrated man decides to take justice into his own hands after a plea bargain sets one of his family's killers free. He targets not only the killer but also the district attorney and others involved in the deal.",
-    "starring": "Jamie Foxx, Gerard Butler",
-    "release": "2009",
-    "director": "F. Gary Gray",
-    "duration": "1h 49m",
-    "age_rating": "18",
-    "trailer": "https://youtu.be/qsR8-zxV-3E",
-    "user": 1,
-    "genre": [
-      2,
-      3
-    ],
-    "liked_by": []
-  }
-},
-{
-  "model": "movies.movie",
   "pk": 27,
   "fields": {
     "title": "Mission Impossible - Fallout",
@@ -384,27 +316,6 @@
     "duration": "2h 27m",
     "age_rating": "12A",
     "trailer": "https://youtu.be/wb49-oV0F78",
-    "user": 1,
-    "genre": [
-      2,
-      3
-    ],
-    "liked_by": []
-  }
-},
-{
-  "model": "movies.movie",
-  "pk": 29,
-  "fields": {
-    "title": "The Bourne Supremacy",
-    "image": "https://image.tmdb.org/t/p/w1280/7IYGiDrquvX3q7e9PV6Pejs6b2g.jpg",
-    "description": "When a CIA operation to purchase classified Russian documents is blown by a rival agent, who then shows up in the sleepy seaside village where Bourne and Marie have been living. The pair run for their lives and Bourne, who promised retaliation should anyone from his former life attempt contact, is forced to once again take up his life as a trained assassin to survive.",
-    "starring": "Matt Damon, Franka Potente, Julia Stiles",
-    "release": "2004",
-    "director": "Paul Greengrass",
-    "duration": "1h 48m",
-    "age_rating": "12A",
-    "trailer": "https://youtu.be/ofMkaGkyAPw",
     "user": 1,
     "genre": [
       2,
@@ -466,7 +377,7 @@
     "release": "2009",
     "director": "Kevin Macdonald",
     "duration": "2h 7m",
-    "age_rating": "12",
+    "age_rating": "18",
     "trailer": "https://youtu.be/s1Sp1QvyQQI",
     "user": 1,
     "genre": [
@@ -494,8 +405,8 @@
     "user": 1,
     "genre": [
       1,
-      5,
-      11
+      11,
+      5
     ],
     "liked_by": [
       1
@@ -526,20 +437,393 @@
 },
 {
   "model": "movies.movie",
-  "pk": 42,
+  "pk": 43,
   "fields": {
-    "title": "Welcome to the Sudden Death",
-    "image": "https://image.tmdb.org/t/p/w1280/elZ6JCzSEvFOq4gNjNeZsnRFsvj.jpg",
-    "description": "When three friends finally come to after a raucous night of bachelor-party revelry, they find a baby in the closet and a tiger in the bathroom. But they can't seem to locate their best friend, Doug – who's supposed to be tying the knot. Launching a frantic search for Doug, the trio perseveres through a nasty hangover to try to make it to the church on time.",
-    "starring": "Michael Jai White, Michael Eklund, Gillian White, Gary Owen",
-    "release": "2019",
-    "director": "Dallas Jackson",
-    "duration": "1h 29m",
-    "age_rating": "R",
-    "trailer": "https://youtu.be/szby7ZHLnkA",
+    "title": "Legends of the Fall",
+    "image": "https://image.tmdb.org/t/p/w1280/t1KPGlW0UGd0m515LPQmk2F4nu1.jpg",
+    "description": "An epic tale of three brothers and their father living in the remote wilderness of 1900s USA and how their lives are affected by nature, history, war, and love.",
+    "starring": "Brad Pitt, Anthony Hopkins, Julia Ormond",
+    "release": "1994",
+    "director": "Edward Zwick",
+    "duration": "2h 13m",
+    "age_rating": "12A",
+    "trailer": "https://youtu.be/TR5E7Kuty3o",
+    "user": 1,
+    "genre": [
+      13,
+      11,
+      5,
+      14
+    ],
+    "liked_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 44,
+  "fields": {
+    "title": "Inception",
+    "image": "https://image.tmdb.org/t/p/w1280/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg",
+    "description": "Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: \"inception\", the implantation of another person's idea into a target's subconscious.",
+    "starring": "Leonardo Di Caprio, Ken Watanabe, Joesph Gordon-Lwevitt",
+    "release": "2010",
+    "director": "Christopher Nolan",
+    "duration": "2h 28m",
+    "age_rating": "12A",
+    "trailer": "https://youtu.be/Jvurpf91omw",
+    "user": 1,
+    "genre": [
+      2,
+      12
+    ],
+    "liked_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 45,
+  "fields": {
+    "title": "The Martian",
+    "image": "https://image.tmdb.org/t/p/w1280/5BHuvQ6p9kfc091Z8RiFNhCwL4b.jpg",
+    "description": "During a manned mission to Mars, Astronaut Mark Watney is presumed dead after a fierce storm and left behind by his crew. But Watney has survived and finds himself stranded and alone on the hostile planet. With only meager supplies, he must draw upon his ingenuity, wit and spirit to subsist and find a way to signal to Earth that he is alive.",
+    "starring": "Matt Damon, Jessica Chastain, Kristen Wiig",
+    "release": "2015",
+    "director": "Ridley Scott",
+    "duration": "2h 21m",
+    "age_rating": "12A",
+    "trailer": "https://youtu.be/ej3ioOneTy8",
+    "user": 1,
+    "genre": [
+      12,
+      5
+    ],
+    "liked_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 47,
+  "fields": {
+    "title": "Super 8",
+    "image": "https://image.tmdb.org/t/p/w1280/sytFL6ALMAesKZoarlp7bIDKnns.jpg",
+    "description": "In 1979 Ohio, several youngsters are making a zombie movie with a Super-8 camera. In the midst of filming, the friends witness a horrifying train derailment and are lucky to escape with their lives. They soon discover that the catastrophe was no accident, as a series of unexplained events and disappearances soon follows. Deputy Jackson Lamb, the father of one of the kids, searches for the terrifying truth behind the crash.",
+    "starring": "Joel Courtney, Elle Fanning, Riley Griffiths",
+    "release": "2011",
+    "director": "J.J. Abrams",
+    "duration": "1h 34m",
+    "age_rating": "15",
+    "trailer": "https://youtu.be/t-0XuYxh67w",
+    "user": 2,
+    "genre": [
+      1
+    ],
+    "liked_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 49,
+  "fields": {
+    "title": "Life As We Know It",
+    "image": "https://image.tmdb.org/t/p/w1280/zLzS2aOqKsS0QvEaY6SfBw4VBqh.jpg",
+    "description": "After a distastrous first date for caterer Holly and network sports director Messer, all they have is common is a dislike for each other and their love for their goddaughter Sophie. But when they suddenly become all Sophie has in this world, Holly and Messer must set their differences aside. Juggling careers and social calendars, they'll have to find common ground while living under the same roof.",
+    "starring": "Katherine Heigl, Josh Duhamel, Christina Hendricks, Josh Lucas",
+    "release": "2010",
+    "director": "Greg Berlandi",
+    "duration": "1h 54m",
+    "age_rating": "12A",
+    "trailer": "https://youtu.be/ZNSeUYw95NY",
+    "user": 1,
+    "genre": [
+      1,
+      11,
+      5
+    ],
+    "liked_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 50,
+  "fields": {
+    "title": "The Bourne Identity",
+    "image": "https://image.tmdb.org/t/p/w1280/vN6jGCuzefysLVFrzK3Vs6xAdu1.jpg",
+    "description": "Wounded to the brink of death and suffering from amnesia, Jason Bourne is rescued at sea by a fisherman. With nothing to go on but a Swiss bank account number, he starts to reconstruct his life, but finds that many people he encounters want him dead. However, Bourne realizes that he has the combat and mental skills of a world-class spy—but who does he work for?",
+    "starring": "Matt Damon, Franka Potente, Chris Cooper",
+    "release": "2002",
+    "director": "Doug Liman",
+    "duration": "1h 59m",
+    "age_rating": "12A",
+    "trailer": "https://youtu.be/2tqK_3mKQUw",
+    "user": 1,
+    "genre": [
+      2,
+      3,
+      5
+    ],
+    "liked_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 51,
+  "fields": {
+    "title": "The Hangover Part 2",
+    "image": "https://image.tmdb.org/t/p/w1280/7sGkjqorTHkaHTz8Q4WWHj8JL9t.jpg",
+    "description": "The Hangover crew heads to Thailand for Stu's wedding. After the disaster of a bachelor party in Las Vegas last year, Stu is playing it safe with a mellow pre-wedding brunch. However, nothing goes as planned and Bangkok is the perfect setting for another adventure with the rowdy group.",
+    "starring": "Bradley Cooper, Ed Helms, Zach Galifianakis, Justin Bartha, Heather Graham",
+    "release": "2011",
+    "director": "Todd Phillips",
+    "duration": "1h 42m",
+    "age_rating": "12A",
+    "trailer": "https://youtu.be/ohF5ZO_zOYU",
+    "user": 1,
+    "genre": [
+      1,
+      2
+    ],
+    "liked_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 52,
+  "fields": {
+    "title": "The Hangover Part 3",
+    "image": "https://image.tmdb.org/t/p/w1280/vtxuPWkdllLNLVyGjKYa267ntuH.jpg",
+    "description": "This time, there's no wedding. No bachelor party. What could go wrong, right? But when the Wolfpack hits the road, all bets are off.",
+    "starring": "Bradley Cooper, Ed Helms, Zach Galifianakis, Justin Bartha, Heather Graham",
+    "release": "2014",
+    "director": "Todd Phillips",
+    "duration": "1h 40m",
+    "age_rating": "15",
+    "trailer": "https://youtu.be/NKE-RXR_XIs",
+    "user": 1,
+    "genre": [
+      1,
+      2
+    ],
+    "liked_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 53,
+  "fields": {
+    "title": "Knowing",
+    "image": "https://image.tmdb.org/t/p/w1280/7xkAVXnrSW5SgpTo8Z5U3a1ZOW2.jpg",
+    "description": "A teacher opens a time capsule that has been dug up at his son's elementary school; in it are some chilling predictions -- some that have already occurred and others that are about to -- that lead him to believe his family plays a role in the events that are about to unfold.",
+    "starring": "Nicholas Cage, Rosa Byrne",
+    "release": "2009",
+    "director": "Alex Proyas",
+    "duration": "2h 1m",
+    "age_rating": "15",
+    "trailer": "https://youtu.be/A2oDiEVXuDo",
+    "user": 1,
+    "genre": [
+      2,
+      3,
+      5
+    ],
+    "liked_by": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 54,
+  "fields": {
+    "title": "Limitless",
+    "image": "https://image.tmdb.org/t/p/w1280/mA77y2AMLkjBNRv0dtsWYQRu4IU.jpg",
+    "description": "A paranoia-fueled action thriller about an unsuccessful writer whose life is transformed by a top-secret \"smart drug\" that allows him to use 100% of his brain and become a perfect version of himself. His enhanced abilities soon attract shadowy forces that threaten his new life in this darkly comic and provocative film.",
+    "starring": "Bradley Cooper, Robert De Niro",
+    "release": "2011",
+    "director": "Neil Burger",
+    "duration": "1h 45m",
+    "age_rating": "18",
+    "trailer": "https://youtu.be/6d1Uc68wt3c",
+    "user": 1,
+    "genre": [
+      3,
+      12
+    ],
+    "liked_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 57,
+  "fields": {
+    "title": "The Equalizer 2",
+    "image": "https://image.tmdb.org/t/p/w1280/cQvc9N6JiMVKqol3wcYrGshsIdZ.jpg",
+    "description": "Robert McCall, who serves an unflinching justice for the exploited and oppressed, embarks on a relentless, globe-trotting quest for vengeance when a long-time girl friend is murdered.",
+    "starring": "Denzel Washington",
+    "release": "2018",
+    "director": "Antoine Fuqua",
+    "duration": "2h 2m",
+    "age_rating": "18",
+    "trailer": "https://youtu.be/HyNJ3UrGk_I",
     "user": 1,
     "genre": [
       1
+    ],
+    "liked_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 59,
+  "fields": {
+    "title": "Source Code",
+    "image": "https://image.tmdb.org/t/p/w1280/nTr0lvAzeQmUjgSgDEHTJpnrxTz.jpg",
+    "description": "Decorated soldier Captain Colter Stevens wakes up in the body of an unknown man, discovering he's involved in a mission to find the bomber of a Chicago commuter train. He learns he's part of a top-secret experimental program that enables him to experience the final 8 minutes of another person's life. Colter re-lives the train incident over and over again, gathering more clues each time.",
+    "starring": "Jake Gyllenhaal, Michelle Monaghan",
+    "release": "2011",
+    "director": "Duncan Jones",
+    "duration": "1h 33m",
+    "age_rating": "12A",
+    "trailer": "https://youtu.be/NkTrG-gpIzE",
+    "user": 1,
+    "genre": [
+      1
+    ],
+    "liked_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 68,
+  "fields": {
+    "title": "2067",
+    "image": "https://image.tmdb.org/t/p/w1280/7D430eqZj8y3oVkLFfsWXGRcpEG.jpg",
+    "description": "A lowly utility worker is called to the future by a mysterious radio signal, he must leave his dying wife to embark on a journey that will force him to face his deepest fears in an attempt to change the fabric of reality and save humankind from its greatest environmental crisis yet.",
+    "starring": "Kodi Smit-McPhee, Ryan Kwanten, Sana'a Shaik, Aaron Glenane",
+    "release": "2020",
+    "director": "Seth Larney",
+    "duration": "1h 54m",
+    "age_rating": "16+",
+    "trailer": "https://youtu.be/cU5875rHQ8k",
+    "user": 1,
+    "genre": [
+      3,
+      12,
+      5
+    ],
+    "liked_by": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 69,
+  "fields": {
+    "title": "Minions",
+    "image": "https://image.tmdb.org/t/p/w1280/vlOgaxUiMOA8sPDG9n3VhQabnEi.jpg",
+    "description": "Minions Stuart, Kevin and Bob are recruited by Scarlet Overkill, a super-villain who, alongside her inventor husband Herb, hatches a plot to take over the world.",
+    "starring": "Sandra Bullock, Jon Hamm, Michael Keaton",
+    "release": "2015",
+    "director": "Pierre Coffin",
+    "duration": "1h 31m",
+    "age_rating": "U",
+    "trailer": "https://youtu.be/P9-FCC6I7u0",
+    "user": 1,
+    "genre": [
+      8,
+      1,
+      9
+    ],
+    "liked_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 70,
+  "fields": {
+    "title": "Hotel Transylvania 3",
+    "image": "https://image.tmdb.org/t/p/w1280/gjAFM4xhA5vyLxxKMz38ujlUfDL.jpg",
+    "description": "Dracula, Mavis, Johnny and the rest of the Drac Pack take a vacation on a luxury Monster Cruise Ship, where Dracula falls in love with the ship’s captain, Ericka, who’s secretly a descendant of Abraham Van Helsing, the notorious monster slayer.",
+    "starring": "Adam Sandler, Andy Samberg, Selena Gomez",
+    "release": "2018",
+    "director": "Genndy Tartakovsky",
+    "duration": "1h 37m",
+    "age_rating": "U",
+    "trailer": "https://youtu.be/Ku52zNnft8k",
+    "user": 1,
+    "genre": [
+      8,
+      9,
+      2
+    ],
+    "liked_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 71,
+  "fields": {
+    "title": "Hotel Transylvania 2",
+    "image": "https://image.tmdb.org/t/p/w1280/kKFgwQnR5q08UFsAvtoYyTIiHyj.jpg",
+    "description": "When the old-old-old-fashioned vampire Vlad arrives at the hotel for an impromptu family get-together, Hotel Transylvania is in for a collision of supernatural old-school and modern day cool.",
+    "starring": "Adam Sandler, Andy Samberg, Selena Gomez",
+    "release": "2015",
+    "director": "Genndy Tartakovsky",
+    "duration": "1h 29m",
+    "age_rating": "U",
+    "trailer": "https://youtu.be/OIx8OGeEh9c",
+    "user": 1,
+    "genre": [
+      8,
+      1,
+      9
+    ],
+    "liked_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 72,
+  "fields": {
+    "title": "Kung Fu Panda",
+    "image": "https://image.tmdb.org/t/p/w1280/nlr2oxuYsHXt0wdtmzaOuVBoNC0.jpg",
+    "description": "Continuing his \"legendary adventures of awesomeness\", Po must face two hugely epic, but different threats: one supernatural and the other a little closer to his home.",
+    "starring": "Jack Black, Bryan Cranston, Dustin Hoffman, Angelina Jolie",
+    "release": "2016",
+    "director": "Alessandro Carloni",
+    "duration": "1h 35",
+    "age_rating": "PG",
+    "trailer": "https://youtu.be/10r9ozshGVE",
+    "user": 1,
+    "genre": [
+      8,
+      1,
+      2,
+      9
+    ],
+    "liked_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 73,
+  "fields": {
+    "title": "Madagascar: Escape 2 Africa",
+    "image": "https://image.tmdb.org/t/p/w1280/9lfNdHVfd37R1GszeH5ZcWzkb14.jpg",
+    "description": "Alex, Marty, and other zoo animals find a way to escape from Madagascar when the penguins reassemble a wrecked airplane. The precariously repaired craft stays airborne just long enough to make it to the African continent. There the New Yorkers encounter members of their own species for the first time. Africa proves to be a wild place, but Alex and company wonder if it is better than their Central Park home.",
+    "starring": "Ben Stiller, Jada Pinkett Smith, David Schwimmer",
+    "release": "2008",
+    "director": "Tom McGrath",
+    "duration": "1h 29m",
+    "age_rating": "PG",
+    "trailer": "https://youtu.be/cSo0k5a0l0w",
+    "user": 1,
+    "genre": [
+      8,
+      1,
+      9
     ],
     "liked_by": []
   }

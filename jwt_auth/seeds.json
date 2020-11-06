@@ -1,0 +1,40 @@
+[
+{
+  "model": "jwt_auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$zYnlFSSENmW0$tXVu88KyjRRx3ISsGgkYep4rapIidnEnV54bH/31o94=",
+    "last_login": "2020-10-28T23:00:47.354Z",
+    "is_superuser": true,
+    "username": "renatomignogna",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2020-10-28T22:38:42.821Z",
+    "email": "ren@email.com",
+    "first_name": "",
+    "last_name": "",
+    "profile_image": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$v1Ie7B6L381K$YTVmYYVagX9JpaVKkqDKaLb9hjLAxtcrdvaX5EfjiPY=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "john",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-10-29T00:19:14.269Z",
+    "email": "john@email.com",
+    "first_name": "John",
+    "last_name": "Wick",
+    "profile_image": "https://ga-core.s3.amazonaws.com/production/uploads/instructor/image/14618/thumb_Screen_Shot_2019-05-30_at_16.42.14.png",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
