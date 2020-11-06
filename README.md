@@ -18,7 +18,7 @@ The app was built using Django and Django REST Framwork with a Postgres database
 
 <br/>
 
-**Launch The App**
+## **Launch The App**
 https://movies-tmbd.herokuapp.com/
 
 <br/>
