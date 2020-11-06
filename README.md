@@ -29,8 +29,6 @@ https://movies-tmbd.herokuapp.com/
 <https://github.com/renato76/sei-project-4>
 
 <br/>
-<br/>
-
 
 ## Features Required: 
 
@@ -136,7 +134,6 @@ The details of the movies was styled with a view to giving users all the info th
 
 <img src="./frontend/src/styles/project-photos/homepage-2.png" width="1100">
 
-<br/>
 <br/>
 <br/>
 
