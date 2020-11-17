@@ -3,6 +3,12 @@
 
 <br />
 
+# SEI - Project 4 
+
+## Goal: To build a full stack application using Django REST and React JS
+
+<br />
+
 ## Table of contents 
 
 * Overview
@@ -16,9 +22,6 @@
 * Installation Instructions
 
 <br />
-
-
-## Goal: To build a full stack application using Django REST and React JS
 
 <br />
 
