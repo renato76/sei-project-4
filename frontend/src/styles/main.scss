@@ -66,6 +66,24 @@
 
 // Hero 
 
+.title {
+  position: relative;
+  h2 {
+    position:absolute;
+    top: 40%;
+    right: 45%;
+    color: white;
+    font-weight: bold;
+    background-color: #181818;
+    border-radius: 12px;
+    padding: 10px 30px;
+    font-size: 20px;
+  }
+  h2:hover {
+    background-color: #202020;
+  }
+}
+
 .featured {
   width: 100%;
   background-position: center;
@@ -191,23 +209,7 @@
   height: 525px;
 }
 
-.title {
-  position: relative;
-  h2 {
-    position:absolute;
-    top: 40%;
-    right: 45%;
-    color: white;
-    font-weight: bold;
-    background-color: #181818;
-    border-radius: 12px;
-    padding: 10px 30px;
-    font-size: 20px;
-  }
-  h2:hover {
-    background-color: #202020;
-  }
-}
+
 
 .trailer-parent {
   display: flex;

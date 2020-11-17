@@ -1,8 +1,26 @@
 
 <img src="./frontend/src/styles/ga-logo.jpg" width="100" height="100">
 
+<br />
+
+## Table of contents 
+
+* Overview
+* Launch The App
+* Project Brief
+* Technologies Used
+* Approach
+* Challenges & Wins
+* Final Product - (screenshots)
+* Future Features
+* Installation Instructions
+
+<br />
+
 
 ## Goal: To build a full stack application using Django REST and React JS
+
+<br />
 
 # **My Project - Movies Database**
 
@@ -28,7 +46,7 @@ https://movies-tmbd.herokuapp.com/
 
 <br/>
 
-## Features Required: 
+## Project Brief: 
 
 * use Django REST Framework to serve data from a Postgres database
 * Consume the API with a separate front-end built with React
