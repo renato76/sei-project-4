@@ -1,8 +1,6 @@
 
 <img src="./frontend/src/styles/ga-logo.jpg" width="100" height="100">
 
-<br />
-
 # SEI - Project 4 
 
 ## Goal: To build a full stack application using Django REST and React JS
