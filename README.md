@@ -1,14 +1,13 @@
 
 <img src="./frontend/src/styles/ga-logo.jpg" width="100" height="100">
 
-# SEI - Project 4 
-
-## Goal: To build a full stack application using Django REST and React JS
+# SEI 50 Project 4  - TMDB Movies API
 
 <br />
 
 ## Table of contents 
 
+* Installation
 * Overview
 * Launch The App
 * Project Brief
@@ -17,39 +16,53 @@
 * Challenges & Wins
 * Final Product - (screenshots)
 * Future Features
-* Installation Instructions
+
 
 <br />
 
 <br />
 
-# **My Project - Movies Database**
+## **Installation**
 
+Clone or download the repo then do the following in Terminal:
 
-## **Overview**
-For my final project I created a movies database that showcases popular movies based on categories. The app allows users to view movie information including a Youtube trailer. Users can view and comment on any movie and add their own rating.
+* Install dependencies `npm i`
+* Install Django - `pipenv install django`
+* Enter Shell - `pipenv shell`
+* Run Backend Server - `python manage. py runserver`
+* Change into front-end directory: `cd frontend`
+* Install Dependencies - `npm i`
+* Launch the app locally - `npm start`
 
-The app has full CRUD functionality, so users can register and login. Once logged in users can then upload their own movie and create a listing with the required information. They can also edit their own movies and delete them if needed.
+<br />
 
-Categories were created to allow users to find movies in certain categories such as "Action Comedies"
-
-The app was built using Django and Django REST Framwork with a Postgres database for the backend, and React JS for frontend.
-
-<br/>
 
 ## **Launch The App**
 https://movies-tmbd.herokuapp.com/
 
 <br/>
 
-## **Check Out The GitHub Repo**
-<https://github.com/renato76/sei-project-4>
+# **My Project - Movies Database**
+
+
+## **Overview**
+For my final project, I created a movies database that showcases popular movies based on categories. The app allows users to view movie information including a Youtube trailer. Users can view and comment on any movie and add their own rating.
+
+The app has full CRUD functionality, so users can register and login. Once logged in, users can then upload their own movie and create a listing with the required information. They can also edit their own movies and delete them if needed.
+
+Categories were created to allow users to find movies in certain categories such as "Action Comedies".
+
+The app was built using Django and Django REST Framwork with a Postgres database for the backend, and React JS for frontend.
 
 <br/>
 
-## Project Brief: 
 
-* use Django REST Framework to serve data from a Postgres database
+
+
+## **Project Brief:** 
+
+* Build a full stack application using Django REST and React JS
+* Create our Own API and serve data from a Postgres database
 * Consume the API with a separate front-end built with React
 * Must have CRUD fnctionality
 * Thoughtful user stories  
@@ -61,7 +74,7 @@ https://movies-tmbd.herokuapp.com/
 * 9 days  
 
 
-### **Technologies Used**
+## **Technologies Used**
 
 * React JS
 * Django
@@ -81,7 +94,7 @@ https://movies-tmbd.herokuapp.com/
 * Google Fonts
 * Chrome Developer Tools
 * Axios
-* Quickdatabasediagrams.com
+* Quick DBD
 
 <br/>
 <br/>
@@ -98,9 +111,9 @@ https://movies-tmbd.herokuapp.com/
 ## **Approach**
 My approach was work entirely on back end first, and then once that was complete start working on the front end in React.
 
-First of all I planned how the app should function and what the user should be able to see and do. 
+First of all, I planned how the app should function and what the user should be able to see and do. 
 
-Then I created simple wireframes to reflect this. 
+Then, I created simple wireframes to reflect this. 
 
 <br/>
 <br/>
@@ -114,7 +127,7 @@ Then I created simple wireframes to reflect this.
 
 **ERD Diagram**
 
-Using an ERD diagram I planned which models and fields would be required. This allowed me to create the Components and fields alongside the relationships between fields. The diagram illustrates how the movies, users and comments are related through one-to-many and many-to-many relationships.
+Using an ERD diagram, I planned which models and fields would be required. This allowed me to create the Components and fields alongside the relationships between fields. The diagram illustrates how the movies, users and comments are related through one-to-many and many-to-many relationships.
 
 <br/>
 
@@ -123,7 +136,7 @@ Using an ERD diagram I planned which models and fields would be required. This a
 <br/>
 
 ## **Challenges**
-The main challenges were first of all building the back end with Django REST Framework, understanding the error messages and dealing with them was challenging, I used the Django Documentation to guide me with a lot of these.
+The main challenges were first of all building the back end with Django REST Framework, understanding the error messages and dealing with them was challenging. I used the Django Documentation to guide me with a lot of these.
 
 Here is a screenshot of the code to fix the error messages regarding the type of information being submitted to the formData:
 
@@ -176,13 +189,6 @@ Currently this is built for desktop, so I will need to make it responsive for ta
 <br/>
 <br/>
 
-## **Installation Instructions**
 
-
-* Install Django - "pipenv install django"
-* Enter Shell - "pipenv shell"
-* Run Backend Server - "python manage. py runserver" 
-* Install Dependencies - "npm i"
-* Launch the app locally - "npm start"
 
 
