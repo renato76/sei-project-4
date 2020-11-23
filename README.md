@@ -144,7 +144,7 @@ Here is a screenshot of the code to fix the error messages regarding the type of
 
 Another main challenge was when working on the frontend in React, getting the data across to back end in the correct format exactly as setout on the backend. This was a great learning curve in understanding error messages and providing the correct code to fix them. 
 
-The main thing I learned from these was to take a systematic approach and aso use pseudo code to write out each step of the solution.
+The main thing I learned from these was to take a systematic approach and also use pseudo code to write out each step of the solution.
 
 
 <br/>
@@ -154,7 +154,7 @@ The main thing I learned from these was to take a systematic approach and aso us
 
 One really great win was getting the backend setup correctly, with the right fields and relationships which include user profiles, likes, comments and ratings. This meant I was then able to set these features up at the frontend.
 
-The styling was also a great win for me, the homepage contains rows of movies with styling that's influenced by Amazon Prime and Netflix. I created rows of movies in certain categories with a hidden scrollbar and with a grow effect as you hover over each movie.
+The styling was also a great win, the homepage contains rows of movies with styling that's influenced by Amazon Prime and Netflix. I created rows of movies in certain categories with a hidden scrollbar and with a grow effect as you hover over each movie.
 
 The details of the movies was styled with a view to giving users all the info they require about a movie, whilst also making the page visually impressive.
 
