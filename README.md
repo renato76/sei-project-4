@@ -64,7 +64,7 @@ The app was built using Django and Django REST Framwork with a Postgres database
 * Build a full stack application using Django REST and React JS
 * Create our Own API and serve data from a Postgres database
 * Consume the API with a separate front-end built with React
-* Must have CRUD fnctionality
+* Must have CRUD functionality
 * Thoughtful user stories  
 * Impressive design
 
@@ -154,7 +154,7 @@ The main thing I learned from these was to take a systematic approach and aso us
 
 One really great win was getting the backend setup correctly, with the right fields and relationships which include user profiles, likes, comments and ratings. This meant I was then able to set these features up at the frontend.
 
-The styling was also a great win for me, the homepage contain rows of movies influenced by Amazon Prime and Netflix. I created rows of movies in certain categories with a hidden scrollbar and with a grow effect as you hover over each movie.
+The styling was also a great win for me, the homepage contains rows of movies with styling that's influenced by Amazon Prime and Netflix. I created rows of movies in certain categories with a hidden scrollbar and with a grow effect as you hover over each movie.
 
 The details of the movies was styled with a view to giving users all the info they require about a movie, whilst also making the page visually impressive.
 
