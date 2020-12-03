@@ -81,7 +81,7 @@ class MovieDetails extends React.Component {
               <div className="movie-info">
                 <h3>{movie.age_rating}&nbsp;</h3>
                 <div className="genres">
-                  <h4> {movie.genre.map(genre => genre.name)} </h4>
+                  <h4> {movie.genre.map(genre => genre.name).join(', ')} </h4>
                 </div>
                 <div className="duration">
                   <h4>{movie.duration}</h4>

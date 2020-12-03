@@ -48,7 +48,7 @@ class MovieEdit extends React.Component {
   handleSubmit = async event => {
     event.preventDefault() 
     const genreItems = this.state.formData.genre.map(genre => genre.id)
-    // console.log(genreItems)
+    console.log(genreItems)
     this.state.formData.genre = genreItems
 
     const userId = this.state.formData.user

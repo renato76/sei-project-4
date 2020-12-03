@@ -366,9 +366,6 @@
 }
 
 
-
-
-
 // *** Register and Login Section ***
 
 .section {
@@ -400,7 +397,7 @@
 
 @media only screen
 and (min-width: 1025px)
-and (max-width: 1250px) {
+and (max-width: 1280px) {
   
   .poster-view img {
     max-width: 280px;
@@ -447,16 +444,14 @@ and (max-width: 1250px) {
     margin-left: 25%;
     font-size: 15px;
     .button {
-      font-size: 15px;
+      font-size: 13px;
       width: 80px;
       border-radius: 10px;
       margin: 0 5px;
-      transition: transform 500ms;
+      padding: 4%;
     }
     .button:hover {
-      border-radius: 10px;
-      transform: scale(1.015);
-      
+      border-radius: 10px;      
     }
   }
   .right-box {
@@ -464,7 +459,6 @@ and (max-width: 1250px) {
     margin-top: 30px;
     margin-right: 90px;
     border-radius: 20px;
-    padding-bottom: 50px;
     height: 421px;
   }
     
