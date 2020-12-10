@@ -23,7 +23,7 @@ class Home extends React.Component {
     const movies = this.state.movies
     const comedies = movies.filter(movie => movie.genre.includes(1))
     const thrillers = movies.filter(movie => movie.genre.includes(3))
-    
+    const animation = movies.filter(movie => movie.genre.includes(8))
 
     if ( !this.state.movies ) return null
 
@@ -60,10 +60,10 @@ class Home extends React.Component {
             ))}
           </div>
           <div className="home-titles">
-            <h1>RECENTLY ADDED</h1>
+            <h1>ANIMATION / FAMILY</h1>
           </div>
           <div className="movie-row">       
-            { this.state.movies.map(movie => (
+            { animation .map(movie => (
               <MoviesCard key={movie.id} {...movie} />
             ))}
           </div>
