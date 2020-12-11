@@ -61,16 +61,15 @@ class MovieDetails extends React.Component {
 
   render() {
     const { movie, text, rating } = this.state
-    console.log(this.state)
+    // console.log(this.state)
     // console.log(movie)
     
-
     if (!movie) return null
     return (
       <div className="show-page">
         <div className="details">
           <div className="poster-view">
-            <img src={movie.image} key={movie.title} alt={movie.title} />
+            <img src={movie.image} key={movie.image} alt={movie.title} />
           </div>
           <div className="main-right">
             <div className="right-box">

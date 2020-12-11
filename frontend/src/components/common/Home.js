@@ -11,7 +11,7 @@ class Home extends React.Component {
 
   async componentDidMount() {
     const response = await getAllMovies()
-    console.log(getAllMovies)
+    // console.log(getAllMovies)
     this.setState({
       movies: response.data
     })
@@ -39,7 +39,7 @@ class Home extends React.Component {
             <h1>MOST POPULAR</h1>
           </div>
           <div className="movie-row">       
-            { this.state.movies.map(movie => (
+            {this.state.movies.map(movie => (
               <MoviesCard key={movie.id} {...movie} />
             ))}
           </div>
@@ -47,7 +47,7 @@ class Home extends React.Component {
             <h1>COMEDIES</h1>
           </div>
           <div className="movie-row">       
-            { comedies.map(movie => (
+            {comedies.map(movie => (
               <MoviesCard key={movie.id} {...movie} />
             ))}
           </div>
@@ -55,7 +55,7 @@ class Home extends React.Component {
             <h1>THRILLERS</h1>
           </div>
           <div className="movie-row">       
-            { thrillers.map(movie => (
+            {thrillers.map(movie => (
               <MoviesCard key={movie.id} {...movie} />
             ))}
           </div>
@@ -63,7 +63,7 @@ class Home extends React.Component {
             <h1>ANIMATION / FAMILY</h1>
           </div>
           <div className="movie-row">       
-            { animation .map(movie => (
+            {animation.map(movie => (
               <MoviesCard key={movie.id} {...movie} />
             ))}
           </div>
