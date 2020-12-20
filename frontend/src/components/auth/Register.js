@@ -6,13 +6,13 @@ class Register extends React.Component {
     formData: {
       username: '',
       email: '',
-      first_name: '',
-      last_name: '',
+      firstName: '',
+      lastName: '',
       profileImage: '',
       password: '',
-      password_confirmation: ''
-    }
-
+      passwordConfirmation: ''
+    },
+    registerErrors: {}
   }
   // a function to take user input and update formdata
   handleChange = event => {
@@ -21,20 +21,32 @@ class Register extends React.Component {
       ...this.state.formData,
       [event.target.name]: event.target.value
     }
+
+    const registerErrors = {
+      ...this.state.registerErrors,
+      [event.target.name]: ''
+    }
     console.log(formData)
-    this.setState({ formData })
+    this.setState({ formData, registerErrors })
   }
 
   handleSubmit = async event => {
     event.preventDefault()
-    const response = await registerUser(this.state.formData)
-    console.log(response)
-    this.props.history.push('login')
+
+    try {
+      const response = await registerUser(this.state.formData)
+      console.log(response)
+      this.props.history.push('login')
+    } catch ( err ) {
+      console.log(err.response.data)
+      this.setState({ registerErrors: err.response.data })
+      return
+    }     
   }
 
 
   render() {
-    const { username, email, profileImage, first_name, last_name, password, password_confirmation } = this.state
+    const { username, email, profileImage, firstName, lastName, password, passwordConfirmation, registerErrors } = this.state
     return (
       <section className="section">
         <div className="container">
@@ -49,11 +61,12 @@ class Register extends React.Component {
                     name="username"
                     value={username}
                     onChange={this.handleChange}
+                    error={registerErrors.username}
                   />
                 </div>
+                { this.state.registerErrors.username && <p className="help is-danger">{registerErrors.username}</p> }
               </div>
               <div className="field">
-                {/* <label className="label">Email</label> */}
                 <div className="control">
                   <input
                     className="input"
@@ -65,31 +78,28 @@ class Register extends React.Component {
                 </div>
               </div>
               <div className="field">
-                {/* <label className="label">First Name</label> */}
                 <div className="control">
                   <input
                     className="input"
                     placeholder="First Name"
                     name="first_name" 
-                    value={first_name}
+                    value={firstName}
                     onChange={this.handleChange}
                   />
                 </div>
               </div>
               <div className="field">
-                {/* <label className="label">Last Name</label> */}
                 <div className="control">
                   <input
                     className="input"
                     placeholder="Last Name"
                     name="last_name"
-                    value={last_name}
+                    value={lastName}
                     onChange={this.handleChange}
                   />
                 </div>
               </div>
               <div className="field">
-                {/* <label className="label">Profile Image</label> */}
                 <div className="control">
                   <input
                     className="input"
@@ -101,7 +111,6 @@ class Register extends React.Component {
                 </div>
               </div>
               <div className="field">
-                {/* <label className="label">Password</label> */}
                 <div className="control">
                   <input
                     type="password"
@@ -114,14 +123,13 @@ class Register extends React.Component {
                 </div>
               </div>
               <div className="field">
-                {/* <label className="label">Password Confirmation</label> */}
                 <div className="control">
                   <input
                     type="password"
                     className="input"
                     placeholder="Password Confirmation"
                     name="password_confirmation"
-                    value={password_confirmation}
+                    value={passwordConfirmation}
                     onChange={this.handleChange}
                   />
                 </div>

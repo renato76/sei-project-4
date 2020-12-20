@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { getSingleMovie, deleteMovie } from '../../lib/api'
 import { createNewComment } from '../../lib/api'
+import { isAuthenticated } from '../../lib/auth'
 
 // import { FaThumbsUp, FaHeart } from 'react-icons/fa'
 
@@ -113,10 +114,10 @@ class MovieDetails extends React.Component {
                 <div className="favourite">
                   <FaHeart size="2em"/>
                 </div> */}
-                <div className="edit-buttons">
+                { isAuthenticated() && <div className="edit-buttons">
                   <Link to={`/movies/${movie.id}/edit`} className="button">Edit</Link>
                   <button onClick={this.handleDelete} className="button">Delete</button>
-                </div> 
+                </div> }
                 
               </div> 
             </div>
@@ -153,7 +154,7 @@ class MovieDetails extends React.Component {
                 <button type="submit" className="button is-fullwidth is-dark">Submit</button>
               </div>
             </form>
-          </div>
+          </div> 
           <div className="comments-right">
             <div className="comments-box">
               <div className="comments-title">
@@ -179,7 +180,7 @@ class MovieDetails extends React.Component {
                     </>
                   ))}
                 </div>              
-              </div>
+              </div> 
             </div>
           </div>
         </div> 

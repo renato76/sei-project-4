@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
+// import Notifications from 'react-notify-toast'
 
 import MovieDetails from './components/movies/MovieDetails'
 import MovieNew from './components/movies/MovieNew'
@@ -15,6 +16,7 @@ import Footer from './components/common/Footer'
 const App = ()  => {
   return (
     <BrowserRouter>
+      {/* s */}
       <Navbar />
       <Switch>
         <Route path="/movies/:id/edit" component={MovieEdit} />
