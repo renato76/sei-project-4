@@ -1,5 +1,6 @@
 import React from 'react'
 import { registerUser } from '../../lib/api'
+import { popupNotification } from '../../lib/notification'
 
 class Register extends React.Component {
   state = {
@@ -37,6 +38,7 @@ class Register extends React.Component {
       const response = await registerUser(this.state.formData)
       console.log(response)
       this.props.history.push('login')
+      popupNotification('Welcome, now please log in!')
     } catch ( err ) {
       console.log(err.response.data)
       this.setState({ registerErrors: err.response.data })
@@ -143,6 +145,5 @@ class Register extends React.Component {
       </section>
     )
   }
-
 }
 export default Register

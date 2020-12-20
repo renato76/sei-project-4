@@ -118,6 +118,20 @@
 // Movie details
 
 
+.details {
+  display: flex;
+  background-color: #08080a;  
+  height: auto;
+  padding-bottom: 8%;
+
+  h1 {
+    font-weight: bold;
+    color: white;
+    margin-left: 8%;
+  }
+}
+
+
 .right-box {
   background-color: #161616;
   margin-top: 50px;
@@ -139,19 +153,6 @@
     font-size: 14px;
     font-weight: bold;
     font-family: Quicksand;
-  }
-}
-
-.details {
-  display: flex;
-  background-color: #08080a;  
-  height: auto;
-  padding-bottom: 8%;
-
-  h1 {
-    font-weight: bold;
-    color: white;
-    margin-left: 8%;
   }
 }
 
@@ -226,26 +227,6 @@
   display: flex;
 }
 
-// .like {
-//   color: #009cc4;
-//   margin-left: 200px;
-// }
-// .like:hover {
-//   color: #17cffd;
-//   transition: 500ms;
-//   margin-left: 200px;
-// }
-
-// .favourite {
-//   color: #eeeeee;
-//   margin-left: 30px;
-// }
-// .favourite:hover {
-//   color: #f81515;
-//   margin-left: 30px;
-//   transition: 500ms;
-// }
-
 .trailer-parent {
   padding-left: 7.5%;
 }
@@ -262,8 +243,6 @@
     padding: 4%;
     width: 200px;
     border-radius: 12px;
-    // margin-left: 35%;
-
     transition: transform 500ms;
   }
   button:hover {
@@ -271,7 +250,6 @@
     transition: 500ms;
     border: 1px solid #03acd6;   
     border-radius: 12px;
-    // margin-left: 35%;
     transform: scale(1.03);
   }
 }

@@ -2,11 +2,13 @@ import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
 
 import { logout, isAuthenticated } from '../../lib/auth'
+import { popupNotification } from '../../lib/notification'
 
 const Navbar = () => {
 
   const handleLogOut = () => {
     // show a message to user to say goodbye or whatever
+    popupNotification('You have logged out!')
     logout()
   }
 

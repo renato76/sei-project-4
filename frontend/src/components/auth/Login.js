@@ -1,6 +1,7 @@
 import React from 'react'
 import { loginUser } from '../../lib/api'
 import { setToken } from '../../lib/auth'
+import { popupNotification } from '../../lib/notification'
 
 class Login extends React.Component {
   state = {
@@ -23,6 +24,7 @@ class Login extends React.Component {
   handleSubmit = async event => {
     event.preventDefault()
     const response = await loginUser(this.state.formData)
+    popupNotification(`${response.data.message}`)
     console.log(response)
     setToken(response.data.token)
     this.props.history.push('/')
