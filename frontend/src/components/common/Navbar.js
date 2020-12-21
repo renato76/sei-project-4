@@ -12,7 +12,6 @@ const Navbar = () => {
     logout()
   }
 
-
   return (
     <nav className="navbar is-transparent">
       <div className="container">

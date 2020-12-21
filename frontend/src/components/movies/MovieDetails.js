@@ -115,8 +115,8 @@ class MovieDetails extends React.Component {
                   <FaHeart size="2em"/>
                 </div> */}
                 { isAuthenticated() && <div className="edit-buttons">
-                  <Link to={`/movies/${movie.id}/edit`} className="button">Edit</Link>
-                  <button onClick={this.handleDelete} className="button">Delete</button>
+                  <Link to={`/movies/${movie.id}/edit`} id="edit" className="button">Edit</Link>
+                  <button onClick={this.handleDelete} id="delete" className="button">Delete</button>
                 </div> }
                 
               </div> 
