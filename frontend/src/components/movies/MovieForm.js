@@ -1,7 +1,7 @@
 import React from 'react'
 
 const MovieForm = props => {
-  const { handleChange, handleSubmit } = props
+  const { handleChange, handleSubmit, handleMultiSelect } = props
   const { title, image, description, starring, release, director, duration, age_rating, trailer } = props.formData
 
   return (
@@ -19,15 +19,25 @@ const MovieForm = props => {
             />
           </div>
         </div>
-        {/* <div className="select is-multiple">
+        { <div className="select is-multiple">
           <select multiple={true} size="14" onChange={handleMultiSelect}>
             <option name="1"value={1}>Comedy</option>
             <option name="2"value={2}>Action</option>
             <option name="3"value={3}>Thriller</option>
+            <option name="4"value={4}>Horror</option>
+            <option name="5"value={5}>Drama</option>
+            <option name="6"value={6}>Documentary</option>
+            <option name="7"value={7}>Crime</option>
+            <option name="8"value={8}>Animation</option>
+            <option name="9"value={9}>Family</option>
+            <option name="10"value={10}>Fantasy</option>
+            <option name="11"value={11}>Romance</option>
+            <option name="12"value={12}>Science Fiction</option>
+            <option name="13"value={13}>War</option>
+            <option name="14"value={14}>Western</option>
           </select>
-        </div> */}
+        </div> }
         <div className="field">
-          {/* <label className="label">Image</label> */}
           <div className="control">
             <input
               className="input"
@@ -40,7 +50,6 @@ const MovieForm = props => {
           </div>
         </div>
         <div className="field">
-          {/* <label className="label">Description</label> */}
           <div className="control">
             <textarea
               className="input"
@@ -53,7 +62,6 @@ const MovieForm = props => {
           </div>
         </div>
         <div className="field">
-          {/* <label className="label">Starring</label> */}
           <div className="control">
             <input
               className="input"
@@ -66,7 +74,6 @@ const MovieForm = props => {
           </div>
         </div>
         <div className="field">
-          {/* <label className="label">Release</label> */}
           <div className="control">
             <input
               className="input"
@@ -78,7 +85,6 @@ const MovieForm = props => {
           </div>
         </div>
         <div className="field">
-          {/* <label className="label">Director</label> */}
           <div className="control">
             <input
               className="input"
@@ -90,7 +96,6 @@ const MovieForm = props => {
           </div>
         </div>
         <div className="field">
-          {/* <label className="label">Duration</label> */}
           <div className="control">
             <input
               className="input"
@@ -102,7 +107,6 @@ const MovieForm = props => {
           </div>
         </div>
         <div className="field">
-          {/* <label className="label">Age Rating</label> */}
           <div className="control">
             <input
               className="input"
@@ -114,7 +118,6 @@ const MovieForm = props => {
           </div>
         </div>
         <div className="field">
-          {/* <label className="label">Trailer</label> */}
           <div className="control">
             <input
               className="input"

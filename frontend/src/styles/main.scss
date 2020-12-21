@@ -368,6 +368,21 @@
   }
 }
 
+// *** Create and Update a Movie Section ***
+
+.add-movie-section {
+  background-color: #1f1e1e;
+  height: auto;
+  padding: 50px;
+}
+
+.is-multiple {
+  font-size: 11px;
+}
+.input {
+  font-size: 12px;
+}
+
 
 // Laptops
 
@@ -476,7 +491,31 @@ and (max-width: 1280px) {
     margin-right: 30px;
   }
     
+}
+
+// Ipad 
+
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px) {
+
+  .navbar {
+    display: flex;
+    padding-left: 20px;
+  }
+  .navbar-end {
+    display: flex;
+    width: 10%;
+    height: 50px;
+    margin: 0;
+    position: relative;
+
+    
+  }
+  .logo {
+    width: 150px;
+  }
+
 
 
 }
-

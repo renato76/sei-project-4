@@ -2,6 +2,16 @@ import axios from 'axios'
 
 // MOVIES
 
+const getAuthHeaders = () => {
+  const token = localStorage.getItem('token')
+  const headers = {
+    headers: {
+      Authorization: `Bearer ${token}`
+    }
+  }
+  return headers;
+}
+
 // GET ALL MOVIES
 export const getAllMovies = () =>  {
   return axios.get('/api/movies/')
@@ -14,14 +24,16 @@ export const getSingleMovie = movieId => {
 
 // CREATE A MOVIE
 export const createMovie = formData => {
-  const token = localStorage.getItem('token')
-  const headers = {
-    headers: {
-      Authorization: `Bearer ${token}`
-    }
-  }
   // console.log(formData, headers)
-  return axios.post('/api/movies/', formData, headers)
+  return axios.post('/api/movies/', formData, getAuthHeaders())
+}
+
+// CREATE A LIKE
+export const createLike = movieId => {
+  console.log(`Liking move with ID ${movieId}`);
+  return axios.post(`/api/movies/${movieId}/likes`, {
+    headers: getAuthHeaders()
+  })
 }
 
 // UPDATE A MOVIE

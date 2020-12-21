@@ -66,7 +66,7 @@ class Register extends React.Component {
                     error={registerErrors.username}
                   />
                 </div>
-                { this.state.registerErrors.username && <p className="help is-danger">{registerErrors.username}</p> }
+                { registerErrors.username && <p className="help is-danger">{registerErrors.username}</p> }
               </div>
               <div className="field">
                 <div className="control">
