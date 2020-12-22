@@ -13,12 +13,14 @@ class NavBarContent extends React.Component  {
   }
 
   render() { 
-    return <div className="navbar-end">
-      { isAuthenticated() && <Link to="/movies/new" className="navbar-item">Add A Movie</Link> }
-      { !isAuthenticated() && <Link to="/register" className="navbar-item">Register</Link> }
-      { !isAuthenticated() && <Link to="/login" className="navbar-item">Login</Link> }
-      { isAuthenticated() && <Link to="/" onClick={this.handleLogOut} className="navbar-item">Logout</Link> }
-    </div>
+    return (
+      <div className="navbar-end">    
+        <Link to="/" className="navbar-item">Home</Link>  
+        { isAuthenticated() && <Link to="/movies/new" className="navbar-item">Add A Movie</Link> }
+        { !isAuthenticated() && <Link to="/register" className="navbar-item">Register</Link> }
+        { !isAuthenticated() && <Link to="/login" className="navbar-item">Login</Link> }
+        { isAuthenticated() && <Link to="/" onClick={this.handleLogOut} className="navbar-item">Logout</Link> }
+      </div> )
   }
 }
 

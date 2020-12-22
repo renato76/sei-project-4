@@ -1,10 +1,9 @@
-section,
+html,
 body {
-  text-align: center;
+  width: 100%;
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  width: 100%;
 }
 
 // *** Navbar ***
@@ -17,7 +16,7 @@ body {
 }
 
 .navbar-end {
-  margin-right: 15%;
+  padding-right: 15%;
 }
 
 .navbar-item {
@@ -149,7 +148,7 @@ body {
 .right-box {
   background-color: #161616;
   // background-color: #522323;
-  margin-top: 70px;
+  padding-top: 70px;
   margin-right: 90px;
   border-radius: 20px;
   padding-bottom: 50px;
@@ -210,6 +209,7 @@ body {
 .overview {
   h1 {
     margin-top: 30px;
+    text-align: left;
     font-size: 26px;
     font-weight: bold;
   }
@@ -218,10 +218,11 @@ body {
   color: white;
   padding: 2% 20% 2% 8%;
   flex-wrap: wrap;
-
+  text-align: left;
 }
 
 .cast {
+  text-align: left;
   display: flex;
   padding-top: 30px;
   padding-left: 8%;
@@ -484,7 +485,7 @@ and (max-width: 1280px) {
   .right-box {
     // background-color: #522323;
     // background-color: #161616;
-    margin-top: 80px;
+    // margin-top: 80px;
     margin-right: 90px;
     border-radius: 20px;
     height: 421px;
@@ -500,6 +501,7 @@ and (max-width: 1280px) {
     padding-top: 10px;
     padding-left: 8%;
     padding-bottom: 20px;
+    text-align: center;
   }
   .director {
     margin-right: 30px;
@@ -540,54 +542,70 @@ and (max-width: 1024px) {
 and (min-width: 414px)
 and (max-width: 736px) {
 
-  section,
-  body {
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
-    width: 100%;
+  .title {
+    position: relative;
+    h2 {
+      position:absolute;
+      top: 40%;
+      right: 30%;
+      color: white;
+      font-weight: bold;
+      background-color: #181818;
+      border-radius: 5px;
+      padding: 8px 25px;
+      font-size: 15px;
+    }
+    h2:hover {
+      background-color: #202020;
+    }
   }
 
   .logo {
     width: 150px;
+    padding: 5px 0;
+    margin: 5px 0;
+    }
+
+  .navbar-item:hover {
+    background-color: black;
   }
 
-  /* Position and sizing of burger button */
-.bm-burger-button {
-  position: fixed;
-  width: 36px;
-  height: 30px;
-  right: 36px;
-  top: 46px;
-}
+    /* Position and sizing of burger button */
+  .bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    right: 36px;
+    top: 12px;
+  }
 
-/* Color/shape of burger icon bars */
-.bm-burger-bars {
-  background: #373a47;
-}
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: #373a47;
+  }
 
-/* Color/shape of burger icon bars on hover*/
-.bm-burger-bars-hover {
-  background: #a90000;
-}
+  /* Color/shape of burger icon bars on hover*/
+  .bm-burger-bars-hover {
+    // background: #a90000;
+    background: #009cc4;
+  }
 
-/* Position and sizing of clickable cross button */
-.bm-cross-button {
-  height: 24px;
-  width: 24px;
-}
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
 
-/* Color/shape of close button cross */
-.bm-cross {
-  background: #bdc3c7;
-}
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #bdc3c7;
+  }
 
 
 
   .row-poster {
     object-fit: contain;
-    width: 150px;
+    width: 160px;
     transition: transform 500ms;
     margin-right: 15px;
     img {
@@ -600,7 +618,7 @@ and (max-width: 736px) {
       max-width: 350px;
       border-radius: 10px;
     }
-    padding: 30px;
+    padding: 30px 30px 20px 30px;
     margin: 0;
   }
   .details {
@@ -664,7 +682,8 @@ and (max-width: 736px) {
     padding: 10% 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    text-align: center;
     h4 {
   
       font-size: 15px;
