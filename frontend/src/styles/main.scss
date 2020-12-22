@@ -395,10 +395,6 @@
 @media only screen
 and (min-width: 1025px)
 and (max-width: 1280px) {
-
-.navbar-end {
-    margin-right: 15%;
-  }
   
 .poster-view img {
   max-width: 280px;
@@ -521,9 +517,11 @@ and (max-width: 1024px) {
   .logo {
     width: 150px;
   }
-  // .navbar-item {
-  //   display: none;
-  // }
+  .navbar-end {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
 
 }
 
