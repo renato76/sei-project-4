@@ -24,6 +24,10 @@
   color: white;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 // *** Home Page *** 
 
 // Movie rows
@@ -285,13 +289,14 @@
   background-color: #202020;
   display: flex;
   padding-bottom: 100px;
+  padding-right: 8%;
 }
 
 .comments-left {
   margin-left: 90px;
   margin-top: 60px;
   padding: 0 10px;
-  width: 35%;
+  flex-grow: 1;
   h2 {
     
     padding: 20px 0;
@@ -312,7 +317,7 @@
   overflow-y: scroll;
   overflow-x: hidden;
   border-radius: 20px;
-  width: 50%;
+  flex-grow: 2;
   padding: 20px;
   background-color: white;
   margin-top: 60px;
@@ -494,7 +499,32 @@ and (max-width: 1280px) {
   .director {
     margin-right: 30px;
   }
+  .comments-right {
+    width: 500px;
+  }
     
+}
+
+// Tablet
+
+@media only screen
+and (min-width: 736px)
+and (max-width: 1024px) {
+  section,
+  body {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
+  }
+  .logo {
+    width: 150px;
+  }
+  // .navbar-item {
+  //   display: none;
+  // }
+
 }
 
 // Mobile
@@ -516,10 +546,9 @@ and (max-width: 736px) {
     width: 150px;
   }
 
-  .navbar {
+  .navbar-item {
     display: none;
   }
-
 
   .row-poster {
     object-fit: contain;
@@ -533,7 +562,7 @@ and (max-width: 736px) {
 
   .poster-view {
     img {
-      max-width: 300px;
+      max-width: 350px;
       border-radius: 10px;
     }
     padding: 30px;
@@ -549,7 +578,7 @@ and (max-width: 736px) {
     h1 {
       font-size: 21px;
       text-align: center;
-      padding: 20px 0 10px 40px;
+      padding: 5% 10%;
       margin: 0;
       text-align: left;
     }
@@ -565,25 +594,31 @@ and (max-width: 736px) {
   }
 
   .movie-title {
-    padding: 0 8%;
+    margin: 0;
     display: flex;
+    justify-content: center;
     h1 {
       color: white;
-      padding: 0 5px 0 5px;
+      padding: 0;
+      margin: 0;
       font-weight: bold;
-      font-size: 21px;
+      font-size: 25px;
     }
     h2 {
       color: white;
       padding: 0;
-      font-size: 21px;
+      font-size: 25px;
     }
     
   }
   .movie-info {
-    padding: 3% 8%;
+    justify-content: center;
+    padding: 3% 0;
+    margin: 0;
+    
     h3, h4 {
       font-size: 14px;
+      text-align: center;
     }
   }
   .description {
@@ -591,13 +626,27 @@ and (max-width: 736px) {
   }
 
   .cast {
-    padding: 8%;
+    padding: 10% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     h4 {
-      font-size: 14px;
+  
+      font-size: 15px;
+      padding-bottom: 20px;
     }
-    h5 {
-      font-size: 12px;
+    h5 { 
+      font-size: 13px;
     }
+    .director {
+      margin: 0;
+    }
+  }
+
+  .trailer-parent {
+    padding: 0;
+    margin: 0;
+    justify-content: center;
   }
 
   .trailer {
@@ -610,8 +659,13 @@ and (max-width: 736px) {
     }
   }
   .edit-buttons {
-    margin-left: 20px;
+    margin-left: 10%;
     .button {
+      width: 80px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    .button:hover {
       width: 80px;
       border-radius: 5px;
       font-size: 14px;
@@ -627,6 +681,189 @@ and (max-width: 736px) {
 
   }
 
-
-
+  .next-page {
+    flex-direction: column;
+    padding: 4%;
+  }
+  .comments-left {
+    width: 100%;
+    padding: 4%;
+    margin: 0;
+  }
+  .review-column {
+    margin: 0;
+  }
+  .comments-right {
+    padding: 1%;
+    margin: 4%;
+  }
 }
+
+@media only screen
+and (min-width: 320px)
+and (max-width: 413px){
+  section,
+  body {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  // .navbar-item {
+  //   display: none;
+  // }
+
+  .row-poster {
+    object-fit: contain;
+    width: 140px;
+    transition: transform 500ms;
+    margin-right: 15px;
+    img {
+      border-radius: 6px;
+    }  
+  }
+
+  .poster-view {
+    img {
+      max-width: 260px;
+      border-radius: 10px;
+    }
+    padding: 30px;
+    margin: 0;
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .overview {
+    h1 {
+      font-size: 21px;
+      text-align: center;
+      padding: 5% 10%;
+      margin: 0;
+      text-align: left;
+    }
+    h2 {
+      text-align: left;
+    }
+  }
+
+  .right-box {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  }
+
+  .movie-title {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    h1 {
+      color: white;
+      padding: 0;
+      margin: 0;
+      font-weight: bold;
+      font-size: 25px;
+    }
+    h2 {
+      color: white;
+      padding: 0;
+      font-size: 25px;
+    }
+    
+  }
+  .movie-info {
+    justify-content: center;
+    padding: 3% 0;
+    margin: 0;
+    
+    h3, h4 {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+  .description {
+    padding: 0 10%;
+  }
+
+  .cast {
+    padding: 10% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h4 {
+  
+      font-size: 15px;
+      padding-bottom: 20px;
+    }
+    h5 { 
+      font-size: 13px;
+    }
+    .director {
+      margin: 0;
+    }
+  }
+
+  .trailer-parent {
+    padding: 0;
+    margin: 0 10%;
+  }
+
+  .trailer {
+    button {
+      width: 140px;
+      border-radius: 5px;
+    }
+    a {
+      font-size: 18px;
+    }
+  }
+  .edit-buttons {
+    margin-left: 10%;
+    .button {
+      width: 70px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    .button:hover {
+      width: 70px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    #edit {
+      background-color: #079475;
+      border: none;
+    }
+    #delete {
+      background-color: #af006c;
+      border: none;
+    }
+
+  }
+
+  .next-page {
+    flex-direction: column;
+    padding: 4%;
+  }
+  .comments-left {
+    width: 100%;
+    padding: 4%;
+    margin: 0;
+  }
+  .review-column {
+    margin: 0;
+  }
+  .comments-right {
+    padding: 1%;
+    margin: 4%;
+  }
+}
+
