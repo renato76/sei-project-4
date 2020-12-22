@@ -1,28 +1,24 @@
-import React, { useState } from 'react'
-import { Link, withRouter } from 'react-router-dom'
-import { logout, isAuthenticated } from '../../lib/auth'
+import React from 'react'
+import { slide as Menu } from 'react-burger-menu'
+import NavBarContent from './NavbarContent'
+import { FaCross } from 'react-icons/fa'
 
 // create a function that does something when you click the burger menu
 // like open up and display a list of links
 // and turns into X to close the menu / toggle feature
 
 
+class MobileNav extends React.Component {
+  // navbar() {
+  // }
 
-
-const MobileNav = () => {
-  return (
-    <div className="navbar-brand">
-      <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-
-    
-
-  )
+  render() {
+    return <Menu>
+      <div className="mobile-nav">
+        <NavBarContent />
+      </div>
+    </Menu>
+  }
 }
 
-
-export default withRouter(MobileNav)
+export default MobileNav
