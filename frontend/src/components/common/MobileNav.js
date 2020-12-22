@@ -1,7 +1,7 @@
 import React from 'react'
 import { slide as Menu } from 'react-burger-menu'
 import NavBarContent from './NavbarContent'
-import { FaCross } from 'react-icons/fa'
+// import { FaCross } from 'react-icons/fa'
 
 // create a function that does something when you click the burger menu
 // like open up and display a list of links
