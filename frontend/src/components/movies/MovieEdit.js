@@ -7,7 +7,7 @@ class MovieEdit extends React.Component {
     formData: {
       title: '',
       image: '',
-      genre: [1],
+      genre: [],
       description: '',
       starring: '',
       release: '',
@@ -32,6 +32,22 @@ class MovieEdit extends React.Component {
       formData: response.data
     })
   }
+  handleMultiSelect = event => {
+    // push the selected values into that array
+    const selectedIds =  Array.from(event.target.selectedOptions).map((o) => Number(o.value))
+    console.log(selectedIds)
+
+    // now open up formdata and set genres to this array's values
+    const formData = {
+      ...this.state.formData,
+      genre: selectedIds
+    }
+
+    // and set state of formdata
+    this.setState({ formData })
+    console.log(formData)
+    
+  }
 
   handleChange = event => {
 
@@ -47,9 +63,9 @@ class MovieEdit extends React.Component {
 
   handleSubmit = async event => {
     event.preventDefault() 
-    const genreItems = this.state.formData.genre.map(genre => genre.id)
-    console.log(genreItems)
-    this.state.formData.genre = genreItems
+    // const genreItems = this.state.formData.genre.map(genre => genre.id)
+    // console.log(genreItems)
+    // this.state.formData.genre = genreItems
 
     const userId = this.state.formData.user
     console.log(userId)
@@ -78,6 +94,7 @@ class MovieEdit extends React.Component {
           <MovieForm 
             handleChange={this.handleChange}
             handleSubmit={this.handleSubmit}
+            handleMultiSelect={this.handleMultiSelect}
             formData={this.state.formData}/>
         </div>
       </section>
