@@ -44,6 +44,7 @@ body {
   display: flex;
   overflow-y: hidden;
   overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
   padding: 25px 5px;
   margin-bottom: 20px;
   margin-left: 50px;
@@ -547,6 +548,20 @@ and (max-width: 1024px) {
     height: 50px;
     margin-left: 50px;
   }
+
+  .movie-row{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    padding: 25px 5px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .movie-row::-webkit-scrollbar {
+    display: none;
+  }
   /* Position and sizing of burger button */
   .bm-burger-button {
     position: fixed;
@@ -592,7 +607,7 @@ and (max-width: 1024px) {
     object-fit: contain;
     width: 200px;
     transition: transform 500ms;
-    margin-right: 10px;
+    margin-right: 13px;
     img {
       border-radius: 6px;
     }  
