@@ -515,32 +515,246 @@ and (max-width: 1280px) {
 // Tablet
 
 @media only screen
-and (min-width: 736px)
+and (min-width: 768px)
 and (max-width: 1024px) {
   section,
   body {
-    text-align: center;
     padding: 0;
     margin: 0;
     overflow-x: hidden;
     width: 100%;
   }
+
+  .title {
+    position: relative;
+    h2 {
+      position:absolute;
+      top: 50%;
+      right:38%;
+      color: white;
+      font-weight: bold;
+      background-color: #181818;
+      border-radius: 5px;
+      padding: 8px 25px;
+      font-size: 15px;
+    }
+    h2:hover {
+      background-color: #202020;
+    }
+  }
   .logo {
     width: 150px;
+    height: 50px;
+    margin-left: 50px;
   }
-  .navbar-end {
-    margin: 0;
-    padding: 0;
-    display: flex;
+  /* Position and sizing of burger button */
+  .bm-burger-button {
+    position: fixed;
+    width: 30px;
+    height: 25px;
+    right: 15px;
+    top: 10px;
   }
 
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: #373a47;
+  }
+
+  /* Color/shape of burger icon bars on hover*/
+  .bm-burger-bars-hover {
+    // background: #a90000;
+    background: #009cc4;
+  }
+
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #bdc3c7;
+  }
+
+  .movie-row{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 10px 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .row-poster {
+    object-fit: contain;
+    width: 200px;
+    transition: transform 500ms;
+    margin-right: 10px;
+    img {
+      border-radius: 6px;
+    }  
+  }
+
+  .home-titles {
+    h1 {
+      font-size: 14px;
+      font-weight: bold;
+      color: white;
+      margin-left: 18px;
+      margin-top: 2px;
+    }
+  }
+
+  .poster-view {
+    img {
+      max-width: 280px;
+      border-radius: 10px;
+    }
+    padding: 30px 10px 10px 25px;
+    margin: 0;
+  }
+  .details {
+    display: flex;
+    text-align: center;
+  }
+
+  .overview {
+    h1 {
+      font-size: 21px;
+      padding: 2% 3%;
+      margin: 0;
+      text-align: left;
+    }
+    h2 {
+      text-align: left;
+      padding-right: 5%;
+    }
+  }
+  .right-box {
+    margin: 23px 0;
+    padding: 0;
+    height: auto;
+    }
+  
+    .movie-title {
+      margin: 0 3%;
+
+      h1 {
+        color: white;
+        padding: 0;
+        margin: 0;
+        font-weight: bold;
+        font-size: 25px;
+      }
+      h2 {
+        color: white;
+        padding: 0;
+        font-size: 25px;
+      }
+      
+    }
+    .movie-info {
+      justify-content: start;
+      padding: 3% 0;
+      margin: 0 3%;
+      
+      h3, h4 {
+        font-size: 14px;
+        text-align: left;
+      }
+    }
+    .description {
+      padding: 0 3%;
+    }
+  
+    .cast {
+      padding: 5% 3% 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: start;
+      h4 {
+    
+        font-size: 15px;
+        padding-bottom: 20px;
+      }
+      h5 { 
+        font-size: 13px;
+      }
+      .director {
+        margin: 0;
+      }
+    }
+  
+    .trailer-parent {
+      padding: 0;
+      margin-left: 3%;
+    }
+  
+    .trailer {
+      button {
+        width: 120px;
+        border-radius: 5px;
+      }
+      a {
+        font-size: 18px;
+      }
+    }
+    .edit-buttons {
+      margin-left: 10%;
+      .button {
+        width: 80px;
+        border-radius: 5px;
+        font-size: 13px;
+      }
+      .button:hover {
+        width: 80px;
+        border-radius: 5px;
+        font-size: 13px;
+      }
+      #edit {
+        background-color: #079475;
+        border: none;
+      }
+      #delete {
+        background-color: #af006c;
+        border: none;
+      }
+  
+    }
+  
+    .next-page {
+      flex-direction: column;
+      padding: 4%;
+    }
+    .comments-left {
+      width: 100%;
+      padding: 4%;
+      margin: 0;
+    }
+    .review-column {
+      margin: 0;
+    }
+    .comments-right {
+      padding: 1%;
+      margin: 4%;
+    }
+  
+
 }
+
+
+
 
 // Mobile
 
 @media only screen
 and (min-width: 414px)
-and (max-width: 736px) {
+and (max-width: 812px)
+and (-webkit-min-device-pixel-ratio: 3) {
 
   .title {
     position: relative;
@@ -601,16 +815,34 @@ and (max-width: 736px) {
     background: #bdc3c7;
   }
 
-
+  .movie-row{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 10px 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
   .row-poster {
     object-fit: contain;
     width: 160px;
     transition: transform 500ms;
-    margin-right: 15px;
+    margin-right: 10px;
     img {
       border-radius: 6px;
     }  
+  }
+
+  .home-titles {
+    h1 {
+      font-size: 14px;
+      font-weight: bold;
+      color: white;
+      margin-left: 18px;
+      margin-top: 2px;
+    }
   }
 
   .poster-view {
@@ -767,11 +999,65 @@ and (max-width: 413px){
 
   .logo {
     width: 150px;
+    height: 60px;
   }
+  .movie-row{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 10px 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+
+
+  .row-poster {
+    object-fit: contain;
+    width: 160px;
+    transition: transform 500ms;
+    margin-right: 10px;
+    img {
+      border-radius: 6px;
+    }  
+  }
+
+     /* Position and sizing of burger button */
+    .bm-burger-button {
+      position: fixed;
+      width: 36px;
+      height: 27px;
+      right: 36px;
+      top: 12px;
+    }
+  
+    /* Color/shape of burger icon bars */
+    .bm-burger-bars {
+      background: #373a47;
+    }
+  
+    /* Color/shape of burger icon bars on hover*/
+    .bm-burger-bars-hover {
+      // background: #a90000;
+      background: #009cc4;
+    }
+  
+    /* Position and sizing of clickable cross button */
+    .bm-cross-button {
+      height: 24px;
+      width: 24px;
+    }
+  
+    /* Color/shape of close button cross */
+    .bm-cross {
+      background: #bdc3c7;
+    }
 
   // .navbar-item {
   //   display: none;
   // }
+  
 
   .row-poster {
     object-fit: contain;
