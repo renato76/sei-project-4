@@ -25,12 +25,29 @@ body {
   background-color: #202020;
   display: flex;
 }
-
-.navbar:hover {
-  background-color: #202020;
-  font-weight: bold;
-  color: white;
+a.navbar-item:hover {
+  color: ç;
 }
+a.navbar-item:active {
+  color: #009cc4;
+}
+
+
+a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, .navbar-link.is-active {
+  background-color: #202020;
+  color: #009cc4;
+}
+
+// .navbar-item a:hover {
+//   background-color: #202020;
+// }
+
+// .navbar:hover {
+//   background-color: #202020;
+//   font-weight: bold;
+//   color: white;
+// }
+
 
 // .mobile-nav {
 //   display: none;
@@ -543,11 +560,20 @@ and (max-width: 1024px) {
       background-color: #202020;
     }
   }
+
   .logo {
     width: 150px;
-    height: 50px;
-    margin-left: 50px;
+    padding: 5px 0;
+    margin: 15px 25px;
+    }
+  .logo:active {
+    background-color: #202020;
   }
+
+
+  .mobile-navbar {
+    background-color: #202020;
+}
 
   .movie-row{
     display: flex;
@@ -791,20 +817,24 @@ and (max-width: 812px) {
   .logo {
     width: 150px;
     padding: 5px 0;
-    margin: 5px 0;
+    margin: 15px 25px;
     }
-
-  .navbar-item:hover {
-    background-color: black;
+  .logo:active {
+    background-color: #202020;
   }
+
+
+  .mobile-navbar {
+    background-color: #202020;
+}
 
     /* Position and sizing of burger button */
   .bm-burger-button {
     position: fixed;
-    width: 36px;
+    width: 35px;
     height: 30px;
-    right: 36px;
-    top: 12px;
+    right: 16px;
+    top: 16px;
   }
 
   /* Color/shape of burger icon bars */
@@ -1011,10 +1041,6 @@ and (max-width: 413px){
     width: 100%;
   }
 
-  .logo {
-    width: 150px;
-    height: 60px;
-  }
   .movie-row{
     display: flex;
     overflow-y: hidden;
@@ -1025,7 +1051,19 @@ and (max-width: 413px){
     margin-right: 10px;
   }
 
+  .logo {
+    width: 130px;
+    padding: 5px 0;
+    margin: 15px 25px;
+    }
+  .logo:active {
+    background-color: #202020;
+  }
 
+
+  .mobile-navbar {
+    background-color: #202020;
+}
 
   .row-poster {
     object-fit: contain;
