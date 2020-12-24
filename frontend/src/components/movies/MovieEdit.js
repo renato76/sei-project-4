@@ -89,7 +89,7 @@ class MovieEdit extends React.Component {
   render()  {
 
     return (
-      <section className="section">
+      <section className="add-movie-section">
         <div className="container">
           <MovieForm 
             handleChange={this.handleChange}

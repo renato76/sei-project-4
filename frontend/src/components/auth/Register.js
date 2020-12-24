@@ -58,7 +58,7 @@ class Register extends React.Component {
                 <label className="label">Register</label>
                 <div className="control">
                   <input
-                    className="input"
+                    className={`input ${registerErrors.username ? 'is-danger' : ''}`}
                     placeholder="Username"
                     name="username"
                     value={username}
@@ -71,70 +71,82 @@ class Register extends React.Component {
               <div className="field">
                 <div className="control">
                   <input
-                    className="input"
+                    className={`input ${registerErrors.email ? 'is-danger' : ''}`}
                     placeholder="Email"
                     name="email" 
                     value={email}
                     onChange={this.handleChange}
+                    error={registerErrors.email}
                   />
                 </div>
+                { registerErrors.email && <p className="help is-danger">{registerErrors.email}</p> }
               </div>
               <div className="field">
                 <div className="control">
                   <input
-                    className="input"
+                    className={`input ${registerErrors.first_name ? 'is-danger' : ''}`}
                     placeholder="First Name"
                     name="first_name" 
                     value={firstName}
                     onChange={this.handleChange}
+                    error={registerErrors.first_name}
                   />
                 </div>
+                { registerErrors.first_name && <p className="help is-danger">{registerErrors.first_name}</p> }
               </div>
               <div className="field">
                 <div className="control">
                   <input
-                    className="input"
+                    className={`input ${registerErrors.last_name ? 'is-danger' : ''}`}
                     placeholder="Last Name"
                     name="last_name"
                     value={lastName}
                     onChange={this.handleChange}
+                    error={registerErrors.last_name}
                   />
                 </div>
+                { registerErrors.last_name && <p className="help is-danger">{registerErrors.last_name}</p> }
               </div>
               <div className="field">
                 <div className="control">
                   <input
-                    className="input"
+                    className={`input ${registerErrors.profile_image ? 'is-danger' : ''}`}
                     placeholder="Profile Image URL"
                     name="profile_image" 
                     value={profileImage}
                     onChange={this.handleChange}
+                    error={registerErrors.profile_image}
                   />
                 </div>
+                { registerErrors.profile_image && <p className="help is-danger">{registerErrors.profile_image}</p> }
               </div>
               <div className="field">
                 <div className="control">
                   <input
                     type="password"
-                    className="input"
+                    className={`input ${registerErrors.password ? 'is-danger' : ''}`}
                     placeholder="Password"
                     name="password" 
                     value={password}
                     onChange={this.handleChange}
+                    error={registerErrors.password}
                   />
                 </div>
+                { registerErrors.password && <p className="help is-danger">{registerErrors.password}</p> }
               </div>
               <div className="field">
                 <div className="control">
                   <input
                     type="password"
-                    className="input"
+                    className={`input ${registerErrors.password_confirmation ? 'is-danger' : ''}`}
                     placeholder="Password Confirmation"
                     name="password_confirmation"
                     value={passwordConfirmation}
                     onChange={this.handleChange}
+                    error={registerErrors.password_confirmation}
                   />
                 </div>
+                { registerErrors.password_confirmation && <p className="help is-danger">{registerErrors.password_confirmation}</p> }
               </div>
               <div className="field">
                 <button type="submit" className="button is-fullwidth">Register</button>
