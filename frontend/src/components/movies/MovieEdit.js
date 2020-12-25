@@ -27,10 +27,11 @@ class MovieEdit extends React.Component {
 
     const movieId = this.props.match.params.id
     const response = await getSingleMovie(movieId)
-    // console.log(response)
+    console.log(response.data)
     this.setState({
       formData: response.data
     })
+    
   }
   handleMultiSelect = event => {
     // push the selected values into that array
@@ -63,6 +64,7 @@ class MovieEdit extends React.Component {
 
   handleSubmit = async event => {
     event.preventDefault() 
+    
     // const genreItems = this.state.formData.genre.map(genre => genre.id)
     // console.log(genreItems)
     // this.state.formData.genre = genreItems

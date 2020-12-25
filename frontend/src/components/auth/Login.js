@@ -23,11 +23,15 @@ class Login extends React.Component {
 
   handleSubmit = async event => {
     event.preventDefault()
-    const response = await loginUser(this.state.formData)
-    popupNotification(`${response.data.message}`)
-    console.log(response)
-    setToken(response.data.token)
-    this.props.history.push('/')
+    try {
+      const response = await loginUser(this.state.formData)
+      popupNotification(`${response.data.message}`)
+      console.log(response)
+      setToken(response.data.token)
+      this.props.history.push('/')
+    } catch ( err ) {
+      popupNotification('Invalid email or pasword')
+    }
   } 
 
   render() {

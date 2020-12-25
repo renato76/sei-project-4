@@ -16,7 +16,7 @@ body {
 }
 
 .navbar-end {
-  padding-right: 15%;
+  padding-right: 5%;
 }
 
 .navbar-item {
@@ -384,6 +384,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 }
 
 .field {
+
   button {
     background-color: #009cc4;
     border: 1px solid #009cc4;
@@ -399,6 +400,10 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     color: white;
     font-weight: bold;
     transition: transform 900ms;
+  }
+  .input {
+    height: 32px;
+
   }
 }
 

@@ -11,13 +11,13 @@ export const getToken = ()  => {
 }
 
 export const getPayLoad = () => {
-  console.log('getting payload')
+  // console.log('getting payload')
   const token = getToken()
   if (!token) return false
 
   const parts = token.split('.')
   if (parts.length < 3) return false
-  console.log(parts)
+  // console.log(parts)
 
   return JSON.parse(atob(parts[1]))
 
@@ -28,6 +28,6 @@ export const isAuthenticated = () => {
 
   if (!payload) return false
   const now = Math.floor(Date.now() / 1000)
-  console.log(now, payload.exp)
+  // console.log(now, payload.exp)
   return now < payload.exp
 }

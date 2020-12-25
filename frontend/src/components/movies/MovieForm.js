@@ -20,7 +20,7 @@ const MovieForm = props => {
           </div>
         </div>
         { <div className="select is-multiple">
-          <label className="label">Select 1-3 Genres</label>
+          <label className="label">Select 1 or more genres</label>
           <select multiple={true} size="14" onChange={handleMultiSelect}>           
             <option name="1"value={1}>Comedy</option>
             <option name="2"value={2}>Action</option>
