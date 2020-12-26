@@ -6,6 +6,14 @@ body {
   overflow-x: hidden;
 }
 
+.like {
+  color: #02a4cc;
+  margin-left: 10%;
+}
+.favourite {
+  color: red;
+}
+
 // *** Navbar ***
 
 .navbar {
@@ -289,7 +297,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 
 .edit-buttons {
   display: flex;
-  margin-left: 25%;
+  margin-left: 10%;
   
   .button {
     background-color: #009cc4;
@@ -344,7 +352,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 .comments-right {
   overflow-y: scroll;
   overflow-x: hidden;
-  border-radius: 20px;
+  border-radius: 12px;
   flex-grow: 2;
   padding: 20px;
   background-color: white;
@@ -352,7 +360,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 }
 
 .review-column {
-  border-radius: 20px;
+  border-radius: 12px;
   margin-right: 20px;
 }
 
@@ -389,7 +397,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     background-color: #009cc4;
     border: 1px solid #009cc4;
     padding: 10px;
-    border-radius: 12px;
+    border-radius: 8px;
     color: white;
     font-weight: bold;
   }
@@ -401,10 +409,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     font-weight: bold;
     transition: transform 900ms;
   }
-  .input {
-    height: 32px;
 
-  }
 }
 
 // *** Create and Update a Movie Section ***
@@ -416,11 +421,17 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 }
 
 .is-multiple {
-  font-size: 11px;
+  font-size: 15px;
 }
 .input {
   font-size: 15px;
 }
+.multiple {
+  margin-bottom: 30px;
+  padding: 20px 100px;
+  width: 500px;
+}
+
 
 
 // Laptops
@@ -838,7 +849,7 @@ and (max-width: 812px) {
     position: fixed;
     width: 35px;
     height: 30px;
-    right: 16px;
+    right: 30px;
     top: 16px;
   }
 
@@ -896,10 +907,10 @@ and (max-width: 812px) {
 
   .poster-view {
     img {
-      max-width: 350px;
+      max-width: 370px;
       border-radius: 10px;
     }
-    padding: 30px 30px 20px 30px;
+    padding: 30px 20px 20px 20px;
     margin: 0;
   }
   .details {
@@ -1032,6 +1043,10 @@ and (max-width: 812px) {
     padding: 1%;
     margin: 4%;
   }
+  .add-movie-section {
+    padding: 50px 20px;
+  }
+
 }
 
 @media only screen

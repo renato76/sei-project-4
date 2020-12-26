@@ -28,9 +28,20 @@ class MovieEdit extends React.Component {
     const movieId = this.props.match.params.id
     const response = await getSingleMovie(movieId)
     console.log(response.data)
+    
     this.setState({
       formData: response.data
     })
+    console.log(response.data.genre)
+
+    // Basically the error said expected PK received a dict, 
+    // so the console.log shows an object with arrays inside
+    // needed to extract just the ids from the object and save them to the genres array in state
+
+    const genres = response.data.genre.map(genre => genre.id)
+    console.log(genres)
+
+    this.state.formData.genre = genres
     
   }
   handleMultiSelect = event => {
@@ -70,11 +81,11 @@ class MovieEdit extends React.Component {
     // this.state.formData.genre = genreItems
 
     const userId = this.state.formData.user
-    console.log(userId)
+    // console.log(userId)
     this.state.formData.user = userId.id
 
     const likedBy = this.state.formData
-    console.log(likedBy)
+    // console.log(likedBy)
     this.state.formData.liked_by = likedBy.value
 
     const movieId = this.props.match.params.id
@@ -86,7 +97,6 @@ class MovieEdit extends React.Component {
     this.props.history.push(`/movies/${movieId}`)
 
   }
-
 
   render()  {
 

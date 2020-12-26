@@ -12,7 +12,9 @@ class MovieDetails extends React.Component {
     formdata: {
       text: '',
       rating: ''
-    }
+    },
+    liked_by: [],
+    count: 0
   }
 
   async componentDidMount() {    
@@ -59,6 +61,14 @@ class MovieDetails extends React.Component {
     console.log(response)
     this.props.history.push('/')
   }
+
+  // addLike = () => {
+  //   console.log('added a like')
+  //   const newCount = this.state.count + 1
+  //   this.setState({
+  //     count: newCount
+  //   })
+  // }
 
   render() {
     const { movie, text, rating } = this.state
@@ -109,9 +119,9 @@ class MovieDetails extends React.Component {
                 </div>  
                 {/* <div className="like">
                   <FaThumbsUp size="2em" onClick={this.addLike} />
-                  <h5>Likes: {this.state.likes}</h5>
-                </div>
-                <div className="favourite">
+                  <h5>Likes: {this.state.liked_by.map(user => user.length)}</h5>
+                </div> */}
+                {/* <div className="favourite">
                   <FaHeart size="2em"/>
                 </div> */}
                 { isAuthenticated() && <div className="edit-buttons">
@@ -150,7 +160,7 @@ class MovieDetails extends React.Component {
                 </div>
               </div>
               <div className="field">
-                <button type="submit" className="button is-fullwidth is-dark">Submit</button>
+                <button type="submit" className="button is-fullwidth">Submit</button>
               </div>
             </form>
           </div> 

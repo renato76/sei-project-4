@@ -19,7 +19,6 @@ class MovieNew extends React.Component {
     }
   }
 
-
   handleMultiSelect = event => {
     // push the selected values into that array
     const selectedIds =  Array.from(event.target.selectedOptions).map((o) => Number(o.value))
@@ -49,6 +48,9 @@ class MovieNew extends React.Component {
 
   handleSubmit = async event => {
     event.preventDefault() 
+    // const genreItems = this.state.formData.genre.map(genre => genre.id)
+    // console.log(genreItems)
+    // this.state.formData.genre = genreItems
     // post to /movies via the api axios request
     const response = await createMovie(this.state.formData)
     console.log(response)
