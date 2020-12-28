@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { getSingleMovie, deleteMovie } from '../../lib/api'
-import { createNewComment } from '../../lib/api'
+import { createNewComment, addToWatchlist } from '../../lib/api'
 import { isAuthenticated } from '../../lib/auth'
 
-// import { FaThumbsUp, FaHeart } from 'react-icons/fa'
+import { FaHeart } from 'react-icons/fa'
 
 class MovieDetails extends React.Component {
   state = {
@@ -14,7 +14,7 @@ class MovieDetails extends React.Component {
       rating: ''
     },
     liked_by: [],
-    count: 0
+    watchlist: []
   }
 
   async componentDidMount() {    
@@ -62,13 +62,19 @@ class MovieDetails extends React.Component {
     this.props.history.push('/')
   }
 
-  // addLike = () => {
-  //   console.log('added a like')
-  //   const newCount = this.state.count + 1
-  //   this.setState({
-  //     count: newCount
-  //   })
-  // }
+  // create a function that handles click on like
+  handleWatchlist = async () => {
+    // console.log('I am being clicked')
+    const movieId = this.props.match.params.id
+    // const response = createLike(movieId)
+    await addToWatchlist(movieId)
+    // console.log(response)
+    // now need to add this movie to the watchlist array
+
+  }
+
+
+
 
   render() {
     const { movie, text, rating } = this.state
@@ -117,10 +123,10 @@ class MovieDetails extends React.Component {
                 <div className="trailer">      
                   <button className="button"><a href={movie.trailer}>Play Trailer</a></button>
                 </div>  
-                {/* <div className="like">
-                  <FaThumbsUp size="2em" onClick={this.addLike} />
-                  <h5>Likes: {this.state.liked_by.map(user => user.length)}</h5>
-                </div> */}
+                <div className="like">
+                  <FaHeart size="1.6em" onClick={this.handleWatchlist} />
+                  <h6>Add to Watchlist</h6>
+                </div>
                 {/* <div className="favourite">
                   <FaHeart size="2em"/>
                 </div> */}

@@ -7,8 +7,17 @@ body {
 }
 
 .like {
-  color: #02a4cc;
+  text-align: center;
+  color: #dadada;
   margin-left: 10%;
+  h6 {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+.like:hover {
+  color: #d6063a;
 }
 .favourite {
   color: red;
@@ -291,7 +300,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     transition: 500ms;
     border: 1px solid #03acd6;   
     border-radius: 12px;
-    transform: scale(1.02);
+    transform: scale(1.03);
   }
 }
 
@@ -299,7 +308,9 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   display: flex;
   margin-left: 10%;
   
-  .button { 
+  .button {
+    background-color: #009cc4;
+    border: none;
     color: white;
     font-weight: bold;
     padding: 5% 10%;
@@ -310,23 +321,10 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   }
   .button:hover {
     background-color: #03acd6;
+    border: 1px solid #03acd6;
     border-radius: 10px;
     transform: scale(1.03);
     
-  }
-  #edit {
-    background-color: #079475;
-    border: none;
-  }
-  #edit:hover {
-    background-color: #0a9779;
-  }
-  #delete {
-    background-color: #af006c;
-    border: none;
-  }
-  #delete:hover {
-    background-color: #b80172;
   }
 }
 
