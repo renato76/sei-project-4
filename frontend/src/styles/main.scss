@@ -291,7 +291,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     transition: 500ms;
     border: 1px solid #03acd6;   
     border-radius: 12px;
-    transform: scale(1.03);
+    transform: scale(1.02);
   }
 }
 
@@ -299,9 +299,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   display: flex;
   margin-left: 10%;
   
-  .button {
-    background-color: #009cc4;
-    border: 1px solid #009cc4;
+  .button { 
     color: white;
     font-weight: bold;
     padding: 5% 10%;
@@ -312,10 +310,23 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   }
   .button:hover {
     background-color: #03acd6;
-    border: 1px solid #03acd6;
-    border-radius: 12px;
+    border-radius: 10px;
     transform: scale(1.03);
     
+  }
+  #edit {
+    background-color: #079475;
+    border: none;
+  }
+  #edit:hover {
+    background-color: #0a9779;
+  }
+  #delete {
+    background-color: #af006c;
+    border: none;
+  }
+  #delete:hover {
+    background-color: #b80172;
   }
 }
 
@@ -340,6 +351,62 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     font-size: 30px;
   }
 }
+
+.login-to-review {
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex-grow: 1;
+  align-items: center;
+  .button {
+    width: 120px;  
+    background-color: #009cc4;
+    border: 1px solid #009cc4;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+  }
+  .button:hover {
+    background-color: #03acd6;
+    border: 1px solid #03acd6;
+    border-radius: 12px;
+    transform: scale(1.02);
+    color: white;
+  }
+  
+  h1 {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Quicksand;
+    padding-bottom: 2%;
+  }
+  
+}
+.review-button {
+  text-align: center;
+  button {
+    background-color: #009cc4;
+    border: 1px solid #009cc4;
+    color: white;
+    font-weight: bold;
+    padding: 5% 10%;
+    width: 100px;
+    border-radius: 10px;
+    margin: 0 5px;
+    transition: transform 500ms;
+  }
+  button:hover {
+    background-color: #03acd6;
+    border: 1px solid #03acd6;
+    border-radius: 12px;
+    transform: scale(1.03);
+    
+  }
+}
+
 
 .comments-box {
   height: 250px;
@@ -991,7 +1058,7 @@ and (max-width: 812px) {
 
   .trailer-parent {
     padding: 0;
-    margin: 0;
+    margin: 0 60px;
     justify-content: center;
   }
 
@@ -1001,7 +1068,7 @@ and (max-width: 812px) {
       border-radius: 5px;
     }
     a {
-      font-size: 18px;
+      font-size: 15px;
     }
   }
   .edit-buttons {
@@ -1045,6 +1112,19 @@ and (max-width: 812px) {
   }
   .add-movie-section {
     padding: 50px 20px;
+  }
+
+  .login-to-review {
+    h1 {
+      font-size: 15px;
+    }
+    .button {
+      border-radius: 5px;
+      width: 80px;
+    }
+    a {
+      font-size: 14px;
+    }
   }
 
 }

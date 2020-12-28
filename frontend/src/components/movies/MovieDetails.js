@@ -115,7 +115,7 @@ class MovieDetails extends React.Component {
               </div>   
               <div className="trailer-parent">
                 <div className="trailer">      
-                  <button><a href={movie.trailer}>Play Trailer</a></button>
+                  <button className="button"><a href={movie.trailer}>Play Trailer</a></button>
                 </div>  
                 {/* <div className="like">
                   <FaThumbsUp size="2em" onClick={this.addLike} />
@@ -133,7 +133,7 @@ class MovieDetails extends React.Component {
           </div>
         </div>  
         <div className="next-page">
-          <div className="comments-left">
+          { isAuthenticated() && <div className="comments-left">
             <form onSubmit={this.handleSubmit} className="review-column is-two-thirds is-offset-one-quarter box">
               <div className="field">
                 <label className="label">Add A Review</label>
@@ -163,7 +163,13 @@ class MovieDetails extends React.Component {
                 <button type="submit" className="button is-fullwidth">Submit</button>
               </div>
             </form>
-          </div> 
+          </div> }
+          {/* Add review section end */}
+          { !isAuthenticated() && <div className="login-to-review">     
+            <h1>Login to rate and review movies</h1>  
+            <Link to={'/login'} className="button">Login</Link>        
+          </div>
+          }  
           <div className="comments-right">
             <div className="comments-box">
               <div className="comments-title">
@@ -172,7 +178,6 @@ class MovieDetails extends React.Component {
               <hr />
               <div className="user-reviews-parent">
                 <div className="user-reviews">
-                  {/* display comments using a map method */}
                   {movie.comments.map(comment => (
                     <>
                       <div className="comment-text">
