@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { getSingleMovie, deleteMovie } from '../../lib/api'
+import { getSingleMovie, deleteMovie, getUserProfile } from '../../lib/api'
 import { createNewComment, addToWatchlist } from '../../lib/api'
 import { isAuthenticated } from '../../lib/auth'
 
@@ -13,8 +13,7 @@ class MovieDetails extends React.Component {
       text: '',
       rating: ''
     },
-    liked_by: [],
-    watchlist: []
+    liked_movies: ''
   }
 
   async componentDidMount() {    
@@ -22,11 +21,24 @@ class MovieDetails extends React.Component {
     const movieId = this.props.match.params.id
     // console.log(this.props, movieId)
     const response = await getSingleMovie(movieId)
-    // console.log(response)
+    // console.log(response.data)
 
     this.setState({
       movie: response.data
     })
+
+    // Below I am retrieving the state from user Profile with a get request
+
+    // const likedByArray = this.state.movie.liked_by
+    // console.log(likedByArray)
+
+    const responseProfile = await getUserProfile()
+    // console.log(responseProfile)
+    this.setState({
+      currentUserId: responseProfile.data.id,
+      currentUsername: responseProfile.data.username
+    })
+  
   }
 
   // function that handles the comments formdata, 
@@ -49,6 +61,7 @@ class MovieDetails extends React.Component {
     const movieId = this.state.movie.id
     const response = await createNewComment(this.state.formData)
     console.log(response)
+    console.log(this.state.formData)
     
     this.props.history.push(`/movies/${movieId}`)
   }
@@ -56,20 +69,48 @@ class MovieDetails extends React.Component {
   handleDelete = async () => {
     const movieId = this.props.match.params.id
     // console.log(movieId)
-    const response = deleteMovie(movieId)
+    // const response = deleteMovie(movieId)
     await deleteMovie(movieId)
-    console.log(response)
+    // console.log(response)
     this.props.history.push('/')
   }
 
   // create a function that handles click on like
   handleWatchlist = async () => {
-    // console.log('I am being clicked')
     const movieId = this.props.match.params.id
-    // const response = createLike(movieId)
-    await addToWatchlist(movieId)
-    // console.log(response)
-    // now need to add this movie to the watchlist array
+    const response = await addToWatchlist(movieId)
+    console.log(response)
+    // console.log(this.state.movie)
+
+    const responseProfile =  await getUserProfile()
+    // console.log(responseProfile)
+
+    const liked = responseProfile.data.liked_movies
+    // console.log(liked)
+    const movie = this.state.movie
+    // console.log(movie)
+
+    liked.push(movie)
+
+    console.log(responseProfile)
+
+
+
+    // const currentUserId = responseProfile.data.id
+    // const currentUsername = responseProfile.data.username
+    // const user = {
+    //   ...this.state.user,
+    //   id: currentUserId,
+    //   username: currentUsername
+    // }
+    // this.setState({ user })
+  
+
+    
+    // I need to toggle the heart color 
+    // so if the logged in user has liked this movie then red heart, otherwise grey heart
+    
+
 
   }
 
@@ -78,8 +119,7 @@ class MovieDetails extends React.Component {
 
   render() {
     const { movie, text, rating } = this.state
-    // console.log(this.state)
-    // console.log(movie)
+
     
     if (!movie) return null
     return (
@@ -124,7 +164,9 @@ class MovieDetails extends React.Component {
                   <button className="button"><a href={movie.trailer}>Play Trailer</a></button>
                 </div>  
                 <div className="like">
-                  <FaHeart size="1.6em" onClick={this.handleWatchlist} />
+                  <Link to={`/movies/${movie.id}/likes`} className="like">
+                    <FaHeart size="1.6em" onClick={this.handleWatchlist} />
+                  </Link>
                   <h6>Add to Watchlist</h6>
                 </div>
                 {/* <div className="favourite">

@@ -30,7 +30,7 @@ class Login extends React.Component {
       setToken(response.data.token)
       this.props.history.push('/')
     } catch ( err ) {
-      popupNotification('Invalid email or pasword')
+      popupNotification('Invalid email or password')
     }
   } 
 
