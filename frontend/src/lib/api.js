@@ -28,26 +28,6 @@ export const createMovie = formData => {
   return axios.post('/api/movies/', formData, getAuthHeaders())
 }
 
-// ADD MOVIE TO WATCHLIST
-// this is the same as Simon's likePhoto
-
-export const addToWatchlist = movieId => {
-  console.log(`Adding movie ${movieId} to my Watchlist`)
-  return axios.post(`/api/movies/${movieId}/likes`, {
-    headers: getAuthHeaders()
-  })
-}
-
-// will need to create similar to unlikephoto, so ...
-// removeFromWatchlist delete request
-
-export const removeFromWatchlist = (movieId) => {
-  console.log(`Removing movie ${movieId} from my Watchlist`)
-  return axios.delete(`/api/photos/${movieId}/likes/`, {
-    headers: getAuthHeaders()
-  })
-}
-
 
 // UPDATE A MOVIE
 export const updateMovie = (id, formData) => {
@@ -100,8 +80,22 @@ export const createNewComment = formData => {
   return axios.post('/api/comments/', formData, headers)
 }
 
-// User Profile
 
+
+// ADD MOVIE TO WATCHLIST
+// this is the same as Simon's likePhoto
+
+export const addToWatchlist = (movieId, formData) => {
+  console.log(`Adding movie ${movieId} to my Watchlist`)
+  return axios.post(`/api/movies/${movieId}/likes/`, formData, getAuthHeaders())
+}
+
+// export const likePhoto = (photoId, formData) => {
+//   return axios.post(`/api/photos/${photoId}/likes/`, formData, withHeaders())
+// }
+
+
+// User Profile
 
 export function getUserProfile(){
   return axios.get('/api/auth/profile/', getAuthHeaders())

@@ -13,7 +13,8 @@ class MovieDetails extends React.Component {
       text: '',
       rating: ''
     },
-    liked_movies: ''
+    liked_movies: '',
+    currentUserId: ''
   }
 
   async componentDidMount() {    
@@ -22,23 +23,38 @@ class MovieDetails extends React.Component {
     // console.log(this.props, movieId)
     const response = await getSingleMovie(movieId)
     // console.log(response.data)
-
     this.setState({
       movie: response.data
+    })  
+
+
+    // So here I am retrieving the loggoed in user details, the id in particular
+    // so I can then check if this user has liked this movie
+    // if not, then set heart color to grey - if yes then set to pink
+    // then onclick toggle the color whilst also adding / removing from like_movies
+
+    const profile = await getUserProfile()
+    // console.log(profile.data.id)
+    const userId = profile.data.id
+    // console.log(userId)
+    this.setState({ 
+      currentUserId: userId
     })
 
-    // Below I am retrieving the state from user Profile with a get request
+    console.log(this.state)
 
-    // const likedByArray = this.state.movie.liked_by
-    // console.log(likedByArray)
+    // const likedByArrayIds = this.state.movie.liked_by.map(likedBy = likedBy.id)
+    // const isLikedByCurrentUser = likedByArrayIds.includes()
 
-    const responseProfile = await getUserProfile()
-    // console.log(responseProfile)
-    this.setState({
-      currentUserId: responseProfile.data.id,
-      currentUsername: responseProfile.data.username
-    })
-  
+
+    // const heartColor = isLikedByCurrentUser ? 'pink' : 'grey'
+
+    // this.setState({
+    //   heartColor,
+    //   liked: isLikedByCurrentUser
+    // })
+
+    
   }
 
   // function that handles the comments formdata, 
@@ -49,7 +65,6 @@ class MovieDetails extends React.Component {
       ...this.state.formData,
       [event.target.name]: event.target.value
     } 
-    // console.log(formData)
     this.setState({ formData })
   }
 
@@ -58,11 +73,14 @@ class MovieDetails extends React.Component {
     event.preventDefault()
     // add the movieID to the Object formdata
     this.state.formData.movie = this.state.movie.id
-    const movieId = this.state.movie.id
-    const response = await createNewComment(this.state.formData)
-    console.log(response)
+
+    // const response = await createNewComment(this.state.formData)
+    // console.log(response)
+    await createNewComment(this.state.formData)
+    
     console.log(this.state.formData)
     
+    const movieId = this.state.movie.id
     this.props.history.push(`/movies/${movieId}`)
   }
 
@@ -75,45 +93,19 @@ class MovieDetails extends React.Component {
     this.props.history.push('/')
   }
 
-  // create a function that handles click on like
+  // handle add to watchlist button
   handleWatchlist = async () => {
-    const movieId = this.props.match.params.id
-    const response = await addToWatchlist(movieId)
-    console.log(response)
-    // console.log(this.state.movie)
+    const movieId  = this.props.match.params.id
+    await addToWatchlist(movieId)
 
+    // need to set state of heart icon ideally toggle on and off
+
+
+    // this is just to test if the movie is added to liked_movies
     const responseProfile =  await getUserProfile()
-    // console.log(responseProfile)
-
-    const liked = responseProfile.data.liked_movies
-    // console.log(liked)
-    const movie = this.state.movie
-    // console.log(movie)
-
-    liked.push(movie)
-
     console.log(responseProfile)
-
-
-
-    // const currentUserId = responseProfile.data.id
-    // const currentUsername = responseProfile.data.username
-    // const user = {
-    //   ...this.state.user,
-    //   id: currentUserId,
-    //   username: currentUsername
-    // }
-    // this.setState({ user })
-  
-
     
-    // I need to toggle the heart color 
-    // so if the logged in user has liked this movie then red heart, otherwise grey heart
-    
-
-
   }
-
 
 
 
@@ -164,14 +156,11 @@ class MovieDetails extends React.Component {
                   <button className="button"><a href={movie.trailer}>Play Trailer</a></button>
                 </div>  
                 <div className="like">
-                  <Link to={`/movies/${movie.id}/likes`} className="like">
-                    <FaHeart size="1.6em" onClick={this.handleWatchlist} />
-                  </Link>
+                  
+                  { isAuthenticated  && <FaHeart size="1.6em" onClick={this.handleWatchlist} /> }
+              
                   <h6>Add to Watchlist</h6>
                 </div>
-                {/* <div className="favourite">
-                  <FaHeart size="2em"/>
-                </div> */}
                 { isAuthenticated() && <div className="edit-buttons">
                   <Link to={`/movies/${movie.id}/edit`} id="edit" className="button">Edit</Link>
                   <button onClick={this.handleDelete} id="delete" className="button">Delete</button>
