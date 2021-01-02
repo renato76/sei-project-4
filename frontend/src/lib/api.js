@@ -81,7 +81,6 @@ export const createNewComment = formData => {
 }
 
 
-
 // ADD MOVIE TO WATCHLIST
 // this is the same as Simon's likePhoto
 
@@ -89,10 +88,6 @@ export const addToWatchlist = (movieId, formData) => {
   console.log(`Adding movie ${movieId} to my Watchlist`)
   return axios.post(`/api/movies/${movieId}/likes/`, formData, getAuthHeaders())
 }
-
-// export const likePhoto = (photoId, formData) => {
-//   return axios.post(`/api/photos/${photoId}/likes/`, formData, withHeaders())
-// }
 
 
 // User Profile

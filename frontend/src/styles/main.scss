@@ -57,21 +57,6 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   color: #009cc4;
 }
 
-// .navbar-item a:hover {
-//   background-color: #202020;
-// }
-
-// .navbar:hover {
-//   background-color: #202020;
-//   font-weight: bold;
-//   color: white;
-// }
-
-
-// .mobile-nav {
-//   display: none;
-// }
-
 // *** Home Page *** 
 
 // Movie rows
@@ -192,21 +177,8 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   height: 525px;
 }
 
-.starring, 
-.director {
-  h4 {
-    font-weight: bold;
-    font-size: 16px;
-    font-family: Quicksand;
-  }
-  h5 {
-    font-size: 14px;
-    font-weight: bold;
-    font-family: Quicksand;
-  }
-}
-
 .movie-title {
+  font-family: 'Source Sans Pro', sans-serif;
   display: flex;
   h1 {
     color: white;
@@ -225,18 +197,21 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 .movie-info {
   display: flex;
   margin-left: 8%;
-  padding-top: 10px;
+  padding-top: 2px;
+  font-family: Quicksand;
   h3 {
+    
     display: inline;
     color: #ffffff8e;
     border: 1px solid rgba(255, 255, 255, 0.575);
-    padding: 4px;
+    padding: 2px 2px 2px 6px;
     margin-right: 15px;
+    font-size: 15px;
   }
   h4 {
     display: inline;
     color: white;
-    font-size: 18px;
+    font-size: 15px;
   }
   .duration {
     margin-left: 15px;
@@ -245,6 +220,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 }
 .overview {
   h1 {
+    font-family: 'Source Sans Pro', sans-serif;
     margin-top: 30px;
     text-align: left;
     font-size: 26px;
@@ -252,6 +228,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   }
 }
 .description {
+  font-family: 'Source Sans Pro', sans-serif;
   color: white;
   padding: 2% 20% 2% 8%;
   flex-wrap: wrap;
@@ -267,12 +244,22 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   color: white;
 
 }
+
+.starring, 
 .director {
-  margin-right: 50px;
   h4 {
     font-weight: bold;
-
+    font-size: 16px;
+    font-family: Quicksand;
   }
+  h5 {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Quicksand;
+  }
+}
+.director {
+  margin-right: 50px;
 }
 
 .trailer-parent {
@@ -325,8 +312,15 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     background-color: #03acd6;
     border: 1px solid #03acd6;
     border-radius: 10px;
-    transform: scale(1.03);
-    
+    transform: scale(1.03);  
+  }
+  #edit {
+    background-color: #079475;
+    border: none;
+  }
+  #delete {
+    background-color: #af006c;
+    border: none;
   }
 }
 
@@ -826,6 +820,10 @@ and (max-width: 1024px) {
       a {
         font-size: 18px;
       }
+      button:hover {
+        width: 120px;
+        border-radius: 5px;
+      }
     }
     .edit-buttons {
       margin-left: 10%;
@@ -1067,6 +1065,10 @@ and (max-width: 812px) {
       width: 140px;
       border-radius: 5px;
     }
+    button:hover {
+      width: 140px;
+      border-radius: 5px;
+    }
     a {
       font-size: 15px;
     }
@@ -1121,6 +1123,10 @@ and (max-width: 812px) {
     .button {
       border-radius: 5px;
       width: 80px;
+    }
+    .button:hover {
+      border-radius: 5px;
+
     }
     a {
       font-size: 14px;

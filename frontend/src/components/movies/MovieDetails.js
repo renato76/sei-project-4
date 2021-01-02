@@ -1,4 +1,5 @@
 import React from 'react'
+import moment from 'moment'
 import { Link } from 'react-router-dom'
 import { getSingleMovie, deleteMovie, getUserProfile } from '../../lib/api'
 import { createNewComment, addToWatchlist } from '../../lib/api'
@@ -31,7 +32,8 @@ class MovieDetails extends React.Component {
     // So here I am retrieving the loggoed in user details, the id in particular
     // so I can then check if this user has liked this movie
     // if not, then set heart color to grey - if yes then set to pink
-    // then onclick toggle the color whilst also adding / removing from like_movies
+    
+
 
     const profile = await getUserProfile()
     // console.log(profile.data.id)
@@ -99,6 +101,7 @@ class MovieDetails extends React.Component {
     await addToWatchlist(movieId)
 
     // need to set state of heart icon ideally toggle on and off
+    // so onclick toggle the color whilst also adding / removing from like_movies
 
 
     // this is just to test if the movie is added to liked_movies
@@ -225,7 +228,7 @@ class MovieDetails extends React.Component {
                         <p>Rating: {comment.rating}</p>
                       </div>
                       <div className="comment-rating">
-                        <p>Created at: {comment.created_at}</p>
+                        <p>Created at: {moment(comment.created_at).format('Do MMM YY')}</p>
                       </div>
                       <hr />
                     </>

@@ -10,6 +10,7 @@
     "bulma": "^0.9.1",
     "eslint-plugin-react": "^7.21.5",
     "http-proxy-middleware": "^1.0.6",
+    "moment": "^2.29.1",
     "node-sass": "^4.14.1",
     "react": "^17.0.1",
     "react-browser-router": "^2.1.2",
