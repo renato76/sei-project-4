@@ -1,9 +1,10 @@
 import React from 'react'
 import moment from 'moment'
-import { Link } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
 import { getSingleMovie, deleteMovie, getUserProfile } from '../../lib/api'
 import { createNewComment, addToWatchlist } from '../../lib/api'
 import { isAuthenticated } from '../../lib/auth'
+import { popupNotification } from '../../lib/notification'
 
 import { FaHeart } from 'react-icons/fa'
 
@@ -81,9 +82,11 @@ class MovieDetails extends React.Component {
     await createNewComment(this.state.formData)
     
     console.log(this.state.formData)
-    
-    const movieId = this.state.movie.id
-    this.props.history.push(`/movies/${movieId}`)
+        
+    popupNotification('Thanks for your comment and rating!')
+    // const movieId = this.state.movie.id
+    // this.props.history.push(`/movies/${movieId}`)
+    this.props.history.push('/')
   }
 
   handleDelete = async () => {
@@ -109,8 +112,6 @@ class MovieDetails extends React.Component {
     console.log(responseProfile)
     
   }
-
-
 
   render() {
     const { movie, text, rating } = this.state
@@ -243,4 +244,4 @@ class MovieDetails extends React.Component {
   }
 }
 
-export default MovieDetails
+export default withRouter(MovieDetails)
