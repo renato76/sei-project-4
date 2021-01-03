@@ -6,24 +6,25 @@ body {
   overflow-x: hidden;
 }
 
+.description h2 {
+  line-height: 1.4em;
+  letter-spacing: 0.014em;
+}
+
 .like {
+  font-size: 30px;
   text-align: center;
   color: #dadada;
-  margin-left: 10%;
+  margin-left: 6%;
   h6 {
     color: white;
     font-size: 12px;
     text-align: center;
   }
 }
-.like:hover {
-  color: #d6063a;
-  
-}
-
-.favourite {
-  color: red;
-}
+// .like:hover {
+//   color: #dc143c;
+// }
 
 // *** Navbar ***
 
@@ -229,6 +230,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 }
 .description {
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
   color: white;
   padding: 2% 20% 2% 8%;
   flex-wrap: wrap;
@@ -295,7 +297,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 
 .edit-buttons {
   display: flex;
-  margin-left: 10%;
+  margin-left: 5%;
   
   .button {
     background-color: #009cc4;
@@ -329,12 +331,13 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 .next-page {
   background-color: #202020;
   display: flex;
-  padding-bottom: 100px;
-  padding: 3%;
+  
+  padding: 3% 1%;
 }
 
 .comments-left {
-  margin-left: 90px;
+  
+  margin-left: 70px;
   margin-top: 60px;
   padding: 0 10px;
   flex-grow: 1;
@@ -347,7 +350,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 }
 
 .login-to-review {
-  padding: 5%;
+  padding: 5% 0;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -417,7 +420,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   border-radius: 12px;
   padding: 20px;
   background-color: white;
-  margin: 60px;
+  margin: 60px 70px 60px 30px;
 }
 
 .review-column {
@@ -434,7 +437,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 
 .user-reviews-parent {
   display: flex;
-  max-width: 400px;
+  max-width: 550px;
   h1,
   h2 {
     font-weight: bold;
@@ -566,7 +569,7 @@ and (max-width: 1280px) {
     }
   }
   .edit-buttons {
-    margin-left: 25%;
+    margin-left: 5%;
     font-size: 15px;
     .button {
       font-size: 13px;
@@ -828,7 +831,7 @@ and (max-width: 1024px) {
       }
     }
     .edit-buttons {
-      margin-left: 10%;
+      margin-left: 5%;
       .button {
         width: 80px;
         border-radius: 5px;
@@ -1076,7 +1079,7 @@ and (max-width: 812px) {
     }
   }
   .edit-buttons {
-    margin-left: 10%;
+    margin-left: 3%;
     .button {
       width: 80px;
       border-radius: 5px;

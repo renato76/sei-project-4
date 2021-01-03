@@ -79,3 +79,12 @@ class MovieLikeView(MovieDetailView):
         movie_to_like.save()
         return Response({'Message': f'Like Added To Movie {pk}'}, status=status.HTTP_202_ACCEPTED)
 
+    def delete(self, request, pk):
+        movie_to_like = self.get_movie(pk=pk)
+        movie_to_like.liked_by.remove(request.user.id)
+        movie_to_like.save()
+        return Response(
+            {'Message': f'Removed like on Movie: {pk}'},
+            status=status.HTTP_202_ACCEPTED
+        )
+

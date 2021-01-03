@@ -1,0 +1,2087 @@
+[
+    {
+        "model": "admin.logentry",
+        "pk": 1,
+        "fields": {
+            "action_time": "2020-10-28T23:37:55.285Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "43",
+            "object_repr": "Legends of the Fall",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 2,
+        "fields": {
+            "action_time": "2020-10-28T23:41:01.327Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "44",
+            "object_repr": "Inception",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 3,
+        "fields": {
+            "action_time": "2020-10-28T23:59:40.484Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "45",
+            "object_repr": "The Martian",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 4,
+        "fields": {
+            "action_time": "2020-10-29T09:06:56.353Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "49",
+            "object_repr": "Life As We Know It",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 5,
+        "fields": {
+            "action_time": "2020-10-29T09:10:20.542Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "50",
+            "object_repr": "The Bourne Identity",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 6,
+        "fields": {
+            "action_time": "2020-10-29T09:11:59.803Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "51",
+            "object_repr": "The Hangover Part 2",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 7,
+        "fields": {
+            "action_time": "2020-10-29T09:13:23.779Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "52",
+            "object_repr": "The Hangover Part 3",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 8,
+        "fields": {
+            "action_time": "2020-10-29T09:15:59.137Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "53",
+            "object_repr": "Knowing",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 9,
+        "fields": {
+            "action_time": "2020-10-29T09:17:34.406Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "54",
+            "object_repr": "Limitless",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 10,
+        "fields": {
+            "action_time": "2020-10-29T10:32:49.113Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "29",
+            "object_repr": "The Bourne Supremacy",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 11,
+        "fields": {
+            "action_time": "2020-10-29T10:34:41.654Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "58",
+            "object_repr": "2The Bourne Supremacy",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 12,
+        "fields": {
+            "action_time": "2020-10-29T10:35:12.000Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "58",
+            "object_repr": "The Bourne Supremacy",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 13,
+        "fields": {
+            "action_time": "2020-10-29T15:55:12.053Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "53",
+            "object_repr": "Knowing",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Liked by\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 14,
+        "fields": {
+            "action_time": "2020-11-01T12:17:56.303Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "68",
+            "object_repr": "2067",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 15,
+        "fields": {
+            "action_time": "2020-11-02T00:03:07.595Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "69",
+            "object_repr": "Minions",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 16,
+        "fields": {
+            "action_time": "2020-11-02T00:05:34.567Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "70",
+            "object_repr": "Hotel Transylvania 3",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 17,
+        "fields": {
+            "action_time": "2020-11-02T00:07:18.453Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "71",
+            "object_repr": "Hotel Transylvania 2",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 18,
+        "fields": {
+            "action_time": "2020-11-02T00:10:00.671Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "72",
+            "object_repr": "Kung Fu Panda",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 19,
+        "fields": {
+            "action_time": "2020-11-02T00:14:32.273Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "73",
+            "object_repr": "Madagascar: Escape 2 Africa",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 20,
+        "fields": {
+            "action_time": "2020-12-31T09:50:23.524Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "87",
+            "object_repr": "Welcome to the Sudden Death",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 1,
+        "fields": {
+            "name": "Can add log entry",
+            "content_type": 1,
+            "codename": "add_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 2,
+        "fields": {
+            "name": "Can change log entry",
+            "content_type": 1,
+            "codename": "change_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 3,
+        "fields": {
+            "name": "Can delete log entry",
+            "content_type": 1,
+            "codename": "delete_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 4,
+        "fields": {
+            "name": "Can view log entry",
+            "content_type": 1,
+            "codename": "view_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 5,
+        "fields": {
+            "name": "Can add permission",
+            "content_type": 2,
+            "codename": "add_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 6,
+        "fields": {
+            "name": "Can change permission",
+            "content_type": 2,
+            "codename": "change_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 7,
+        "fields": {
+            "name": "Can delete permission",
+            "content_type": 2,
+            "codename": "delete_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 8,
+        "fields": {
+            "name": "Can view permission",
+            "content_type": 2,
+            "codename": "view_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 9,
+        "fields": {
+            "name": "Can add group",
+            "content_type": 3,
+            "codename": "add_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 10,
+        "fields": {
+            "name": "Can change group",
+            "content_type": 3,
+            "codename": "change_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 11,
+        "fields": {
+            "name": "Can delete group",
+            "content_type": 3,
+            "codename": "delete_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 12,
+        "fields": {
+            "name": "Can view group",
+            "content_type": 3,
+            "codename": "view_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 13,
+        "fields": {
+            "name": "Can add content type",
+            "content_type": 4,
+            "codename": "add_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 14,
+        "fields": {
+            "name": "Can change content type",
+            "content_type": 4,
+            "codename": "change_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 15,
+        "fields": {
+            "name": "Can delete content type",
+            "content_type": 4,
+            "codename": "delete_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 16,
+        "fields": {
+            "name": "Can view content type",
+            "content_type": 4,
+            "codename": "view_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 17,
+        "fields": {
+            "name": "Can add session",
+            "content_type": 5,
+            "codename": "add_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 18,
+        "fields": {
+            "name": "Can change session",
+            "content_type": 5,
+            "codename": "change_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 19,
+        "fields": {
+            "name": "Can delete session",
+            "content_type": 5,
+            "codename": "delete_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 20,
+        "fields": {
+            "name": "Can view session",
+            "content_type": 5,
+            "codename": "view_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 21,
+        "fields": {
+            "name": "Can add movie",
+            "content_type": 6,
+            "codename": "add_movie"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 22,
+        "fields": {
+            "name": "Can change movie",
+            "content_type": 6,
+            "codename": "change_movie"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 23,
+        "fields": {
+            "name": "Can delete movie",
+            "content_type": 6,
+            "codename": "delete_movie"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 24,
+        "fields": {
+            "name": "Can view movie",
+            "content_type": 6,
+            "codename": "view_movie"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 25,
+        "fields": {
+            "name": "Can add user",
+            "content_type": 7,
+            "codename": "add_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 26,
+        "fields": {
+            "name": "Can change user",
+            "content_type": 7,
+            "codename": "change_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 27,
+        "fields": {
+            "name": "Can delete user",
+            "content_type": 7,
+            "codename": "delete_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 28,
+        "fields": {
+            "name": "Can view user",
+            "content_type": 7,
+            "codename": "view_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 29,
+        "fields": {
+            "name": "Can add comment",
+            "content_type": 8,
+            "codename": "add_comment"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 30,
+        "fields": {
+            "name": "Can change comment",
+            "content_type": 8,
+            "codename": "change_comment"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 31,
+        "fields": {
+            "name": "Can delete comment",
+            "content_type": 8,
+            "codename": "delete_comment"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 32,
+        "fields": {
+            "name": "Can view comment",
+            "content_type": 8,
+            "codename": "view_comment"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 33,
+        "fields": {
+            "name": "Can add genre",
+            "content_type": 9,
+            "codename": "add_genre"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 34,
+        "fields": {
+            "name": "Can change genre",
+            "content_type": 9,
+            "codename": "change_genre"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 35,
+        "fields": {
+            "name": "Can delete genre",
+            "content_type": 9,
+            "codename": "delete_genre"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 36,
+        "fields": {
+            "name": "Can view genre",
+            "content_type": 9,
+            "codename": "view_genre"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 1,
+        "fields": {
+            "app_label": "admin",
+            "model": "logentry"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 2,
+        "fields": {
+            "app_label": "auth",
+            "model": "permission"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 3,
+        "fields": {
+            "app_label": "auth",
+            "model": "group"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 4,
+        "fields": {
+            "app_label": "contenttypes",
+            "model": "contenttype"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 5,
+        "fields": {
+            "app_label": "sessions",
+            "model": "session"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 6,
+        "fields": {
+            "app_label": "movies",
+            "model": "movie"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 7,
+        "fields": {
+            "app_label": "jwt_auth",
+            "model": "user"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 8,
+        "fields": {
+            "app_label": "comments",
+            "model": "comment"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 9,
+        "fields": {
+            "app_label": "genres",
+            "model": "genre"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "1gw8k0f6jwy84i4mk2hpjy5m3pkrdw2r",
+        "fields": {
+            "session_data": ".eJxVjMsOwiAQAP-FsyELQmU9eu83kF0eUjWQlPZk_HdD0oNeZybzFp72rfi9p9UvUVyFEqdfxhSeqQ4RH1TvTYZWt3VhORJ52C7nFtPrdrR_g0K9jC1P4QwGCNg4x5otYI6aDaPJ-RIiuGyjzmiVRms0IjBpmjChcaBAfL7ZTjc8:1kXuQx:fViaeJlSc7-UwlbxXm7ZBCGYnn_gPVP_ayhORMxR-9E",
+            "expire_date": "2020-11-11T23:00:47.356Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "7tmppfqi20605bsb5v9yn5vbwk1hdntq",
+        "fields": {
+            "session_data": ".eJxVjMsOwiAQAP-FsyELQmU9eu83kF0eUjWQlPZk_HdD0oNeZybzFp72rfi9p9UvUVyFEqdfxhSeqQ4RH1TvTYZWt3VhORJ52C7nFtPrdrR_g0K9jC1P4QwGCNg4x5otYI6aDaPJ-RIiuGyjzmiVRms0IjBpmjChcaBAfL7ZTjc8:1kuuaT:8peBjvy3BUb9cQ_NJA5KHb_BTtUA6ooldns-NNPzqug",
+            "expire_date": "2021-01-14T09:49:41.728Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "nigs5vq9527t8ygxserw136bw9b7d50q",
+        "fields": {
+            "session_data": ".eJxVjMsOwiAQAP-FsyELQmU9eu83kF0eUjWQlPZk_HdD0oNeZybzFp72rfi9p9UvUVyFEqdfxhSeqQ4RH1TvTYZWt3VhORJ52C7nFtPrdrR_g0K9jC1P4QwGCNg4x5otYI6aDaPJ-RIiuGyjzmiVRms0IjBpmjChcaBAfL7ZTjc8:1knOGx:eD82Xe2_s3HhH7isZgjzrPMEOyGsmQpwqrQxjeWIg5c",
+            "expire_date": "2020-12-24T15:54:27.560Z"
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 3,
+        "fields": {
+            "title": "Welcome to Sudden Death",
+            "image": "https://image.tmdb.org/t/p/w1280/elZ6JCzSEvFOq4gNjNeZsnRFsvj.jpg",
+            "description": "Jesse Freeman is a former special forces officer and explosives expert now working a regular job as a security guard in a state-of-the-art basketball arena. Trouble erupts when a tech-savvy cadre of terrorists kidnap the team's owner and Jesse's daughter during opening night. Facing a ticking clocks",
+            "starring": "Michael Jai White, Michael Eklund, Gillian White, Gary Owen",
+            "release": "2020",
+            "director": "Dallas Jackson",
+            "duration": "1h 20m",
+            "age_rating": "18",
+            "trailer": "https://youtu.be/jKCj3XuPG8",
+            "user": 1,
+            "genre": [
+                2,
+                3,
+                1
+            ],
+            "liked_by": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 5,
+        "fields": {
+            "title": "Bad Boys For Life",
+            "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/y95lQLnuNKdPAzw9F9Ab8kJ80c3.jpg",
+            "description": "Marcus and Mike are forced to confront new threats, career changes, and midlife crises as they join the newly created elite team AMMO of the Miami police department to take down the ruthless Armando Armas, the vicious leader of a Miami drug cartel.",
+            "starring": "Will Smith, Martin Lawrence, Paola Nunez",
+            "release": "2020",
+            "director": "Bilall Fallah",
+            "duration": "2h4m",
+            "age_rating": "18",
+            "trailer": "https://youtu.be/jKCj3XuPG8M",
+            "user": 1,
+            "genre": [
+                1,
+                2,
+                7
+            ],
+            "liked_by": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 7,
+        "fields": {
+            "title": "Money Plane",
+            "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/thPyrU7LsAVKbxt57ZsxdZJzupN.jpg",
+            "description": "A professional thief with $40 million in debt and his family's life on the line must commit one final heist - rob a futuristic airborne casino filled with the world's most dangerous criminals.",
+            "starring": "Adam Copeland",
+            "release": "2020",
+            "director": "Andrew Lawrence",
+            "duration": "1h 22m",
+            "age_rating": "15",
+            "trailer": "https://youtu.be/aETz_dRDEys",
+            "user": 1,
+            "genre": [
+                1,
+                2
+            ],
+            "liked_by": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 14,
+        "fields": {
+            "title": "The War With Grandpa",
+            "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ltyARDw2EFXZ2H2ERnlEctXPioP.jpg",
+            "description": "Sixth-grader Peter is pretty much your average kid\u2014he likes gaming, hanging with his friends and his beloved pair of Air Jordans. But when his recently widowed grandfather Ed moves in with Peter\u2019s family, the boy is forced to give up his most prized possession of all, his bedroom. Unwilling to let s",
+            "starring": "Robert De Niro, Uma Thurman, Christopher Walken",
+            "release": "2020",
+            "director": "Tim Hill",
+            "duration": "1h 34m",
+            "age_rating": "15",
+            "trailer": "https://youtu.be/EohVvIWg-Oc",
+            "user": 1,
+            "genre": [
+                1,
+                9,
+                7
+            ],
+            "liked_by": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 15,
+        "fields": {
+            "title": "Sonic The Hedgehog",
+            "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aQvJ5WPzZgYVDrxLX4R6cLJCEaQ.jpg",
+            "description": "Based on the global blockbuster videogame franchise from Sega, Sonic the Hedgehog tells the story of the world\u2019s speediest hedgehog as he embraces his new home on Earth. In this live-action adventure comedy, Sonic and his new best friend team up to defend the planet from the evil genius Dr. Robotnik",
+            "starring": "Ben Schwartz, James Marsden, Jim Carrey",
+            "release": "2019",
+            "director": "Jeff Fowler",
+            "duration": "1h 39m",
+            "age_rating": "PG",
+            "trailer": "https://youtu.be/szby7ZHLnkA",
+            "user": 1,
+            "genre": [
+                1,
+                2
+            ],
+            "liked_by": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 16,
+        "fields": {
+            "title": "The Green Mile",
+            "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/o0lO84GI7qrG6XFvtsPOSV7CTNa.jpg",
+            "description": "A supernatural tale set on death row in a Southern prison, where gentle giant John Coffey possesses the mysterious power to heal people's ailments. When the cell block's head guard, Paul Edgecomb, recognizes Coffey's miraculous gift, he tries desperately to help stave off the condemned man's executi",
+            "starring": "Tom Hanks, Amy Ryan",
+            "release": "1999",
+            "director": "Frank Darabont",
+            "duration": "3h 9m",
+            "age_rating": "18",
+            "trailer": "https://youtu.be/ctRK-4Vt7dA1",
+            "user": 1,
+            "genre": [
+                10,
+                5,
+                7
+            ],
+            "liked_by": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 17,
+        "fields": {
+            "title": "Pulp Fiction",
+            "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/plnlrtBUULT0rh3Xsjmpubiso3L.jpg",
+            "description": "A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.",
+            "starring": "John Travolta, Uma Thurman, Samuel L Jackson",
+            "release": "1994",
+            "director": "Quentin Tarantino",
+            "duration": "2h 34m",
+            "age_rating": "21",
+            "trailer": "https://youtu.be/tGpTpVyI_OQ",
+            "user": 1,
+            "genre": [
+                2,
+                3,
+                7
+            ],
+            "liked_by": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 19,
+        "fields": {
+            "title": "Triple Frontier",
+            "image": "https://image.tmdb.org/t/p/w1280/aBw8zYuAljVM1FeK5bZKITPH8ZD.jpg",
+            "description": "Struggling to make ends meet, former special ops soldiers reunite for a high-stakes heist: stealing $75 million from a South American drug lord.",
+            "starring": "Pedro Pascal",
+            "release": "2018",
+            "director": "J.C. Chandor",
+            "duration": "2h 6m",
+            "age_rating": "R",
+            "trailer": "https://youtu.be/Fo3yRLLrXQA",
+            "user": 1,
+            "genre": [
+                2,
+                3,
+                7
+            ],
+            "liked_by": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 20,
+        "fields": {
+            "title": "Spenser Confidential",
+            "image": "https://image.tmdb.org/t/p/w1280/fePczipv6ZzDO2uoww4vTAu2Sq3.jpg",
+            "description": "Spenser, a former Boston patrolman who just got out from prison, teams up with Hawk, an aspiring fighter, to unravel the truth behind the death of two police officers",
+            "starring": "Mark Wahlberg, Winston Duke, Iliza Shlesinger",
+            "release": "2020",
+            "director": "Peter Berg",
+            "duration": "1h 52m",
+            "age_rating": "PG",
+            "trailer": "https://youtu.be/bgKEoHNi3Uc",
+            "user": 1,
+            "genre": [
+                1,
+                2,
+                3
+            ],
+            "liked_by": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 21,
+        "fields": {
+            "title": "Joy",
+            "image": "https://image.tmdb.org/t/p/w1280/drHYguFkQO4nQQFUhRYqIbl45oT.jpg",
+            "description": "A story based on the life of a struggling Long Island single mom who became one of the country's most successful entrepreneurs.",
+            "starring": "Jennifer Lawrence, Bradley Cooper",
+            "release": "2015",
+            "director": "David O. Russell",
+            "duration": "2hrs 4m",
+            "age_rating": "12A",
+            "trailer": "https://youtu.be/uR-2TiQVY-k",
+            "user": 1,
+            "genre": [
+                1,
+                5
+            ],
+            "liked_by": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 22,
+        "fields": {
+            "title": "The Ugly Truth",
+            "image": "https://image.tmdb.org/t/p/w1280/2rq96Ihbqb1eU3TEBVtgFlqbeX7.jpg",
+            "description": "A romantically challenged morning show producer is reluctantly embroiled in a series of outrageous tests by her chauvinistic correspondent to prove his theories on relationships and help her find love. His clever ploys, however, lead to an unexpected result.",
+            "starring": "Katherine Heigl, Gerard Butler",
+            "release": "2010",
+            "director": "Jack May",
+            "duration": "1h 36m",
+            "age_rating": "15",
+            "trailer": "https://youtu.be/Lh_NT69lcPY",
+            "user": 1,
+            "genre": [
+                1,
+                11
+            ],
+            "liked_by": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 23,
+        "fields": {
+            "title": "Rumour Has It",
+            "image": "https://image.tmdb.org/t/p/w1280/1dAnuoBKGbpxZ5XvjDGJcUYsf0x.jpg",
+            "description": "Sarah Huttinger's return home with her fiance convinces her that the sedate, proper, country-club lifestyle of her family isn't for her \u2013 and that maybe the Huttinger family isn't even hers \u2013 as she uncovers secrets that suggest the Huttingers are neither sedate nor proper.",
+            "starring": "Jennifer Aniston, Kevin Costner",
+            "release": "2005",
+            "director": "Rob Reiner",
+            "duration": "1h 37m",
+            "age_rating": "12",
+            "trailer": "https://youtu.be/QWYqikq6YuE",
+            "user": 1,
+            "genre": [
+                1
+            ],
+            "liked_by": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 24,
+        "fields": {
+            "title": "Ava",
+            "image": "https://image.tmdb.org/t/p/w1280/qzA87Wf4jo1h8JMk9GilyIYvwsA.jpg",
+            "description": "Ava is a deadly assassin who works for a black ops organization, traveling the globe specializing in high profile hits. When a job goes dangerously wrong she is forced to fight for her own survival.",
+            "starring": "Jessica Chastain, John Malkovic, Colin Farrell",
+            "release": "2020",
+            "director": "Tate Taylor",
+            "duration": "1h 36m",
+            "age_rating": "18",
+            "trailer": "https://youtu.be/aoCP_JHzBUM",
+            "user": 1,
+            "genre": [
+                2
+            ],
+            "liked_by": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 27,
+        "fields": {
+            "title": "Mission Impossible - Fallout",
+            "image": "https://image.tmdb.org/t/p/w1280/AkJQpZp9WoNdj7pLYSj1L0RcMMN.jpg",
+            "description": "When an IMF mission ends badly, the world is faced with dire consequences. As Ethan Hunt takes it upon himself to fulfill his original briefing, the CIA begin to question his loyalty and his motives. The IMF team find themselves in a race against time, hunted by assassins while trying to prevent a global catastrophe.",
+            "starring": "Tom Cruise, Henry Cavill",
+            "release": "2018",
+            "director": "Christopher McQuarrie",
+            "duration": "2h 27m",
+            "age_rating": "12A",
+            "trailer": "https://youtu.be/wb49-oV0F78",
+            "user": 1,
+            "genre": [
+                2,
+                3
+            ],
+            "liked_by": []
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 37,
+        "fields": {
+            "title": "Lucy",
+            "image": "https://image.tmdb.org/t/p/w1280/kRbpUTRNm6QbLQFPFWUcNC4czEm.jpg",
+            "description": "A woman, accidentally caught in a dark deal, turns the tables on her captors and transforms into a merciless warrior evolved beyond human logic.",
+            "starring": "Scarlett Johannson, Morgan Freeman",
+            "release": "2014",
+            "director": "Luc Besson",
+            "duration": "1h 29m",
+            "age_rating": "15",
+            "trailer": "https://youtu.be/bN7ksFEVO9U",
+            "user": 1,
+            "genre": [
+                2,
+                3
+            ],
+            "liked_by": []
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 38,
+        "fields": {
+            "title": "Bridge Of Spies",
+            "image": "https://image.tmdb.org/t/p/w1280/bORlvwnVJE1Z6yIg96qnLLY3LJQ.jpg",
+            "description": "During the Cold War, the Soviet Union captures U.S. pilot Francis Gary Powers after shooting down his U-2 spy plane. Sentenced to 10 years in prison, Powers' only hope is New York lawyer James Donovan, who boards a plane to Berlin, hoping to win the young man's freedom through a prisoner exchange.",
+            "starring": "Tom Hanks, Amy Ryan",
+            "release": "2015",
+            "director": "Steven Spielberg",
+            "duration": "2h 21m",
+            "age_rating": "12A",
+            "trailer": "https://youtu.be/2-2x3r1m2I4",
+            "user": 1,
+            "genre": [
+                3,
+                5
+            ],
+            "liked_by": []
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 39,
+        "fields": {
+            "title": "State of Play",
+            "image": "https://image.tmdb.org/t/p/w1280/4f8nhHESDhAVKow2M1khmqDdatp.jpg",
+            "description": "Handsome, unflappable U.S. Congressman Stephen Collins is the future of his political party: an honorable appointee who serves as the chairman of a committee overseeing defense spending. All eyes are upon the rising star to be his party's contender for the upcoming presidential race. Until his research assistant/mistress is brutally murdered and buried secrets come tumbling out.",
+            "starring": "Russell Crowe, Ben Affleck, Rachel McAdams, Helen Mirren",
+            "release": "2009",
+            "director": "Kevin Macdonald",
+            "duration": "2h 7m",
+            "age_rating": "18",
+            "trailer": "https://youtu.be/s1Sp1QvyQQI",
+            "user": 1,
+            "genre": [
+                3,
+                5
+            ],
+            "liked_by": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 40,
+        "fields": {
+            "title": "Notting Hill",
+            "image": "https://image.tmdb.org/t/p/w1280/cBpef6K40Su2CcBb3c18WdwRFCL.jpg",
+            "description": "William Thacker is a London bookstore owner whose humdrum existence is thrown into romantic turmoil when famous American actress Anna Scott appears in his shop. A chance encounter over spilled orange juice leads to a kiss that blossoms into a full-blown affair. As the average bloke and glamorous movie star draw closer and closer together, they struggle to reconcile their radically different lifestyles in the name of love.",
+            "starring": "Jula Roberts, Hugh Grant",
+            "release": "1999",
+            "director": "Roger Michell",
+            "duration": "2h 4m",
+            "age_rating": "12",
+            "trailer": "https://youtu.be/4RI0QvaGoiI",
+            "user": 1,
+            "genre": [
+                1,
+                11,
+                5
+            ],
+            "liked_by": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 41,
+        "fields": {
+            "title": "The Hangover",
+            "image": "https://image.tmdb.org/t/p/w1280/jjCPcxw7QCmFPYM1t3BThdEawJK.jpg",
+            "description": "When three friends finally come to after a raucous night of bachelor-party revelry, they find a baby in the closet and a tiger in the bathroom. But they can't seem to locate their best friend, Doug \u2013 who's supposed to be tying the knot. Launching a frantic search for Doug, the trio perseveres through a nasty hangover to try to make it to the church on time.",
+            "starring": "Bradley Cooper, Ed Helms, Zach Galifianakis, Justin Bartha, Heather Graham",
+            "release": "2009",
+            "director": "Todd Philips",
+            "duration": "1h 40m",
+            "age_rating": "15",
+            "trailer": "https://youtu.be/jj6wcUes1no",
+            "user": 1,
+            "genre": [
+                1
+            ],
+            "liked_by": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 43,
+        "fields": {
+            "title": "Legends of the Fall",
+            "image": "https://image.tmdb.org/t/p/w1280/t1KPGlW0UGd0m515LPQmk2F4nu1.jpg",
+            "description": "An epic tale of three brothers and their father living in the remote wilderness of 1900s USA and how their lives are affected by nature, history, war, and love.",
+            "starring": "Brad Pitt, Anthony Hopkins, Julia Ormond",
+            "release": "1994",
+            "director": "Edward Zwick",
+            "duration": "2h 13m",
+            "age_rating": "12A",
+            "trailer": "https://youtu.be/TR5E7Kuty3o",
+            "user": 1,
+            "genre": [
+                13,
+                11,
+                5,
+                14
+            ],
+            "liked_by": []
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 44,
+        "fields": {
+            "title": "Inception",
+            "image": "https://image.tmdb.org/t/p/w1280/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg",
+            "description": "Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: \"inception\", the implantation of another person's idea into a target's subconscious.",
+            "starring": "Leonardo Di Caprio, Ken Watanabe, Joesph Gordon-Lwevitt",
+            "release": "2010",
+            "director": "Christopher Nolan",
+            "duration": "2h 28m",
+            "age_rating": "12A",
+            "trailer": "https://youtu.be/Jvurpf91omw",
+            "user": 1,
+            "genre": [
+                2,
+                12
+            ],
+            "liked_by": []
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 45,
+        "fields": {
+            "title": "The Martian",
+            "image": "https://image.tmdb.org/t/p/w1280/5BHuvQ6p9kfc091Z8RiFNhCwL4b.jpg",
+            "description": "During a manned mission to Mars, Astronaut Mark Watney is presumed dead after a fierce storm and left behind by his crew. But Watney has survived and finds himself stranded and alone on the hostile planet. With only meager supplies, he must draw upon his ingenuity, wit and spirit to subsist and find a way to signal to Earth that he is alive.",
+            "starring": "Matt Damon, Jessica Chastain, Kristen Wiig",
+            "release": "2015",
+            "director": "Ridley Scott",
+            "duration": "2h 21m",
+            "age_rating": "12A",
+            "trailer": "https://youtu.be/ej3ioOneTy8",
+            "user": 1,
+            "genre": [
+                12,
+                5
+            ],
+            "liked_by": []
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 47,
+        "fields": {
+            "title": "Super 8",
+            "image": "https://image.tmdb.org/t/p/w1280/sytFL6ALMAesKZoarlp7bIDKnns.jpg",
+            "description": "In 1979 Ohio, several youngsters are making a zombie movie with a Super-8 camera. In the midst of filming, the friends witness a horrifying train derailment and are lucky to escape with their lives. They soon discover that the catastrophe was no accident, as a series of unexplained events and disappearances soon follows. Deputy Jackson Lamb, the father of one of the kids, searches for the terrifying truth behind the crash.",
+            "starring": "Joel Courtney, Elle Fanning, Riley Griffiths",
+            "release": "2011",
+            "director": "J.J. Abrams",
+            "duration": "1h 34m",
+            "age_rating": "15",
+            "trailer": "https://youtu.be/t-0XuYxh67w",
+            "user": 2,
+            "genre": [
+                1
+            ],
+            "liked_by": []
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 49,
+        "fields": {
+            "title": "Life As We Know It",
+            "image": "https://image.tmdb.org/t/p/w1280/zLzS2aOqKsS0QvEaY6SfBw4VBqh.jpg",
+            "description": "After a distastrous first date for caterer Holly and network sports director Messer, all they have is common is a dislike for each other and their love for their goddaughter Sophie. But when they suddenly become all Sophie has in this world, Holly and Messer must set their differences aside. Juggling careers and social calendars, they'll have to find common ground while living under the same roof.",
+            "starring": "Katherine Heigl, Josh Duhamel, Christina Hendricks, Josh Lucas",
+            "release": "2011",
+            "director": "Greg Berlandi",
+            "duration": "1h 54m",
+            "age_rating": "12A",
+            "trailer": "https://youtu.be/ZNSeUYw95NY",
+            "user": 1,
+            "genre": [
+                1,
+                2
+            ],
+            "liked_by": []
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 50,
+        "fields": {
+            "title": "The Bourne Identity",
+            "image": "https://image.tmdb.org/t/p/w1280/vN6jGCuzefysLVFrzK3Vs6xAdu1.jpg",
+            "description": "Wounded to the brink of death and suffering from amnesia, Jason Bourne is rescued at sea by a fisherman. With nothing to go on but a Swiss bank account number, he starts to reconstruct his life, but finds that many people he encounters want him dead. However, Bourne realizes that he has the combat and mental skills of a world-class spy\u2014but who does he work for?",
+            "starring": "Matt Damon, Franka Potente, Chris Cooper",
+            "release": "2002",
+            "director": "Doug Liman",
+            "duration": "1h 59m",
+            "age_rating": "12A",
+            "trailer": "https://youtu.be/2tqK_3mKQUw",
+            "user": 1,
+            "genre": [
+                2,
+                3,
+                5
+            ],
+            "liked_by": []
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 51,
+        "fields": {
+            "title": "The Hangover Part 2",
+            "image": "https://image.tmdb.org/t/p/w1280/7sGkjqorTHkaHTz8Q4WWHj8JL9t.jpg",
+            "description": "The Hangover crew heads to Thailand for Stu's wedding. After the disaster of a bachelor party in Las Vegas last year, Stu is playing it safe with a mellow pre-wedding brunch. However, nothing goes as planned and Bangkok is the perfect setting for another adventure with the rowdy group.",
+            "starring": "Bradley Cooper, Ed Helms, Zach Galifianakis, Justin Bartha, Heather Graham",
+            "release": "2011",
+            "director": "Todd Phillips",
+            "duration": "1h 42m",
+            "age_rating": "12A",
+            "trailer": "https://youtu.be/ohF5ZO_zOYU",
+            "user": 1,
+            "genre": [
+                1,
+                2
+            ],
+            "liked_by": []
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 52,
+        "fields": {
+            "title": "The Hangover Part 3",
+            "image": "https://image.tmdb.org/t/p/w1280/vtxuPWkdllLNLVyGjKYa267ntuH.jpg",
+            "description": "This time, there's no wedding. No bachelor party. What could go wrong, right? But when the Wolfpack hits the road, all bets are off.",
+            "starring": "Bradley Cooper, Ed Helms, Zach Galifianakis, Justin Bartha, Heather Graham",
+            "release": "2014",
+            "director": "Todd Phillips",
+            "duration": "1h 40m",
+            "age_rating": "15",
+            "trailer": "https://youtu.be/NKE-RXR_XIs",
+            "user": 1,
+            "genre": [
+                1,
+                2
+            ],
+            "liked_by": []
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 53,
+        "fields": {
+            "title": "Knowing",
+            "image": "https://image.tmdb.org/t/p/w1280/7xkAVXnrSW5SgpTo8Z5U3a1ZOW2.jpg",
+            "description": "A teacher opens a time capsule that has been dug up at his son's elementary school; in it are some chilling predictions -- some that have already occurred and others that are about to -- that lead him to believe his family plays a role in the events that are about to unfold.",
+            "starring": "Nicholas Cage, Rosa Byrne",
+            "release": "2009",
+            "director": "Alex Proyas",
+            "duration": "2h 1m",
+            "age_rating": "15",
+            "trailer": "https://youtu.be/A2oDiEVXuDo",
+            "user": 1,
+            "genre": [
+                2,
+                3,
+                5
+            ],
+            "liked_by": [
+                1,
+                2
+            ]
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 54,
+        "fields": {
+            "title": "Limitless",
+            "image": "https://image.tmdb.org/t/p/w1280/mA77y2AMLkjBNRv0dtsWYQRu4IU.jpg",
+            "description": "A paranoia-fueled action thriller about an unsuccessful writer whose life is transformed by a top-secret \"smart drug\" that allows him to use 100% of his brain and become a perfect version of himself. His enhanced abilities soon attract shadowy forces that threaten his new life in this darkly comic and provocative film.",
+            "starring": "Bradley Cooper, Robert De Niro",
+            "release": "2011",
+            "director": "Neil Burger",
+            "duration": "1h 45m",
+            "age_rating": "18",
+            "trailer": "https://youtu.be/6d1Uc68wt3c",
+            "user": 1,
+            "genre": [
+                3,
+                12
+            ],
+            "liked_by": []
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 57,
+        "fields": {
+            "title": "The Equalizer 2",
+            "image": "https://image.tmdb.org/t/p/w1280/cQvc9N6JiMVKqol3wcYrGshsIdZ.jpg",
+            "description": "Robert McCall, who serves an unflinching justice for the exploited and oppressed, embarks on a relentless, globe-trotting quest for vengeance when a long-time girl friend is murdered.",
+            "starring": "Denzel Washington",
+            "release": "2018",
+            "director": "Antoine Fuqua",
+            "duration": "2h 2m",
+            "age_rating": "18",
+            "trailer": "https://youtu.be/HyNJ3UrGk_I",
+            "user": 1,
+            "genre": [
+                1
+            ],
+            "liked_by": []
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 59,
+        "fields": {
+            "title": "Source Code",
+            "image": "https://image.tmdb.org/t/p/w1280/nTr0lvAzeQmUjgSgDEHTJpnrxTz.jpg",
+            "description": "Decorated soldier Captain Colter Stevens wakes up in the body of an unknown man, discovering he's involved in a mission to find the bomber of a Chicago commuter train. He learns he's part of a top-secret experimental program that enables him to experience the final 8 minutes of another person's life. Colter re-lives the train incident over and over again, gathering more clues each time.",
+            "starring": "Jake Gyllenhaal, Michelle Monaghan",
+            "release": "2011",
+            "director": "Duncan Jones",
+            "duration": "1h 33m",
+            "age_rating": "12A",
+            "trailer": "https://youtu.be/NkTrG-gpIzE",
+            "user": 1,
+            "genre": [
+                1
+            ],
+            "liked_by": []
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 68,
+        "fields": {
+            "title": "2067",
+            "image": "https://image.tmdb.org/t/p/w1280/7D430eqZj8y3oVkLFfsWXGRcpEG.jpg",
+            "description": "A lowly utility worker is called to the future by a mysterious radio signal, he must leave his dying wife to embark on a journey that will force him to face his deepest fears in an attempt to change the fabric of reality and save humankind from its greatest environmental crisis yet.",
+            "starring": "Kodi Smit-McPhee, Ryan Kwanten, Sana'a Shaik, Aaron Glenane",
+            "release": "2020",
+            "director": "Seth Larney",
+            "duration": "1h 54m",
+            "age_rating": "16+",
+            "trailer": "https://youtu.be/cU5875rHQ8k",
+            "user": 1,
+            "genre": [
+                2,
+                3,
+                12
+            ],
+            "liked_by": [
+                1,
+                2
+            ]
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 69,
+        "fields": {
+            "title": "Minions",
+            "image": "https://image.tmdb.org/t/p/w1280/vlOgaxUiMOA8sPDG9n3VhQabnEi.jpg",
+            "description": "Minions Stuart, Kevin and Bob are recruited by Scarlet Overkill, a super-villain who, alongside her inventor husband Herb, hatches a plot to take over the world.",
+            "starring": "Sandra Bullock, Jon Hamm, Michael Keaton",
+            "release": "2015",
+            "director": "Pierre Coffin",
+            "duration": "1h 31m",
+            "age_rating": "U",
+            "trailer": "https://youtu.be/P9-FCC6I7u0",
+            "user": 1,
+            "genre": [
+                8,
+                1,
+                9
+            ],
+            "liked_by": []
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 70,
+        "fields": {
+            "title": "Hotel Transylvania 3",
+            "image": "https://image.tmdb.org/t/p/w1280/gjAFM4xhA5vyLxxKMz38ujlUfDL.jpg",
+            "description": "Dracula, Mavis, Johnny and the rest of the Drac Pack take a vacation on a luxury Monster Cruise Ship, where Dracula falls in love with the ship\u2019s captain, Ericka, who\u2019s secretly a descendant of Abraham Van Helsing, the notorious monster slayer.",
+            "starring": "Adam Sandler, Andy Samberg, Selena Gomez",
+            "release": "2018",
+            "director": "Genndy Tartakovsky",
+            "duration": "1h 37m",
+            "age_rating": "U",
+            "trailer": "https://youtu.be/Ku52zNnft8k",
+            "user": 1,
+            "genre": [
+                8,
+                9,
+                2
+            ],
+            "liked_by": []
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 71,
+        "fields": {
+            "title": "Hotel Transylvania 2",
+            "image": "https://image.tmdb.org/t/p/w1280/kKFgwQnR5q08UFsAvtoYyTIiHyj.jpg",
+            "description": "When the old-old-old-fashioned vampire Vlad arrives at the hotel for an impromptu family get-together, Hotel Transylvania is in for a collision of supernatural old-school and modern day cool.",
+            "starring": "Adam Sandler, Andy Samberg, Selena Gomez",
+            "release": "2015",
+            "director": "Genndy Tartakovsky",
+            "duration": "1h 29m",
+            "age_rating": "U",
+            "trailer": "https://youtu.be/OIx8OGeEh9c",
+            "user": 1,
+            "genre": [
+                8,
+                1,
+                9
+            ],
+            "liked_by": []
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 72,
+        "fields": {
+            "title": "Kung Fu Panda",
+            "image": "https://image.tmdb.org/t/p/w1280/nlr2oxuYsHXt0wdtmzaOuVBoNC0.jpg",
+            "description": "Continuing his \"legendary adventures of awesomeness\", Po must face two hugely epic, but different threats: one supernatural and the other a little closer to his home.",
+            "starring": "Jack Black, Bryan Cranston, Dustin Hoffman, Angelina Jolie",
+            "release": "2016",
+            "director": "Alessandro Carloni",
+            "duration": "1h 35",
+            "age_rating": "PG",
+            "trailer": "https://youtu.be/10r9ozshGVE",
+            "user": 1,
+            "genre": [
+                8,
+                1,
+                2,
+                9
+            ],
+            "liked_by": []
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 73,
+        "fields": {
+            "title": "Madagascar: Escape 2 Africa",
+            "image": "https://image.tmdb.org/t/p/w1280/9lfNdHVfd37R1GszeH5ZcWzkb14.jpg",
+            "description": "Alex, Marty, and other zoo animals find a way to escape from Madagascar when the penguins reassemble a wrecked airplane. The precariously repaired craft stays airborne just long enough to make it to the African continent. There the New Yorkers encounter members of their own species for the first time. Africa proves to be a wild place, but Alex and company wonder if it is better than their Central Park home.",
+            "starring": "Ben Stiller, Jada Pinkett Smith, David Schwimmer",
+            "release": "2009",
+            "director": "Tom McGrath",
+            "duration": "1h 29m",
+            "age_rating": "PG",
+            "trailer": "https://youtu.be/cSo0k5a0l0w",
+            "user": 1,
+            "genre": [
+                1
+            ],
+            "liked_by": []
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 75,
+        "fields": {
+            "title": "The Nut Job",
+            "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1RdUaSbNUlOf0b0JDGJzHbRrQ2j.jpg",
+            "description": "Surly, a curmudgeon, independent squirrel is banished from his park and forced to survive in the city. Lucky for him, he stumbles on the one thing that may be able to save his life, and the rest of park community, as they gear up for winter - Maury's Nut Store.",
+            "starring": "Will Arnett, Sarah Gadon, Liam Neeson",
+            "release": "2014",
+            "director": "Peter Lepeniotis",
+            "duration": "1h 25",
+            "age_rating": "U",
+            "trailer": "https://www.themoviedb.org/movie/227783-the-nut-job#",
+            "user": 1,
+            "genre": [
+                8,
+                1,
+                9
+            ],
+            "liked_by": []
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 83,
+        "fields": {
+            "title": "1917",
+            "image": "https://image.tmdb.org/t/p/w1280/iZf0KyrE25z1sage4SYFLCCrMi9.jpg",
+            "description": "At the height of the First World War, two young British soldiers must cross enemy territory and deliver a message that will stop a deadly attack on hundreds of soldiers.",
+            "starring": "George Mackay, Dean-Charles Chapman, Mark Strong",
+            "release": "2019",
+            "director": "Sam Mendes",
+            "duration": "1h 59m",
+            "age_rating": "15",
+            "trailer": "https://www.themoviedb.org/movie/530915-1917#",
+            "user": 1,
+            "genre": [
+                13,
+                2,
+                3,
+                5
+            ],
+            "liked_by": []
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 84,
+        "fields": {
+            "title": "Green Book",
+            "image": "https://image.tmdb.org/t/p/w1280/7BsvSuDQuoqhWmU2fL7W2GOcZHU.jpg",
+            "description": "Tony Lip, a bouncer in 1962, is hired to drive pianist Don Shirley on a tour through the Deep South in the days when African Americans, forced to find alternate accommodations and services due to segregation laws below the Mason-Dixon Line, relied on a guide called The Negro Motorist Green Book.",
+            "starring": "Viggo Mortensen, Mahershala Ali, Linda Cardellini",
+            "release": "2018",
+            "director": "Peter Farrelly",
+            "duration": "2h 10m",
+            "age_rating": "12A",
+            "trailer": "https://www.themoviedb.org/movie/490132-green-book#",
+            "user": 1,
+            "genre": [
+                1,
+                5
+            ],
+            "liked_by": []
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 85,
+        "fields": {
+            "title": "The Bourne Ultimatum",
+            "image": "https://image.tmdb.org/t/p/w1280/xqf7mzA77LmMJByvwxRLNdw5pz4.jpg",
+            "description": "Bourne is brought out of hiding once again by reporter Simon Ross who is trying to unveil Operation Blackbriar, an upgrade to Project Treadstone, in a series of newspaper columns. Information from the reporter stirs a new set of memories, and Bourne must finally uncover his dark past while dodging The Company's best efforts to eradicate him.",
+            "starring": "Matt Damon, Julia Styles, David Strathairn",
+            "release": "2007",
+            "director": "Paul Greengrass",
+            "duration": "1h 55m",
+            "age_rating": "12A",
+            "trailer": "https://www.themoviedb.org/movie/2503-the-bourne-ultimatum#",
+            "user": 1,
+            "genre": [
+                2,
+                3,
+                5
+            ],
+            "liked_by": []
+        }
+    },
+    {
+        "model": "movies.movie",
+        "pk": 87,
+        "fields": {
+            "title": "Welcome to the Sudden Death",
+            "image": "https://image.tmdb.org/t/p/w1280/elZ6JCzSEvFOq4gNjNeZsnRFsvj.jpg",
+            "description": "A woman, accidentally caught in a dark deal, turns the tables on her captors and transforms into a merciless warrior evolved beyond human logic.",
+            "starring": "Michael Jai White, Michael Eklund, Gillian White, Gary Owen",
+            "release": "2015",
+            "director": "Dallas Jackson",
+            "duration": "1h 20m",
+            "age_rating": "18",
+            "trailer": "https://youtu.be/xisfaGi_6Ow",
+            "user": 1,
+            "genre": [
+                1
+            ],
+            "liked_by": []
+        }
+    },
+    {
+        "model": "jwt_auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$zYnlFSSENmW0$tXVu88KyjRRx3ISsGgkYep4rapIidnEnV54bH/31o94=",
+            "last_login": "2020-12-31T09:49:41.724Z",
+            "is_superuser": true,
+            "username": "renatomignogna",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2020-10-28T22:38:42.821Z",
+            "email": "ren@email.com",
+            "first_name": "",
+            "last_name": "",
+            "profile_image": "",
+            "groups": [],
+            "user_permissions": [],
+            "watchlist": [
+                17
+            ]
+        }
+    },
+    {
+        "model": "jwt_auth.user",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$v1Ie7B6L381K$YTVmYYVagX9JpaVKkqDKaLb9hjLAxtcrdvaX5EfjiPY=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "john",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2020-10-29T00:19:14.269Z",
+            "email": "john@email.com",
+            "first_name": "John",
+            "last_name": "Wick",
+            "profile_image": "https://ga-core.s3.amazonaws.com/production/uploads/instructor/image/14618/thumb_Screen_Shot_2019-05-30_at_16.42.14.png",
+            "groups": [],
+            "user_permissions": [],
+            "watchlist": []
+        }
+    },
+    {
+        "model": "jwt_auth.user",
+        "pk": 4,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$BQRzx7z6QERg$MUfJ10dQXUbvnedZpl3O2xA1nWnqYv8ppSEKQEedEMI=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "max",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2020-12-20T00:15:26.685Z",
+            "email": "max@email.com",
+            "first_name": "Max",
+            "last_name": "Allerhand",
+            "profile_image": "https://ga-core.s3.amazonaws.com/production/uploads/instructor/image/14618/thumb_Screen_Shot_2019-05-30_at_16.42.14.png",
+            "groups": [],
+            "user_permissions": [],
+            "watchlist": []
+        }
+    },
+    {
+        "model": "jwt_auth.user",
+        "pk": 5,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$cSQ9PfM6kiIb$DHDYK2n1u4TvLfOokbKqR9bL/o3VFed1sEN8jUnMmc4=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "victoria",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2020-12-20T16:39:57.938Z",
+            "email": "victoria@email.com",
+            "first_name": "Victoria",
+            "last_name": "Bocancea",
+            "profile_image": "https://ga-core.s3.amazonaws.com/production/uploads/instructor/image/14618/thumb_Screen_Shot_2019-05-30_at_16.42.14.png",
+            "groups": [],
+            "user_permissions": [],
+            "watchlist": []
+        }
+    },
+    {
+        "model": "jwt_auth.user",
+        "pk": 6,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$PID2dC603iaC$8fEyRZjo2hQTUtOzoL71mwR9W5eQs67+G2b+4g9DQTA=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "dave",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2020-12-20T19:26:31.790Z",
+            "email": "dave@email.com",
+            "first_name": "Dave",
+            "last_name": "Gibbs",
+            "profile_image": "https://ga-core.s3.amazonaws.com/production/uploads/instructor/image/14618/thumb_Screen_Shot_2019-05-30_at_16.42.14.png",
+            "groups": [],
+            "user_permissions": [],
+            "watchlist": []
+        }
+    },
+    {
+        "model": "jwt_auth.user",
+        "pk": 7,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$jiaTxGJG9cbm$b2N91X+8m2sgwW9e1VYeybFfSz1MfiXauhj35OI1tZU=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "mike",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2020-12-24T15:01:40.863Z",
+            "email": "mike@email.com",
+            "first_name": "Mike",
+            "last_name": "Mignogna",
+            "profile_image": "https://ga-core.s3.amazonaws.com/production/uploads/instructor/image/14618/thumb_Screen_Shot_2019-05-30_at_16.42.14.png",
+            "groups": [],
+            "user_permissions": [],
+            "watchlist": []
+        }
+    },
+    {
+        "model": "jwt_auth.user",
+        "pk": 8,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$zWUAgrWGVGEm$XtiFK6Zn1y8t6ArSR3SkRaxJYW80rwNtClZRUMpJfJY=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "phil",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2020-12-29T13:55:12.427Z",
+            "email": "phil@email.com",
+            "first_name": "Phil",
+            "last_name": "Willis",
+            "profile_image": "https://ga-core.s3.amazonaws.com/production/uploads/instructor/image/14618/thumb_Screen_Shot_2019-05-30_at_16.42.14.png",
+            "groups": [],
+            "user_permissions": [],
+            "watchlist": []
+        }
+    },
+    {
+        "model": "comments.comment",
+        "pk": 1,
+        "fields": {
+            "text": "yeah great movie",
+            "created_at": "2020-10-29T08:27:31.160Z",
+            "rating": 5,
+            "movie": 5,
+            "user": 1
+        }
+    },
+    {
+        "model": "comments.comment",
+        "pk": 3,
+        "fields": {
+            "text": "Yeah great movie",
+            "created_at": "2020-10-29T09:48:49.332Z",
+            "rating": 5,
+            "movie": 54,
+            "user": 1
+        }
+    },
+    {
+        "model": "comments.comment",
+        "pk": 4,
+        "fields": {
+            "text": "yeah great movie",
+            "created_at": "2020-10-29T09:49:36.526Z",
+            "rating": 5,
+            "movie": 20,
+            "user": 1
+        }
+    },
+    {
+        "model": "comments.comment",
+        "pk": 5,
+        "fields": {
+            "text": "very cool",
+            "created_at": "2020-10-29T09:50:36.448Z",
+            "rating": 4,
+            "movie": 20,
+            "user": 1
+        }
+    },
+    {
+        "model": "comments.comment",
+        "pk": 6,
+        "fields": {
+            "text": "very funny",
+            "created_at": "2020-10-29T10:41:34.196Z",
+            "rating": 4,
+            "movie": 22,
+            "user": 1
+        }
+    },
+    {
+        "model": "comments.comment",
+        "pk": 7,
+        "fields": {
+            "text": "yeah it was alright",
+            "created_at": "2020-10-29T10:46:11.499Z",
+            "rating": 3,
+            "movie": 22,
+            "user": 1
+        }
+    },
+    {
+        "model": "comments.comment",
+        "pk": 8,
+        "fields": {
+            "text": "awesome",
+            "created_at": "2020-10-29T10:48:40.708Z",
+            "rating": 5,
+            "movie": 17,
+            "user": 1
+        }
+    },
+    {
+        "model": "comments.comment",
+        "pk": 9,
+        "fields": {
+            "text": "yes fantastic!",
+            "created_at": "2020-10-29T10:52:23.914Z",
+            "rating": 5,
+            "movie": 17,
+            "user": 1
+        }
+    },
+    {
+        "model": "comments.comment",
+        "pk": 10,
+        "fields": {
+            "text": "yeah very entertaining movie",
+            "created_at": "2020-10-29T10:57:24.015Z",
+            "rating": 4,
+            "movie": 17,
+            "user": 1
+        }
+    },
+    {
+        "model": "comments.comment",
+        "pk": 11,
+        "fields": {
+            "text": "Enjoyed this one very entertaining!",
+            "created_at": "2020-10-29T12:06:38.450Z",
+            "rating": 4,
+            "movie": 20,
+            "user": 1
+        }
+    },
+    {
+        "model": "comments.comment",
+        "pk": 12,
+        "fields": {
+            "text": "yeah great",
+            "created_at": "2020-10-29T14:28:40.814Z",
+            "rating": 5,
+            "movie": 5,
+            "user": 1
+        }
+    },
+    {
+        "model": "comments.comment",
+        "pk": 13,
+        "fields": {
+            "text": "yep really cool",
+            "created_at": "2020-10-29T15:45:38.504Z",
+            "rating": 5,
+            "movie": 53,
+            "user": 1
+        }
+    },
+    {
+        "model": "comments.comment",
+        "pk": 14,
+        "fields": {
+            "text": "hmm it was alright",
+            "created_at": "2020-10-29T16:30:39.984Z",
+            "rating": 3,
+            "movie": 54,
+            "user": 1
+        }
+    },
+    {
+        "model": "comments.comment",
+        "pk": 15,
+        "fields": {
+            "text": "yep super",
+            "created_at": "2020-10-29T17:13:29.831Z",
+            "rating": 5,
+            "movie": 39,
+            "user": 1
+        }
+    },
+    {
+        "model": "comments.comment",
+        "pk": 16,
+        "fields": {
+            "text": "super",
+            "created_at": "2020-10-29T20:26:42.567Z",
+            "rating": 5,
+            "movie": 38,
+            "user": 1
+        }
+    },
+    {
+        "model": "comments.comment",
+        "pk": 17,
+        "fields": {
+            "text": "really good , great sound effects and story",
+            "created_at": "2020-10-29T22:18:20.356Z",
+            "rating": 5,
+            "movie": 45,
+            "user": 1
+        }
+    },
+    {
+        "model": "comments.comment",
+        "pk": 18,
+        "fields": {
+            "text": "kjxczvkjbnkd",
+            "created_at": "2020-10-29T22:19:18.827Z",
+            "rating": 5,
+            "movie": 45,
+            "user": 1
+        }
+    },
+    {
+        "model": "comments.comment",
+        "pk": 20,
+        "fields": {
+            "text": "nice movie",
+            "created_at": "2020-12-30T22:32:36.097Z",
+            "rating": 5,
+            "movie": 14,
+            "user": 7
+        }
+    },
+    {
+        "model": "comments.comment",
+        "pk": 21,
+        "fields": {
+            "text": "excellent",
+            "created_at": "2020-12-30T23:02:43.492Z",
+            "rating": 4,
+            "movie": 17,
+            "user": 7
+        }
+    },
+    {
+        "model": "comments.comment",
+        "pk": 22,
+        "fields": {
+            "text": "not so great",
+            "created_at": "2020-12-30T23:07:12.774Z",
+            "rating": 2,
+            "movie": 15,
+            "user": 7
+        }
+    },
+    {
+        "model": "comments.comment",
+        "pk": 23,
+        "fields": {
+            "text": "didnt like it",
+            "created_at": "2020-12-30T23:09:19.687Z",
+            "rating": 1,
+            "movie": 15,
+            "user": 7
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 1,
+        "fields": {
+            "name": "Comedy"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 2,
+        "fields": {
+            "name": "Action"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 3,
+        "fields": {
+            "name": "Thriller"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 4,
+        "fields": {
+            "name": "Horror"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 5,
+        "fields": {
+            "name": "Drama"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 6,
+        "fields": {
+            "name": "Documentary"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 7,
+        "fields": {
+            "name": "Crime"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 8,
+        "fields": {
+            "name": "Animation"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 9,
+        "fields": {
+            "name": "Family"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 10,
+        "fields": {
+            "name": "Fantasy"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 11,
+        "fields": {
+            "name": "Romance"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 12,
+        "fields": {
+            "name": "Science Fiction"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 13,
+        "fields": {
+            "name": "War"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 14,
+        "fields": {
+            "name": "Western"
+        }
+    }
+]

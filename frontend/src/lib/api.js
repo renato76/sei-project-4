@@ -1,7 +1,8 @@
 import axios from 'axios'
+
 // MOVIES
 
-// helper function as we need to repeatedly get token and headers etc
+// helper function as I need to repeatedly get token and headers etc
 const getAuthHeaders = () => {
   const token = localStorage.getItem('token')
   const headers = {
@@ -31,13 +32,6 @@ export const createMovie = formData => {
 
 // UPDATE A MOVIE
 export const updateMovie = (id, formData) => {
-  // const token = localStorage.getItem('token')
-  // const headers = {
-  //   headers: {
-  //     Authorization: `Bearer ${token}`
-  //   }
-  // }
-  // console.log(formData, headers)
   return axios.put(`/api/movies/${id}/`, formData, getAuthHeaders())
 }
 
@@ -61,6 +55,7 @@ export const deleteMovie = id => {
 
 
 // AUTH
+
 export const registerUser = formData => {
   return axios.post('/api/auth/register/', formData)
 }
@@ -69,7 +64,7 @@ export const loginUser = formData => {
   return axios.post('/api/auth/login/', formData)
 }
 
-// Will need another export const here to handle new comments
+// Create New Comment
 export const createNewComment = formData => {
   const token = localStorage.getItem('token')
   const headers = {
@@ -80,13 +75,18 @@ export const createNewComment = formData => {
   return axios.post('/api/comments/', formData, headers)
 }
 
-
-// ADD MOVIE TO WATCHLIST
-// this is the same as Simon's likePhoto
+// Add Movie to Watchlist
 
 export const addToWatchlist = (movieId, formData) => {
   console.log(`Adding movie ${movieId} to my Watchlist`)
   return axios.post(`/api/movies/${movieId}/likes/`, formData, getAuthHeaders())
+}
+
+// remove Movie from Watchlist
+
+export const removeFromWatchlist = (movieId) => {
+  console.log(`Removing movie ${movieId} from my Watchlist`)
+  return axios.delete(`/api/movies/${movieId}/likes/`, getAuthHeaders())
 }
 
 

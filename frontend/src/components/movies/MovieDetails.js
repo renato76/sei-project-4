@@ -2,7 +2,7 @@ import React from 'react'
 import moment from 'moment'
 import { Link } from 'react-router-dom'
 import { getSingleMovie, deleteMovie, getUserProfile } from '../../lib/api'
-import { createNewComment, addToWatchlist } from '../../lib/api'
+import { createNewComment, addToWatchlist, removeFromWatchlist } from '../../lib/api'
 import { isAuthenticated } from '../../lib/auth'
 import { popupNotification } from '../../lib/notification'
 
@@ -16,7 +16,10 @@ class MovieDetails extends React.Component {
       rating: ''
     },
     liked_movies: '',
-    currentUserId: ''
+    currentUserId: '',
+    liked_by: '', 
+    heartColor: 'grey',
+    liked: false
   }
 
   async componentDidMount() {    
@@ -30,7 +33,7 @@ class MovieDetails extends React.Component {
     })  
 
 
-    // So here I am retrieving the loggoed in user details, the id in particular
+    // I am retrieving the loggoed in user details, the id in particular
     // so I can then check if this user has liked this movie
     // if not, then set heart color to grey - if yes then set to pink
     
@@ -46,16 +49,15 @@ class MovieDetails extends React.Component {
 
     console.log(this.state)
 
-    // const likedByArrayIds = this.state.movie.liked_by.map(likedBy = likedBy.id)
-    // const isLikedByCurrentUser = likedByArrayIds.includes()
+    const likedByArrayIds = this.state.movie.liked_by.map(user => user.id)
+    const isLikedByCurrentUser = likedByArrayIds.includes(this.state.currentUserId)
 
+    const heartColor = isLikedByCurrentUser ? 'crimson' : 'grey'
 
-    // const heartColor = isLikedByCurrentUser ? 'pink' : 'grey'
-
-    // this.setState({
-    //   heartColor,
-    //   liked: isLikedByCurrentUser
-    // })
+    this.setState({
+      heartColor,
+      liked: isLikedByCurrentUser
+    })
 
     
   }
@@ -101,10 +103,33 @@ class MovieDetails extends React.Component {
   // handle add to watchlist button
   handleWatchlist = async () => {
     const movieId  = this.props.match.params.id
-    await addToWatchlist(movieId)
+    // await addToWatchlist(movieId)
 
     // need to set state of heart icon ideally toggle on and off
     // so onclick toggle the color whilst also adding / removing from like_movies
+
+    const { liked } = this.state
+    if (!liked) {
+      try {
+        await addToWatchlist(movieId)
+        this.setState({
+          heartColor: 'crimson',
+          liked: true
+        })
+      } catch (err) {
+        console.log(err)
+      }
+    } else {
+      try {
+        await removeFromWatchlist(movieId)
+        this.setState({
+          heartColor: 'grey',
+          liked: false
+        })
+      } catch (err) {
+        console.log(err)
+      }
+    }
 
 
     // this is just to test if the movie is added to liked_movies
@@ -115,7 +140,7 @@ class MovieDetails extends React.Component {
 
   render() {
     const { movie, text, rating } = this.state
-
+    const { heartColor } = this.state
     
     if (!movie) return null
     return (
@@ -161,9 +186,9 @@ class MovieDetails extends React.Component {
                 </div>  
                 <div className="like">
                   
-                  { isAuthenticated  && <FaHeart size="1.6em" onClick={this.handleWatchlist} /> }
+                  { isAuthenticated()  && <FaHeart onClick={this.handleWatchlist}  color={heartColor} /> }
               
-                  <h6>Add to Watchlist</h6>
+                  {/* <h6>Add to Watchlist</h6> */}
                 </div>
                 { isAuthenticated() && <div className="edit-buttons">
                   <Link to={`/movies/${movie.id}/edit`} id="edit" className="button">Edit</Link>
