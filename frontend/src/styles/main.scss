@@ -6,11 +6,6 @@ body {
   overflow-x: hidden;
 }
 
-.description h2 {
-  line-height: 1.4em;
-  letter-spacing: 0.014em;
-}
-
 .like {
   font-size: 30px;
   text-align: center;
@@ -31,12 +26,14 @@ body {
 .navbar {
   padding-left: 8%;
   background-color: #202020;
-  height: 3.3rem;
-
+  height: 4rem;
+  border-bottom: 1px solid rgb(56, 56, 56);
 }
 
 .navbar-end {
   padding-right: 5%;
+  padding-top: 10px;
+  padding-bottom: 10PX;
 }
 
 .navbar-item {
@@ -46,16 +43,21 @@ body {
   display: flex;
 }
 a.navbar-item:hover {
-  color: ç;
+  color: #009cc4;
 }
 a.navbar-item:active {
   color: #009cc4;
 }
 
-
 a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, .navbar-link.is-active {
   background-color: #202020;
   color: #009cc4;
+}
+
+.sign-in {
+  border: 1px solid white;
+  padding: 2%;
+  border-radius: 8px;
 }
 
 // *** Home Page *** 
@@ -228,14 +230,20 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     font-weight: bold;
   }
 }
-.description {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 15px;
-  color: white;
+.description {  
   padding: 2% 20% 2% 8%;
   flex-wrap: wrap;
   text-align: left;
+  h2 {
+    line-height: 1.5em;
+    letter-spacing: 0.014em;
+    font-weight: lighter;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    color: white;
+  }
 }
+
 
 .cast {
   text-align: left;
@@ -453,12 +461,46 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 // *** Register and Login Section ***
 
 .section {
-  background-color: #1f1e1e;
+  position: relative;
+  background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/9ec8d211-6a2a-460d-9b68-5d6bb1c57ee0/d504294f-8d38-4583-9c12-713e9cda3cfe/GB-en-20201228-popsignuptwoweeks-perspective_alpha_website_large.jpg');
   height: 100vh;
+  background-size: cover;
+  &:before {
+    content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom right,#000000,#000000);
+        opacity: .65; 
+  }
+}
+
+.column {
+  background-color: rgba(0, 0, 0, 0.644);
+  padding: 3%;
+  margin-top: 2%;
+  border-radius: 1em;
+}
+
+.input {
+  background-color: #dfdfdf;
+  font-family: Quicksand;
+}
+
+.reg-label {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Quicksand;
+}
+
+.sign-in-form {
+  margin-top: 8%;
 }
 
 .field {
-
   button {
     background-color: #009cc4;
     border: 1px solid #009cc4;
@@ -496,6 +538,10 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   margin-bottom: 30px;
   padding: 20px 100px;
   width: 500px;
+}
+
+.footer {
+  background-color: #0f0f0f;
 }
 
 

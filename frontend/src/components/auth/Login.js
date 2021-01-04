@@ -40,10 +40,10 @@ class Login extends React.Component {
     return (
       <section className="section">
         <div className="container">
-          <div className="columns">
+          <div className="columns  sign-in-form">
             <form onSubmit={this.handleSubmit} className="column is-one-third is-offset-one-third box">
               <div className="field">
-                <label className="label">Email</label>
+                <label className="reg-label">Sign In</label>
                 <div className="control">
                   <input
                     className="input"
@@ -55,7 +55,7 @@ class Login extends React.Component {
                 </div>
               </div>
               <div className="field">
-                <label className="label">Password</label>
+                {/* <label className="label">Password</label> */}
                 <div className="control">
                   <input
                     type="password"

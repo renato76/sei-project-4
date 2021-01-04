@@ -54,7 +54,7 @@ class Register extends React.Component {
           <div className="columns">
             <form onSubmit={this.handleSubmit} className="column is-one-third is-offset-one-third box">
               <div className="field">
-                <label className="label">Register</label>
+                <label className="reg-label">Register</label>
                 <div className="control">
                   <input
                     className={`input ${registerErrors.username ? 'is-danger' : ''}`}
