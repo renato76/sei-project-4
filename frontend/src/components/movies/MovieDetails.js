@@ -167,7 +167,7 @@ class MovieDetails extends React.Component {
               <div className="overview">
                 <h1>Overview</h1>
                 <div className="description">
-                  <h2>{movie.description}</h2>
+                  <p>{movie.description}</p>
                 </div>
               </div>
               <div className="cast">
@@ -264,7 +264,7 @@ class MovieDetails extends React.Component {
             </div>
           </div>
         </div> 
-      </div>
+      </div>    
     )
   }
 }

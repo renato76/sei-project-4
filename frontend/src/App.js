@@ -10,7 +10,7 @@ import Home from './components/common/Home'
 import Navbar from './components/common/Navbar'
 import Register from './components/auth/Register'
 import Login from './components/auth/Login'
-// import Profile from './components/auth/Profile' 
+import Profile from './components/auth/Profile' 
 import Footer from './components/common/Footer'
 
 
@@ -27,7 +27,7 @@ const App = ()  => {
         <Route exact path="/" component={Home} />   
         <Route path="/register" component={Register} />     
         <Route path="/login" component={Login} />    
-        {/* <Route path="/profile" component={Profile} />     */}
+        <Route path="/profile" component={Profile} />    
       </Switch>
       <Footer />
     </BrowserRouter>

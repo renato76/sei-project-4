@@ -54,7 +54,7 @@ class Register extends React.Component {
           <div className="columns">
             <form onSubmit={this.handleSubmit} className="column is-one-third is-offset-one-third box">
               <div className="field">
-                <label className="reg-label">Register</label>
+                <label className="reg-label">Sign Up</label>
                 <div className="control">
                   <input
                     className={`input ${registerErrors.username ? 'is-danger' : ''}`}
@@ -148,7 +148,7 @@ class Register extends React.Component {
                 { registerErrors.password_confirmation && <p className="help is-danger">{registerErrors.password_confirmation}</p> }
               </div>
               <div className="field">
-                <button type="submit" className="button is-fullwidth">Register</button>
+                <button type="submit" className="button is-fullwidth">Sign Up!</button>
               </div>
             </form>
           </div>
