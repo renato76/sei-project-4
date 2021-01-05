@@ -27,18 +27,13 @@ class MovieDetails extends React.Component {
     const movieId = this.props.match.params.id
     // console.log(this.props, movieId)
     const response = await getSingleMovie(movieId)
-    // console.log(response.data)
+    console.log(response.data)
     this.setState({
       movie: response.data
     })  
 
 
-    // I am retrieving the loggoed in user details, the id in particular
-    // so I can then check if this user has liked this movie
-    // if not, then set heart color to grey - if yes then set to pink
-    
-
-
+    // Get user profile details and update state
     const profile = await getUserProfile()
     // console.log(profile.data.id)
     const userId = profile.data.id
@@ -46,8 +41,6 @@ class MovieDetails extends React.Component {
     this.setState({ 
       currentUserId: userId
     })
-
-    console.log(this.state)
 
     const likedByArrayIds = this.state.movie.liked_by.map(user => user.id)
     const isLikedByCurrentUser = likedByArrayIds.includes(this.state.currentUserId)
@@ -74,6 +67,7 @@ class MovieDetails extends React.Component {
   }
 
   // A function to handle submit comment
+  
   handleSubmit = async event => {
     event.preventDefault()
     // add the movieID to the Object formdata
@@ -106,7 +100,7 @@ class MovieDetails extends React.Component {
     // await addToWatchlist(movieId)
 
     // need to set state of heart icon ideally toggle on and off
-    // so onclick toggle the color whilst also adding / removing from like_movies
+    // so onclick toggle the color whilst also adding / removing from liked_movies
 
     const { liked } = this.state
     if (!liked) {
@@ -133,8 +127,8 @@ class MovieDetails extends React.Component {
 
 
     // this is just to test if the movie is added to liked_movies
-    const responseProfile =  await getUserProfile()
-    console.log(responseProfile)
+    // const responseProfile =  await getUserProfile()
+    // console.log(responseProfile)
     
   }
 

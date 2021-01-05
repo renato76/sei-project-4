@@ -5,8 +5,8 @@ const MovieForm = props => {
   const { title, image, description, starring, release, director, duration, age_rating, trailer } = props.formData
 
   return (
-    <div className="columns">
-      <form onSubmit={handleSubmit} className="column add-movie is-one-third is-offset-one-third box">
+    <div className="add-movie">
+      <form onSubmit={handleSubmit} className="column is-half is-offset-one-quarter box">
         <div className="field">
           <label className="label">Add / Edit A Movie</label>
           <div className="control">

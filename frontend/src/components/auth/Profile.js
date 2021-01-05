@@ -11,16 +11,11 @@ class Profile extends React.Component {
     const profile = await getUserProfile()
     // console.log(profile.data)
     this.setState({
-      liked_movies: profile.data.liked_movies
+      liked_movies: profile.data.liked_movies,
+      created_movies: profile.data.created_movies
     })
     // console.log('watchlist array >>>>', profile.data.liked_movies)
-    console.log(this.state)
 
-    const responseProfile =  await getUserProfile()
-    console.log(responseProfile)
-    this.setState({
-      created_movies: responseProfile.data.created_movies
-    })
   }
   render() {
     const watchlist = this.state.liked_movies

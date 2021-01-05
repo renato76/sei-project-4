@@ -17,9 +17,6 @@ body {
     text-align: center;
   }
 }
-// .like:hover {
-//   color: #dc143c;
-// }
 
 // *** Navbar ***
 
@@ -99,36 +96,6 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     margin-left: 60px;
     margin-top: 10px;
   }
-}
-
-// Profile View
-
-// .profile-movie-row{
-//   display: flex;
-//   overflow-y: hidden;
-//   overflow-x: scroll;
-//   -webkit-overflow-scrolling: touch;
-//   padding: 25px 5px;
-//   margin-bottom: 20px;
-//   margin-left: 50px;
-//   margin-right: 50px;
-// }
-// .profile-movie-row::-webkit-scrollbar {
-//   display: none;
-// }
-
-.profile-row-poster {
-  object-fit: contain;
-  width: 200px;
-  transition: transform 500ms;
-  margin-right: 15px;
-  img {
-    border-radius: 6px;
-  }  
-}
-
-.profile-row-poster:hover {
-  transform: scale(1.09);
 }
 
 .profile-container {
@@ -518,10 +485,24 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 }
 
 .column {
-  background-color: rgba(0, 0, 0, 0.644);
+  background-color: #000000a4;
   padding: 3%;
   margin-top: 2%;
   border-radius: 1em;
+}
+
+.add-movie {
+  .column {
+    // background-color: #944545a4;
+    background-color: #303030a4;
+    padding: 3% 8%;
+    margin-top: 2%;
+    border-radius: 1em;
+    align-content: center;
+  }
+  .label {
+    color: white;
+  }
 }
 
 .input {
@@ -562,10 +543,12 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 
 // *** Create and Update a Movie Section ***
 
+
 .add-movie-section {
   background-color: #1f1e1e;
   height: auto;
   padding: 50px;
+  
 }
 
 .is-multiple {
