@@ -505,6 +505,14 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   }
 }
 
+.multiple {
+  .option {
+    font-family: Quicksand;
+    color: #5c5c5c8e;
+    background-color: rgb(216, 216, 216);
+  }
+}
+
 .input {
   background-color: #dfdfdf;
   font-family: Quicksand;

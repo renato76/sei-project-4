@@ -110,6 +110,7 @@ class MovieDetails extends React.Component {
           heartColor: 'crimson',
           liked: true
         })
+        popupNotification('Added to Watchlist!')
       } catch (err) {
         console.log(err)
       }
@@ -120,6 +121,7 @@ class MovieDetails extends React.Component {
           heartColor: 'grey',
           liked: false
         })
+        popupNotification('Removed from Watchlist!')
       } catch (err) {
         console.log(err)
       }

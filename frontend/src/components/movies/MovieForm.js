@@ -22,20 +22,20 @@ const MovieForm = props => {
         { <div className="select is-multiple">
           <label className="label">Select 1 or more genres</label>
           <select multiple={true} className="multiple" size="14" onChange={handleMultiSelect}>           
-            <option name="1"value={1}>Comedy</option>
-            <option name="2"value={2}>Action</option>
-            <option name="3"value={3}>Thriller</option>
-            <option name="4"value={4}>Horror</option>
-            <option name="5"value={5}>Drama</option>
-            <option name="6"value={6}>Documentary</option>
-            <option name="7"value={7}>Crime</option>
-            <option name="8"value={8}>Animation</option>
-            <option name="9"value={9}>Family</option>
-            <option name="10"value={10}>Fantasy</option>
-            <option name="11"value={11}>Romance</option>
-            <option name="12"value={12}>Science Fiction</option>
-            <option name="13"value={13}>War</option>
-            <option name="14"value={14}>Western</option>
+            <option name="1"value={1} className="option">Comedy</option>
+            <option name="2"value={2} className="option">Action</option>
+            <option name="3"value={3} className="option">Thriller</option>
+            <option name="4"value={4} className="option">Horror</option>
+            <option name="5"value={5} className="option">Drama</option>
+            <option name="6"value={6} className="option">Documentary</option>
+            <option name="7"value={7} className="option">Crime</option>
+            <option name="8"value={8} className="option">Animation</option>
+            <option name="9"value={9} className="option">Family</option>
+            <option name="10"value={10} className="option">Fantasy</option>
+            <option name="11"value={11} className="option">Romance</option>
+            <option name="12"value={12} className="option">Science Fiction</option>
+            <option name="13"value={13} className="option">War</option>
+            <option name="14"value={14} className="option">Western</option>
           </select>
         </div> }
         <div className="field">
