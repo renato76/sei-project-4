@@ -242,7 +242,7 @@ class MovieDetails extends React.Component {
               <hr />
               <div className="user-reviews-parent">
                 <div className="user-reviews"> 
-                  key={movie.comment} {movie.comments.map(comment => (
+                  {movie.comment} {movie.comments.map(comment => (
                     <>
                       <div className="comment-text">
                         <h3>User: {comment.user.username}</h3>
