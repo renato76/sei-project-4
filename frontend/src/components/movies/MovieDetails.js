@@ -245,14 +245,17 @@ class MovieDetails extends React.Component {
                   {movie.comment} {movie.comments.map(comment => (
                     <>
                       <div className="comment-text">
-                        <h3>User: {comment.user.username}</h3>
-                        <p>Comment: {comment.text}</p>
+                        <h2>A review by {comment.user.username} </h2>
+                        <h3>Written on: {moment(comment.created_at).format('Do MMM YY')}</h3>
+                        {/* <h3>User: {comment.user.username}</h3> */}
+                        <div className="comment-rating">
+                          <p><span>{comment.rating}.0</span></p>
+                        </div>
+                        <p>{comment.text}</p>
                       </div>
+                      
                       <div className="comment-rating">
-                        <p>Rating: {comment.rating}</p>
-                      </div>
-                      <div className="comment-rating">
-                        <p>Created at: {moment(comment.created_at).format('Do MMM YY')}</p>
+                        {/* <p>Created on: {moment(comment.created_at).format('Do MMM YY')}</p> */}
                       </div>
                       <hr />
                     </>

@@ -450,6 +450,31 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     font-size: 20px;
   }
 }
+.comment-text {
+  h3 {
+    font-size: 12px;
+    font-weight: bold;
+    // font-style: italic;
+    color: #0084ac;
+  }
+  p {
+    font-size: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+}
+.comment-rating {
+  p {
+    font-weight: bold;
+    font-size: 13px;
+    font-family: Quicksand;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 5px 0;
+  }
+}
 
 .user-reviews-parent {
   display: flex;
@@ -1320,7 +1345,7 @@ and (max-width: 413px){
     object-fit: contain;
     width: 140px;
     transition: transform 500ms;
-    margin-right: 15px;
+    margin-right: 8px;
     img {
       border-radius: 6px;
     }  
