@@ -71,9 +71,10 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   margin-left: 50px;
   margin-right: 50px;
 }
-.movie-row::-webkit-scrollbar {
-  display: none;
-}
+
+// .movie-row::-webkit-scrollbar {
+//   display: none;
+// }
 
 .row-poster {
   object-fit: contain;
@@ -576,7 +577,6 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 }
 
 
-
 // Laptops
 
 @media only screen
@@ -950,9 +950,6 @@ and (max-width: 1024px) {
 
 }
 
-
-
-
 // Mobile
 
 @media only screen
@@ -964,7 +961,7 @@ and (max-width: 812px) {
     h2 {
       position:absolute;
       top: 40%;
-      right: 30%;
+      right: 34%;
       color: white;
       font-weight: bold;
       background-color: #181818;
@@ -985,7 +982,6 @@ and (max-width: 812px) {
   .logo:active {
     background-color: #202020;
   }
-
 
   .mobile-navbar {
     background-color: #202020;
@@ -1056,6 +1052,7 @@ and (max-width: 812px) {
     img {
       max-width: 360px;
       border-radius: 10px;
+      margin: 0;
     }
     padding: 8% 0;
     margin: 0;
@@ -1217,6 +1214,8 @@ and (max-width: 812px) {
 
 }
 
+// Small Mobile Phones
+
 @media only screen
 and (min-width: 320px)
 and (max-width: 413px){
@@ -1227,6 +1226,24 @@ and (max-width: 413px){
     margin: 0;
     overflow-x: hidden;
     width: 100%;
+  }
+
+  .title {
+    position: relative;
+    h2 {
+      position:absolute;
+      top: 40%;
+      right: 32%;
+      color: white;
+      font-weight: bold;
+      background-color: #181818;
+      border-radius: 5px;
+      padding: 8px 25px;
+      font-size: 15px;
+    }
+    h2:hover {
+      background-color: #202020;
+    }
   }
 
   .movie-row{
@@ -1268,7 +1285,7 @@ and (max-width: 413px){
       position: fixed;
       width: 36px;
       height: 27px;
-      right: 36px;
+      right: 28px;
       top: 12px;
     }
   
@@ -1311,10 +1328,12 @@ and (max-width: 413px){
 
   .poster-view {
     img {
-      max-width: 260px;
+      max-width: 330px;
       border-radius: 10px;
+      margin: 0;
     }
-    padding: 30px;
+    
+    padding: 20px 10px 10px 10px;
     margin: 0;
   }
   .details {
@@ -1375,10 +1394,10 @@ and (max-width: 413px){
   }
 
   .cast {
-    padding: 10% 0;
+    padding: 10%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     h4 {
   
       font-size: 15px;
@@ -1394,20 +1413,21 @@ and (max-width: 413px){
 
   .trailer-parent {
     padding: 0;
-    margin: 0 10%;
+    margin: 0;
   }
 
   .trailer {
     button {
-      width: 140px;
+      width: 120px;
+      margin-left: 15px;
       border-radius: 5px;
     }
     a {
-      font-size: 18px;
+      font-size: 17px;
     }
   }
   .edit-buttons {
-    margin-left: 10%;
+    margin-left: 5%;
     .button {
       width: 70px;
       border-radius: 5px;
@@ -1431,7 +1451,7 @@ and (max-width: 413px){
 
   .next-page {
     flex-direction: column;
-    padding: 4%;
+    padding: 3% 1%;
   }
   .comments-left {
     width: 100%;

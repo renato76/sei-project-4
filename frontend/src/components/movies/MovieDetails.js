@@ -22,6 +22,7 @@ class MovieDetails extends React.Component {
     liked: false
   }
 
+  
   async componentDidMount() {    
     // request single movie by id
     const movieId = this.props.match.params.id
@@ -34,13 +35,17 @@ class MovieDetails extends React.Component {
 
 
     // Get user profile details and update state
-    const profile = await getUserProfile()
-    // console.log(profile.data.id)
-    const userId = profile.data.id
-    // console.log(userId)
-    this.setState({ 
-      currentUserId: userId
-    })
+    try {
+      const profile = await getUserProfile()
+      // console.log(profile.data.id)
+      const userId = profile.data.id
+      // console.log(userId)
+      this.setState({ 
+        currentUserId: userId
+      })
+    } catch (err) {
+      console.error(err)
+    }
 
     const likedByArrayIds = this.state.movie.liked_by.map(user => user.id)
     const isLikedByCurrentUser = likedByArrayIds.includes(this.state.currentUserId)
@@ -127,17 +132,14 @@ class MovieDetails extends React.Component {
       }
     }
 
-
     // this is just to test if the movie is added to liked_movies
     // const responseProfile =  await getUserProfile()
-    // console.log(responseProfile)
-    
+    // console.log(responseProfile) 
   }
-
+  
   render() {
     const { movie, text, rating } = this.state
-    const { heartColor } = this.state
-    
+    const { heartColor } = this.state   
     if (!movie) return null
     return (
       <div className="show-page">
@@ -154,7 +156,7 @@ class MovieDetails extends React.Component {
               <div className="movie-info">
                 <h3>{movie.age_rating}&nbsp;</h3>
                 <div className="genres">
-                  <h4> {movie.genre.map(genre => genre.name).join(', ')} </h4>
+                  <h4 key={movie.id}> {movie.genre.map(genre => genre.name).join(', ')}</h4>
                 </div>
                 <div className="duration">
                   <h4>{movie.duration}</h4>
@@ -184,7 +186,7 @@ class MovieDetails extends React.Component {
                   
                   { isAuthenticated()  && <FaHeart onClick={this.handleWatchlist}  color={heartColor} /> }
               
-                  {/* <h6>Add to Watchlist</h6> */}
+                  {/* Add to Watchlist */}
                 </div>
                 { isAuthenticated() && <div className="edit-buttons">
                   <Link to={`/movies/${movie.id}/edit`} id="edit" className="button">Edit</Link>
@@ -239,8 +241,8 @@ class MovieDetails extends React.Component {
               </div>
               <hr />
               <div className="user-reviews-parent">
-                <div className="user-reviews">
-                  {movie.comments.map(comment => (
+                <div className="user-reviews"> 
+                  key={movie.comment} {movie.comments.map(comment => (
                     <>
                       <div className="comment-text">
                         <h3>User: {comment.user.username}</h3>
