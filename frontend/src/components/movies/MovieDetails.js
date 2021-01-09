@@ -85,9 +85,9 @@ class MovieDetails extends React.Component {
     console.log(this.state.formData)
         
     popupNotification('Thanks for your comment and rating!')
-    const movieId = this.state.movie.id
-    this.props.history.push(`/movies/${movieId}`)
-    // this.props.history.push('/')
+    // const movieId = this.state.movie.id
+    // this.props.history.push(`/movies/${movieId}`)
+    this.props.history.push('/')
   }
 
   handleDelete = async () => {
