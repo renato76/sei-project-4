@@ -4,18 +4,18 @@ import { Link } from 'react-router-dom'
 import { logout, isAuthenticated } from '../../lib/auth'
 import { popupNotification } from '../../lib/notification'
 
-class NavBarContent extends React.Component  {
 
+class NavBarContent extends React.Component  {
   handleLogOut() {
-    // show a message to user to say goodbye or whatever
     popupNotification('You have signed out!')
     logout()
   }
 
+
   render() { 
     return (
       <div className="navbar-end">    
-        <Link to="/" className="navbar-item">Home</Link>  
+        <Link to="/" className="navbar-item" >Home</Link>  
         { isAuthenticated() && <Link to="/movies/new" className="navbar-item">Add A Movie</Link> }
         { !isAuthenticated() && <Link to="/register" className="navbar-item">Sign Up</Link> }
         { !isAuthenticated() && <Link to="/login" className="navbar-item sign-in">Sign In</Link> }

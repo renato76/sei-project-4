@@ -51,7 +51,7 @@ class Register extends React.Component {
     return (
       <section className="section">
         <div className="container">
-          <div className="columns">
+          <div className="columns sign-in-form">
             <form onSubmit={this.handleSubmit} className="column is-one-third is-offset-one-third box">
               <div className="field">
                 <label className="reg-label">Sign Up</label>
