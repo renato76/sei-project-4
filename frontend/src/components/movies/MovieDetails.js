@@ -242,9 +242,9 @@ class MovieDetails extends React.Component {
               <hr />
               <div className="user-reviews-parent">
                 <div className="user-reviews"> 
-                  {movie.comment} {movie.comments.map(comment => (
+                  {movie.comments.map((comment, id) => (
                     <>
-                      <div className="comment-text">
+                      <div key={id} className="comment-text">
                         <h2>A review by {comment.user.username} </h2>
                         <h3>Written on: {moment(comment.created_at).format('Do MMM YY')}</h3>
                         {/* <h3>User: {comment.user.username}</h3> */}
