@@ -629,6 +629,16 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 .footer {
   background-color: #0f0f0f;
 }
+.columns {
+  display: flex;
+  justify-content: center;
+  margin: 4% 0;
+}
+.column.is-offset-one-third {
+  margin: 0;
+  padding: 3%;
+  width: 430px;
+}
 
 
 // Laptops
@@ -864,7 +874,7 @@ and (max-width: 1024px) {
 
   .poster-view {
     img {
-      max-width: 280px;
+      max-width: 350px;
       border-radius: 10px;
     }
     padding: 30px 10px 10px 25px;
@@ -878,7 +888,7 @@ and (max-width: 1024px) {
   .overview {
     h1 {
       font-size: 21px;
-      padding: 2% 3%;
+      padding: 1% 3%;
       margin: 0;
       text-align: left;
     }
@@ -919,6 +929,10 @@ and (max-width: 1024px) {
         font-size: 14px;
         text-align: left;
       }
+    }
+    .average-rating {
+      margin: 10px 16px;
+      width: 140px;
     }
     .description {
       padding: 0 3%;
@@ -1000,6 +1014,16 @@ and (max-width: 1024px) {
       padding: 1%;
       margin: 4%;
     }
+  .columns {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .column.is-offset-one-third {
+    margin: 0;
+    padding: 3%;
+    width: 380px;
+  }
   
 
 }
@@ -1164,17 +1188,27 @@ and (max-width: 812px) {
       text-align: center;
     }
   }
+  .rating-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .average-rating {
-    width: auto;
+    width: 140px;
     border-radius: 12px;
     margin: 0.6em 7.5em 0;
+  }
+  .overview {
+    h1 {
+      padding: 3% 10% 1%;
+    }
   }
   .description {
     padding: 0 10%;
   }
 
   .cast {
-    padding: 10% 0;
+    padding: 5% 0 3% 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1236,7 +1270,7 @@ and (max-width: 812px) {
 
   .next-page {
     flex-direction: column;
-    padding: 4%;
+    padding: 4% 1%;
   }
   .comments-left {
     width: 100%;
@@ -1276,6 +1310,13 @@ and (max-width: 812px) {
       padding: 0;
       font-size: 15px;
     }
+  }
+  .columns {
+    margin: 10% 20%;
+    
+  }
+  .column {
+    padding: 10%;
   }
 }
 

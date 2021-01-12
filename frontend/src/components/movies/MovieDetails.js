@@ -96,6 +96,7 @@ class MovieDetails extends React.Component {
     // const response = deleteMovie(movieId)
     await deleteMovie(movieId)
     // console.log(response)
+    popupNotification('Movie has been deleted!')
     this.props.history.push('/')
   }
 
@@ -170,10 +171,12 @@ class MovieDetails extends React.Component {
                   <h4>{movie.duration}</h4>
                 </div>        
               </div>    
-              <div className="average-rating">
-                <h4>User Rating</h4>
-                <h5>{this.getAverageRating()}%</h5>
-              </div>       
+              <dic className="rating-container">
+                <div className="average-rating">
+                  <h4>User Rating</h4>
+                  <h5>{this.getAverageRating()}%</h5>
+                </div>       
+              </dic>
               <div className="overview">
                 <h1>Overview</h1>
                 <div className="description">
