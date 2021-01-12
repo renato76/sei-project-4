@@ -42,7 +42,7 @@ class MovieNew extends React.Component {
       ...this.state.formData,
       [event.target.name]: event.target.value
     } 
-    console.log(formData)
+    // console.log(formData)
     this.setState({ formData })
   }
 
@@ -53,7 +53,7 @@ class MovieNew extends React.Component {
     // this.state.formData.genre = genreItems
     // post to /movies via the api axios request
     const response = await createMovie(this.state.formData)
-    console.log(response)
+    // console.log(response)
     // redirect user to whichever page we want - I guess the show page of the movie they create
     this.props.history.push(`/movies/${response.data.id}`)
 

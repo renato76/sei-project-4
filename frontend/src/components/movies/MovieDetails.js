@@ -99,6 +99,16 @@ class MovieDetails extends React.Component {
     this.props.history.push('/')
   }
 
+  getAverageRating = () => {
+    const sum = (acc, curr) => acc + curr
+    const ratings = this.state.movie.comments.map(comment => comment.rating)
+    if (ratings.length > 0) {
+      return ((ratings.reduce(sum) * 20) / ratings.length).toFixed(0)
+    } else {
+      return (50).toFixed(0)
+    }
+  }
+
   // handle add to watchlist button
   handleWatchlist = async () => {
     const movieId  = this.props.match.params.id
@@ -132,14 +142,12 @@ class MovieDetails extends React.Component {
       }
     }
 
-    // this is just to test if the movie is added to liked_movies
-    // const responseProfile =  await getUserProfile()
-    // console.log(responseProfile) 
   }
   
   render() {
     const { movie, text, rating } = this.state
     const { heartColor } = this.state   
+    console.log(this.state)
     if (!movie) return null
     return (
       <div className="show-page">
@@ -156,12 +164,16 @@ class MovieDetails extends React.Component {
               <div className="movie-info">
                 <h3>{movie.age_rating}&nbsp;</h3>
                 <div className="genres">
-                  <h4 key={movie.id}> {movie.genre.map(genre => genre.name).join(', ')}</h4>
+                  <h4>{movie.genre.map(genre => genre.name).join(', ')}</h4>
                 </div>
                 <div className="duration">
                   <h4>{movie.duration}</h4>
-                </div>
-              </div>
+                </div>        
+              </div>    
+              <div className="average-rating">
+                <h4>User Rating</h4>
+                <h5>{this.getAverageRating()}%</h5>
+              </div>       
               <div className="overview">
                 <h1>Overview</h1>
                 <div className="description">

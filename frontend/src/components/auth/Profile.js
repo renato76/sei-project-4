@@ -24,14 +24,14 @@ class Profile extends React.Component {
     return (
       <div className="profile-container">
         <div className="watchlist">
-          <h1>Watchlist</h1>
+          <h1>WATCHLIST</h1>
           <div className="movie-row">{watchlist.map(movie => (
             <MoviesCard key={movie.id} {...movie} />
           ))}
           </div>
         </div>
         <div className="profile-comments">
-          <h1>Created Movies</h1>
+          <h1>CREATED MOVIES</h1>
           <div className="movie-row">{createdMovies.map(movie => (
             <MoviesCard key={movie.id} {...movie} />
           ))}
