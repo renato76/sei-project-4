@@ -43,7 +43,7 @@ class Login extends React.Component {
           <div className="columns  sign-in-form">
             <form onSubmit={this.handleSubmit} className="column is-one-third is-offset-one-third box">
               <div className="field">
-                <label className="reg-label">Sign In</label>
+                <h2 className="reg-label">Sign In</h2>
                 <div className="control">
                   <input
                     className="input"
@@ -55,7 +55,6 @@ class Login extends React.Component {
                 </div>
               </div>
               <div className="field">
-                {/* <label className="label">Password</label> */}
                 <div className="control">
                   <input
                     type="password"

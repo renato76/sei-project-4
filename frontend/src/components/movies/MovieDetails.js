@@ -55,9 +55,7 @@ class MovieDetails extends React.Component {
     this.setState({
       heartColor,
       liked: isLikedByCurrentUser
-    })
-
-    
+    })   
   }
 
   // function that handles the comments formdata, 

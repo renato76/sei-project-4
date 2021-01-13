@@ -99,7 +99,6 @@ class MovieEdit extends React.Component {
   }
 
   render()  {
-
     return (
       <section className="add-movie-section">
         <div className="container">

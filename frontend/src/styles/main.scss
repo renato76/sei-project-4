@@ -578,6 +578,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   font-size: 30px;
   font-weight: bold;
   font-family: Quicksand;
+  padding-bottom: 20px;
 }
 
 .sign-in-form {
@@ -1028,6 +1029,7 @@ and (max-width: 1024px) {
 
 }
 
+
 // Mobile
 
 @media only screen
@@ -1313,12 +1315,21 @@ and (max-width: 812px) {
   }
   .columns {
     margin: 10% 20%;
-    
   }
   .column {
     padding: 10%;
   }
 }
+@media only screen
+and (min-width: 414px)
+and (max-width: 812px)
+and (orientation: landscape) {
+  .section {
+    height: auto;
+  }
+}
+
+
 
 @media only screen 
 and (min-width: 414px)
