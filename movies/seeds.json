@@ -15,10 +15,10 @@
     "user": 1,
     "genre": [
       2,
-      3,
-      1
+      3
     ],
     "liked_by": [
+      10,
       1
     ]
   }
@@ -30,7 +30,7 @@
     "title": "Bad Boys For Life",
     "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/y95lQLnuNKdPAzw9F9Ab8kJ80c3.jpg",
     "description": "Marcus and Mike are forced to confront new threats, career changes, and midlife crises as they join the newly created elite team AMMO of the Miami police department to take down the ruthless Armando Armas, the vicious leader of a Miami drug cartel.",
-    "starring": "Will Smith, Martin Lawrence, Paoloa Nunez",
+    "starring": "Will Smith, Martin Lawrence, Paola Nunez",
     "release": "2020",
     "director": "Bilall Fallah",
     "duration": "2h4m",
@@ -43,7 +43,7 @@
       7
     ],
     "liked_by": [
-      1
+      10
     ]
   }
 },
@@ -81,15 +81,17 @@
     "release": "2020",
     "director": "Tim Hill",
     "duration": "1h 34m",
-    "age_rating": "12A",
+    "age_rating": "18",
     "trailer": "https://youtu.be/EohVvIWg-Oc",
     "user": 1,
     "genre": [
+      1,
       9,
-      2,
       7
     ],
     "liked_by": [
+      7,
+      10,
       1
     ]
   }
@@ -102,7 +104,7 @@
     "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aQvJ5WPzZgYVDrxLX4R6cLJCEaQ.jpg",
     "description": "Based on the global blockbuster videogame franchise from Sega, Sonic the Hedgehog tells the story of the world’s speediest hedgehog as he embraces his new home on Earth. In this live-action adventure comedy, Sonic and his new best friend team up to defend the planet from the evil genius Dr. Robotnik",
     "starring": "Ben Schwartz, James Marsden, Jim Carrey",
-    "release": "2020",
+    "release": "2019",
     "director": "Jeff Fowler",
     "duration": "1h 39m",
     "age_rating": "PG",
@@ -110,10 +112,10 @@
     "user": 1,
     "genre": [
       1,
-      9
+      2
     ],
     "liked_by": [
-      1
+      9
     ]
   }
 },
@@ -124,7 +126,7 @@
     "title": "The Green Mile",
     "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/o0lO84GI7qrG6XFvtsPOSV7CTNa.jpg",
     "description": "A supernatural tale set on death row in a Southern prison, where gentle giant John Coffey possesses the mysterious power to heal people's ailments. When the cell block's head guard, Paul Edgecomb, recognizes Coffey's miraculous gift, he tries desperately to help stave off the condemned man's executi",
-    "starring": "Tom Hanks,",
+    "starring": "Tom Hanks, Amy Ryan",
     "release": "1999",
     "director": "Frank Darabont",
     "duration": "3h 9m",
@@ -152,14 +154,16 @@
     "release": "1994",
     "director": "Quentin Tarantino",
     "duration": "2h 34m",
-    "age_rating": "18",
+    "age_rating": "21",
     "trailer": "https://youtu.be/tGpTpVyI_OQ",
     "user": 1,
     "genre": [
+      2,
       3,
       7
     ],
     "liked_by": [
+      7,
       1
     ]
   }
@@ -172,7 +176,7 @@
     "image": "https://image.tmdb.org/t/p/w1280/aBw8zYuAljVM1FeK5bZKITPH8ZD.jpg",
     "description": "Struggling to make ends meet, former special ops soldiers reunite for a high-stakes heist: stealing $75 million from a South American drug lord.",
     "starring": "Pedro Pascal",
-    "release": "2019",
+    "release": "2018",
     "director": "J.C. Chandor",
     "duration": "2h 6m",
     "age_rating": "R",
@@ -184,7 +188,7 @@
       7
     ],
     "liked_by": [
-      1
+      7
     ]
   }
 },
@@ -208,30 +212,7 @@
       3
     ],
     "liked_by": [
-      1
-    ]
-  }
-},
-{
-  "model": "movies.movie",
-  "pk": 21,
-  "fields": {
-    "title": "Joy",
-    "image": "https://image.tmdb.org/t/p/w1280/drHYguFkQO4nQQFUhRYqIbl45oT.jpg",
-    "description": "A story based on the life of a struggling Long Island single mom who became one of the country's most successful entrepreneurs.",
-    "starring": "Jennifer Lawrence, Bradley Cooper",
-    "release": "2015",
-    "director": "David O. Russell",
-    "duration": "2hrs 4m",
-    "age_rating": "12A",
-    "trailer": "https://youtu.be/uR-2TiQVY-k",
-    "user": 1,
-    "genre": [
-      1,
-      5
-    ],
-    "liked_by": [
-      1
+      10
     ]
   }
 },
@@ -254,7 +235,8 @@
       11
     ],
     "liked_by": [
-      1
+      1,
+      10
     ]
   }
 },
@@ -285,21 +267,20 @@
   "pk": 24,
   "fields": {
     "title": "Ava",
-    "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/i4kPwXPlM1iy8Jf3S1uuLuwqQAV.jpg",
-    "description": "A black ops assassin is forced to fight for her own survival after a job goes dangerously wrong.",
+    "image": "https://image.tmdb.org/t/p/w1280/qzA87Wf4jo1h8JMk9GilyIYvwsA.jpg",
+    "description": "Ava is a deadly assassin who works for a black ops organization, traveling the globe specializing in high profile hits. When a job goes dangerously wrong she is forced to fight for her own survival.",
     "starring": "Jessica Chastain, John Malkovic, Colin Farrell",
     "release": "2020",
     "director": "Tate Taylor",
     "duration": "1h 36m",
-    "age_rating": "15",
+    "age_rating": "18",
     "trailer": "https://youtu.be/aoCP_JHzBUM",
     "user": 1,
     "genre": [
-      2,
-      3
+      2
     ],
     "liked_by": [
-      1
+      10
     ]
   }
 },
@@ -321,7 +302,11 @@
       2,
       3
     ],
-    "liked_by": []
+    "liked_by": [
+      1,
+      10,
+      7
+    ]
   }
 },
 {
@@ -351,7 +336,7 @@
   "fields": {
     "title": "Bridge Of Spies",
     "image": "https://image.tmdb.org/t/p/w1280/bORlvwnVJE1Z6yIg96qnLLY3LJQ.jpg",
-    "description": "During the Cold War, the Soviet Union captures U.S. pilot Francis Gary Powers after shooting down his U-2 spy plane. Sentenced to 10 years in prison, Powers' only hope is New York lawyer James Donovan, recruited by a CIA operative to negotiate his release. Donovan boards a plane to Berlin, hoping to win the young man's freedom through a prisoner exchange. If all goes well, the Russians would get Rudolf Abel, the convicted spy who Donovan defended in court.",
+    "description": "During the Cold War, the Soviet Union captures U.S. pilot Francis Gary Powers after shooting down his U-2 spy plane. Sentenced to 10 years in prison, Powers' only hope is New York lawyer James Donovan, who boards a plane to Berlin, hoping to win the young man's freedom through a prisoner exchange.",
     "starring": "Tom Hanks, Amy Ryan",
     "release": "2015",
     "director": "Steven Spielberg",
@@ -476,7 +461,9 @@
       2,
       12
     ],
-    "liked_by": []
+    "liked_by": [
+      10
+    ]
   }
 },
 {
@@ -497,7 +484,10 @@
       12,
       5
     ],
-    "liked_by": []
+    "liked_by": [
+      8,
+      7
+    ]
   }
 },
 {
@@ -528,7 +518,7 @@
     "image": "https://image.tmdb.org/t/p/w1280/zLzS2aOqKsS0QvEaY6SfBw4VBqh.jpg",
     "description": "After a distastrous first date for caterer Holly and network sports director Messer, all they have is common is a dislike for each other and their love for their goddaughter Sophie. But when they suddenly become all Sophie has in this world, Holly and Messer must set their differences aside. Juggling careers and social calendars, they'll have to find common ground while living under the same roof.",
     "starring": "Katherine Heigl, Josh Duhamel, Christina Hendricks, Josh Lucas",
-    "release": "2010",
+    "release": "2011",
     "director": "Greg Berlandi",
     "duration": "1h 54m",
     "age_rating": "12A",
@@ -536,8 +526,7 @@
     "user": 1,
     "genre": [
       1,
-      11,
-      5
+      2
     ],
     "liked_by": []
   }
@@ -626,8 +615,8 @@
       5
     ],
     "liked_by": [
-      1,
-      2
+      2,
+      1
     ]
   }
 },
@@ -707,13 +696,13 @@
     "trailer": "https://youtu.be/cU5875rHQ8k",
     "user": 1,
     "genre": [
+      2,
       3,
-      12,
-      5
+      12
     ],
     "liked_by": [
-      1,
-      2
+      2,
+      1
     ]
   }
 },
@@ -814,16 +803,122 @@
     "image": "https://image.tmdb.org/t/p/w1280/9lfNdHVfd37R1GszeH5ZcWzkb14.jpg",
     "description": "Alex, Marty, and other zoo animals find a way to escape from Madagascar when the penguins reassemble a wrecked airplane. The precariously repaired craft stays airborne just long enough to make it to the African continent. There the New Yorkers encounter members of their own species for the first time. Africa proves to be a wild place, but Alex and company wonder if it is better than their Central Park home.",
     "starring": "Ben Stiller, Jada Pinkett Smith, David Schwimmer",
-    "release": "2008",
+    "release": "2009",
     "director": "Tom McGrath",
     "duration": "1h 29m",
     "age_rating": "PG",
     "trailer": "https://youtu.be/cSo0k5a0l0w",
     "user": 1,
     "genre": [
+      1
+    ],
+    "liked_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 75,
+  "fields": {
+    "title": "The Nut Job",
+    "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1RdUaSbNUlOf0b0JDGJzHbRrQ2j.jpg",
+    "description": "Surly, a curmudgeon, independent squirrel is banished from his park and forced to survive in the city. Lucky for him, he stumbles on the one thing that may be able to save his life, and the rest of park community, as they gear up for winter - Maury's Nut Store.",
+    "starring": "Will Arnett, Sarah Gadon, Liam Neeson",
+    "release": "2014",
+    "director": "Peter Lepeniotis",
+    "duration": "1h 25",
+    "age_rating": "U",
+    "trailer": "https://www.themoviedb.org/movie/227783-the-nut-job#",
+    "user": 1,
+    "genre": [
       8,
       1,
       9
+    ],
+    "liked_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 83,
+  "fields": {
+    "title": "1917",
+    "image": "https://image.tmdb.org/t/p/w1280/iZf0KyrE25z1sage4SYFLCCrMi9.jpg",
+    "description": "At the height of the First World War, two young British soldiers must cross enemy territory and deliver a message that will stop a deadly attack on hundreds of soldiers.",
+    "starring": "George Mackay, Dean-Charles Chapman, Mark Strong",
+    "release": "2019",
+    "director": "Sam Mendes",
+    "duration": "1h 59m",
+    "age_rating": "15",
+    "trailer": "https://www.themoviedb.org/movie/530915-1917#",
+    "user": 1,
+    "genre": [
+      13,
+      2,
+      3,
+      5
+    ],
+    "liked_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 84,
+  "fields": {
+    "title": "Green Book",
+    "image": "https://image.tmdb.org/t/p/w1280/7BsvSuDQuoqhWmU2fL7W2GOcZHU.jpg",
+    "description": "Tony Lip, a bouncer in 1962, is hired to drive pianist Don Shirley on a tour through the Deep South in the days when African Americans, forced to find alternate accommodations and services due to segregation laws below the Mason-Dixon Line, relied on a guide called The Negro Motorist Green Book.",
+    "starring": "Viggo Mortensen, Mahershala Ali, Linda Cardellini",
+    "release": "2018",
+    "director": "Peter Farrelly",
+    "duration": "2h 10m",
+    "age_rating": "12A",
+    "trailer": "https://www.themoviedb.org/movie/490132-green-book#",
+    "user": 1,
+    "genre": [
+      1,
+      5
+    ],
+    "liked_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 85,
+  "fields": {
+    "title": "The Bourne Ultimatum",
+    "image": "https://image.tmdb.org/t/p/w1280/xqf7mzA77LmMJByvwxRLNdw5pz4.jpg",
+    "description": "Bourne is brought out of hiding once again by reporter Simon Ross who is trying to unveil Operation Blackbriar, an upgrade to Project Treadstone, in a series of newspaper columns. Information from the reporter stirs a new set of memories, and Bourne must finally uncover his dark past while dodging The Company's best efforts to eradicate him.",
+    "starring": "Matt Damon, Julia Styles, David Strathairn",
+    "release": "2007",
+    "director": "Paul Greengrass",
+    "duration": "1h 55m",
+    "age_rating": "12A",
+    "trailer": "https://www.themoviedb.org/movie/2503-the-bourne-ultimatum#",
+    "user": 1,
+    "genre": [
+      2,
+      3,
+      5
+    ],
+    "liked_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 87,
+  "fields": {
+    "title": "Welcome to the Sudden Death",
+    "image": "https://image.tmdb.org/t/p/w1280/elZ6JCzSEvFOq4gNjNeZsnRFsvj.jpg",
+    "description": "A woman, accidentally caught in a dark deal, turns the tables on her captors and transforms into a merciless warrior evolved beyond human logic.",
+    "starring": "Michael Jai White, Michael Eklund, Gillian White, Gary Owen",
+    "release": "2015",
+    "director": "Dallas Jackson",
+    "duration": "1h 20m",
+    "age_rating": "18",
+    "trailer": "https://youtu.be/xisfaGi_6Ow",
+    "user": 1,
+    "genre": [
+      1
     ],
     "liked_by": []
   }

@@ -18,5 +18,4 @@ class DesktopNav extends React.Component {
     )
   }
 }
-
 export default DesktopNav

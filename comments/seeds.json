@@ -1,0 +1,453 @@
+[
+{
+  "model": "comments.comment",
+  "pk": 1,
+  "fields": {
+    "text": "yeah great movie",
+    "created_at": "2020-10-29T08:27:31.160Z",
+    "rating": 5,
+    "movie": 5,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 3,
+  "fields": {
+    "text": "Yeah great movie",
+    "created_at": "2020-10-29T09:48:49.332Z",
+    "rating": 5,
+    "movie": 54,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 4,
+  "fields": {
+    "text": "yeah great movie",
+    "created_at": "2020-10-29T09:49:36.526Z",
+    "rating": 5,
+    "movie": 20,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 5,
+  "fields": {
+    "text": "very cool",
+    "created_at": "2020-10-29T09:50:36.448Z",
+    "rating": 4,
+    "movie": 20,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 6,
+  "fields": {
+    "text": "very funny",
+    "created_at": "2020-10-29T10:41:34.196Z",
+    "rating": 4,
+    "movie": 22,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 7,
+  "fields": {
+    "text": "yeah it was alright",
+    "created_at": "2020-10-29T10:46:11.499Z",
+    "rating": 3,
+    "movie": 22,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 8,
+  "fields": {
+    "text": "awesome",
+    "created_at": "2020-10-29T10:48:40.708Z",
+    "rating": 5,
+    "movie": 17,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 9,
+  "fields": {
+    "text": "yes fantastic!",
+    "created_at": "2020-10-29T10:52:23.914Z",
+    "rating": 5,
+    "movie": 17,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 10,
+  "fields": {
+    "text": "yeah very entertaining movie",
+    "created_at": "2020-10-29T10:57:24.015Z",
+    "rating": 4,
+    "movie": 17,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 11,
+  "fields": {
+    "text": "Enjoyed this one very entertaining!",
+    "created_at": "2020-10-29T12:06:38.450Z",
+    "rating": 4,
+    "movie": 20,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 12,
+  "fields": {
+    "text": "yeah great",
+    "created_at": "2020-10-29T14:28:40.814Z",
+    "rating": 5,
+    "movie": 5,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 13,
+  "fields": {
+    "text": "yep really cool",
+    "created_at": "2020-10-29T15:45:38.504Z",
+    "rating": 5,
+    "movie": 53,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 14,
+  "fields": {
+    "text": "hmm it was alright",
+    "created_at": "2020-10-29T16:30:39.984Z",
+    "rating": 3,
+    "movie": 54,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 15,
+  "fields": {
+    "text": "yep super",
+    "created_at": "2020-10-29T17:13:29.831Z",
+    "rating": 5,
+    "movie": 39,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 16,
+  "fields": {
+    "text": "super",
+    "created_at": "2020-10-29T20:26:42.567Z",
+    "rating": 5,
+    "movie": 38,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 20,
+  "fields": {
+    "text": "nice movie",
+    "created_at": "2020-12-30T22:32:36.097Z",
+    "rating": 5,
+    "movie": 14,
+    "user": 7
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 21,
+  "fields": {
+    "text": "excellent",
+    "created_at": "2020-12-30T23:02:43.492Z",
+    "rating": 4,
+    "movie": 17,
+    "user": 7
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 22,
+  "fields": {
+    "text": "not so great",
+    "created_at": "2020-12-30T23:07:12.774Z",
+    "rating": 2,
+    "movie": 15,
+    "user": 7
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 23,
+  "fields": {
+    "text": "didnt like it",
+    "created_at": "2020-12-30T23:09:19.687Z",
+    "rating": 1,
+    "movie": 15,
+    "user": 7
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 26,
+  "fields": {
+    "text": "great movie very enjoyable for the family",
+    "created_at": "2021-01-02T21:01:33.677Z",
+    "rating": 4,
+    "movie": 22,
+    "user": 10
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 27,
+  "fields": {
+    "text": "very good storyline, funny",
+    "created_at": "2021-01-02T21:05:28.229Z",
+    "rating": 4,
+    "movie": 23,
+    "user": 10
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 28,
+  "fields": {
+    "text": "we enjoyed it very much",
+    "created_at": "2021-01-02T21:09:22.178Z",
+    "rating": 4,
+    "movie": 23,
+    "user": 10
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 29,
+  "fields": {
+    "text": "average movie",
+    "created_at": "2021-01-02T21:10:52.052Z",
+    "rating": 3,
+    "movie": 23,
+    "user": 10
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 30,
+  "fields": {
+    "text": "non stop action packed, great",
+    "created_at": "2021-01-02T21:13:33.462Z",
+    "rating": 4,
+    "movie": 24,
+    "user": 10
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 31,
+  "fields": {
+    "text": "The best blockbuster of the summer and the most accomplished thriller since Supremacy. It's the payoff Bourne fans have been waiting for and the standard to which future blockbusters should be held.",
+    "created_at": "2021-01-02T21:32:20.400Z",
+    "rating": 5,
+    "movie": 50,
+    "user": 10
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 33,
+  "fields": {
+    "text": "Enjoyed this one very entertaining!",
+    "created_at": "2021-01-02T21:49:52.961Z",
+    "rating": 4,
+    "movie": 20,
+    "user": 10
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 34,
+  "fields": {
+    "text": "Enjoyed this one very entertaining!",
+    "created_at": "2021-01-02T21:51:23.224Z",
+    "rating": 4,
+    "movie": 19,
+    "user": 10
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 35,
+  "fields": {
+    "text": "This impish comedy brings the whole family together with a nod to appreciating their elders just a little more. In other words, there's a winner in this War -- and it's grandparents.",
+    "created_at": "2021-01-02T21:58:06.695Z",
+    "rating": 4,
+    "movie": 14,
+    "user": 10
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 36,
+  "fields": {
+    "text": "brilliant",
+    "created_at": "2021-01-09T22:28:14.289Z",
+    "rating": 5,
+    "movie": 71,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 37,
+  "fields": {
+    "text": "great!",
+    "created_at": "2021-01-09T22:31:08.165Z",
+    "rating": 5,
+    "movie": 24,
+    "user": 10
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 38,
+  "fields": {
+    "text": "average movie",
+    "created_at": "2021-01-09T22:32:18.249Z",
+    "rating": 3,
+    "movie": 24,
+    "user": 10
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 39,
+  "fields": {
+    "text": "Excellent",
+    "created_at": "2021-01-09T22:33:12.918Z",
+    "rating": 0,
+    "movie": 24,
+    "user": 10
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 40,
+  "fields": {
+    "text": "There's too much going on, almost like the movie thinks an abundance of psychobabble can paper over a lack of character development, and most of it is uninteresting",
+    "created_at": "2021-01-09T22:47:28.792Z",
+    "rating": 2,
+    "movie": 24,
+    "user": 10
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 41,
+  "fields": {
+    "text": "A combination of thrilling stunts, insane daring and clever writing make this a stunning piece of action cinema. Just be sure to take your heart meds first, and hold on tight",
+    "created_at": "2021-01-09T22:55:05.330Z",
+    "rating": 5,
+    "movie": 27,
+    "user": 10
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 42,
+  "fields": {
+    "text": "Triple Frontier doesn't entirely manage to transcend the traps of action movie, but there's more to it than meets the eye.",
+    "created_at": "2021-01-12T11:49:03.697Z",
+    "rating": 3,
+    "movie": 19,
+    "user": 10
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 43,
+  "fields": {
+    "text": "The physical proximity to each character and each movement is so minute, so aurally and visually sweeping, that Fallout is often slick as all hell.",
+    "created_at": "2021-01-12T12:41:25.032Z",
+    "rating": 4,
+    "movie": 27,
+    "user": 10
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 44,
+  "fields": {
+    "text": "The Martian is a film about human error, the will to survive, and the responsibility that we have as human beings, not just to the work that we dedicate our lives to, but to one another as people.",
+    "created_at": "2021-01-12T14:31:36.986Z",
+    "rating": 4,
+    "movie": 45,
+    "user": 10
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 45,
+  "fields": {
+    "text": "Matt Damon's strong central performance anchors this compelling sci-fi adventure about a man stuck on Mars while the folks back home try to find an easy way to rescue him.",
+    "created_at": "2021-01-12T20:49:55.212Z",
+    "rating": 4,
+    "movie": 45,
+    "user": 8
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 46,
+  "fields": {
+    "text": "It has to be said directly: The Martian is a very clever movie and perhaps the most intriguing science fiction movie that Ridley Scott has directed in a long time.",
+    "created_at": "2021-01-12T20:51:07.275Z",
+    "rating": 5,
+    "movie": 45,
+    "user": 7
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 47,
+  "fields": {
+    "text": "Bridge of Spies is a warm portrait of a friendship, an excitingly intricate story of realistically scaled suspense, and a visually ravishing and lovingly crafted rendering of mid-century America.",
+    "created_at": "2021-01-14T00:01:35.011Z",
+    "rating": 4,
+    "movie": 38,
+    "user": 7
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 48,
+  "fields": {
+    "text": "Bad Boys for Life adds emotional gravitas that wasn't seen in the previous Bad Boys films.",
+    "created_at": "2021-01-14T00:05:26.617Z",
+    "rating": 5,
+    "movie": 5,
+    "user": 7
+  }
+}
+]
