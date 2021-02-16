@@ -642,6 +642,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 }
 
 
+
 // Laptops
 
 @media only screen
@@ -1596,6 +1597,9 @@ and (max-width: 413px){
   .comments-right {
     padding: 1%;
     margin: 4%;
+  }
+   .add-movie-section {
+    padding: 50px 10px;
   }
 }
 

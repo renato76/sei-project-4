@@ -46,14 +46,16 @@ const MovieForm = props => {
         <div className="field">
           <div className="control">
             <input
-              className="input"
+              className={`input ${formErrors.image ? 'is-danger' : ''}`}
               type="text"
               placeholder="Image URL (required)"
               name="image"
               value={image}
               onChange={handleChange}
+              error={formErrors.image}
             />
           </div>
+          { formErrors.image && <p className="help is-danger">{formErrors.image}</p> }
         </div>
         <div className="field">
           <div className="control">
