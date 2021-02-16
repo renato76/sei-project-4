@@ -5,14 +5,15 @@ class Movie(models.Model):
     image = models.CharField(max_length=100)
     description = models.CharField(max_length=500)
     starring = models.CharField(max_length=100)
-    release = models.CharField(max_length=4)
-    director = models.CharField(max_length=30)
-    duration = models.CharField(max_length=10)
-    age_rating = models.CharField(max_length=3)
-    trailer = models.CharField(max_length=200)
+    release = models.CharField(max_length=4, blank=True)
+    director = models.CharField(max_length=30, blank=True)
+    duration = models.CharField(max_length=10, blank=True)
+    age_rating = models.CharField(max_length=3, blank=True)
+    trailer = models.CharField(max_length=200, blank=True)
     genre = models.ManyToManyField(
         'genres.Genre',
-        related_name="genres"
+        related_name="genres",
+        blank=True
     )
     user = models.ForeignKey(
         'jwt_auth.user',
