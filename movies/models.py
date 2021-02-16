@@ -12,8 +12,7 @@ class Movie(models.Model):
     trailer = models.CharField(max_length=200, blank=True)
     genre = models.ManyToManyField(
         'genres.Genre',
-        related_name="genres",
-        blank=True
+        related_name="genres"
     )
     user = models.ForeignKey(
         'jwt_auth.user',

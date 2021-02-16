@@ -2,11 +2,9 @@ import React from 'react'
 
 
 const MovieForm = props => {
-  const { handleChange, handleSubmit, handleMultiSelect } = props
+  const { handleChange, handleSubmit, handleMultiSelect, formErrors } = props
   const { title, image, description, starring, release, director, duration, age_rating: ageRating, trailer } = props.formData
-
   console.log(props)
-
   return (
     <div className="add-movie">
       <form onSubmit={handleSubmit} className="column is-half is-offset-one-quarter box">
@@ -14,16 +12,20 @@ const MovieForm = props => {
           <label className="label">Add / Edit A Movie</label>
           <div className="control">
             <input
-              className="input"
+              className={`input ${formErrors.title ? 'is-danger' : ''}`}
               placeholder="Title (Required)" 
               name="title"
               value={title}
               onChange={handleChange}
+              error={formErrors.title}
             />
           </div>
+          { formErrors.title && <p className="help is-danger">{formErrors.title}</p> }
         </div>
-        { <div className="select is-multiple">
+        { <div className={`select is-multiple ${formErrors.genre ? 'is-danger' : ''}`}
+          error={formErrors.genre}>
           <label className="label">Select 1 or more genres</label>
+          { formErrors.genre && <p className="help is-danger">{formErrors.genre}</p> }
           <select multiple={true} className="multiple" size="14" onChange={handleMultiSelect}>           
             <option name="1"value={1} className="option">Comedy</option>
             <option name="2"value={2} className="option">Action</option>
@@ -39,7 +41,7 @@ const MovieForm = props => {
             <option name="12"value={12} className="option">Science Fiction</option>
             <option name="13"value={13} className="option">War</option>
             <option name="14"value={14} className="option">Western</option>
-          </select>
+          </select>       
         </div> }
         <div className="field">
           <div className="control">

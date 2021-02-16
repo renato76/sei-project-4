@@ -1,7 +1,7 @@
 import React from 'react'
 import { createMovie } from '../../lib/api'
 import MovieForm from './MovieForm'
-import { popupNotification } from '../../lib/notification'
+// import { popupNotification } from '../../lib/notification'
 
 class MovieNew extends React.Component {
   state = {
@@ -34,8 +34,7 @@ class MovieNew extends React.Component {
 
     // and set state of formdata
     this.setState({ formData })
-    console.log(formData)
-    
+    // console.log(formData)   
   }
 
   handleChange = event => {
@@ -60,9 +59,9 @@ class MovieNew extends React.Component {
       // redirect user to the movie they created
       this.props.history.push(`/movies/${response.data.id}`)
     } catch (err) {
-      // this.setState({ formErrors: err.response.data })
-      // return
-      popupNotification('Please fill in the "Required" fields: title, image, description and starring')
+      this.setState({ formErrors: err.response.data })
+      return
+      // popupNotification('Please fill in the "Required" fields: title, image, description and starring')
     }
   }
 
@@ -76,7 +75,7 @@ class MovieNew extends React.Component {
             handleSubmit={this.handleSubmit}
             handleMultiSelect={this.handleMultiSelect}
             formData={this.state.formData}
-            formErrors={this.formErrors}/>
+            formErrors={this.state.formErrors}/>
         </div>
       </section>
     )

@@ -140,7 +140,6 @@ class MovieDetails extends React.Component {
         console.log(err)
       }
     }
-
   }
   
   render() {
