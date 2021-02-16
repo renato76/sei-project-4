@@ -1,8 +1,11 @@
 import React from 'react'
 
+
 const MovieForm = props => {
   const { handleChange, handleSubmit, handleMultiSelect } = props
-  const { title, image, description, starring, release, director, duration, age_rating, trailer } = props.formData
+  const { title, image, description, starring, release, director, duration, age_rating: ageRating, trailer } = props.formData
+
+  console.log(props)
 
   return (
     <div className="add-movie">
@@ -113,7 +116,7 @@ const MovieForm = props => {
               className="input"
               placeholder="Age Rating (eg. 12A or 18)"
               name="age_rating"
-              value={age_rating}
+              value={ageRating}
               onChange={handleChange}
             />
           </div>

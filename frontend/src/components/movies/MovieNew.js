@@ -1,6 +1,7 @@
 import React from 'react'
 import { createMovie } from '../../lib/api'
 import MovieForm from './MovieForm'
+import { popupNotification } from '../../lib/notification'
 
 class MovieNew extends React.Component {
   state = {
@@ -16,7 +17,8 @@ class MovieNew extends React.Component {
       age_rating: '',
       trailer: '',
       liked_by: []
-    }
+    },
+    formErrors: {}
   }
 
   handleMultiSelect = event => {
@@ -52,14 +54,20 @@ class MovieNew extends React.Component {
     // console.log(genreItems)
     // this.state.formData.genre = genreItems
     // post to /movies via the api axios request
-    const response = await createMovie(this.state.formData)
-    // console.log(response)
-    // redirect user to whichever page we want - I guess the show page of the movie they create
-    this.props.history.push(`/movies/${response.data.id}`)
-
+    try {
+      const response = await createMovie(this.state.formData)
+      // console.log(response)
+      // redirect user to the movie they created
+      this.props.history.push(`/movies/${response.data.id}`)
+    } catch (err) {
+      // this.setState({ formErrors: err.response.data })
+      // return
+      popupNotification('Please fill in the "Required" fields: title, image, description and starring')
+    }
   }
 
   render()  {
+    console.log(this.state)
     return (
       <section className="add-movie-section">
         <div className="container">
@@ -67,7 +75,8 @@ class MovieNew extends React.Component {
             handleChange={this.handleChange}
             handleSubmit={this.handleSubmit}
             handleMultiSelect={this.handleMultiSelect}
-            formData={this.state.formData}/>
+            formData={this.state.formData}
+            formErrors={this.formErrors}/>
         </div>
       </section>
     )
