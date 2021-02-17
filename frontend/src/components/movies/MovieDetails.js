@@ -19,7 +19,8 @@ class MovieDetails extends React.Component {
     currentUserId: '',
     liked_by: '', 
     heartColor: 'grey',
-    liked: false
+    liked: false,
+    commentErrors: {}
   }
   
 
@@ -75,18 +76,19 @@ class MovieDetails extends React.Component {
   handleSubmit = async event => {
     event.preventDefault()
     // add the movieID to the Object formdata
-    this.state.formData.movie = this.state.movie.id
-
-    // const response = await createNewComment(this.state.formData)
-    // console.log(response)
-    await createNewComment(this.state.formData)
-    
-    console.log(this.state.formData)
-        
-    popupNotification('Thanks for your comment and rating!')
-    // const movieId = this.state.movie.id
-    // this.props.history.push(`/movies/${movieId}`)
-    this.props.history.push('/')
+    try {
+      this.state.formData.movie = this.state.movie.id
+      // const response = await createNewComment(this.state.formData)
+      // console.log(response)
+      await createNewComment(this.state.formData)
+      popupNotification('Thanks for your comment and rating!')
+      // const movieId = this.state.movie.id
+      // this.props.history.push(`/movies/${movieId}`)
+      this.props.history.push('/')
+    } catch (err) {
+      console.log('error on comments')
+      popupNotification('Please add a review and rating')
+    }
   }
 
   handleDelete = async () => {

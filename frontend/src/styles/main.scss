@@ -38,9 +38,11 @@ body {
   font-weight: bold;
   background-color: #202020;
   display: flex;
+  transition: 600ms;
 }
 a.navbar-item:hover {
   color: #009cc4;
+  transition: 600ms;
 }
 a.navbar-item:active {
   color: #009cc4;
@@ -281,7 +283,6 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   }
 }
 
-
 .cast {
   text-align: left;
   display: flex;
@@ -329,14 +330,13 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     padding: 4%;
     width: 200px;
     border-radius: 12px;
-    transition: transform 500ms;
+    transition: 500ms;
   }
   button:hover {
     background-color: #03acd6;
     transition: 500ms;
     border: 1px solid #03acd6;   
     border-radius: 12px;
-    transform: scale(1.03);
   }
 }
 
@@ -344,8 +344,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   display: flex;
   margin-left: 5%;
   
-  .button {
-    background-color: #009cc4;
+  .button {  
     border: none;
     color: white;
     font-weight: bold;
@@ -353,13 +352,11 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     width: 100px;
     border-radius: 10px;
     margin: 0 5px;
-    transition: transform 500ms;
+    transition: 500ms;
   }
   .button:hover {
-    background-color: #03acd6;
-    border: 1px solid #03acd6;
     border-radius: 10px;
-    transform: scale(1.03);  
+    transition: 500ms;
   }
   #edit {
     background-color: #079475;
@@ -367,6 +364,14 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   }
   #delete {
     background-color: #af006c;
+    border: none;
+  }
+  #edit:hover {
+    background-color: #08a180;
+    border: none;
+  }
+  #delete:hover {
+    background-color: #c00377;
     border: none;
   }
 }
@@ -544,7 +549,9 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   padding: 3%;
   margin-top: 2%;
   border-radius: 1em;
+  align-items: center;
 }
+
 
 .add-movie {
   .column {
@@ -579,10 +586,6 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   font-weight: bold;
   font-family: Quicksand;
   padding-bottom: 20px;
-}
-
-.sign-in-form {
-  margin-top: 8%;
 }
 
 .field {
@@ -633,14 +636,13 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 .columns {
   display: flex;
   justify-content: center;
-  margin: 4% 0;
+  margin: 20px 0;
 }
 .column.is-offset-one-third {
   margin: 0;
   padding: 3%;
   width: 430px;
 }
-
 
 
 // Laptops
