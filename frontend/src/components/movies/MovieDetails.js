@@ -21,6 +21,7 @@ class MovieDetails extends React.Component {
     heartColor: 'grey',
     liked: false
   }
+  
 
   
   async componentDidMount() {    
@@ -168,12 +169,12 @@ class MovieDetails extends React.Component {
                   <h4>{movie.duration}</h4>
                 </div>        
               </div>    
-              <dic className="rating-container">
+              <div className="rating-container">
                 <div className="average-rating">
                   <h4>User Rating</h4>
                   <h5>{this.getAverageRating()}%</h5>
                 </div>       
-              </dic>
+              </div>
               <div className="overview">
                 <h1>Overview</h1>
                 <div className="description">

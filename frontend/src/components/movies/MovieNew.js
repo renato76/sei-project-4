@@ -23,7 +23,7 @@ class MovieNew extends React.Component {
 
   handleMultiSelect = event => {
     // push the selected values into that array
-    const selectedIds =  Array.from(event.target.selectedOptions).map((o) => Number(o.value))
+    const selectedIds =  Array.from(event.target.selectedOptions).map((genre) => Number(genre.value))
     console.log(selectedIds)
 
     // now open up formdata and set genres to this array's values
