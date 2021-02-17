@@ -100,46 +100,54 @@ const MovieForm = props => {
         <div className="field">
           <div className="control">
             <input
-              className="input"
+              className={`input ${formErrors.director ? 'is-danger' : ''}`}
               placeholder="Director(required)"
               name="director"
               value={director}
               onChange={handleChange}
+              error={formErrors.director}
             />
           </div>
+          { formErrors.director && <p className="help is-danger">{formErrors.director}</p> }
         </div>
         <div className="field">
           <div className="control">
             <input
-              className="input"
+              className={`input ${formErrors.duration ? 'is-danger' : ''}`}
               placeholder="Duration (eg: 1h 45m)"
               name="duration"
               value={duration}
               onChange={handleChange}
+              error={formErrors.duration}
             />
           </div>
+          { formErrors.duration && <p className="help is-danger">{formErrors.duration}</p> }
         </div>
         <div className="field">
           <div className="control">
             <input
-              className="input"
+              className={`input ${formErrors.age_rating ? 'is-danger' : ''}`}
               placeholder="Age Rating (eg. 12A or 18)"
               name="age_rating"
               value={ageRating}
               onChange={handleChange}
+              error={formErrors.age_rating}
             />
           </div>
+          { formErrors.age_rating && <p className="help is-danger">{formErrors.age_rating}</p> }
         </div>
         <div className="field">
           <div className="control">
             <input
-              className="input"
+              className={`input ${formErrors.trailer ? 'is-danger' : ''}`}
               placeholder="Trailer URL(required)"
               name="trailer"
               value={trailer}
               onChange={handleChange}
+              error={formErrors.trailer}
             />
           </div>
+          { formErrors.trailer && <p className="help is-danger">{formErrors.trailer}</p> }
         </div>
         <div className="field">
           <button type="submit" className="button is-fullwidth">Submit</button>
