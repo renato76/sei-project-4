@@ -23,7 +23,6 @@ class MovieDetails extends React.Component {
     commentErrors: {}
   }
   
-
   
   async componentDidMount() {    
     // request single movie by id
@@ -75,28 +74,19 @@ class MovieDetails extends React.Component {
   
   handleSubmit = async event => {
     event.preventDefault()
-    // add the movieID to the Object formdata
+
     try {
-      this.state.formData.movie = this.state.movie.id
-      // const response = await createNewComment(this.state.formData)
-      // console.log(response)
       await createNewComment(this.state.formData)
       popupNotification('Thanks for your comment and rating!')
-      // const movieId = this.state.movie.id
-      // this.props.history.push(`/movies/${movieId}`)
       this.props.history.push('/')
     } catch (err) {
-      console.log('error on comments')
-      popupNotification('Please add a review and rating')
+      console.log(err.response)
     }
   }
 
   handleDelete = async () => {
     const movieId = this.props.match.params.id
-    // console.log(movieId)
-    // const response = deleteMovie(movieId)
     await deleteMovie(movieId)
-    // console.log(response)
     popupNotification('Movie has been deleted!')
     this.props.history.push('/')
   }
@@ -211,6 +201,7 @@ class MovieDetails extends React.Component {
             </div>
           </div>
         </div>  
+        {/* Add review section START */}
         <div className="next-page">
           { isAuthenticated() && <div className="comments-left">
             <form onSubmit={this.handleSubmit} className="review-column is-two-thirds is-offset-one-quarter box">
@@ -243,7 +234,7 @@ class MovieDetails extends React.Component {
               </div>
             </form>
           </div> }
-          {/* Add review section end */}
+          {/* Add review section END */}
           { !isAuthenticated() && <div className="login-to-review">     
             <h1>Login to rate and review movies</h1>  
             <Link to={'/login'} className="button">Login</Link>        
@@ -262,15 +253,12 @@ class MovieDetails extends React.Component {
                       <div key={id} className="comment-text">
                         <h2>A review by {comment.user.username} </h2>
                         <h3>Written on: {moment(comment.created_at).format('Do MMM YY')}</h3>
-                        {/* <h3>User: {comment.user.username}</h3> */}
                         <div className="comment-rating">
                           <p><span>{comment.rating}.0</span></p>
                         </div>
                         <p>{comment.text}</p>
-                      </div>
-                      
+                      </div>                    
                       <div className="comment-rating">
-                        {/* <p>Created on: {moment(comment.created_at).format('Do MMM YY')}</p> */}
                       </div>
                       <hr />
                     </>

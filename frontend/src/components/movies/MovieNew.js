@@ -59,6 +59,7 @@ class MovieNew extends React.Component {
       // redirect user to the movie they created
       this.props.history.push(`/movies/${response.data.id}`)
     } catch (err) {
+      console.log(err.response)
       this.setState({ formErrors: err.response.data })
       return
       // popupNotification('Please fill in the "Required" fields: title, image, description and starring')
