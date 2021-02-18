@@ -23,6 +23,7 @@ class MovieDetails extends React.Component {
     commentErrors: {}
   }
   
+
   
   async componentDidMount() {    
     // request single movie by id
@@ -33,6 +34,7 @@ class MovieDetails extends React.Component {
     this.setState({
       movie: response.data
     })  
+    
 
 
     // Get user profile details and update state
@@ -73,20 +75,26 @@ class MovieDetails extends React.Component {
   // A function to handle submit comment
   
   handleSubmit = async event => {
-    event.preventDefault()
-
+    event.preventDefault()    
     try {
-      await createNewComment(this.state.formData)
+      this.state.formData.movie = this.state.movie.id
+      await createNewComment(this.state.formData)   
       popupNotification('Thanks for your comment and rating!')
+      // const movieId = this.state.movie.id
+      // this.props.history.push(`/movies/${movieId}`)
       this.props.history.push('/')
     } catch (err) {
       console.log(err.response)
+      popupNotification('Please add a review and rating')
     }
   }
 
   handleDelete = async () => {
     const movieId = this.props.match.params.id
+    // console.log(movieId)
+    // const response = deleteMovie(movieId)
     await deleteMovie(movieId)
+    // console.log(response)
     popupNotification('Movie has been deleted!')
     this.props.history.push('/')
   }
