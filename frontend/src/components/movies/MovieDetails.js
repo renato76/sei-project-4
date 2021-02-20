@@ -34,6 +34,16 @@ class MovieDetails extends React.Component {
     this.setState({
       movie: response.data
     })  
+
+    // get all the movies - store them in a const, 
+    // get current movie and store in a const
+    // and then create a function that sets the state
+    // to the next movie in the movies array
+
+    // though...what if I have all the movies, then loop through that array
+    // and the handleclick can simply setState to i ??
+
+    // could have handleNext and handlePrev functions
     
 
 
@@ -85,7 +95,7 @@ class MovieDetails extends React.Component {
       this.props.history.push('/')
     } catch (err) {
       console.log(err.response)
-      popupNotification('Please add a review and rating')
+      popupNotification('Please add a review and rating 1-5')
     }
   }
 
