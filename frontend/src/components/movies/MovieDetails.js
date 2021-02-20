@@ -197,7 +197,7 @@ class MovieDetails extends React.Component {
                 </div>  
                 <div className="like">
                   
-                  { isAuthenticated()  && <FaHeart onClick={this.handleWatchlist}  color={heartColor} /> }
+                  { isAuthenticated()  && <FaHeart className="heart" onClick={this.handleWatchlist}  color={heartColor} /> }
               
                   {/* Add to Watchlist */}
                 </div>

@@ -17,6 +17,10 @@ body {
     text-align: center;
   }
 }
+.like:hover {
+  cursor: pointer;
+}
+
 
 // *** Navbar ***
 
@@ -127,9 +131,11 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     border-radius: 12px;
     padding: 10px 30px;
     font-size: 20px;
+    transition: 500ms;
   }
   h2:hover {
-    background-color: #202020;
+    background-color: #009cc4;
+    transition: 500ms;
   }
 }
 
@@ -815,6 +821,14 @@ and (max-width: 1024px) {
   .movie-row::-webkit-scrollbar {
     display: none;
   }
+   /* Burger Menu */
+  .bm-item {
+    background-color: rgb(53, 53, 53);
+  }
+  .navbar-item {
+    height: 70px;
+    align-items: center;
+  }
   /* Position and sizing of burger button */
   .bm-burger-button {
     position: fixed;
@@ -837,6 +851,7 @@ and (max-width: 1024px) {
 
   /* Position and sizing of clickable cross button */
   .bm-cross-button {
+    margin: 10px;
     height: 24px;
     width: 24px;
   }
@@ -1070,6 +1085,23 @@ and (max-width: 812px) {
     background-color: #202020;
 }
 
+  .navbar-item {
+    height: 50px;
+    align-items: center;
+    border: none;
+    border-radius: 0;
+  }
+  .navbar-item {
+    padding: 0.5rem 1.35rem;
+    background-color: #373a47;
+  }
+  .mobile-nav {
+    background-color: #373a47;
+  }
+  .sign-in {
+    padding: 0.5rem 0.75rem;
+  }
+
     /* Position and sizing of burger button */
   .bm-burger-button {
     position: fixed;
@@ -1078,8 +1110,7 @@ and (max-width: 812px) {
     right: 30px;
     top: 16px;
   }
-
-  /* Color/shape of burger icon bars */
+  /*b Comlor/s-hapme eonf burger icon bars */
   .bm-burger-bars {
     background: #373a47;
   }
@@ -1092,8 +1123,7 @@ and (max-width: 812px) {
 
   /* Position and sizing of clickable cross button */
   .bm-cross-button {
-    height: 24px;
-    width: 24px;
+    margin: 10px;
   }
 
   /* Color/shape of close button cross */
@@ -1446,9 +1476,12 @@ and (max-width: 413px){
       background: #bdc3c7;
     }
 
-  // .navbar-item {
-  //   display: none;
-  // }
+    .navbar-item {
+      height: 50px;
+      align-items: center;
+      border: none;
+      border-radius: 0;
+    }
   
 
   .row-poster {
