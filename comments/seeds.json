@@ -3,21 +3,21 @@
   "model": "comments.comment",
   "pk": 1,
   "fields": {
-    "text": "yeah great movie",
-    "created_at": "2020-10-29T08:27:31.160Z",
-    "rating": 5,
-    "movie": 5,
+    "text": "First of all, the animation in this is spectacular. All the scenery in the film looks like something you could find in real life.",
+    "created_at": "2021-02-16T15:09:43.257Z",
+    "rating": 4,
+    "movie": 93,
     "user": 1
   }
 },
 {
   "model": "comments.comment",
-  "pk": 3,
+  "pk": 2,
   "fields": {
-    "text": "Yeah great movie",
-    "created_at": "2020-10-29T09:48:49.332Z",
-    "rating": 5,
-    "movie": 54,
+    "text": "Will Smith and Martin Lawrence bring their A game; they never let us feel like they're going through the motions. The marks may be standard issue, but they hit them with fury and flair",
+    "created_at": "2021-02-17T22:09:41.750Z",
+    "rating": 4,
+    "movie": 5,
     "user": 1
   }
 },
@@ -25,87 +25,32 @@
   "model": "comments.comment",
   "pk": 4,
   "fields": {
-    "text": "yeah great movie",
-    "created_at": "2020-10-29T09:49:36.526Z",
-    "rating": 5,
-    "movie": 20,
-    "user": 1
-  }
-},
-{
-  "model": "comments.comment",
-  "pk": 5,
-  "fields": {
-    "text": "very cool",
-    "created_at": "2020-10-29T09:50:36.448Z",
-    "rating": 4,
-    "movie": 20,
-    "user": 1
-  }
-},
-{
-  "model": "comments.comment",
-  "pk": 6,
-  "fields": {
-    "text": "very funny",
-    "created_at": "2020-10-29T10:41:34.196Z",
-    "rating": 4,
-    "movie": 22,
-    "user": 1
-  }
-},
-{
-  "model": "comments.comment",
-  "pk": 7,
-  "fields": {
-    "text": "yeah it was alright",
-    "created_at": "2020-10-29T10:46:11.499Z",
+    "text": "It's best to approach Welcome to Sudden Death like a bad comedy with the occasional impressively out of tone gratuitously bloody action scene.",
+    "created_at": "2021-02-17T23:52:08.264Z",
     "rating": 3,
-    "movie": 22,
-    "user": 1
-  }
-},
-{
-  "model": "comments.comment",
-  "pk": 8,
-  "fields": {
-    "text": "awesome",
-    "created_at": "2020-10-29T10:48:40.708Z",
-    "rating": 5,
-    "movie": 17,
-    "user": 1
-  }
-},
-{
-  "model": "comments.comment",
-  "pk": 9,
-  "fields": {
-    "text": "yes fantastic!",
-    "created_at": "2020-10-29T10:52:23.914Z",
-    "rating": 5,
-    "movie": 17,
-    "user": 1
+    "movie": 3,
+    "user": 3
   }
 },
 {
   "model": "comments.comment",
   "pk": 10,
   "fields": {
-    "text": "yeah very entertaining movie",
-    "created_at": "2020-10-29T10:57:24.015Z",
+    "text": "Half of the draw is the action, and the filmmakers amp things up nicely. The other half of the draw is the chemistry between Smith and Lawrence, and it remains great.",
+    "created_at": "2021-02-18T12:26:09.809Z",
     "rating": 4,
-    "movie": 17,
-    "user": 1
+    "movie": 5,
+    "user": 3
   }
 },
 {
   "model": "comments.comment",
   "pk": 11,
   "fields": {
-    "text": "Enjoyed this one very entertaining!",
-    "created_at": "2020-10-29T12:06:38.450Z",
-    "rating": 4,
-    "movie": 20,
+    "text": "The heist plan makes no sense, the action is sporadic and listless, the dialogue is full of macho nonsense, and the set where most of the movie was shot only vaguely resembles the interior of a plane.",
+    "created_at": "2021-02-18T12:26:53.237Z",
+    "rating": 2,
+    "movie": 7,
     "user": 1
   }
 },
@@ -113,74 +58,63 @@
   "model": "comments.comment",
   "pk": 12,
   "fields": {
-    "text": "yeah great",
-    "created_at": "2020-10-29T14:28:40.814Z",
-    "rating": 5,
-    "movie": 5,
-    "user": 1
+    "text": "Almost a guilty pleasure, this heist movie benefits a bit from an \"I don't care\" attitude, but unfortunately it's crushed under too many dumb cliches, terrible writing, and general boredom.",
+    "created_at": "2021-02-18T12:27:09.539Z",
+    "rating": 2,
+    "movie": 7,
+    "user": 3
   }
 },
 {
   "model": "comments.comment",
   "pk": 13,
   "fields": {
-    "text": "yep really cool",
-    "created_at": "2020-10-29T15:45:38.504Z",
-    "rating": 5,
-    "movie": 53,
-    "user": 1
+    "text": "The simple storyline finds a way to adapt the games' characters and themes, by adding universal concepts such as friendship to the original games' tension between nature and machines.",
+    "created_at": "2021-02-18T12:28:13.293Z",
+    "rating": 3,
+    "movie": 15,
+    "user": 3
   }
 },
 {
   "model": "comments.comment",
   "pk": 14,
   "fields": {
-    "text": "hmm it was alright",
-    "created_at": "2020-10-29T16:30:39.984Z",
+    "text": "It may not be particularly memorable, but in an era where family-friendly movies like Paddington can be a hit across all audiences, Sonic more than manages to hold its own.",
+    "created_at": "2021-02-18T12:28:33.621Z",
     "rating": 3,
-    "movie": 54,
-    "user": 1
+    "movie": 15,
+    "user": 2
   }
 },
 {
   "model": "comments.comment",
   "pk": 15,
   "fields": {
-    "text": "yep super",
-    "created_at": "2020-10-29T17:13:29.831Z",
-    "rating": 5,
-    "movie": 39,
-    "user": 1
+    "text": "Overextending its welcome, Frank Darabont's film is the most commercially popular adaptation of a Stephen King novella, but it's also a slow, often dull prison drama.",
+    "created_at": "2021-02-18T12:29:21.614Z",
+    "rating": 3,
+    "movie": 16,
+    "user": 2
   }
 },
 {
   "model": "comments.comment",
   "pk": 16,
   "fields": {
-    "text": "super",
-    "created_at": "2020-10-29T20:26:42.567Z",
-    "rating": 5,
-    "movie": 38,
-    "user": 1
+    "text": "Though the film drifts off down some long blind alleys, when Darabont exercises discipline the result is highly effective.",
+    "created_at": "2021-02-18T12:29:34.931Z",
+    "rating": 4,
+    "movie": 16,
+    "user": 3
   }
 },
 {
   "model": "comments.comment",
-  "pk": 20,
+  "pk": 17,
   "fields": {
-    "text": "nice movie",
-    "created_at": "2020-12-30T22:32:36.097Z",
-    "rating": 5,
-    "movie": 14,
-    "user": 1
-  }
-},
-{
-  "model": "comments.comment",
-  "pk": 21,
-  "fields": {
-    "text": "excellent",
-    "created_at": "2020-12-30T23:02:43.492Z",
+    "text": "Reservoir Dogs still looks like the great American film of the decade, but Quentin Tarantino's second film as writer-director shows him already deep in the territory of self-parody.",
+    "created_at": "2021-02-18T12:30:13.625Z",
     "rating": 4,
     "movie": 17,
     "user": 1
@@ -188,12 +122,56 @@
 },
 {
   "model": "comments.comment",
+  "pk": 18,
+  "fields": {
+    "text": "A seminal piece of filmmaking, perfectly capturing its era and a zeitgeist, while also being oddly timeless in terms of its neo-crime, post modern, darkly comic approach.",
+    "created_at": "2021-02-18T12:30:28.863Z",
+    "rating": 5,
+    "movie": 17,
+    "user": 3
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 19,
+  "fields": {
+    "text": "Quentin Tarantino was able to take the films that influenced him and create something wholly his own, in turn influencing a generation of young filmmakers.",
+    "created_at": "2021-02-18T12:30:44.076Z",
+    "rating": 5,
+    "movie": 17,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 20,
+  "fields": {
+    "text": "With Chandor doubling as director the movie looks great but makes surprisingly little of the personal conflicts that arise",
+    "created_at": "2021-02-18T12:31:14.275Z",
+    "rating": 4,
+    "movie": 19,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 21,
+  "fields": {
+    "text": "Triple Frontier doesn't entirely manage to transcend the traps of action movie, but there's more to it than meets the eye.",
+    "created_at": "2021-02-18T12:31:32.153Z",
+    "rating": 3,
+    "movie": 19,
+    "user": 2
+  }
+},
+{
+  "model": "comments.comment",
   "pk": 22,
   "fields": {
-    "text": "not so great",
-    "created_at": "2020-12-30T23:07:12.774Z",
-    "rating": 2,
-    "movie": 15,
+    "text": "An ending that teases the possibility of sequels, with Wahlberg's Spenser tackling more cases of police officers and emergency personnel who have been falsely accused of crimes, should elicit nothing but groans.",
+    "created_at": "2021-02-18T12:32:10.370Z",
+    "rating": 3,
+    "movie": 20,
     "user": 1
   }
 },
@@ -201,21 +179,43 @@
   "model": "comments.comment",
   "pk": 23,
   "fields": {
-    "text": "didnt like it",
-    "created_at": "2020-12-30T23:09:19.687Z",
-    "rating": 1,
-    "movie": 15,
+    "text": "It's an action-comedy-mystery-thriller that manages to spectacularly fail at all the above, an algorithmic abomination that's as coldly constructed as it is clumsily made.",
+    "created_at": "2021-02-18T12:32:24.656Z",
+    "rating": 2,
+    "movie": 20,
+    "user": 3
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 24,
+  "fields": {
+    "text": "It's not as risqu as it wishes it were, nor as likable as it should be. Butler's rarely been better-cast, but the material's too patchy to support him .",
+    "created_at": "2021-02-18T12:33:25.498Z",
+    "rating": 3,
+    "movie": 22,
     "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 25,
+  "fields": {
+    "text": "A hideously misguided attempt to marry girly chick-flick sentiment with laddish Judd-Apatow-style raunch.",
+    "created_at": "2021-02-18T12:33:50.193Z",
+    "rating": 2,
+    "movie": 22,
+    "user": 3
   }
 },
 {
   "model": "comments.comment",
   "pk": 26,
   "fields": {
-    "text": "great movie very enjoyable for the family",
-    "created_at": "2021-01-02T21:01:33.677Z",
+    "text": "A romantic comedy with all the excitement of an AARP magazine cover story and negligible chemistry between Aniston and Costner. Given talk of infertility, let it be said \"Rumor\" is a series of rocky places in which comedy's seed can find no purchase.",
+    "created_at": "2021-02-18T12:34:25.314Z",
     "rating": 4,
-    "movie": 22,
+    "movie": 23,
     "user": 1
   }
 },
@@ -223,21 +223,21 @@
   "model": "comments.comment",
   "pk": 27,
   "fields": {
-    "text": "very good storyline, funny",
-    "created_at": "2021-01-02T21:05:28.229Z",
+    "text": "The movie shines when allowing the characters to just exist in their world together, without the forced and tired romantic comedy plot weighing on them.",
+    "created_at": "2021-02-18T12:34:41.738Z",
     "rating": 4,
     "movie": 23,
-    "user": 1
+    "user": 3
   }
 },
 {
   "model": "comments.comment",
   "pk": 28,
   "fields": {
-    "text": "we enjoyed it very much",
-    "created_at": "2021-01-02T21:09:22.178Z",
-    "rating": 4,
-    "movie": 23,
+    "text": "One of our most expressive actresses joining two of our most insistent hams in an action movie? How do you screw something like that up? Well, maybe by just stopping at the concept and calling it a day.",
+    "created_at": "2021-02-18T12:35:16.054Z",
+    "rating": 2,
+    "movie": 24,
     "user": 1
   }
 },
@@ -245,21 +245,21 @@
   "model": "comments.comment",
   "pk": 29,
   "fields": {
-    "text": "average movie",
-    "created_at": "2021-01-02T21:10:52.052Z",
+    "text": "Ava is a napping-on-the-couch movie through and through, with recognizable names and a sexy premise but no distinct personality.",
+    "created_at": "2021-02-18T12:35:30.716Z",
     "rating": 3,
-    "movie": 23,
-    "user": 1
+    "movie": 24,
+    "user": 3
   }
 },
 {
   "model": "comments.comment",
   "pk": 30,
   "fields": {
-    "text": "non stop action packed, great",
-    "created_at": "2021-01-02T21:13:33.462Z",
+    "text": "Ironically, the most entertaining element of all may be the star's advancing age; Cruise, well into his 50s, scores numerous laughs as the increasingly confused CIA agent, leaping into one spectacular stunt after another and then wishing he hadn't.",
+    "created_at": "2021-02-18T12:36:14.693Z",
     "rating": 4,
-    "movie": 24,
+    "movie": 27,
     "user": 1
   }
 },
@@ -267,10 +267,21 @@
   "model": "comments.comment",
   "pk": 31,
   "fields": {
-    "text": "The best blockbuster of the summer and the most accomplished thriller since Supremacy. It's the payoff Bourne fans have been waiting for and the standard to which future blockbusters should be held.",
-    "created_at": "2021-01-02T21:32:20.400Z",
+    "text": "Tom Cruise's iron will to entertain with insane physical setpieces, along with Christopher McQuarrie's sharp script and direction, mark this Mission as one of the best.",
+    "created_at": "2021-02-18T12:36:31.769Z",
+    "rating": 4,
+    "movie": 27,
+    "user": 3
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 32,
+  "fields": {
+    "text": "let it grab you by the noodle and zap you into its whacked-out vision of human existence. You'll feel much better for it, I promise.",
+    "created_at": "2021-02-18T12:37:06.953Z",
     "rating": 5,
-    "movie": 50,
+    "movie": 37,
     "user": 1
   }
 },
@@ -278,43 +289,43 @@
   "model": "comments.comment",
   "pk": 33,
   "fields": {
-    "text": "Enjoyed this one very entertaining!",
-    "created_at": "2021-01-02T21:49:52.961Z",
+    "text": "It would be overstating it to suggest that Besson is enjoying a major creative renaissance but Lucy is the best film he has made in a very long time.",
+    "created_at": "2021-02-18T12:37:33.747Z",
     "rating": 4,
-    "movie": 20,
-    "user": 1
+    "movie": 37,
+    "user": 3
   }
 },
 {
   "model": "comments.comment",
   "pk": 34,
   "fields": {
-    "text": "Enjoyed this one very entertaining!",
-    "created_at": "2021-01-02T21:51:23.224Z",
+    "text": "Bridge of Spies is a quality film featuring loads of commendable work, but Spielberg's glossy and exceedingly upbeat take on the material might make it more of a crowdpleaser than an Oscar contender.",
+    "created_at": "2021-02-18T12:38:02.403Z",
     "rating": 4,
-    "movie": 19,
-    "user": 10
+    "movie": 38,
+    "user": 1
   }
 },
 {
   "model": "comments.comment",
   "pk": 35,
   "fields": {
-    "text": "This impish comedy brings the whole family together with a nod to appreciating their elders just a little more. In other words, there's a winner in this War -- and it's grandparents.",
-    "created_at": "2021-01-02T21:58:06.695Z",
-    "rating": 4,
-    "movie": 14,
-    "user": 1
+    "text": "Bridge of Spies is a warm portrait of a friendship, an excitingly intricate story of realistically scaled suspense, and a visually ravishing and lovingly crafted rendering of mid-century America, where how you look matters much less than what you do.",
+    "created_at": "2021-02-18T12:38:21.089Z",
+    "rating": 5,
+    "movie": 38,
+    "user": 3
   }
 },
 {
   "model": "comments.comment",
   "pk": 36,
   "fields": {
-    "text": "brilliant",
-    "created_at": "2021-01-09T22:28:14.289Z",
-    "rating": 5,
-    "movie": 71,
+    "text": "It's really a story about the romance of newspapers and a good one - part of a tradition that goes all the way back to Ben Hecht and The Front Page. It may also mark the genre's end.",
+    "created_at": "2021-02-18T12:39:01.893Z",
+    "rating": 3,
+    "movie": 39,
     "user": 1
   }
 },
@@ -322,21 +333,21 @@
   "model": "comments.comment",
   "pk": 37,
   "fields": {
-    "text": "great!",
-    "created_at": "2021-01-09T22:31:08.165Z",
-    "rating": 5,
-    "movie": 24,
-    "user": 1
+    "text": "State of Play succeeds as mainstream entertainment to the point where it hardly makes sense to complain about its pulled political punches.",
+    "created_at": "2021-02-18T12:39:16.518Z",
+    "rating": 3,
+    "movie": 39,
+    "user": 3
   }
 },
 {
   "model": "comments.comment",
   "pk": 38,
   "fields": {
-    "text": "average movie",
-    "created_at": "2021-01-09T22:32:18.249Z",
-    "rating": 3,
-    "movie": 24,
+    "text": "The ending is happy and ironic in equal measure, but most of the fun is just getting there with the right chemistry and compatibility.",
+    "created_at": "2021-02-18T12:40:18.044Z",
+    "rating": 4,
+    "movie": 40,
     "user": 1
   }
 },
@@ -344,110 +355,847 @@
   "model": "comments.comment",
   "pk": 39,
   "fields": {
-    "text": "Excellent",
-    "created_at": "2021-01-09T22:33:12.918Z",
-    "rating": 0,
-    "movie": 24,
-    "user": 10
+    "text": "What a charming movie this is. This film and its pairing of Julia Roberts and Hugh Grant is right up there with the best romantic comedies of any time period",
+    "created_at": "2021-02-18T12:40:41.434Z",
+    "rating": 4,
+    "movie": 40,
+    "user": 3
   }
 },
 {
   "model": "comments.comment",
   "pk": 40,
   "fields": {
-    "text": "There's too much going on, almost like the movie thinks an abundance of psychobabble can paper over a lack of character development, and most of it is uninteresting",
-    "created_at": "2021-01-09T22:47:28.792Z",
-    "rating": 2,
-    "movie": 24,
-    "user": 10
+    "text": "The filmmakers throw in so many forced elements of farce, that it dissipates the sense that maybe, just maybe, this kind of thing could happen to any of us.",
+    "created_at": "2021-02-18T12:41:07.764Z",
+    "rating": 4,
+    "movie": 41,
+    "user": 1
   }
 },
 {
   "model": "comments.comment",
   "pk": 41,
   "fields": {
-    "text": "A combination of thrilling stunts, insane daring and clever writing make this a stunning piece of action cinema. Just be sure to take your heart meds first, and hold on tight",
-    "created_at": "2021-01-09T22:55:05.330Z",
+    "text": "Galifianakis went from being an alt-comedy idol to a mainstream pop culture figure. The Hangover still feels like a breath of fresh air.",
+    "created_at": "2021-02-18T12:41:24.493Z",
     "rating": 5,
-    "movie": 27,
-    "user": 10
+    "movie": 41,
+    "user": 3
   }
 },
 {
   "model": "comments.comment",
   "pk": 42,
   "fields": {
-    "text": "Triple Frontier doesn't entirely manage to transcend the traps of action movie, but there's more to it than meets the eye.",
-    "created_at": "2021-01-12T11:49:03.697Z",
-    "rating": 3,
-    "movie": 19,
-    "user": 10
+    "text": "The actors fit their roles exceptionally well, but Zwick rarely allows them the kinds of crucial, intimate moments that establish how the characters feel about each other.",
+    "created_at": "2021-02-18T12:41:59.936Z",
+    "rating": 4,
+    "movie": 43,
+    "user": 1
   }
 },
 {
   "model": "comments.comment",
   "pk": 43,
   "fields": {
-    "text": "The physical proximity to each character and each movement is so minute, so aurally and visually sweeping, that Fallout is often slick as all hell.",
-    "created_at": "2021-01-12T12:41:25.032Z",
+    "text": "The real star, however, is John Toll's Oscar-winning cinematography, which is equally at home with the stunning beauty of the mountainous terrain and the killing fields of war-torn France.",
+    "created_at": "2021-02-18T12:42:23.536Z",
     "rating": 4,
-    "movie": 27,
-    "user": 10
+    "movie": 43,
+    "user": 3
   }
 },
 {
   "model": "comments.comment",
   "pk": 44,
   "fields": {
-    "text": "The Martian is a film about human error, the will to survive, and the responsibility that we have as human beings, not just to the work that we dedicate our lives to, but to one another as people.",
-    "created_at": "2021-01-12T14:31:36.986Z",
-    "rating": 4,
-    "movie": 45,
-    "user": 10
+    "text": "Mind-blowing doesn't even begin to describe director Christopher Nolan's latest foray into the mystifying realm of the subconscious.",
+    "created_at": "2021-02-18T12:42:47.948Z",
+    "rating": 5,
+    "movie": 44,
+    "user": 1
   }
 },
 {
   "model": "comments.comment",
   "pk": 45,
   "fields": {
-    "text": "Matt Damon's strong central performance anchors this compelling sci-fi adventure about a man stuck on Mars while the folks back home try to find an easy way to rescue him.",
-    "created_at": "2021-01-12T20:49:55.212Z",
+    "text": "A multilayered, self-reflexive action film that fires on all cylinders, manipulating time through meticulous editing to deliver a hard-hitting cinematic experience.",
+    "created_at": "2021-02-18T12:43:12.282Z",
     "rating": 4,
-    "movie": 45,
-    "user": 8
+    "movie": 44,
+    "user": 3
   }
 },
 {
   "model": "comments.comment",
   "pk": 46,
   "fields": {
-    "text": "It has to be said directly: The Martian is a very clever movie and perhaps the most intriguing science fiction movie that Ridley Scott has directed in a long time.",
-    "created_at": "2021-01-12T20:51:07.275Z",
+    "text": "The Martian is a film about human error, the will to survive, and the responsibility that we have as human beings, not just to the work that we dedicate our lives to, but to one another as people.",
+    "created_at": "2021-02-18T12:43:46.776Z",
     "rating": 5,
     "movie": 45,
-    "user": 7
+    "user": 1
   }
 },
 {
   "model": "comments.comment",
   "pk": 47,
   "fields": {
-    "text": "Bridge of Spies is a warm portrait of a friendship, an excitingly intricate story of realistically scaled suspense, and a visually ravishing and lovingly crafted rendering of mid-century America.",
-    "created_at": "2021-01-14T00:01:35.011Z",
+    "text": "The Martian is exactly the reason why we watch movies. It's fun, exciting, and a thrilling spectacle with deep emotional payoffs and strong performances from its all-star cast.",
+    "created_at": "2021-02-18T12:44:17.197Z",
     "rating": 4,
-    "movie": 38,
-    "user": 7
+    "movie": 45,
+    "user": 3
   }
 },
 {
   "model": "comments.comment",
   "pk": 48,
   "fields": {
-    "text": "Bad Boys for Life adds emotional gravitas that wasn't seen in the previous Bad Boys films.",
-    "created_at": "2021-01-14T00:05:26.617Z",
+    "text": "Constant violence, some language in terrible action movie.",
+    "created_at": "2021-02-18T12:45:39.112Z",
+    "rating": 2,
+    "movie": 3,
+    "user": 3
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 49,
+  "fields": {
+    "text": "It's a by-the-numbers blockbuster, but one with a key element that's missing from most of the big-budget bloatfests crowding each other for space on the marquee every summer: heart.",
+    "created_at": "2021-02-18T12:54:51.933Z",
+    "rating": 4,
+    "movie": 47,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 50,
+  "fields": {
+    "text": "Super 8 is the most intensely Spielbergian film you'll ever see that Steven Spielberg didn't actually direct himself. And it's early Spielberg!",
+    "created_at": "2021-02-18T12:55:29.300Z",
+    "rating": 3,
+    "movie": 47,
+    "user": 3
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 51,
+  "fields": {
+    "text": "Despite the film's initial overloading of suburban stereotypes, the easy gags about promiscuity, baby vomit and nappy changing gradually give way to a pretty decent, if strictly formulaic, yarn about commitment and unexpected life changes.",
+    "created_at": "2021-02-18T12:56:16.637Z",
+    "rating": 3,
+    "movie": 49,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 52,
+  "fields": {
+    "text": "The comedy is mediocre, the progression of events are predictably contrived, and the character designs are generic.",
+    "created_at": "2021-02-18T12:57:39.458Z",
+    "rating": 2,
+    "movie": 49,
+    "user": 3
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 53,
+  "fields": {
+    "text": "It's hard to believe The Bourne franchise is over 14 years old. With 4 successful films under its belt to this point, and one more on the way, Jason Bourne has become one of Hollywood's most enduring protagonists.",
+    "created_at": "2021-02-18T12:58:29.150Z",
     "rating": 5,
-    "movie": 5,
-    "user": 7
+    "movie": 50,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 54,
+  "fields": {
+    "text": "Whether you consider it a smart thriller or a paint-by-numbers spy caper, The Bourne Identity is a dynamic interpretation of Robert Ludlum's bestselling novel.",
+    "created_at": "2021-02-18T12:58:56.652Z",
+    "rating": 4,
+    "movie": 50,
+    "user": 3
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 56,
+  "fields": {
+    "text": "For moviegoers who like watching good-looking people fall in love -- with a baby and each other -- \"Life as We Know It\" is an easy (if unremarkable) film to see",
+    "created_at": "2021-02-20T16:50:00.866Z",
+    "rating": 4,
+    "movie": 49,
+    "user": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 57,
+  "fields": {
+    "text": "A fast-paced, unpredictable and edgy yarn that breathes new life into the espionage thriller genre.",
+    "created_at": "2021-02-20T17:55:44.266Z",
+    "rating": 5,
+    "movie": 50,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 59,
+  "fields": {
+    "text": "A brilliant mix of great story telling, Great action and suspense, It only spoon feeds us bits about the plot all the way through but it's gripping from start to finish, A great car chase and the film adds some wit which works well, It's Bonds dark and gritty brother.",
+    "created_at": "2021-02-20T17:56:30.378Z",
+    "rating": 4,
+    "movie": 50,
+    "user": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 60,
+  "fields": {
+    "text": "Smarter than your average action flick, The Bourne Identity offers a fresh take at the thriller genre, delivering high-paced action and brilliant dialogue. It may feel slow at times, but the pacing pays off big time. Definitely a solid first installment in a franchise.",
+    "created_at": "2021-02-20T17:56:50.959Z",
+    "rating": 4,
+    "movie": 50,
+    "user": 2
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 61,
+  "fields": {
+    "text": "if director and co-writer Todd Phillips didn't run this once clever idea into the ground the first two times, he definitely did it the third time with THE HANGOVER PART III.",
+    "created_at": "2021-02-20T21:09:02.029Z",
+    "rating": 3,
+    "movie": 52,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 62,
+  "fields": {
+    "text": "If you loved The Hangover but loathed its nastier, cruder, non-hilarious sequel - apart from that quite amusing monkey - you'd be right to approach this threequel with caution.",
+    "created_at": "2021-02-20T21:09:22.938Z",
+    "rating": 3,
+    "movie": 52,
+    "user": 3
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 63,
+  "fields": {
+    "text": "[While] it's a slightly better entry than its predecessor, the third (and final?) instalment still lacks the spark of the original.",
+    "created_at": "2021-02-20T21:10:02.937Z",
+    "rating": 3,
+    "movie": 52,
+    "user": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 64,
+  "fields": {
+    "text": "Rather like watching an intricately arranged set of dominos starting to topple. That's neat. I didn't see that one coming, you think, as yet another train carriage joins the pile-up.",
+    "created_at": "2021-02-20T21:11:16.987Z",
+    "rating": 2,
+    "movie": 53,
+    "user": 2
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 65,
+  "fields": {
+    "text": "As well as being perversely pessimistic for a blockbuster, it's rendered tedious by a dense plot and lifeless characters. Even M Night Shyamalan would have done a better job. How dare such an empty film ask us to endure many realistic scenes of carnage?",
+    "created_at": "2021-02-20T21:11:34.248Z",
+    "rating": 2,
+    "movie": 53,
+    "user": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 66,
+  "fields": {
+    "text": "You almost feel yourself getting smarter as you watch. Remember how you felt sitting through Transformers 2? Kind of the opposite of that.",
+    "created_at": "2021-02-20T21:12:54.997Z",
+    "rating": 3,
+    "movie": 54,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 67,
+  "fields": {
+    "text": "Better, part of me kind of thinks the film is maybe extolling the virtues of addiction, saying the pluses outweigh the minuses as long as you have enough self control to understand your limits and not overdue it.",
+    "created_at": "2021-02-20T21:13:16.733Z",
+    "rating": 3,
+    "movie": 54,
+    "user": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 68,
+  "fields": {
+    "text": "It's ridiculous, of course. And it's violent. It's also impeccably executed (pun intended), powerfully acted and sincerely acknowledges the value of goodness, virtue and doing the right thing.",
+    "created_at": "2021-02-20T21:14:32.932Z",
+    "rating": 4,
+    "movie": 57,
+    "user": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 70,
+  "fields": {
+    "text": "The Equalizer 2 is another blockbuster to join all the other summer sequels in box office heaven.",
+    "created_at": "2021-02-20T21:17:05.144Z",
+    "rating": 4,
+    "movie": 54,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 71,
+  "fields": {
+    "text": "The Equalizer 2 is another blockbuster to join all the other summer sequels in box office heaven.",
+    "created_at": "2021-02-20T21:17:31.311Z",
+    "rating": 5,
+    "movie": 57,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 72,
+  "fields": {
+    "text": "Source Code is a really strong film. It is a significantly more \"pop\" film than Moon was and will probably reach a wider audience.",
+    "created_at": "2021-02-20T21:50:36.754Z",
+    "rating": 4,
+    "movie": 59,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 73,
+  "fields": {
+    "text": "Michelle Monaghan adds tremendous depth and humanity to a woman who could have easily just been a romanticized caricature or afterthought.",
+    "created_at": "2021-02-20T21:51:04.495Z",
+    "rating": 5,
+    "movie": 59,
+    "user": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 74,
+  "fields": {
+    "text": "Jones ... has a light touch of the sort that enlivens the material without trivializing it-think of it as tongue delicately navigating the perimeter of cheek",
+    "created_at": "2021-02-20T21:51:27.915Z",
+    "rating": 4,
+    "movie": 59,
+    "user": 3
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 75,
+  "fields": {
+    "text": "The filmmakers know they have a good thing in the minions, and they figure more prominently in the plot and the film's humor, with sight gags and recurring jokes seamlessly woven into and enhancing the story.",
+    "created_at": "2021-02-20T21:55:38.878Z",
+    "rating": 3,
+    "movie": 92,
+    "user": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 76,
+  "fields": {
+    "text": "The humor this time around isn't nearly as juvenile as before, with much of it based on quick snapshots of immaterial gags - such as flashbacks and visualized backstories.",
+    "created_at": "2021-02-20T21:56:14.516Z",
+    "rating": 2,
+    "movie": 92,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 77,
+  "fields": {
+    "text": "It's bright, fun, and exists with good intentions. Hard to hate on something like that.",
+    "created_at": "2021-02-20T21:56:33.449Z",
+    "rating": 4,
+    "movie": 92,
+    "user": 3
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 78,
+  "fields": {
+    "text": "Larney fails his own idea by not having a stronger edit on his dialogue and a more confident hand when it comes to directing performance.",
+    "created_at": "2021-02-20T21:57:16.280Z",
+    "rating": 3,
+    "movie": 68,
+    "user": 2
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 79,
+  "fields": {
+    "text": "The problem is the story; it's a very thin tale, one that would have made a great short film. Alas the narrative is stretched to snapping point and the viewer ends up more than a little bored.",
+    "created_at": "2021-02-20T21:57:38.666Z",
+    "rating": 2,
+    "movie": 68,
+    "user": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 80,
+  "fields": {
+    "text": "There's plenty of high-velocity comic inanity on display to keep kids happily diverted. But the movie's major flaw is an extension of its own premise: Search as they may, the minions never find a villain worthy of their subservience.",
+    "created_at": "2021-02-20T21:58:19.403Z",
+    "rating": 5,
+    "movie": 69,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 81,
+  "fields": {
+    "text": "Original Score: 2/4\r\nWith its episodic stream of slapstick gags, Minions has moments of piquant absurdity, but mostly its shrill-but-cutesy anarchy works as a visual sugar rush for the preschool set.",
+    "created_at": "2021-02-20T21:59:19.090Z",
+    "rating": 4,
+    "movie": 69,
+    "user": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 82,
+  "fields": {
+    "text": "...though there's no sunshine in the movie, Hotel Transylvania 3 definitely has a summer vibe. And watching these characters try to navigate the naturally corny nature of a cruise ship vacation is pretty hilarious.",
+    "created_at": "2021-02-20T22:00:12.623Z",
+    "rating": 4,
+    "movie": 70,
+    "user": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 83,
+  "fields": {
+    "text": "Undeniably fun, brightly animated and has enough of a unique style to stand as an animated offering well worth taking the family to.",
+    "created_at": "2021-02-20T22:00:33.397Z",
+    "rating": 4,
+    "movie": 70,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 84,
+  "fields": {
+    "text": "There's something about the look of Kung Fu Panda that is so novel and pleasing. Perhaps it's just that we haven't seen this vintage, Far East world in a computer-animated movie before.",
+    "created_at": "2021-02-20T22:01:14.030Z",
+    "rating": 5,
+    "movie": 72,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 85,
+  "fields": {
+    "text": "Kung Fu Panda is ripe with genuine wisdom, and like any Kung Fu film, it delves into some pretty fascinating spirituality.",
+    "created_at": "2021-02-20T22:01:42.737Z",
+    "rating": 4,
+    "movie": 72,
+    "user": 3
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 86,
+  "fields": {
+    "text": "This is a charming film, full of wit and character that makes it a worthy addition to the Dreamworks library of films.",
+    "created_at": "2021-02-20T22:02:00.926Z",
+    "rating": 4,
+    "movie": 72,
+    "user": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 87,
+  "fields": {
+    "text": "The sequel to the 2005 Madagascar is as spunky, witty and funny. However, what's a let-down perhaps is the story, which takes the same course as The Lion King, with a detour towards Shrek thrown in.",
+    "created_at": "2021-02-20T22:02:36.240Z",
+    "rating": 3,
+    "movie": 73,
+    "user": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 88,
+  "fields": {
+    "text": "Punches its key themes of friendship, togetherness and family amid a hyperactive swirl of jokes, musical numbers and physical gags.",
+    "created_at": "2021-02-20T22:02:56.367Z",
+    "rating": 4,
+    "movie": 73,
+    "user": 2
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 89,
+  "fields": {
+    "text": "It's a very handsome production, and a pretty funny one, too, which will keep audiences of all ages -- except perhaps the most cynical -- thoroughly entertained",
+    "created_at": "2021-02-20T22:03:17.158Z",
+    "rating": 4,
+    "movie": 73,
+    "user": 3
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 90,
+  "fields": {
+    "text": "More convoluted than provocative, the script doesn't generate the desired present-day emotional impact.",
+    "created_at": "2021-02-20T23:15:43.422Z",
+    "rating": 3,
+    "movie": 68,
+    "user": 3
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 91,
+  "fields": {
+    "text": "So with The Nut Job we have a movie that in way is marketed like an Over The Hedge rip-off that never really escapes that idea at all when it's on.",
+    "created_at": "2021-02-20T23:17:07.566Z",
+    "rating": 2,
+    "movie": 75,
+    "user": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 92,
+  "fields": {
+    "text": "The good name of Canadian-South Korean animated co-productions has been sullied forever.",
+    "created_at": "2021-02-20T23:18:17.906Z",
+    "rating": 1,
+    "movie": 75,
+    "user": 2
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 93,
+  "fields": {
+    "text": "1917 can safely be added to the list of movies that have expanded and enhanced our understanding of how truly brutal war can be.",
+    "created_at": "2021-02-20T23:18:52.576Z",
+    "rating": 4,
+    "movie": 83,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 94,
+  "fields": {
+    "text": "The way in which the film is choreographed, the music is very important...the film actually stops, bringing everyone together in a quasi-religious silence...very moving and effective.",
+    "created_at": "2021-02-20T23:19:14.681Z",
+    "rating": 5,
+    "movie": 83,
+    "user": 3
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 95,
+  "fields": {
+    "text": "Probably could have hit a little harder but its message of unity, of creating bridges rather than walls, is a welcome one in these politically divisive times.",
+    "created_at": "2021-02-20T23:21:00.882Z",
+    "rating": 4,
+    "movie": 84,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 96,
+  "fields": {
+    "text": "Mahershala Ali and Viggo Mortensen are a match made in heaven. In its political correctness, it finds moments of truth.",
+    "created_at": "2021-02-20T23:21:18.125Z",
+    "rating": 5,
+    "movie": 84,
+    "user": 3
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 97,
+  "fields": {
+    "text": "This film proves why movies can be so powerful with a touching, poignant and some times funny story of opposites attract. Enjoyed every moment",
+    "created_at": "2021-02-20T23:21:38.366Z",
+    "rating": 5,
+    "movie": 84,
+    "user": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 98,
+  "fields": {
+    "text": "The third Bourne instalment is not just the best of the franchise, but also one of the finest and most forceful action releases of the past decade.",
+    "created_at": "2021-02-20T23:22:25.588Z",
+    "rating": 5,
+    "movie": 85,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 99,
+  "fields": {
+    "text": "The Bourne trilogy goes out with a bang in this consistently moving action flick. Matt Damon delivers his best Jason Bourne performance yet as he continues to fight",
+    "created_at": "2021-02-20T23:23:21.063Z",
+    "rating": 5,
+    "movie": 85,
+    "user": 3
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 100,
+  "fields": {
+    "text": "The best one of the original trilogy it's non stop thrills and twists and amazing gripping story only gets better with every scene, Matt Damon was great again",
+    "created_at": "2021-02-20T23:23:39.538Z",
+    "rating": 5,
+    "movie": 85,
+    "user": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 101,
+  "fields": {
+    "text": "It's best to approach Welcome to Sudden Death like a bad comedy with the occasional impressively out of tone gratuitously bloody action scene.",
+    "created_at": "2021-02-20T23:25:09.592Z",
+    "rating": 1,
+    "movie": 87,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 102,
+  "fields": {
+    "text": "Constant violence, some language in terrible action movie.",
+    "created_at": "2021-02-20T23:25:25.812Z",
+    "rating": 1,
+    "movie": 87,
+    "user": 3
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 103,
+  "fields": {
+    "text": "Norton makes for a wiry, curious Bruce Banner. But you can tell from the film's tedium-inducing smackdowns that a different philosophy prevailed: the artificial Zen of video-game playing.",
+    "created_at": "2021-02-20T23:25:56.938Z",
+    "rating": 3,
+    "movie": 88,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 104,
+  "fields": {
+    "text": "The Incredible Hulk makes noises about a return, but it seems doubtful audiences will keep the faith for a third try -- at least, with Hulk as the sole star.",
+    "created_at": "2021-02-20T23:26:15.074Z",
+    "rating": 2,
+    "movie": 88,
+    "user": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 105,
+  "fields": {
+    "text": "But I liked how subtle Miller and company's handling of their Global Warming and Climate Change message was this time, how they don't hit the viewer over the head with their proselytizing.",
+    "created_at": "2021-02-20T23:26:53.240Z",
+    "rating": 4,
+    "movie": 89,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 106,
+  "fields": {
+    "text": "Preaches acceptance but requires assimilation. You dance or you die. Join the party, swim with the swarm.",
+    "created_at": "2021-02-20T23:27:35.345Z",
+    "rating": 2,
+    "movie": 89,
+    "user": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 107,
+  "fields": {
+    "text": "Here is a family movie from which absolutely nothing is expected, and yet it's one of the week's best releases: a muscular, potent and very funny film.",
+    "created_at": "2021-02-20T23:28:14.566Z",
+    "rating": 4,
+    "movie": 90,
+    "user": 2
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 108,
+  "fields": {
+    "text": "The animation is largely excellent -- particularly in the circus sequences -- and the colorful, vibrant visuals look especially impressive in 3D.",
+    "created_at": "2021-02-20T23:28:40.526Z",
+    "rating": 5,
+    "movie": 90,
+    "user": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 109,
+  "fields": {
+    "text": "I have no wish to see any more movies featuring the Minions but I'd make an exception for a crossover project in which they were pitted against the Brood for a fight to the death.",
+    "created_at": "2021-02-20T23:29:18.855Z",
+    "rating": 3,
+    "movie": 91,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 110,
+  "fields": {
+    "text": "Despicable Me 3 is easily the least interesting film in the trilogy, the fact all involved are having such difficulty coming up with many original ideas speaking volumes.",
+    "created_at": "2021-02-20T23:29:42.417Z",
+    "rating": 3,
+    "movie": 91,
+    "user": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 111,
+  "fields": {
+    "text": "Kids are not likely to get the jokes about Gary Oldman​'s wig in the 1992 film Dracula, nor sympathise closely with the emotional difficulties Drac faces in becoming a grandparent. Adults... will have seen virtually all of this before.",
+    "created_at": "2021-02-20T23:30:07.718Z",
+    "rating": 2,
+    "movie": 71,
+    "user": 2
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 112,
+  "fields": {
+    "text": "Like the first entry in this animated Sony Pictures franchise, the film is spirited, engaging, and has an idea: it's about mutual tensions between the undead and the living, who have forged a truce up in the Carpathians.",
+    "created_at": "2021-02-20T23:30:20.341Z",
+    "rating": 3,
+    "movie": 71,
+    "user": 3
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 113,
+  "fields": {
+    "text": "This final instalment confirms this franchise as DreamWorks finest (sorry Shrek, but it's true).",
+    "created_at": "2021-02-20T23:31:19.092Z",
+    "rating": 4,
+    "movie": 93,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 114,
+  "fields": {
+    "text": "Feels like a film that has grown along with its core audience. Determined to supply a satisfying end to the franchise it's a movie that pushes the boundaries of the series while still maintaining the soul that earned the fans in the first place.",
+    "created_at": "2021-02-20T23:31:40.418Z",
+    "rating": 5,
+    "movie": 93,
+    "user": 3
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 115,
+  "fields": {
+    "text": "A fast-paced, unpredictable and edgy yarn that breathes new life into the espionage thriller genre.",
+    "created_at": "2021-02-20T23:32:12.925Z",
+    "rating": 5,
+    "movie": 50,
+    "user": 2
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 116,
+  "fields": {
+    "text": "Efficient set pieces come neatly spaced every ten to 15 minutes -- just often enough to keep you credulous -- and the trans-European settings lend a classy backdrop.",
+    "created_at": "2021-02-20T23:32:33.996Z",
+    "rating": 4,
+    "movie": 50,
+    "user": 3
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 117,
+  "fields": {
+    "text": "Breathtakingly, beautifully simple.",
+    "created_at": "2021-02-20T23:33:04.240Z",
+    "rating": 5,
+    "movie": 50,
+    "user": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 118,
+  "fields": {
+    "text": "Smarter than your average action flick, The Bourne Identity offers a fresh take at the thriller genre, delivering high-paced action and brilliant dialogue.",
+    "created_at": "2021-02-20T23:33:30.826Z",
+    "rating": 4,
+    "movie": 50,
+    "user": 4
   }
 }
 ]

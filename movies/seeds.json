@@ -18,8 +18,8 @@
       3
     ],
     "liked_by": [
-      1,
-      2
+      2,
+      1
     ]
   }
 },
@@ -66,31 +66,6 @@
       2
     ],
     "liked_by": [
-      1
-    ]
-  }
-},
-{
-  "model": "movies.movie",
-  "pk": 14,
-  "fields": {
-    "title": "The War With Grandpa",
-    "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ltyARDw2EFXZ2H2ERnlEctXPioP.jpg",
-    "description": "Sixth-grader Peter is pretty much your average kid—he likes gaming, hanging with his friends and his beloved pair of Air Jordans. But when his recently widowed grandfather Ed moves in with Peter’s family, the boy is forced to give up his most prized possession of all, his bedroom. Unwilling to let s",
-    "starring": "Robert De Niro, Uma Thurman, Christopher Walken",
-    "release": "2020",
-    "director": "Tim Hill",
-    "duration": "1h 34m",
-    "age_rating": "18",
-    "trailer": "https://youtu.be/EohVvIWg-Oc",
-    "user": 1,
-    "genre": [
-      1,
-      9,
-      7
-    ],
-    "liked_by": [
-      3,
       1
     ]
   }
@@ -234,8 +209,8 @@
       11
     ],
     "liked_by": [
-      1,
-      2
+      2,
+      1
     ]
   }
 },
@@ -302,9 +277,9 @@
       3
     ],
     "liked_by": [
-      1,
+      2,
       3,
-      2
+      1
     ]
   }
 },
@@ -326,7 +301,9 @@
       2,
       3
     ],
-    "liked_by": []
+    "liked_by": [
+      1
+    ]
   }
 },
 {
@@ -434,9 +411,9 @@
     "trailer": "https://youtu.be/TR5E7Kuty3o",
     "user": 1,
     "genre": [
-      13,
-      11,
       5,
+      11,
+      13,
       14
     ],
     "liked_by": []
@@ -549,7 +526,9 @@
       3,
       5
     ],
-    "liked_by": []
+    "liked_by": [
+      1
+    ]
   }
 },
 {
@@ -851,10 +830,10 @@
     "trailer": "https://www.themoviedb.org/movie/530915-1917#",
     "user": 1,
     "genre": [
-      13,
+      5,
       2,
       3,
-      5
+      13
     ],
     "liked_by": []
   }
@@ -920,6 +899,159 @@
       1
     ],
     "liked_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 88,
+  "fields": {
+    "title": "The Incredible Hulk",
+    "image": "https://www.themoviedb.org/t/p/w1280/gKzYx79y0AQTL4UAk1cBQJ3nvrm.jpg",
+    "description": "Scientist Bruce Banner scours the planet for an antidote to the unbridled force of rage within him: the Hulk. But when the military masterminds who dream of exploiting his powers force him back to civilization, he finds himself coming face to face with a new, deadly foe.",
+    "starring": "Edward Norton, Liv Tyler",
+    "release": "2008",
+    "director": "Louis Leterrier",
+    "duration": "1h 54m",
+    "age_rating": "12A",
+    "trailer": "https://www.themoviedb.org/movie/1724-the-incredible-hulk?language=en-GB#",
+    "user": 1,
+    "genre": [
+      8,
+      2,
+      12
+    ],
+    "liked_by": [
+      2,
+      3,
+      1
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 89,
+  "fields": {
+    "title": "Happy Feet 2",
+    "image": "https://www.themoviedb.org/t/p/w1280/za41IHkj6LnkilfTzv5B2qmthKD.jpg",
+    "description": "Into the world of the Emperor Penguins, who find their soul mates through song, a penguin is born who cannot sing. But he can tap dance something fierce!",
+    "starring": "Elijah Wood, Robin Williams, Pink",
+    "release": "2006",
+    "director": "George Miller",
+    "duration": "1h 48m",
+    "age_rating": "U",
+    "trailer": "https://www.themoviedb.org/movie/9836-happy-feet?language=en-GB#",
+    "user": 2,
+    "genre": [
+      8,
+      1,
+      9
+    ],
+    "liked_by": [
+      2,
+      3,
+      1
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 90,
+  "fields": {
+    "title": "Madagascar 3 - Europe's Most Wanted",
+    "image": "https://www.themoviedb.org/t/p/w1280/ekraj4ksvIKeuvQVEevEJkuybZd.jpg",
+    "description": "Animal pals Alex, Marty, Melman, and Gloria are still trying to make it back to New York's Central Park Zoo. They are forced to take a detour to Europe to find the penguins and chimps who broke the bank at a Monte Carlo casino. When French animal-control officer Capitaine Chantel DuBois picks up their scent, Alex and company are forced to hide out in a traveling circus.",
+    "starring": "Ben Stiller, Cedric, David Schwimmer",
+    "release": "2012",
+    "director": "Tom Mcgrath",
+    "duration": "1h 33m",
+    "age_rating": "PG",
+    "trailer": "https://www.themoviedb.org/movie/80321-madagascar-3-europe-s-most-wanted?language=en-GB#",
+    "user": 1,
+    "genre": [
+      8,
+      1,
+      9
+    ],
+    "liked_by": [
+      2,
+      3,
+      1
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 91,
+  "fields": {
+    "title": "Despicable Me 3",
+    "image": "https://www.themoviedb.org/t/p/w1280/6t3YWl7hrr88lCEFlGVqW5yV99R.jpg",
+    "description": "Gru and his wife Lucy must stop former '80s child star Balthazar Bratt from achieving world domination.",
+    "starring": "Steve Carell, Kristen Wiig",
+    "release": "2017",
+    "director": "Pierre Coffin",
+    "duration": "1h 36m",
+    "age_rating": "U",
+    "trailer": "https://www.themoviedb.org/movie/324852-despicable-me-3?language=en-GB#",
+    "user": 1,
+    "genre": [
+      8,
+      1,
+      2,
+      9
+    ],
+    "liked_by": [
+      2,
+      3,
+      1
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 92,
+  "fields": {
+    "title": "Despicable Me 2",
+    "image": "https://www.themoviedb.org/t/p/w1280/5Fh4NdoEnCjCK9wLjdJ9DJNFl2b.jpg",
+    "description": "Gru is recruited by the Anti-Villain League to help deal with a powerful new super criminal.",
+    "starring": "Steve Carell, Kristen Wiig",
+    "release": "2013",
+    "director": "Pierre Coffin",
+    "duration": "1h 38m",
+    "age_rating": "U",
+    "trailer": "https://www.themoviedb.org/movie/93456-despicable-me-2?language=en-GB#",
+    "user": 1,
+    "genre": [
+      8,
+      1,
+      9
+    ],
+    "liked_by": [
+      1
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 93,
+  "fields": {
+    "title": "How To Train Your Dragon",
+    "image": "https://www.themoviedb.org/t/p/w1280/ygGmAO60t8GyqUo9xYeYxSZAR3b.jpg",
+    "description": "As the son of a Viking leader on the cusp of manhood, shy Hiccup Horrendous Haddock III faces a rite of passage: he must kill a dragon to prove his warrior mettle. But after downing a feared dragon, he realizes that he no longer wants to destroy it, and instead befriends the beast – which he names Toothless – much to the chagrin of his warrior father",
+    "starring": "Jay Baruchel, Gerard Butler, America Ferrara",
+    "release": "2010",
+    "director": "Chris Sanders",
+    "duration": "1h 38m",
+    "age_rating": "PG",
+    "trailer": "https://www.themoviedb.org/movie/10191-how-to-train-your-dragon?language=en-GB#",
+    "user": 1,
+    "genre": [
+      8,
+      9,
+      10
+    ],
+    "liked_by": [
+      1
+    ]
   }
 }
 ]

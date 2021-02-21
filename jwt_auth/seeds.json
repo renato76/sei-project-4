@@ -4,7 +4,7 @@
   "pk": 1,
   "fields": {
     "password": "pbkdf2_sha256$216000$bJUAO2XF2DLr$wDwMcfWfz2GjSK1P5WTz+nOQApS6MPwJL6ELAyqze5Y=",
-    "last_login": "2021-02-16T14:20:28.288Z",
+    "last_login": "2021-02-20T16:48:20.439Z",
     "is_superuser": true,
     "username": "renatomignogna",
     "is_staff": true,
@@ -51,6 +51,25 @@
     "email": "mike@email.com",
     "first_name": "Mike",
     "last_name": "Mignogna",
+    "profile_image": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pass",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "victoria",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-02-20T16:48:56Z",
+    "email": "victoria@email.com",
+    "first_name": "Victoria",
+    "last_name": "Bocancea",
     "profile_image": "",
     "groups": [],
     "user_permissions": []

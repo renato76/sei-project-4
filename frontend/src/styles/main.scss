@@ -43,6 +43,7 @@ body {
   background-color: #202020;
   display: flex;
   transition: 600ms;
+  justify-content: center;
 }
 a.navbar-item:hover {
   color: #009cc4;
@@ -1093,13 +1094,18 @@ and (max-width: 812px) {
   }
   .navbar-item {
     padding: 0.5rem 1.35rem;
-    background-color: #202020;
+    background-color: #009cc4;
+    border-bottom: 1px solid rgba(202, 202, 202, 0.336);
+    margin: 0;
+  }
+  .navbar-end {
+    padding: 0 15%;
   }
   .mobile-nav {
-    background-color: #202020;
+    background-color: #009cc4;
   }
   .sign-in {
-    padding: 0.5rem 0.75rem;
+    padding: 0.5rem 1.35rem;
   }
 
     /* Position and sizing of burger button */
@@ -1129,6 +1135,9 @@ and (max-width: 812px) {
   /* Color/shape of close button cross */
   .bm-cross {
     background: #bdc3c7;
+  }
+  .bm-menu {
+    border: none;
   }
 
   .movie-row{
@@ -1474,6 +1483,16 @@ and (max-width: 413px){
     /* Color/shape of close button cross */
     .bm-cross {
       background: #bdc3c7;
+    }
+    .navbar-item {
+      padding: 0.5rem 1.35rem;
+      background-color: #202020;
+    }
+    .mobile-nav {
+      background-color: #202020;
+    }
+    .sign-in {
+      padding: 0.5rem 1.35rem;
     }
 
     .navbar-item {
