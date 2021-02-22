@@ -23,7 +23,7 @@ const App = ()  => {
         <Route path="/movies/:id/edit" component={MovieEdit} />
         <Route path="/movies/new" component={MovieNew} />          
         <Route path="/movies/:id" component={MovieDetails} />
-        <Route exact path="/" component={Home} />   
+        <Route exact path="/" component={Home} />    
         <Route path="/register" component={Register} />     
         <Route path="/login" component={Login} />    
         <Route path="/profile" component={Profile} />    
