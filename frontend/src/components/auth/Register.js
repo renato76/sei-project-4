@@ -9,6 +9,7 @@ class Register extends React.Component {
       email: '',
       firstName: '',
       lastName: '',
+      profileImage: '',
       password: '',
       passwordConfirmation: ''
     },
@@ -105,7 +106,7 @@ class Register extends React.Component {
                 </div>
                 { registerErrors.last_name && <p className="help is-danger">{registerErrors.last_name}</p> }
               </div>
-              {/* <div className="field">
+              <div className="field">
                 <div className="control">
                   <input
                     className={`input ${registerErrors.profile_image ? 'is-danger' : ''}`}
@@ -117,7 +118,7 @@ class Register extends React.Component {
                   />
                 </div>
                 { registerErrors.profile_image && <p className="help is-danger">{registerErrors.profile_image}</p> }
-              </div> */}
+              </div>
               <div className="field">
                 <div className="control">
                   <input
