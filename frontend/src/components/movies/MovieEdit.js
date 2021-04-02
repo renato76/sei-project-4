@@ -35,10 +35,6 @@ class MovieEdit extends React.Component {
     })
     console.log(response.data.genre)
 
-    // Basically the error said expected PK received a dict, 
-    // so the console.log shows an object with arrays inside
-    // needed to extract just the ids from the object and save them to the genres array in state
-
     const genres = response.data.genre.map(genre => genre.id)
     console.log(genres)
 
@@ -76,12 +72,17 @@ class MovieEdit extends React.Component {
     })
   }
   
-
   handleSubmit = async event => {
     event.preventDefault()  
 
     
     try {
+      const formData = {
+        ...this.state.formData,
+        [event.target.name]: event.target.value
+      } 
+      // console.log(formData)
+      this.setState({ formData })
       const userId = this.state.formData.user
       // console.log(userId)
       this.state.formData.user = userId.id
@@ -92,6 +93,7 @@ class MovieEdit extends React.Component {
 
       const movieId = this.props.match.params.id
       // post to /movies via the api axios request
+      
       const response = await updateMovie(movieId, this.state.formData)
       console.log(response)
 
