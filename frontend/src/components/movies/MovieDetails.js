@@ -35,18 +35,6 @@ class MovieDetails extends React.Component {
       movie: response.data
     })  
 
-    // get all the movies - store them in a const, 
-    // get current movie and store in a const
-    // and then create a function that sets the state
-    // to the next movie in the movies array
-
-    // though...what if I have all the movies, then loop through that array
-    // and the handleclick can simply setState to i ??
-
-    // could have handleNext and handlePrev functions
-    
-
-
     // Get user profile details and update state
     try {
       const profile = await getUserProfile()
@@ -72,7 +60,6 @@ class MovieDetails extends React.Component {
   }
 
   // function that handles the comments formdata, 
-
   handleChange = event => {
     // console.log(event.target)
     const formData = {
@@ -83,7 +70,6 @@ class MovieDetails extends React.Component {
   }
 
   // A function to handle submit comment
-  
   handleSubmit = async event => {
     event.preventDefault()    
     try {
