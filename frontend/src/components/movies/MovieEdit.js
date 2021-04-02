@@ -71,11 +71,16 @@ class MovieEdit extends React.Component {
     } 
     // console.log(formData)
     this.setState({ formData })
+    this.setState({
+      formErrors: {}
+    })
   }
   
 
   handleSubmit = async event => {
-    event.preventDefault()     
+    event.preventDefault()  
+
+    
     try {
       const userId = this.state.formData.user
       // console.log(userId)
@@ -86,7 +91,6 @@ class MovieEdit extends React.Component {
       this.state.formData.liked_by = likedBy.value
 
       const movieId = this.props.match.params.id
-
       // post to /movies via the api axios request
       const response = await updateMovie(movieId, this.state.formData)
       console.log(response)
@@ -94,6 +98,7 @@ class MovieEdit extends React.Component {
       // redirect user to the new edited movie detail page
       this.props.history.push(`/movies/${movieId}`)
     } catch (err) {
+      // console.log(err.response.data)
       this.setState({ formErrors: err.response.data })
       return
     }
