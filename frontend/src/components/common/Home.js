@@ -11,7 +11,7 @@ class Home extends React.Component {
 
   async componentDidMount() {
     const response = await getAllMovies()
-    // console.log(getAllMovies)
+    // console.log(response)
     this.setState({
       movies: response.data
     })

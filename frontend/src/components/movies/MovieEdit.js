@@ -16,7 +16,8 @@ class MovieEdit extends React.Component {
       age_rating: '',
       trailer: '',
       liked_by: []
-    }
+    },
+    formErrors: {}
   }
 
   // In order to pre-populate the edit form with current data, 
@@ -62,7 +63,7 @@ class MovieEdit extends React.Component {
   }
 
   handleChange = event => {
-
+    
     console.log(event.target)
     const formData = {
       ...this.state.formData,
@@ -74,27 +75,28 @@ class MovieEdit extends React.Component {
   
 
   handleSubmit = async event => {
-    event.preventDefault() 
-    
-    // const genreItems = this.state.formData.genre.map(genre => genre.id)
-    // console.log(genreItems)
-    // this.state.formData.genre = genreItems
+    event.preventDefault()     
+    try {
+      const userId = this.state.formData.user
+      // console.log(userId)
+      this.state.formData.user = userId.id
 
-    const userId = this.state.formData.user
-    // console.log(userId)
-    this.state.formData.user = userId.id
+      const likedBy = this.state.formData
+      // console.log(likedBy)
+      this.state.formData.liked_by = likedBy.value
 
-    const likedBy = this.state.formData
-    // console.log(likedBy)
-    this.state.formData.liked_by = likedBy.value
+      const movieId = this.props.match.params.id
 
-    const movieId = this.props.match.params.id
-    // post to /movies via the api axios request
-    const response = await updateMovie(movieId, this.state.formData)
-    console.log(response)
+      // post to /movies via the api axios request
+      const response = await updateMovie(movieId, this.state.formData)
+      console.log(response)
 
-    // redirect user to the new edited movie detail page
-    this.props.history.push(`/movies/${movieId}`)
+      // redirect user to the new edited movie detail page
+      this.props.history.push(`/movies/${movieId}`)
+    } catch (err) {
+      this.setState({ formErrors: err.response.data })
+      return
+    }
 
   }
 
@@ -106,7 +108,8 @@ class MovieEdit extends React.Component {
             handleChange={this.handleChange}
             handleSubmit={this.handleSubmit}
             handleMultiSelect={this.handleMultiSelect}
-            formData={this.state.formData}/>
+            formData={this.state.formData}
+            formErrors={this.state.formErrors} />
         </div>
       </section>
     )
