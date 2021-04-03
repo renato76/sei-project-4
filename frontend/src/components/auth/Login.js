@@ -8,7 +8,8 @@ class Login extends React.Component {
     formData: {
       email: '',
       password: ''
-    }
+    },
+    loginErrors: {}
   }
 
   handleChange = event => {
@@ -17,8 +18,16 @@ class Login extends React.Component {
       ...this.state.formData,
       [event.target.name]: event.target.value
     }
+    const loginErrors = {
+      ...this.state.registerErrors,
+      [event.target.name]: ''
+    }
     console.log(formData)
-    this.setState({ formData })
+    this.setState({ 
+      formData, loginErrors })
+    this.setState({
+      formErrors: {}
+    })
   }
 
   handleSubmit = async event => {
@@ -30,12 +39,15 @@ class Login extends React.Component {
       setToken(response.data.token)
       this.props.history.push('/')
     } catch ( err ) {
-      popupNotification('Invalid email or password')
+      console.log(err.response)
+      this.setState({ loginErrors: err.response.data })
+      return
+      // popupNotification('Invalid email or password')
     }
   } 
 
   render() {
-    const { email, password } = this.state
+    const { email, password, loginErrors } = this.state
 
     return (
       <section className="section">
@@ -46,7 +58,7 @@ class Login extends React.Component {
                 <h2 className="reg-label">Sign In</h2>
                 <div className="control">
                   <input
-                    className="input"
+                    className={`input ${loginErrors.detail ? 'is-danger' : ''}`}
                     placeholder="Email"
                     name="email"
                     value={email}
@@ -58,13 +70,14 @@ class Login extends React.Component {
                 <div className="control">
                   <input
                     type="password"
-                    className="input"
+                    className={`input ${loginErrors.detail ? 'is-danger' : ''}`}
                     placeholder="Password"
                     name="password"
                     value={password}
                     onChange={this.handleChange}
                   />
                 </div>
+                { loginErrors.detail && <p className="help is-danger">{loginErrors.detail}</p> }
               </div>
               <div className="field">
                 <button type="submit" className="button is-fullwidth">Sign In</button>

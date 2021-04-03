@@ -40,7 +40,7 @@ class Register extends React.Component {
       this.props.history.push('login')
       popupNotification('Welcome, now please log in!')
     } catch ( err ) {
-      // console.log(err.response)
+      console.log(err.response)
       this.setState({ registerErrors: err.response.data })
       return
     }     
