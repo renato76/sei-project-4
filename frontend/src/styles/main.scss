@@ -31,8 +31,12 @@ body {
   border-bottom: 1px solid rgb(56, 56, 56);
 }
 
+.navbar-start {
+  margin-left: 35px;
+}
+
 .navbar-end {
-  padding-right: 5%;
+  padding-right: 190px;
   padding-top: 10px;
   padding-bottom: 10PX;
 }
@@ -161,12 +165,12 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 
 .poster-view {
   img {
-    max-width: 320px;
+    max-width: 330px;
     border-radius: 20px;
     height: auto;
   }
   padding: 90px 0 50px 80px;
-  margin-left: 50px;
+  margin-left: 80px;
 }
 
 // Movie details
@@ -389,7 +393,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   background-color: #202020;
   display: flex;
   
-  padding: 3% 1%;
+  padding: 30px 75px;
 }
 
 .comments-left {
@@ -397,7 +401,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   margin-left: 70px;
   margin-top: 60px;
   padding: 0 10px;
-  flex-grow: 1;
+  flex-grow: 2;
   h2 {
     
     padding: 20px 0;
@@ -477,7 +481,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   border-radius: 12px;
   padding: 20px;
   background-color: white;
-  margin: 60px 70px 60px 30px;
+  margin: 60px 90px 60px 30px;
 }
 
 .review-column {
