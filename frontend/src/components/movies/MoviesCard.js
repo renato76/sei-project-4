@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const MoviesCard = ({ title, image, id }) => {
-  // console.log(title)
 
   return (
     <div id={id} className="main">

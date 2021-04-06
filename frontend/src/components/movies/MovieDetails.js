@@ -30,7 +30,7 @@ class MovieDetails extends React.Component {
     const movieId = this.props.match.params.id
     // console.log(this.props, movieId)
     const response = await getSingleMovie(movieId)
-    console.log(response.data)
+    // console.log(response.data)
     this.setState({
       movie: response.data
     })  
@@ -45,7 +45,7 @@ class MovieDetails extends React.Component {
         currentUserId: userId
       })
     } catch (err) {
-      console.error(err)
+      // console.error(err)
     }
 
     const likedByArrayIds = this.state.movie.liked_by.map(user => user.id)
@@ -123,7 +123,7 @@ class MovieDetails extends React.Component {
         })
         popupNotification('Added to Watchlist!')
       } catch (err) {
-        console.log(err)
+        // console.log(err)
       }
     } else {
       try {
@@ -134,15 +134,13 @@ class MovieDetails extends React.Component {
         })
         popupNotification('Removed from Watchlist!')
       } catch (err) {
-        console.log(err)
+        // console.log(err)
       }
     }
   }
   
   render() {
-    const { movie, text, rating } = this.state
-    const { heartColor } = this.state   
-    console.log(this.state)
+    const { movie, text, rating, heartColor } = this.state  
     if (!movie) return null
     return (
       <div className="show-page">
@@ -255,7 +253,7 @@ class MovieDetails extends React.Component {
                   {movie.comments.map((comment, id) => (
                     <>
                       <div key={id} className="comment-text">
-                        <h2>A review by {comment.user.username} </h2>
+                        <h2>A review by {comment.user.username}</h2>
                         <h3>Written on: {moment(comment.created_at).format('Do MMM YY')}</h3>
                         <div className="comment-rating">
                           <p><span>{comment.rating}.0</span></p>

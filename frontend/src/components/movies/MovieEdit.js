@@ -28,16 +28,14 @@ class MovieEdit extends React.Component {
 
     const movieId = this.props.match.params.id
     const response = await getSingleMovie(movieId)
-    console.log(response.data)
+    // console.log(response.data)
     
     this.setState({
       formData: response.data
     })
-    console.log(response.data.genre)
-
+    // console.log(response.data.genre)
     const genres = response.data.genre.map(genre => genre.id)
     console.log(genres)
-
     this.state.formData.genre = genres
     
   }
@@ -51,7 +49,6 @@ class MovieEdit extends React.Component {
       ...this.state.formData,
       genre: selectedIds
     }
-
     // and set state of formdata
     this.setState({ formData })
     console.log(formData)
@@ -94,8 +91,7 @@ class MovieEdit extends React.Component {
       const movieId = this.props.match.params.id
       // post to /movies via the api axios request
       
-      const response = await updateMovie(movieId, this.state.formData)
-      console.log(response)
+      await updateMovie(movieId, this.state.formData)
 
       // redirect user to the new edited movie detail page
       this.props.history.push(`/movies/${movieId}`)

@@ -29,7 +29,6 @@ export const createMovie = formData => {
   return axios.post('/api/movies/', formData, getAuthHeaders())
 }
 
-
 // UPDATE A MOVIE
 export const updateMovie = (id, formData) => {
   return axios.put(`/api/movies/${id}/`, formData, getAuthHeaders())
@@ -40,22 +39,7 @@ export const deleteMovie = id => {
   return axios.delete(`/api/movies/${id}/`, getAuthHeaders())
 }
 
-// longer version with headers etc
-
-// export const deleteMovie = id => {
-//   const token = localStorage.getItem('token')
-//   const headers = {
-//     headers: {
-//       Authorization: `Bearer ${token}`
-//     }
-//   }
-//   return axios.delete(`/api/movies/${id}/`, headers())
-// }
-
-
-
 // AUTH
-
 export const registerUser = formData => {
   return axios.post('/api/auth/register/', formData)
 }
@@ -76,22 +60,18 @@ export const createNewComment = formData => {
 }
 
 // Add Movie to Watchlist
-
 export const addToWatchlist = (movieId, formData) => {
   console.log(`Adding movie ${movieId} to my Watchlist`)
   return axios.post(`/api/movies/${movieId}/likes/`, formData, getAuthHeaders())
 }
 
 // remove Movie from Watchlist
-
 export const removeFromWatchlist = (movieId) => {
   console.log(`Removing movie ${movieId} from my Watchlist`)
   return axios.delete(`/api/movies/${movieId}/likes/`, getAuthHeaders())
 }
 
-
 // User Profile
-
 export function getUserProfile(){
   return axios.get('/api/auth/profile/', getAuthHeaders())
 }

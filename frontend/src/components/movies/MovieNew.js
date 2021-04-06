@@ -1,7 +1,6 @@
 import React from 'react'
 import { createMovie } from '../../lib/api'
 import MovieForm from './MovieForm'
-// import { popupNotification } from '../../lib/notification'
 
 class MovieNew extends React.Component {
   state = {
@@ -49,20 +48,15 @@ class MovieNew extends React.Component {
 
   handleSubmit = async event => {
     event.preventDefault() 
-    // const genreItems = this.state.formData.genre.map(genre => genre.id)
-    // console.log(genreItems)
-    // this.state.formData.genre = genreItems
     // post to /movies via the api axios request
     try {
       const response = await createMovie(this.state.formData)
-      // console.log(response)
       // redirect user to the movie they created
       this.props.history.push(`/movies/${response.data.id}`)
     } catch (err) {
       console.log(err.response)
       this.setState({ formErrors: err.response.data })
       return
-      // popupNotification('Please fill in the "Required" fields: title, image, description and starring')
     }
   }
 
