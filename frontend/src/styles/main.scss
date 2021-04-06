@@ -841,7 +841,7 @@ and (max-width: 1024px) {
     width: 30px;
     height: 25px;
     right: 15px;
-    top: 10px;
+    top: 20px;
   }
 
   /* Color/shape of burger icon bars */
@@ -923,7 +923,7 @@ and (max-width: 1024px) {
     }
   }
   .right-box {
-    margin: 23px 0;
+    margin: 50px 0;
     padding: 0;
     height: auto;
     }
@@ -1466,7 +1466,7 @@ and (max-width: 413px){
       position: fixed;
       width: 36px;
       height: 27px;
-      right: 28px;
+      right: 20px;
       top: 12px;
     }
   
@@ -1522,7 +1522,7 @@ and (max-width: 413px){
 
   .poster-view {
     img {
-      max-width: 330px;
+      max-width: 300px;
       border-radius: 10px;
       margin: 0;
     }
@@ -1611,12 +1611,14 @@ and (max-width: 413px){
   .trailer-parent {
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: space-around;
   }
 
   .trailer {
     button {
-      width: 110px;
-      margin-left: 12px;
+      width: 100px;
+      margin-left: 18px;
       border-radius: 5px;
     }
     a {
@@ -1624,9 +1626,9 @@ and (max-width: 413px){
     }
   }
   .edit-buttons {
-    margin-left: 5%;
+    margin-right: 3%;
     .button {
-      width: 70px;
+      width: 60px;
       border-radius: 5px;
       font-size: 14px;
     }
