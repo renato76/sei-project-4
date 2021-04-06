@@ -1585,6 +1585,9 @@ and (max-width: 413px){
   }
   .description {
     padding: 0 10%;
+    p {
+      font-size: 13px;
+    }
   }
 
   .cast {
@@ -1594,11 +1597,11 @@ and (max-width: 413px){
     align-items: flex-start;
     h4 {
   
-      font-size: 15px;
+      font-size: 14px;
       padding-bottom: 20px;
     }
     h5 { 
-      font-size: 13px;
+      font-size: 12px;
     }
     .director {
       margin: 0;
@@ -1612,12 +1615,12 @@ and (max-width: 413px){
 
   .trailer {
     button {
-      width: 120px;
-      margin-left: 15px;
+      width: 110px;
+      margin-left: 12px;
       border-radius: 5px;
     }
     a {
-      font-size: 17px;
+      font-size: 15px;
     }
   }
   .edit-buttons {
