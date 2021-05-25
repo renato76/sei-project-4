@@ -17,31 +17,29 @@ const MovieDetails = (props) => {
   const [heartColor, setHeartColor] = useState('grey')
   const [liked, setLiked] = useState(false)
 
-  useEffect(async () => {
-    const movieId = match.params.id
-    const response = await getSingleMovie(movieId)
-    const movie = response.data
-    setMovie(movie)
-    console.log({ movie, response })
+  useEffect(() => {
+    const getData = async () => {
+      const movieId = match.params.id
+      const response = await getSingleMovie(movieId)
+      const movie = response.data
+      setMovie(movie)
+      // console.log({ movie, response })
 
-    // Get user profile details and update state
-    const profile = await getUserProfile()
-    // console.log(profile.data.id)
-    const userId = profile.data.id
-    setCurrentUserId(userId)
+      // Get user profile details and update state
+      const profile = await getUserProfile()
+      const userId = profile.data.id
+      setCurrentUserId(userId)
 
-    const likedByArrayIds = movie.liked_by.map(user => user.id)
-    const isLikedByCurrentUser = likedByArrayIds.includes(currentUserId)
-
-    const heartColor = isLikedByCurrentUser ? 'crimson' : 'grey'
-
-    setHeartColor(heartColor)
-    setLiked(isLikedByCurrentUser)
+      const likedByArrayIds = movie.liked_by.map(user => user.id)
+      const isLikedByCurrentUser = likedByArrayIds.includes(currentUserId)
+      const heartColor = isLikedByCurrentUser ? 'crimson' : 'grey'
+      setHeartColor(heartColor)
+      setLiked(isLikedByCurrentUser)
+    }
+    getData()
   }, [currentUserId])
 
-  // function that handles the comments formdata, 
   const handleChange = event => {
-    // console.log(event.target)
     const { name, value } = event.target
     setFormdata({
       ...formData,
@@ -49,7 +47,6 @@ const MovieDetails = (props) => {
     })
   }
 
-  // A function to handle submit comment
   const handleSubmit = async event => {
     event.preventDefault()
     try {
@@ -97,7 +94,6 @@ const MovieDetails = (props) => {
   }
 
   const { text, rating } = formData
-
   if (!movie) return null
 
   return (
@@ -148,9 +144,7 @@ const MovieDetails = (props) => {
                 <button className="button"><a href={movie.trailer}>Play Trailer</a></button>
               </div>
               <div className="like">
-
                 {isAuthenticated() && <FaHeart className="heart" onClick={handleWatchlist} color={heartColor} />}
-
                 {/* Add to Watchlist */}
               </div>
               {isAuthenticated() && <div className="edit-buttons">
