@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useCallback, useRef } from 'react'
 import moment from 'moment'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { getSingleMovie, deleteMovie, getUserProfile } from '../../lib/api'
 import { createNewComment, addToWatchlist, removeFromWatchlist } from '../../lib/api'
 import { isAuthenticated } from '../../lib/auth'
@@ -62,12 +62,16 @@ const MovieDetails = (props) => {
     }
   }
 
-  const handleDelete = async () => {
-    const movieId = match.params.id
-    await deleteMovie(movieId)
-    popupNotification('Movie has been deleted!')
-    props.history.push('/')
-  }
+  const handleDelete = useCallback(async () => {
+    try {
+      const movieId = match.params.id
+      await deleteMovie(movieId)
+      popupNotification('Movie has been deleted!')
+      props.history.push('/')
+    } catch (err) {
+      popupNotification('You do not have permission to delete this movie!')
+    }
+  }, [useRef, useHistory])  
 
   const getAverageRating = () => {
     const sum = (acc, curr) => acc + curr
