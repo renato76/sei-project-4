@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useRef } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import moment from 'moment'
 import { Link, useHistory } from 'react-router-dom'
 import { getSingleMovie, deleteMovie, getUserProfile } from '../../lib/api'
@@ -10,54 +10,57 @@ import { FaHeart } from 'react-icons/fa'
 
 const MovieDetails = (props) => {
   const { match } = props
+  const history = useHistory()
 
-  const [movie, setMovie] = useState('')
-  const [formData, setFormdata] = useState({ text: '', rating: '' })
-  const [currentUserId, setCurrentUserId] = useState('')
+  const [movie, setMovie] = useState(null)
+  const [commentsData, setCommentsData] = useState({ text: null, rating: null })
+  const [currentUserId, setCurrentUserId] = useState(null)
   const [heartColor, setHeartColor] = useState('grey')
   const [liked, setLiked] = useState(false)
 
   useEffect(() => {
     const getData = async () => {
-      const movieId = match.params.id
-      const response = await getSingleMovie(movieId)
-      const movie = response.data
-      setMovie(movie)
-      // console.log({ movie, response })
+      try {
+        const movieId = match.params.id
+        const { data: movie } = await getSingleMovie(movieId)
+        setMovie(movie)
 
-      const profile = await getUserProfile()
-      const userId = profile.data.id
-      setCurrentUserId(userId)
+        const profile = await getUserProfile()
+        const userId = profile.data.id
+        setCurrentUserId(userId)
 
-      const likedByArrayIds = movie.liked_by.map(user => user.id)
-      const isLikedByCurrentUser = likedByArrayIds.includes(currentUserId)
-      setLiked(isLikedByCurrentUser)
+        const likedByArrayIds = movie.liked_by.map(user => user.id)
+        const isLikedByCurrentUser = likedByArrayIds.includes(currentUserId)
+        setLiked(isLikedByCurrentUser)
+        
+        const heartColor = isLikedByCurrentUser ? 'crimson' : 'grey'
+        setHeartColor(heartColor)
+      } catch (err) {
+        console.log(err.response)
+      }
       
-      const heartColor = isLikedByCurrentUser ? 'crimson' : 'grey'
-      setHeartColor(heartColor)
     }
     getData()
   }, [currentUserId, match])
 
-  const handleChange = event => {
+  const handleComments = event => {
     const { name, value } = event.target
-    setFormdata({
-      ...formData,
+    setCommentsData({
+      ...commentsData,
       [name]: value
     })
   }
 
-  const handleSubmit = async event => {
+  const handleFormSubmit = async event => {
     event.preventDefault()
-    try {
-      const newFormData = JSON.parse(JSON.stringify(formData))
-      newFormData.movie = movie.id
+    try {    
+      commentsData.movie = movie.id
+      await createNewComment(commentsData)
 
-      await createNewComment(newFormData)
       popupNotification('Thanks for your comment and rating!')
-      props.history.push('/')
+      history.push('/')
     } catch (err) {
-      console.log(err.response)
+      // console.log(err.response)
       popupNotification('Please add a review and rating 1-5')
     }
   }
@@ -67,13 +70,13 @@ const MovieDetails = (props) => {
       const movieId = match.params.id
       await deleteMovie(movieId)
       popupNotification('Movie has been deleted!')
-      props.history.push('/')
+      history.push('/')
     } catch (err) {
       popupNotification('You do not have permission to delete this movie!')
     }
-  }, [useRef, useHistory])  
+  }, [])  
 
-  const getAverageRating = () => {
+  const getAverageRating = useCallback(() => {
     const sum = (acc, curr) => acc + curr
     const ratings = movie.comments.map(comment => comment.rating)
     if (ratings.length > 0) {
@@ -81,23 +84,27 @@ const MovieDetails = (props) => {
     } else {
       return (50).toFixed(0)
     }
-  }
+  }, [movie])
 
-  const handleWatchlist = async () => {
+  const handleWatchlistToggle = async () => {
     const movieId = props.match.params.id
 
-    if (!liked) {
-      await addToWatchlist(movieId)
-      setLiked(liked)
-    } else {
-      await removeFromWatchlist(movieId)
-      setLiked(!liked)
+    try {
+      if (!liked) {
+        await addToWatchlist(movieId)
+        setLiked(true)
+      } else {
+        await removeFromWatchlist(movieId)
+        setLiked(false)
+      }
+      setHeartColor(!liked ? 'crimson' : 'grey')
+      popupNotification(!liked ? 'Added to Watchlist!' : 'Removed from Watchlist!')
+    } catch (err) {
+      console.log(err)
     }
-    setHeartColor(!liked ? 'crimson' : 'grey')
-    popupNotification(!liked ? 'Added to Watchlist!' : 'Removed from Watchlist!')
   }
 
-  const { text, rating } = formData
+  const { text, rating } = commentsData
   if (!movie) return null
 
   return (
@@ -148,7 +155,7 @@ const MovieDetails = (props) => {
                 <button className="button"><a href={movie.trailer}>Play Trailer</a></button>
               </div>
               <div className="like">
-                {isAuthenticated() && <FaHeart className="heart" onClick={handleWatchlist} color={heartColor} />}
+                {isAuthenticated() && <FaHeart className="heart" onClick={handleWatchlistToggle} color={heartColor} />}
                 {/* Add to Watchlist */}
               </div>
               {isAuthenticated() && <div className="edit-buttons">
@@ -162,7 +169,7 @@ const MovieDetails = (props) => {
       {/* Add review section START */}
       <div className="next-page">
         {isAuthenticated() && <div className="comments-left">
-          <form onSubmit={handleSubmit} className="review-column is-two-thirds is-offset-one-quarter box">
+          <form onSubmit={handleFormSubmit} className="review-column is-two-thirds is-offset-one-quarter box">
             <div className="field">
               <label className="label">Add A Review</label>
               <div className="control">
@@ -171,7 +178,7 @@ const MovieDetails = (props) => {
                   placeholder="comments"
                   name="text"
                   value={text}
-                  onChange={handleChange}
+                  onChange={handleComments}
                 />
               </div>
             </div>
@@ -183,7 +190,7 @@ const MovieDetails = (props) => {
                   placeholder="Choose 1-5"
                   name="rating"
                   value={rating}
-                  onChange={handleChange}
+                  onChange={handleComments}
                 />
               </div>
             </div>
