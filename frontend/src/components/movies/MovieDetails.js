@@ -25,19 +25,19 @@ const MovieDetails = (props) => {
       setMovie(movie)
       // console.log({ movie, response })
 
-      // Get user profile details and update state
       const profile = await getUserProfile()
       const userId = profile.data.id
       setCurrentUserId(userId)
 
       const likedByArrayIds = movie.liked_by.map(user => user.id)
       const isLikedByCurrentUser = likedByArrayIds.includes(currentUserId)
+      setLiked(isLikedByCurrentUser)
+      
       const heartColor = isLikedByCurrentUser ? 'crimson' : 'grey'
       setHeartColor(heartColor)
-      setLiked(isLikedByCurrentUser)
     }
     getData()
-  }, [currentUserId])
+  }, [currentUserId, match])
 
   const handleChange = event => {
     const { name, value } = event.target
