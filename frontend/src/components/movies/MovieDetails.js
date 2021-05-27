@@ -41,7 +41,7 @@ const MovieDetails = (props) => {
       
     }
     getData()
-  }, [currentUserId, match])
+  }, [])
 
   const handleComments = event => {
     const { name, value } = event.target
@@ -74,7 +74,7 @@ const MovieDetails = (props) => {
     } catch (err) {
       popupNotification('You do not have permission to delete this movie!')
     }
-  }, [])  
+  }, [movie])  
 
   const getAverageRating = useCallback(() => {
     const sum = (acc, curr) => acc + curr
@@ -86,9 +86,8 @@ const MovieDetails = (props) => {
     }
   }, [movie])
 
-  const handleWatchlistToggle = async () => {
+  const handleWatchlistToggle = useCallback(async () => {
     const movieId = props.match.params.id
-
     try {
       if (!liked) {
         await addToWatchlist(movieId)
@@ -102,7 +101,7 @@ const MovieDetails = (props) => {
     } catch (err) {
       console.log(err)
     }
-  }
+  }, [liked])
 
   const { text, rating } = commentsData
   if (!movie) return null
