@@ -37,11 +37,10 @@ const MovieDetails = (props) => {
         setHeartColor(heartColor)
       } catch (err) {
         console.log(err.response)
-      }
-      
+      }  
     }
     getData()
-  }, [])
+  }, [currentUserId])
 
   const handleComments = event => {
     const { name, value } = event.target
@@ -86,7 +85,7 @@ const MovieDetails = (props) => {
     }
   }, [movie])
 
-  const handleWatchlistToggle = useCallback(async () => {
+  const handleWatchlistToggle = async () => {
     const movieId = props.match.params.id
     try {
       if (!liked) {
@@ -101,7 +100,7 @@ const MovieDetails = (props) => {
     } catch (err) {
       console.log(err)
     }
-  }, [liked])
+  }
 
   const { text, rating } = commentsData
   if (!movie) return null
