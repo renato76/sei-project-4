@@ -18,6 +18,8 @@ const MovieDetails = (props) => {
   const [heartColor, setHeartColor] = useState('grey')
   const [liked, setLiked] = useState(false)
 
+  console.log(movie)
+
   useEffect(() => {
     const getData = async () => {
       try {
@@ -55,11 +57,9 @@ const MovieDetails = (props) => {
     try {    
       commentsData.movie = movie.id
       await createNewComment(commentsData)
-
       popupNotification('Thanks for your comment and rating!')
       history.push('/')
     } catch (err) {
-      // console.log(err.response)
       popupNotification('Please add a review and rating 1-5')
     }
   }
@@ -73,11 +73,11 @@ const MovieDetails = (props) => {
     } catch (err) {
       popupNotification('You do not have permission to delete this movie!')
     }
-  }, [movie])  
+  }, [movie])
 
   const getAverageRating = useCallback(() => {
     const sum = (acc, curr) => acc + curr
-    const ratings = movie.comments.map(comment => comment.rating)
+    const ratings = movie.comments.map(comment => (comment.rating))
     if (ratings.length > 0) {
       return ((ratings.reduce(sum) * 20) / ratings.length).toFixed(0)
     } else {
