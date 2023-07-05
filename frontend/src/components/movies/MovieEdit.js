@@ -25,34 +25,23 @@ class MovieEdit extends React.Component {
   // then update the state with that info
   // This is done in componentDidMount
   async componentDidMount() {
-
     const movieId = this.props.match.params.id
     const response = await getSingleMovie(movieId)
-    // console.log(response.data)
-    
     this.setState({
       formData: response.data
     })
-    // console.log(response.data.genre)
     const genres = response.data.genre.map(genre => genre.id)
     console.log(genres)
     this.state.formData.genre = genres
-    
   }
   handleMultiSelect = event => {
-    // push the selected values into that array
     const selectedIds =  Array.from(event.target.selectedOptions).map((o) => Number(o.value))
-    console.log(selectedIds)
-
-    // now open up formdata and set genres to this array's values
     const formData = {
       ...this.state.formData,
       genre: selectedIds
     }
-    // and set state of formdata
     this.setState({ formData })
     console.log(formData)
-    
   }
 
   handleChange = event => {
@@ -62,7 +51,6 @@ class MovieEdit extends React.Component {
       ...this.state.formData,
       [event.target.name]: event.target.value
     } 
-    // console.log(formData)
     this.setState({ formData })
     this.setState({
       formErrors: {}
@@ -71,36 +59,26 @@ class MovieEdit extends React.Component {
   
   handleSubmit = async event => {
     event.preventDefault()  
-
-    
     try {
       const formData = {
         ...this.state.formData,
         [event.target.name]: event.target.value
       } 
-      // console.log(formData)
       this.setState({ formData })
       const userId = this.state.formData.user
-      // console.log(userId)
       this.state.formData.user = userId.id
 
       const likedBy = this.state.formData
-      // console.log(likedBy)
       this.state.formData.liked_by = likedBy.value
 
-      const movieId = this.props.match.params.id
-      // post to /movies via the api axios request
-      
+      const movieId = this.props.match.params.id      
       await updateMovie(movieId, this.state.formData)
 
-      // redirect user to the new edited movie detail page
       this.props.history.push(`/movies/${movieId}`)
     } catch (err) {
-      // console.log(err.response.data)
       this.setState({ formErrors: err.response.data })
       return
     }
-
   }
 
   render()  {
